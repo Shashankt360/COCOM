@@ -235,6 +235,8 @@ public class C4CHelper extends DriverHelper{
 		Thread.sleep(10000);
 		ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on Edit Option to Edit the Details");
 		WaitforElementtobeclickable(xml.getlocator("//locators/Opportunity/Lcomplexity"));
+		SendKeyswithAction(getwebelement(xml.getlocator("//locators/Opportunity/Lcomplexity")),"");
+		Thread.sleep(1000);
 		SendKeyswithAction(getwebelement(xml.getlocator("//locators/Opportunity/Lcomplexity")),"Standard");
 		//SendKeys(getwebelement(xml.getlocator("//locators/Opportunity/Lcomplexity")),Keys.ENTER);
 		//Enter Technical Complexity detail
