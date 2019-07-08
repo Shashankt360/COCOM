@@ -60,10 +60,15 @@ public class StandardOrderOnnet extends DriverTestcase {
 			}
 		else if(Configurationhelper.get().Quotestatus.get().equals("Created"))
 		{
+			Configurationhelper.get().SEDataupdate(Data);
+			}
+		else if(Configurationhelper.get().Quotestatus.get().equals("To be Priced"))
+		{
 			//Need to write the codeExceptionPPT()
 			Configurationhelper.get().ExceptionPPT();
 		}
 		// If Stage is waiting for third Party Need to call All the Explore functions
+		
 		BspokeNonStandard.get().Bespoke(Data);
 		GenralInfohelper.get().GenralInfomration(Data);
 		BCNupdatehelper.get().BCNUpdate(Data);
@@ -77,6 +82,7 @@ public class StandardOrderOnnet extends DriverTestcase {
 			DisscountAndAprrovalhelper.get().ApplyDisscountlinelevel(Data);
 		}
 		DisscountAndAprrovalhelper.get().ApproveQuote(Data);
+		Configurationhelper.get().SetCurrectQuoteStage();
 		// belowMethods will not call if Quote is not in Aprroved Stage 
 		if(Configurationhelper.get().Quotestatus.get().equals("Approved")){
 		SendProposalhelper.get().CustomerSign(Data);
@@ -113,13 +119,16 @@ public void EndtoEndOrderContainerNew(Object[][] Data) throws Exception
 	C4Chelper.get().Product_Add();
 	C4Chelper.get().AddContainerQuote();
 	ContainerHelper.get().AddContainerProduct(Data);
+	GenralInfohelper.get().GenralInfomration(Data);
 	ContainerHelper.get().ContainerApproveQuote();
 	ContainerHelper.get().ContainerSEApproval();
 	ContainerHelper.get().ContainerCSTApproval(Data);
 	SendProposalhelper.get().Containerprices(Data);
+	SendProposalhelper.get().CustomerSign(Data);
 	if(Data[0][24].toString().equals("Email")) {
 		Orderinghelper.get().AcceptsQuote(Data);
-		Orderinghelper.get().CreateOrder(Data);
+		ContainerHelper.get().ContainerCreateOrder();
+	//	Orderinghelper.get().CreateOrder(Data);
 	}
 	else {
 		Orderinghelper.get().AcceptsQuotebyEsignature(Data);
@@ -129,7 +138,7 @@ public void EndtoEndOrderContainerNew(Object[][] Data) throws Exception
 		C4Chelper.get().EditQuote();
 		C4Chelper.get().CheckdocumentSigned();
 		Orderinghelper.get().AcceptsQuote(Data);
-		Orderinghelper.get().CreateOrder(Data);
+		ContainerHelper.get().ContainerCreateOrder();
 		
 		}
 	

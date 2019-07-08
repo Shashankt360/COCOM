@@ -65,7 +65,7 @@
 <LoadingDailog2>//*[@id='loading-dialog']</LoadingDailog2>
 <ApprovalTab>(//span[contains(text(),'Approval')])[1]</ApprovalTab>
 <SubmitetoApproval>//a[text()='Submit to Approval']</SubmitetoApproval>
-<customersignatureTab>//span[text()='CUSTOMER SIGNATURE']</customersignatureTab>
+<customersignatureTab>//span[text()='Customer Signature']</customersignatureTab>
 <Status>//td[text()='Signed']</Status>
 <GenrateProposal>//a[text()='Generate Proposal']</GenrateProposal>
 <ForCustomerSignature>//*[@name='finalizeProposalCheck_t']</ForCustomerSignature>
@@ -111,8 +111,8 @@
 <OptyId>//bdi[text()='Opportunity ID']/parent::*/parent::*/div/span</OptyId>
 </Opportunity>
 <Product>
-<Fields>//*[text()='FName']/parent::*/parent::*/div/div/div/input</Fields>
-<Save>(//bdi[text()='Save'])</Save>
+<Fields>(//*[text()='FName']/parent::*/parent::*/div/div//div/input)[1]</Fields>
+<Save>(//bdi[text()='Save'])[2]</Save>
 </Product>
 <AccountsDropdown>//div[@title="Select View"]//button</AccountsDropdown>
 <SelectAll>//li[text()='All']</SelectAll>

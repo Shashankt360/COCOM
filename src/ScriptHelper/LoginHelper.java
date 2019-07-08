@@ -9,7 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import com.relevantcodes.extentreports.LogStatus;
 import Driver.DriverHelper;
-import Driver.Gmail;
+
 import Driver.xmlreader;
 import Reporter.ExtentTestManager;
 
@@ -18,8 +18,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.mail.Message;
-import javax.mail.internet.MimeMultipart;
+
 
 public class LoginHelper extends DriverHelper{
 	

@@ -56,7 +56,7 @@
 <LoadingDailog2>//*[@id='loading-dialog']</LoadingDailog2>
 <ApprovalTab>(//span[contains(text(),'Approval')])[1]</ApprovalTab>
 <SubmitetoApproval>//a[text()='Submit to Approval']</SubmitetoApproval>
-<customersignatureTab>//span[text()='CUSTOMER SIGNATURE']</customersignatureTab>
+<customersignatureTab>//span[text()='Customer Signature']</customersignatureTab>
 <GenrateProposal>//a[text()='Generate Proposal']</GenrateProposal>
 <ForCustomerSignature>//label[text()='Is this Proposal being sent for Customer Signature now?']/ancestor::div[4]//div[2]//div//span/input</ForCustomerSignature>
 <Mod>//select[@name='workflow_t']</Mod>

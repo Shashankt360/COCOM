@@ -10,7 +10,7 @@
 <QuoteTab>//div[text()='Quotes']</QuoteTab>
 <ContainerNewBusiness>//bdi[text()='Container - New Business']</ContainerNewBusiness>
 <EnterProductName>id=productNameSearch</EnterProductName>
-<AddContainerProduct>(//span[text()='Add Container Product'])[2]</AddContainerProduct>
+<AddContainerProduct>//span[text()='Add Container Product']/parent::*/parent::*[not(contains(@style,'display'))]</AddContainerProduct>
 <TechnicalApprovalTab>(//span[text()='Technical Approval'])</TechnicalApprovalTab>
 <UploadXlsxAttachment>(//div[@id='accordionQuoteLineItems']//span[contains(text(),'Upload')])[index]</UploadXlsxAttachment>
 <SelectCategory>//label[text()='value']</SelectCategory>

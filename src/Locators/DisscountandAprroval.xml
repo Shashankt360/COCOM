@@ -88,7 +88,7 @@
 <ApproveasApprover>//span[text()='Approve']</ApproveasApprover>
 <Proxylogout>//img[contains(@title,'Logout')]/parent::*</Proxylogout>
 <SubmitetoApproval>//span[text()='Submit to Approval']/parent::*/parent::*</SubmitetoApproval>
-<customersignatureTab>//span[text()='CUSTOMER SIGNATURE']</customersignatureTab>
+<customersignatureTab>//span[text()='Customer Signature']</customersignatureTab>
 <GenrateProposal>//a[text()='Generate Proposal']</GenrateProposal>
 <ForCustomerSignature>//*[@name='finalizeProposalCheck_t']</ForCustomerSignature>
 <Mod>//select[@name='workflow_t']</Mod>
@@ -127,5 +127,6 @@
 <ProductDescription>//textarea[@name='notesProductDescription_bespokearray']</ProductDescription>
 <ProxyLink>(//img[@alt='Proxy Login']/parent::*)[1]</ProxyLink>
 <Quotestatus>id=status_t-ro</Quotestatus>
+<LeadTime>(//span[contains(@class,'rowexpander')]/parent::*/parent::*/parent::*/parent::*/td[23]/span)[index]</LeadTime>
 </locators>
 

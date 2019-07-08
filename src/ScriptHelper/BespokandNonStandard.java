@@ -35,7 +35,7 @@ if(Inputdata[0][15].equals("BeSpoke")){
 	ProxyLogin("CPQ_SE_User", xml.getlocator("//locators/ProxyLink"));
 	
 	BespokeSE();
-BespokeSales();
+	BespokeSales();
 }
 else if(Inputdata[0][15].equals("Non Standard"))
 {

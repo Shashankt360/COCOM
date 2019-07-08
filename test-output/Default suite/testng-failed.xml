@@ -6,8 +6,7 @@
       <class name="Testscript.StandardOrderOnnet">
         <methods>
           <include name="BeforeMethod"/>
-          <include name="EndtoEndOrder" invocation-numbers="0"/>
-          <include name="EndtoEndOrderContainerNew"/>
+          <include name="EndtoEndOrderContainerNew" invocation-numbers="0 1"/>
           <include name="Teardown2"/>
           <include name="BeforeSuite"/>
           <include name="Teardown"/>

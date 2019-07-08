@@ -63,7 +63,7 @@
 <ModValue>//div[text()='Workflow']</ModValue>
 <to>//*[@id='toRecepient_t']</to>
 <SendtoCustomer>//span[text()='Send Proposal']/parent::*/parent::*</SendtoCustomer>
-<SentoSign>(//span[text()='Request Signature']/parent::*/parent::*)[2]</SentoSign>
+<SentoSign>(//span[text()='Request Signature']/parent::*/parent::*)[last()]</SentoSign>
 <OrderTab>//span[text()='ORDER']</OrderTab>
 <QuoteAction>name=quoteActionAcceptOrReject_t</QuoteAction>
 <Reasone>name=reasonForStatusWon_t</Reasone>

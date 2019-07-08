@@ -63,10 +63,15 @@ public class OrderingHelper extends DriverHelper{
 			javascriptexecutor(getwebelement(xml.getlocator("//locators/OrderTab")));
 			Clickon(getwebelement(xml.getlocator("//locators/OrderTab")));
 			Thread.sleep(2000);
+			Clickon(getwebelement(xml.getlocator("//locators/QuoteActionContainer")));
+			Clickon(getwebelement(xml.getlocator("//locators/AcceptQuote")));
 			
-			Select(getwebelement(xml.getlocator("//locators/QuoteAction")), "Accept");
+//			Select(getwebelement(xml.getlocator("//locators/QuoteAction")), "Accept");
 			Thread.sleep(2000);
-			Select(getwebelement(xml.getlocator("//locators/Reasone")), "Price");
+			Clickon(getwebelement(xml.getlocator("//locators/ReasonForStatusContainer")));
+			Clickon(getwebelement(xml.getlocator("//locators/Reasone")));
+			
+//			Select(getwebelement(xml.getlocator("//locators/Reasone")), "Price");
 			Thread.sleep(5000);
 //			//safeJavaScriptClick();
 //			//Clickon(getwebelement(xml.getlocator("//locators/FileBrowse")));

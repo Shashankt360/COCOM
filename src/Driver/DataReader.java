@@ -23,7 +23,7 @@ public class DataReader {
 		  formatter.parse(str, pos);
 		  return str.length() == pos.getIndex();
 		}
-	@DataProvider(name="NewStandrdOrder", parallel=false)
+	@DataProvider(name="NewStandrdOrder", parallel=true)
 	public static Object[][] datareader() throws IOException
 	{
 		

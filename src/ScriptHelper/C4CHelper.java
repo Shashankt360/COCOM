@@ -79,35 +79,62 @@ public class C4CHelper extends DriverHelper{
 		Thread.sleep(3000);
 		WaitforC4Cloader(xml.getlocator("//locators/C4Cloader"),1);
 		WaitforElementtobeclickable(xml.getlocator("//locators/Product/Fields").replace("FName", "Product"));
+		SendKeys(getwebelement(xml.getlocator("//locators/Product/Fields").replace("FName", "Product")),"");
+		Thread.sleep(1000);
 		SendKeys(getwebelement(xml.getlocator("//locators/Product/Fields").replace("FName", "Product")),"SD WAN");
-		SendkeaboardKeys(getwebelement(xml.getlocator("//locators/Opportunity/Name")),Keys.ENTER);
+		Thread.sleep(2000);
+		SendkeaboardKeys(getwebelement(xml.getlocator("//locators/Product/Fields").replace("FName", "Product")),Keys.ENTER);
 		ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Enter Opportunuity Name");
 		WaitforC4Cloader(xml.getlocator("//locators/C4Cloader"),1);
+		Thread.sleep(3000);
 		WaitforElementtobeclickable(xml.getlocator("//locators/Product/Fields").replace("FName", "Contract Length In Months"));
+		SendKeys(getwebelement(xml.getlocator("//locators/Product/Fields").replace("FName", "Contract Length In Months")),"");
+		Thread.sleep(1000);
 		SendKeys(getwebelement(xml.getlocator("//locators/Product/Fields").replace("FName", "Contract Length In Months")),"12");
-		SendkeaboardKeys(getwebelement(xml.getlocator("//locators/Opportunity/Name")),Keys.ENTER);
+		Thread.sleep(2000);
+		SendkeaboardKeys(getwebelement(xml.getlocator("//locators/Product/Fields").replace("FName", "Contract Length In Months")),Keys.ENTER);
 		WaitforC4Cloader(xml.getlocator("//locators/C4Cloader"),1);
+		Thread.sleep(3000);
 		WaitforElementtobeclickable(xml.getlocator("//locators/Product/Fields").replace("FName", "Install and Setup"));
+		getwebelement(xml.getlocator("//locators/Product/Fields").replace("FName", "Install and Setup")).clear();
+		Thread.sleep(1000);
 		SendKeys(getwebelement(xml.getlocator("//locators/Product/Fields").replace("FName", "Install and Setup")),"500");
-		SendkeaboardKeys(getwebelement(xml.getlocator("//locators/Opportunity/Name")),Keys.ENTER);
+		Thread.sleep(2000);
+		SendkeaboardKeys(getwebelement(xml.getlocator("//locators/Product/Fields").replace("FName", "Install and Setup")),Keys.ENTER);
 		WaitforC4Cloader(xml.getlocator("//locators/C4Cloader"),1);
+		Thread.sleep(3000);
 		WaitforElementtobeclickable(xml.getlocator("//locators/Product/Fields").replace("FName", "Bandwidth"));
+		SendKeys(getwebelement(xml.getlocator("//locators/Product/Fields").replace("FName", "Bandwidth")),"");
+		Thread.sleep(1000);
 		SendKeys(getwebelement(xml.getlocator("//locators/Product/Fields").replace("FName", "Bandwidth")),"10 MBPS");
-		SendkeaboardKeys(getwebelement(xml.getlocator("//locators/Opportunity/Name")),Keys.ENTER);
-		WaitforC4Cloader(xml.getlocator("//locators/C4Cloader"),1);
-		WaitforElementtobeclickable(xml.getlocator("//locators/Product/Fields").replace("FName", "A End City"));
-		SendKeys(getwebelement(xml.getlocator("//locators/Product/Fields").replace("FName", "A End City")),"London");
-		SendkeaboardKeys(getwebelement(xml.getlocator("//locators/Opportunity/Name")),Keys.ENTER);
-		WaitforC4Cloader(xml.getlocator("//locators/C4Cloader"),1);
-		WaitforElementtobeclickable(xml.getlocator("//locators/Product/Fields").replace("FName", "B End City"));
-		SendKeys(getwebelement(xml.getlocator("//locators/Product/Fields").replace("FName", "B End City")),"London");
-		SendkeaboardKeys(getwebelement(xml.getlocator("//locators/Opportunity/Name")),Keys.ENTER);
-		WaitforC4Cloader(xml.getlocator("//locators/C4Cloader"),1);
-		WaitforElementtobeclickable(xml.getlocator("//locators/Product/Fields").replace("FName", "Cloud Service Provider"));
-		SendKeys(getwebelement(xml.getlocator("//locators/Product/Fields").replace("FName", "Cloud Service Provider")),"IBM");
-		SendkeaboardKeys(getwebelement(xml.getlocator("//locators/Opportunity/Name")),Keys.ENTER);
-		WaitforElementtobeclickable(xml.getlocator("//locators/Opportunity/AddProductlink"));
 		
+		SendkeaboardKeys(getwebelement(xml.getlocator("//locators/Product/Fields").replace("FName", "Bandwidth")),Keys.ENTER);
+		WaitforC4Cloader(xml.getlocator("//locators/C4Cloader"),1);
+		Thread.sleep(3000);
+		WaitforElementtobeclickable(xml.getlocator("//locators/Product/Fields").replace("FName", "A End City"));
+		SendKeys(getwebelement(xml.getlocator("//locators/Product/Fields").replace("FName", "A End City")),"");
+		Thread.sleep(1000);
+		SendKeys(getwebelement(xml.getlocator("//locators/Product/Fields").replace("FName", "A End City")),"London");
+		
+		SendkeaboardKeys(getwebelement(xml.getlocator("//locators/Product/Fields").replace("FName", "A End City")),Keys.ENTER);
+		WaitforC4Cloader(xml.getlocator("//locators/C4Cloader"),1);
+		Thread.sleep(3000);
+		WaitforElementtobeclickable(xml.getlocator("//locators/Product/Fields").replace("FName", "B End City"));
+		SendKeys(getwebelement(xml.getlocator("//locators/Product/Fields").replace("FName", "B End City")),"");
+		Thread.sleep(3000);
+		SendKeys(getwebelement(xml.getlocator("//locators/Product/Fields").replace("FName", "B End City")),"London");
+		
+		SendkeaboardKeys(getwebelement(xml.getlocator("//locators/Product/Fields").replace("FName", "B End City")),Keys.ENTER);
+		WaitforC4Cloader(xml.getlocator("//locators/C4Cloader"),1);
+		Thread.sleep(3000);
+		WaitforElementtobeclickable(xml.getlocator("//locators/Product/Fields").replace("FName", "Cloud Service Provider"));
+		SendKeys(getwebelement(xml.getlocator("//locators/Product/Fields").replace("FName", "Cloud Service Provider")),"");
+		Thread.sleep(3000);
+		SendKeys(getwebelement(xml.getlocator("//locators/Product/Fields").replace("FName", "Cloud Service Provider")),"IBM");
+		
+		SendkeaboardKeys(getwebelement(xml.getlocator("//locators/Product/Fields").replace("FName", "Cloud Service Provider")),Keys.ENTER);
+		Thread.sleep(3000);
+		WaitforElementtobeclickable(xml.getlocator("//locators/Opportunity/AddProductlink"));
 		
 		Clickon(getwebelement(xml.getlocator("//locators/Opportunity/AddProductlink")));
 		ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on New button to create New Opportunuity");
@@ -355,6 +382,9 @@ public class C4CHelper extends DriverHelper{
 	}
 	public void CheckdocumentSigned() throws Exception
 	{
+		Thread.sleep(30000);
+		Pagerefresh();
+		Thread.sleep(30000);
 		WaitforElementtobeclickable(xml.getlocator("//locators/customersignatureTab"));
 		Clickon(getwebelement(xml.getlocator("//locators/customersignatureTab")));
 		ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on Customer Signature Tab");

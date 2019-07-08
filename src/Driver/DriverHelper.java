@@ -481,6 +481,7 @@ public void ClickswithAction(String el) throws InterruptedException {
 				((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
 			} else {
 				Log.info("Unable to click on element");
+				((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
 			}
 		} catch (StaleElementReferenceException e) {
 			Log.info("Element is not attached to the page document "+ e.getStackTrace());
@@ -568,10 +569,11 @@ public void Clickonoutofviewportwithstring(String locator) throws Exception {
 	((JavascriptExecutor)
 
 			driver).executeScript("arguments[0].scrollIntoView();", driver.findElement(By.xpath("//*[text()='Show Groups']")));
-	//safeJavaScriptClick(driver.findElement(By.xpath(locator)));
+	//
 	System.out.println("See if Scrolled");
-	Thread.sleep(1000);	
+	Thread.sleep(5000);	
 	System.out.println("Waiting....");
+	safeJavaScriptClick(driver.findElement(By.xpath(locator)));
 }
 	public void waitandclickForworkitemsPresent(String locator, int timeout) throws InterruptedException
 	{
@@ -994,6 +996,10 @@ public void Clickonoutofviewportwithstring(String locator) throws Exception {
 		Actions keyAction = new Actions(driver);     
 		keyAction.sendKeys(s).perform();
 	}
+	public void EnterText2(Keys k){
+		Actions keyAction = new Actions(driver);     
+		keyAction.sendKeys(k).perform();
+	}
 	public void savePage(){
 			Actions keyAction = new Actions(driver);     
 			keyAction.keyDown(Keys.CONTROL).sendKeys("s").keyUp(Keys.CONTROL).perform();
@@ -1009,9 +1015,41 @@ public void Clickonoutofviewportwithstring(String locator) throws Exception {
 	public void uploadafile(String  locator,String FileName)
 	{
 		String str = System.getProperty("user.dir")+"\\src\\Data\\"+FileName;
-		String[]  finalval=locator.split("=");
-		WebElement el=driver.findElement(By.id(finalval[1])); 
-		el.sendKeys(str);
+		String[]  finalval;
+		//=locator.split("=");
+		 if(locator.startsWith("id"))
+		{
+			finalval=locator.split("=");
+			//Log.info(finalval[1]);
+			//Log.info("Indriverhelper"+driver);
+			//el=driver.findElement(By.id(finalval[1]));
+			       
+				
+					el=driver.findElement(By.id(finalval[1]));
+			//		wait.until(ExpectedConditions.elementToBeClickable(el));
+					//wait.until(el.isEnabled());
+					el.sendKeys(str);
+				//	return el;   
+				   
+				
+			 //el= driver.findElement(By.id(finalval[1]));
+		}
+		else if (locator.startsWith("//")|| locator.startsWith("(//")||locator.startsWith("("))
+		{
+			//el=driver.findElement(By.xpath(locator)); 
+			
+				
+					el=driver.findElement(By.xpath(locator)); 
+			//		wait.until(ExpectedConditions.elementToBeClickable(el));
+					el.sendKeys(str);
+				//	return el;   
+				  
+				
+			
+		}
+		
+//		WebElement el=driver.findElement(By.id(finalval[1]));
+//		el.sendKeys(str);
 //		// + "\\Lib\\chromedriver.exe"
 //		Toolkit toolkit = Toolkit.getDefaultToolkit();
 //		Clipboard clipboard = toolkit.getSystemClipboard();

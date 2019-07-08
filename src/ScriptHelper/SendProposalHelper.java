@@ -97,9 +97,10 @@ public class SendProposalHelper extends DriverHelper{
 			Thread.sleep(5000);
 			//CloseProposalwindow();
 			//WaitforElementtobeclickable(xml.getlocator("//locators/ForCustomerSignature"));
+			Thread.sleep(30000);
 			Thread.sleep(5000);
 			safeJavaScriptClick(getwebelement(xml.getlocator("//locators/ForCustomerSignature")));
-			Clickon(getwebelement(xml.getlocator("//locators/ForCustomerSignature")));
+			//Clickon(getwebelement(xml.getlocator("//locators/ForCustomerSignature")));
 			Thread.sleep(5000);
 			WaitforElementtobeclickable(xml.getlocator("//locators/Mod"));
 			//Select(getwebelement(xml.getlocator("//locators/Mod")), Inputdata[0][24].toString());
@@ -107,7 +108,7 @@ public class SendProposalHelper extends DriverHelper{
 			Clickon(getwebelement(xml.getlocator("//locators/ModValue").replace("Workflow", Inputdata[0][24].toString())));
 			WaitforElementtobeclickable(xml.getlocator("//locators/to"));
 			SendKeys(getwebelement(xml.getlocator("//locators/to")),Inputdata[0][25].toString());
-			Clickon(getwebelement(xml.getlocator("//locators/SentoSign")));
+			//Clickon(getwebelement(xml.getlocator("//locators/SentoSign")));
 			try {
 				Thread.sleep(5000);
 				AcceptJavaScriptMethod();
@@ -117,7 +118,7 @@ public class SendProposalHelper extends DriverHelper{
 					System.out.println("No Alert Present");
 				}
 			Thread.sleep(5000);
-			
+			Clickon(getwebelement(xml.getlocator("//locators/SentoSign")));
 		}
 	}
 	

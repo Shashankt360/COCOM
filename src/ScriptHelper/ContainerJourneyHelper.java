@@ -1,6 +1,7 @@
 package ScriptHelper;
 
 import org.dom4j.DocumentException;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -34,6 +35,8 @@ public class ContainerJourneyHelper extends DriverHelper {
 		Thread.sleep(10000);
 		Clickon(getwebelement(xml.getlocator("//locators/EnterProductName")));
 		SendKeys(getwebelement(xml.getlocator("//locators/EnterProductName")),Data[i][2].toString());
+		Thread.sleep(2000);
+		SendkeaboardKeys(getwebelement(xml.getlocator("//locators/EnterProductName")),Keys.ENTER);
 		Clickon(getwebelement(xml.getlocator("//locators/AddContainerProduct")));
 		getwebelement(xml.getlocator("//locators/EnterProductName")).clear();
 		}
@@ -65,7 +68,7 @@ public class ContainerJourneyHelper extends DriverHelper {
 			Clickon(getwebelement(xml.getlocator("//locators/UploadFile")));
 		}
 		switchtodefault();
-		Thread.sleep(3000);
+		Thread.sleep(20000);
 		ClickswithAction(xml.getlocator("//locators/CheckboxTechnicalApproval"));
 		Thread.sleep(3000);
 		Clickon(getwebelement(xml.getlocator("//locators/SubmitTechnicalApprovalButton")));

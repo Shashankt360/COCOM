@@ -1177,165 +1177,12 @@ public class ConfigurationHelper extends DriverHelper{
 					Clickon(getwebelement(xml.getlocator("//locators/FeaturesTab")));
 					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Waiting for Loading to be completed");
 					Getloadingcomplete(xml.getlocator("//locators/LoadingDailog"));
-					
-			// Json method for Adding Feature
-//					JsonReader js = new JsonReader("Jsonfile.json");
-//					int count = js.getFeatureCount();
-//					for(int a=1; i<=count;a++)
-//					{
-//						String Featurename = js.getJsonData("Feature"+a, "Name");
-//						System.out.println(Featurename);
-//						switch(Featurename)
-//						{
-//						 	case "Outside Business Hours Installation":
-//						 	{
-//						 		//Methods for site A,B
-//						 		if(js.getJsonData("Feature"+a, "Site").equals("A"))
-//						 		{
-//						 		//	Methods for site A
-//						 		}
-//						 		else 
-//						 		{
-//						 		//	Methods for site B
-//						 		}
-//						 		
-//						 	//Methods for Click on the Feature available
-//						 		break;
-//						 	}	
-//						 	case "Dual Entry":
-//						 	{
-//						 		//Methods for site A,B
-//						 		if(js.getJsonData("Feature"+a, "Site").equals("A"))
-//						 		{
-//						 		//	Methods for site A
-//						 		}
-//						 		else 
-//						 		{
-//						 		//	Methods for site B
-//						 		}
-//						 		
-//						 		// Methods for Click on the Feature available
-//						 		break;
-//						 	} 
-//						 	case "Long Lining":
-//						 	{
-//						 		//Methods for site A,B
-//						 		if(js.getJsonData("Feature"+a, "Site").equals("A"))
-//						 		{
-//						 		//	Methods for site A
-//						 		}
-//						 		else 
-//						 		{
-//						 		//	Methods for site B
-//						 		}
-//						 		
-//						 		// Methods for Click on the Feature available
-//						 		break;
-//						 	}
-//						 	case "Internal Cabling":
-//						 	{
-//						 		//Methods for site A,B
-//						 		if(js.getJsonData("Feature"+a, "Site").equals("A"))
-//						 		{
-//						 		//	Methods for site A
-//						 		}
-//						 		else 
-//						 		{
-//						 		//	Methods for site B
-//						 		}
-//						 		
-//						 		// Methods for Click on the Feature available
-//						 		break;
-//						 	} 
-//						 	case "Link Aggregation(LAG)":
-//						 	{
-//						 		//Methods for site A,B
-//						 		if(js.getJsonData("Feature"+a, "Site").equals("A"))
-//						 		{
-//						 		//	Methods for site A
-//						 		}
-//						 		else 
-//						 		{
-//						 		//	Methods for site B
-//						 		}
-//						 		
-//						 		// Methods for Click on the Feature available
-//						 		break;
-//						 	} 
-//						 	case "Demarcation device":
-//						 	{
-//						 		//Methods for site A,B
-//						 		if(js.getJsonData("Feature"+a, "Site").equals("A"))
-//						 		{
-//						 		//	Methods for site A
-//						 		}
-//						 		else 
-//						 		{
-//						 		//	Methods for site B
-//						 		}
-//						 		
-//						 		// Methods for Click on the Feature available
-//						 		break;
-//						 	} 
-//						 	case "Carrier Hotel Cross Connect":
-//						 	{
-//						 		//Methods for site A,B
-//						 		if(js.getJsonData("Feature"+a, "Site").equals("A"))
-//						 		{
-//						 		//	Methods for site A
-//						 		}
-//						 		else 
-//						 		{
-//						 		//	Methods for site B
-//						 		}
-//						 		
-//						 		// Methods for Click on the Feature available
-//						 		break;
-//						 	} 
-//						 	case "Diversity":
-//						 	{
-//						 		// Methods for Click on the Feature available
-//						 		break;
-//						 	} 
-//						 	case "Class of Service":
-//						 	{
-//						 		// Methods for Click on the Feature available
-//						 		break;
-//						 	} 
-//						 	case "Performance Reporting":
-//						 	{
-//						 		// Methods for Click on the Feature available
-//						 		break;
-//						 	} 
-//						 	case "Pro Active Management":
-//						 	{
-//						 		// Methods for Click on the Feature available
-//						 		break;
-//						 	} 
-//						 	case "Fast Track":
-//						 	{
-//						 		// Methods for Click on the Feature available
-//						 		//Getloadingcomplete(xml.getlocator("//locators/LoadingDailog"));
-//								
-								//ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Fast Track Option");
-								//Clickon(getwebelement(xml.getlocator("//locators/FastTrackAddon")));
-								//ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Waiting for Loading to be completed");
-								//Getloadingcomplete(xml.getlocator("//locators/LoadingDailog"));
-//								
-//						 		break;
-//						 	} 
-//						 							 	
-//						}
-//						
-//					}
-				
-					
-//					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Fast Track Option");
-//					Clickon(getwebelement(xml.getlocator("//locators/FastTrackAddon")));
+					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Fast Track Option");
+					Clickon(getwebelement(xml.getlocator("//locators/FastTrackAddon")));
 					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Waiting for Loading to be completed");
 					Getloadingcomplete(xml.getlocator("//locators/LoadingDailog"));
-					
-					
+					Clickon(getwebelement(xml.getlocator("//locators/updateQuote")));
+					Getloadingcomplete(xml.getlocator("//locators/LoadingDailog"));
 					}
 					String exception="No Exception";
 					try {
@@ -1348,6 +1195,9 @@ public class ConfigurationHelper extends DriverHelper{
 					}
 					if(exception.equalsIgnoreCase("Price Not Found"))
 					{
+						System.out.println("Pricing Execption found nd needs to partial save");
+						javascriptexecutor(getwebelement(xml.getlocator("//locators/FeaturesTab")));
+						
 						Clickon(getwebelement(xml.getlocator("//locators/PPT/PartialSave")));
 						//Clickon(getwebelement(xml.getlocator("//locators/PPT/Save")));
 						
@@ -1421,13 +1271,17 @@ public class ConfigurationHelper extends DriverHelper{
 				ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Scroll the Page to Top");
 				javascriptexecutor(getwebelement(xml.getlocator("//locators/FeaturesTab")));
 				ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click On Feature Tab");
-				Clickon(getwebelement(xml.getlocator("//locators/FeaturesTab")));
-				ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Waiting for Loading to be completed");
-				Getloadingcomplete(xml.getlocator("//locators/LoadingDailog"));
-				ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Fast Track Option");
-				Clickon(getwebelement(xml.getlocator("//locators/FastTrackAddon")));
-				ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Waiting for Loading to be completed");
-				Getloadingcomplete(xml.getlocator("//locators/LoadingDailog"));
+				if(!Inputdata[i][13].toString().equals("")) {
+					Clickon(getwebelement(xml.getlocator("//locators/FeaturesTab")));
+					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Waiting for Loading to be completed");
+					Getloadingcomplete(xml.getlocator("//locators/LoadingDailog"));
+					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Fast Track Option");
+					Clickon(getwebelement(xml.getlocator("//locators/FastTrackAddon")));
+					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Waiting for Loading to be completed");
+					Getloadingcomplete(xml.getlocator("//locators/LoadingDailog"));
+					Clickon(getwebelement(xml.getlocator("//locators/updateQuote")));
+					Getloadingcomplete(xml.getlocator("//locators/LoadingDailog"));
+					}
 //				ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on Add to Quote button");
 //				Clickon(getwebelement(xml.getlocator("//locators/AddtoTransaction")));
 				String exception="No Exception";
@@ -1532,14 +1386,17 @@ public class ConfigurationHelper extends DriverHelper{
 					
 					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Scroll the Page to Top");
 					javascriptexecutor(getwebelement(xml.getlocator("//locators/FeaturesTab")));
-					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click On Feature Tab");
-					Clickon(getwebelement(xml.getlocator("//locators/FeaturesTab")));
-					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Waiting for Loading to be completed");
-					Getloadingcomplete(xml.getlocator("//locators/LoadingDailog"));
-					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Fast Track Option");
-					Clickon(getwebelement(xml.getlocator("//locators/FastTrackAddon")));
-					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Waiting for Loading to be completed");
-					Getloadingcomplete(xml.getlocator("//locators/LoadingDailog"));
+					if(!Inputdata[i][13].toString().equals("")) {
+						Clickon(getwebelement(xml.getlocator("//locators/FeaturesTab")));
+						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Waiting for Loading to be completed");
+						Getloadingcomplete(xml.getlocator("//locators/LoadingDailog"));
+						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Fast Track Option");
+						Clickon(getwebelement(xml.getlocator("//locators/FastTrackAddon")));
+						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Waiting for Loading to be completed");
+						Getloadingcomplete(xml.getlocator("//locators/LoadingDailog"));
+						Clickon(getwebelement(xml.getlocator("//locators/updateQuote")));
+						Getloadingcomplete(xml.getlocator("//locators/LoadingDailog"));
+						}
 //					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on Add to Quote button");
 //					Clickon(getwebelement(xml.getlocator("//locators/AddtoTransaction")));
 					String exception="No Exception";
@@ -1642,14 +1499,17 @@ public class ConfigurationHelper extends DriverHelper{
 					
 					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Scroll the Page to Top");
 					javascriptexecutor(getwebelement(xml.getlocator("//locators/FeaturesTab")));
-					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click On Feature Tab");
-					Clickon(getwebelement(xml.getlocator("//locators/FeaturesTab")));
-					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Waiting for Loading to be completed");
-					Getloadingcomplete(xml.getlocator("//locators/LoadingDailog"));
-					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Fast Track Option");
-					Clickon(getwebelement(xml.getlocator("//locators/FastTrackAddon")));
-					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Waiting for Loading to be completed");
-					Getloadingcomplete(xml.getlocator("//locators/LoadingDailog"));
+					if(!Inputdata[i][13].toString().equals("")) {
+						Clickon(getwebelement(xml.getlocator("//locators/FeaturesTab")));
+						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Waiting for Loading to be completed");
+						Getloadingcomplete(xml.getlocator("//locators/LoadingDailog"));
+						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Fast Track Option");
+						Clickon(getwebelement(xml.getlocator("//locators/FastTrackAddon")));
+						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Waiting for Loading to be completed");
+						Getloadingcomplete(xml.getlocator("//locators/LoadingDailog"));
+						Clickon(getwebelement(xml.getlocator("//locators/updateQuote")));
+						Getloadingcomplete(xml.getlocator("//locators/LoadingDailog"));
+						}
 					String exception="No Exception";
 					try {
 					exception=Gettext(getwebelement(xml.getlocator("//locators/PPT/BasePrice")));
@@ -1756,19 +1616,24 @@ public class ConfigurationHelper extends DriverHelper{
 				
 				ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Scroll the Page to Top");
 				javascriptexecutor(getwebelement(xml.getlocator("//locators/FeaturesTab")));
-				ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click On Feature Tab");
-				Clickon(getwebelement(xml.getlocator("//locators/FeaturesTab")));
-				ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Waiting for Loading to be completed");
-				Getloadingcomplete(xml.getlocator("//locators/LoadingDailog"));
-				ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Fast Track Option");
-				Clickon(getwebelement(xml.getlocator("//locators/FastTrackAddon")));
-				ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Waiting for Loading to be completed");
-				Getloadingcomplete(xml.getlocator("//locators/LoadingDailog"));
+				if(!Inputdata[i][13].toString().equals("")) {
+					Clickon(getwebelement(xml.getlocator("//locators/FeaturesTab")));
+					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Waiting for Loading to be completed");
+					Getloadingcomplete(xml.getlocator("//locators/LoadingDailog"));
+					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Fast Track Option");
+					Clickon(getwebelement(xml.getlocator("//locators/FastTrackAddon")));
+					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Waiting for Loading to be completed");
+					Getloadingcomplete(xml.getlocator("//locators/LoadingDailog"));
+					Clickon(getwebelement(xml.getlocator("//locators/updateQuote")));
+					Getloadingcomplete(xml.getlocator("//locators/LoadingDailog"));
+
+					}
 				if(exception.equalsIgnoreCase("Price Not Found")||isElementPresent(xml.getlocator("//locators/Nonfeasiblemsg")))
 				{
 					Clickon(getwebelement(xml.getlocator("//locators/PPT/PartialSave")));
 					
 				}
+				
 				AdditionalProductData();
 				if(isElementPresent(xml.getlocator("//locators/PPT/Save")))
 				{
@@ -1856,14 +1721,18 @@ public class ConfigurationHelper extends DriverHelper{
 					}
 					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Scroll the Page to Top");
 					javascriptexecutor(getwebelement(xml.getlocator("//locators/FeaturesTab")));
-					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click On Feature Tab");
-					Clickon(getwebelement(xml.getlocator("//locators/FeaturesTab")));
-					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Waiting for Loading to be completed");
-					Getloadingcomplete(xml.getlocator("//locators/LoadingDailog"));
-					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Fast Track Option");
-					Clickon(getwebelement(xml.getlocator("//locators/FastTrackAddon")));
-					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Waiting for Loading to be completed");
-					Getloadingcomplete(xml.getlocator("//locators/LoadingDailog"));
+					if(!Inputdata[i][13].toString().equals("")) {
+						Clickon(getwebelement(xml.getlocator("//locators/FeaturesTab")));
+						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Waiting for Loading to be completed");
+						Getloadingcomplete(xml.getlocator("//locators/LoadingDailog"));
+						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Fast Track Option");
+						Clickon(getwebelement(xml.getlocator("//locators/FastTrackAddon")));
+						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Waiting for Loading to be completed");
+						Getloadingcomplete(xml.getlocator("//locators/LoadingDailog"));
+						Clickon(getwebelement(xml.getlocator("//locators/updateQuote")));
+						Getloadingcomplete(xml.getlocator("//locators/LoadingDailog"));
+
+						}
 					String exception="No Exception";
 					try {
 					exception=Gettext(getwebelement(xml.getlocator("//locators/PPT/BasePrice")));
@@ -1899,8 +1768,11 @@ public class ConfigurationHelper extends DriverHelper{
 	
 	public void AdditionalProductData() throws DocumentException, InterruptedException, IOException {
 		// Need to write the code
+		Thread.sleep(30000);
+		
 		if(isElementPresent(xml.getlocator("//locators/AdditionalProductDataTabparent")))
 		{
+			javascriptexecutor(getwebelement(xml.getlocator("//locators/AdditionalProductDataTabparent")));
 			Clickon(getwebelement(xml.getlocator("//locators/AdditionalProductDataTab")));
 			Select(getwebelement(xml.getlocator("//locators/ExistingCapacityLeadTime")),"No");
 			Clickon(getwebelement(xml.getlocator("//locators/updateQuote")));
@@ -2271,37 +2143,142 @@ public class ConfigurationHelper extends DriverHelper{
 		
 	}
 	
+	public void SetCurrectQuoteStage() throws IOException, InterruptedException, DocumentException
+	{
+		Pagerefresh();
+		waitForpageload();
+		WaitforCPQloader();
+//		waitandForElementtobenotDisplay(xml.getlocator("//locators/AjaxLoader1"),1);
+//		waitandForElementtobenotDisplay(xml.getlocator("//locators/AjaxLoader"),1);
+//		waitandForElementDisplay(xml.getlocator("//locators/AddProduct"),1);
+//		waitForpageload();
+		ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Waiting For Page to Be updated as Stanrad Quote");
+		WaitforElementtobeclickable(xml.getlocator("//locators/StandrdQuote"));
+		
+		getwebelement(xml.getlocator("//locators/StandrdQuote"));
+		Quotestatus.set(GetValueofInput(getwebelement(xml.getlocator("//locators/Quotestatus"))));
+		System.out.println("Quite Stage on Screee"+GetValueofInput(getwebelement(xml.getlocator("//locators/Quotestatus"))));
+		
+	}
+	public void SEDataupdate(Object[][] Inputdata)throws Exception
+	{
+		ProxyLogin("CPQ_SE_User", xml.getlocator("//locators/ProxyLink"));
+		
+		WaitforElementtobeclickable(xml.getlocator("//locators/QuotetoOrderLink"));
+		Clickon(getwebelement(xml.getlocator("//locators/QuotetoOrderLink")));
+		WaitforElementtobeclickable(xml.getlocator("//locators/CPQQuotelink").replace("QuoteId", QuoteID.get().trim()));
+		Clickon(getwebelement(xml.getlocator("//locators/CPQQuotelink").replace("QuoteId", QuoteID.get().trim())));
+		waitForpageload();
+		WaitforCPQloader();
+		for(int i=0;i<Inputdata.length;i++) {
+//			waitForpageload();
+//			waitandForElementtobenotDisplay(xml.getlocator("//locators/AjaxLoader1"),1);
+//			waitandForElementtobenotDisplay(xml.getlocator("//locators/AjaxLoader"),1);
+//			waitandForElementDisplay(xml.getlocator("//locators/AddProduct"),1);
+			waitForpageload();
+			WaitforElementtobeclickable(xml.getlocator("//locators/LineitemGrid"));
+			WaitforElementtobeclickable(xml.getlocator("//locators/customersignatureTab"));
+				System.out.println(xml.getlocator("//locators/ModelSelector").replace("index", String.valueOf(i+1)));
+				WaitforElementtobeclickable(xml.getlocator("//locators/ModelSelector").replace("index", String.valueOf(i+1)));
+				
+				Clickon(getwebelement(xml.getlocator("//locators/ModelSelector").replace("index", String.valueOf(i+1))));
+				WaitforElementtobeclickable(xml.getlocator("//locators/Reconfigure"));
+				
+				Clickon(getwebelement(xml.getlocator("//locators/Reconfigure")));
+				Getloadingcomplete(xml.getlocator("//locators/LoadingDailog"));
+				Getmaploaded(xml.getlocator("//locators/GoogleMapifram"), xml.getlocator("//locators/Messages"));
+				
+				WaitforElementtobeclickable(xml.getlocator("//locators/updateQuote"));
+				
+				Clickon(getwebelement(xml.getlocator("//locators/updateQuote")));
+				Getloadingcomplete(xml.getlocator("//locators/LoadingDailog"));
+				Getmaploaded(xml.getlocator("//locators/GoogleMapifram"), xml.getlocator("//locators/Messages"));
+				
+				WaitforElementtobeclickable(xml.getlocator("//locators/ReconfigsaveQuote"));
+				
+				Clickon(getwebelement(xml.getlocator("//locators/ReconfigsaveQuote")));
+				//Getloadingcomplete(xml.getlocator("//locators/LoadingDailog"));
+				// Need to check if New request need to be raised..
+				// raised a request whenever required
+				ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Waiting for Loading to be completed");
+				WaitforElementtobeclickable(xml.getlocator("//locators/ApprovalTab"));}
+		
+	}
 	public void ExceptionPPT() throws Exception
 	{
-		Clickon(getwebelement(xml.getlocator("//locators/PPT/EngagePortfolio")));		
+		Clickon(getwebelement(xml.getlocator("//locators/PPT/EngagePortfolio")));	
+		Thread.sleep(30000);
+		//waitForpageload();
+		//WaitforCPQloader();
 //		openurl("Admin");
 ////		Switchtotab();
 //		WaitforElementtobeclickable(xml.getlocator("//locators/InternalUser"));
 //		Clickon(getwebelement(xml.getlocator("//locators/InternalUser")));
 //		WaitforElementtobeclickable(xml.getlocator("//locators/usernameproxy").replace("Ashwani.Singh31@colt.net", pr.readproperty("CPQ_PPT_User")));
 //		Clickon(getwebelement(xml.getlocator("//locators/usernameproxy").replace("Ashwani.Singh31@colt.net",pr.readproperty("CPQ_PPT_User"))));
-		ProxyLogin("CPQ_PPT_User",xml.getlocator("//locators/usernameproxy"));
+		ProxyLogin("CPQ_PPT_User",xml.getlocator("//locators/ProxyLink"));
 		WaitforElementtobeclickable(xml.getlocator("//locators/QuotetoOrderLink"));
 		Clickon(getwebelement(xml.getlocator("//locators/QuotetoOrderLink")));
 		WaitforElementtobeclickable(xml.getlocator("//locators/CPQQuotelink").replace("QuoteId", QuoteID.get().trim()));
 		Clickon(getwebelement(xml.getlocator("//locators/CPQQuotelink").replace("QuoteId", QuoteID.get().trim())));
 		//Clickon(getwebelement(xml.getlocator("//locators/CPQQuotelink").replace("QuoteId", QuoteID.get().trim())));
+		waitForpageload();
+		WaitforCPQloader();
+		Thread.sleep(10000);
+		WaitforElementtobeclickable(xml.getlocator("//locators/PPT/PLtab"));
 		Clickon(getwebelement(xml.getlocator("//locators/PPT/PLtab")));
-		Select assignuser=new Select(getwebelement(xml.getlocator("//select[@name='portfolioTeamAssignment']")));
-		assignuser.selectByVisibleText("Prashant Manu");
+		WaitforElementtobeclickable(xml.getlocator("//locators/Listexpander"));
+		Clickon(getwebelement(xml.getlocator("//locators/Listexpander")));
+		WaitforElementtobeclickable(xml.getlocator("//locators/UserSelector").replace("Username", "Prashant Manu"));
+		Clickon(getwebelement(xml.getlocator("//locators/UserSelector").replace("Username", "Prashant Manu")));
+		//Select assignuser=new Select(getwebelement("//select[@name='portfolioTeamAssignment']"));
+		//assignuser.selectByVisibleText("Prashant Manu");
+		WaitforElementtobeclickable(xml.getlocator("//locators/PPT/Assignquote"));
 		Clickon(getwebelement(xml.getlocator("//locators/PPT/Assignquote")));
 		//String exception=xml.getlocator("//locators/PPT/Bpnotfound").toString();
-		if(xml.getlocator("//locators/PPT/Bpnotfound").toString().equalsIgnoreCase("Base price not found"))
+		Thread.sleep(20000);
+		if(GetText(getwebelement(xml.getlocator("//locators/PPT/Bpnotfound").toString())).equalsIgnoreCase("Base price not found"))
 		{
-			SendKeys(getwebelement(xml.getlocator("//locators/PPT/Basepricenrr")),"555");
+			//SendKeys(getwebelement(xml.getlocator("//locators/PPT/Basepricenrr")),"555");
+			Thread.sleep(2000);
+			safeJavaScriptClick(getwebelement(xml.getlocator("//locators/PPT/Basepricenrr")));
+			Thread.sleep(2000);
+			EnterText2(Keys.BACK_SPACE);
+			EnterText2(Keys.BACK_SPACE);
+			EnterText2(Keys.BACK_SPACE);
+			EnterText2(Keys.BACK_SPACE);
+			EnterText2(Keys.BACK_SPACE);
+			
+			EnterText("555");
 			SendKeys(getwebelement(xml.getlocator("//locators/PPT/Basepricemrr")),"666");
+			Thread.sleep(2000);
+			safeJavaScriptClick(getwebelement(xml.getlocator("//locators/PPT/Basepricemrr")));
+			Thread.sleep(2000);
+			EnterText2(Keys.BACK_SPACE);
+			EnterText2(Keys.BACK_SPACE);
+			EnterText2(Keys.BACK_SPACE);
+			EnterText2(Keys.BACK_SPACE);
+			EnterText2(Keys.BACK_SPACE);
+			
+			EnterText("666");
 		}
-		else if(xml.getlocator("//locators/PPT/Fastnotfound").toString().equalsIgnoreCase("FastTrack price not found"))
+		else if(GetText(getwebelement(xml.getlocator("//locators/PPT/Fastnotfound").toString())).equalsIgnoreCase("FastTrack price not found"))
 		{
-			SendKeys(getwebelement(xml.getlocator("//locators/PPT/Fastracknrr")),"777");
+			//Clickon(getwebelement(xml.getlocator("//locators/PPT/Fastracknrr")));
+			Thread.sleep(2000);
+			safeJavaScriptClick(getwebelement(xml.getlocator("//locators/PPT/Fastracknrr")));
+			Thread.sleep(2000);
+			EnterText2(Keys.BACK_SPACE);
+			EnterText2(Keys.BACK_SPACE);
+			EnterText2(Keys.BACK_SPACE);
+			EnterText2(Keys.BACK_SPACE);
+			EnterText2(Keys.BACK_SPACE);
+			
+			EnterText("777");
+			//SendKeys(getwebelement(xml.getlocator("//locators/PPT/Fastracknrr")),"777");
 			
 		}
-		else if(xml.getlocator("//locators/PPT/Pricingcitynotfound").toString().equalsIgnoreCase("A-END Pricing City ( Linz) Not Found"))
+		else if(GetText(getwebelement(xml.getlocator("//locators/PPT/Pricingcitynotfound").toString())).equalsIgnoreCase("A-END Pricing City ( Linz) Not Found"))
 		{
 			//Select a row
 			Clickon(getwebelement(xml.getlocator("//locators/PPT/Pricincity")));
@@ -2317,52 +2294,89 @@ public class ConfigurationHelper extends DriverHelper{
 			Clickon(getwebelement(xml.getlocator("//locators/PPT/Clicksave")));
 		}
 			//Return quote to sales
+			Thread.sleep(10000);
 			Clickon(getwebelement(xml.getlocator("//locators/PPT/Sendtosales")));
-		
+			Thread.sleep(30000);
 			openurl("CPQAdmin");
 			WaitforElementtobeclickable(xml.getlocator("//locators/InternalUser"));
 			Clickon(getwebelement(xml.getlocator("//locators/InternalUser")));
 			Clickon(getwebelement(xml.getlocator("//locators/Proxylogout")));
+			Thread.sleep(30000);
 			openurl2(CurrentQuoteURL.get());
+			WaitforElementtobeclickable(xml.getlocator("//locators/ApprovalTab"));
 		
 		
 	}
 	public void POA() throws Exception
 	{
-		Clickon(getwebelement(xml.getlocator("//locators/PPT/EngagePortfolio")));		
+		Clickon(getwebelement(xml.getlocator("//locators/PPT/EngagePortfolio")));	
+		Thread.sleep(30000);
+		//waitForpageload();
+		//WaitforCPQloader();
 //		openurl("Admin");
 ////		Switchtotab();
 //		WaitforElementtobeclickable(xml.getlocator("//locators/InternalUser"));
 //		Clickon(getwebelement(xml.getlocator("//locators/InternalUser")));
 //		WaitforElementtobeclickable(xml.getlocator("//locators/usernameproxy").replace("Ashwani.Singh31@colt.net", pr.readproperty("CPQ_PPT_User")));
 //		Clickon(getwebelement(xml.getlocator("//locators/usernameproxy").replace("Ashwani.Singh31@colt.net",pr.readproperty("CPQ_PPT_User"))));
-		ProxyLogin("CPQ_DealPrice_User",xml.getlocator("//locators/usernameproxy"));
+		ProxyLogin("CPQ_PPT_User",xml.getlocator("//locators/ProxyLink"));
 		WaitforElementtobeclickable(xml.getlocator("//locators/QuotetoOrderLink"));
 		Clickon(getwebelement(xml.getlocator("//locators/QuotetoOrderLink")));
 		WaitforElementtobeclickable(xml.getlocator("//locators/CPQQuotelink").replace("QuoteId", QuoteID.get().trim()));
 		Clickon(getwebelement(xml.getlocator("//locators/CPQQuotelink").replace("QuoteId", QuoteID.get().trim())));
 		//Clickon(getwebelement(xml.getlocator("//locators/CPQQuotelink").replace("QuoteId", QuoteID.get().trim())));
+		waitForpageload();
+		WaitforCPQloader();
+		Thread.sleep(10000);
+		WaitforElementtobeclickable(xml.getlocator("//locators/PPT/PLtab"));
 		Clickon(getwebelement(xml.getlocator("//locators/PPT/PLtab")));
-		Select assignuser=new Select(getwebelement(xml.getlocator("//select[@name='portfolioTeamAssignment']")));
-		assignuser.selectByVisibleText("Namita Sinha");
+		WaitforElementtobeclickable(xml.getlocator("//locators/Listexpander"));
+		Clickon(getwebelement(xml.getlocator("//locators/Listexpander")));
+		WaitforElementtobeclickable(xml.getlocator("//locators/UserSelector").replace("Username", "Prashant Manu"));
+		Clickon(getwebelement(xml.getlocator("//locators/UserSelector").replace("Username", "Prashant Manu")));
+		//Select assignuser=new Select(getwebelement("//select[@name='portfolioTeamAssignment']"));
+		//assignuser.selectByVisibleText("Prashant Manu");
+		WaitforElementtobeclickable(xml.getlocator("//locators/PPT/Assignquote"));
 		Clickon(getwebelement(xml.getlocator("//locators/PPT/Assignquote")));
 		//String exception=xml.getlocator("//locators/PPT/Bpnotfound").toString();
-		if(xml.getlocator("//locators/PPT/POA").toString().equalsIgnoreCase("POA"))
+		if(GetText(getwebelement(xml.getlocator("//locators/PPT/POA").toString())).equalsIgnoreCase("POA"))
 		{
-			SendKeys(getwebelement(xml.getlocator("//locators/PPT/Basepricenrr")),"555");
+			//SendKeys(getwebelement(xml.getlocator("//locators/PPT/Basepricenrr")),"555");
+			Thread.sleep(2000);
+			safeJavaScriptClick(getwebelement(xml.getlocator("//locators/PPT/Basepricenrr")));
+			Thread.sleep(2000);
+			EnterText2(Keys.BACK_SPACE);
+			EnterText2(Keys.BACK_SPACE);
+			EnterText2(Keys.BACK_SPACE);
+			EnterText2(Keys.BACK_SPACE);
+			EnterText2(Keys.BACK_SPACE);
+			
+			EnterText("555");
 			SendKeys(getwebelement(xml.getlocator("//locators/PPT/Basepricemrr")),"666");
+			Thread.sleep(2000);
+			safeJavaScriptClick(getwebelement(xml.getlocator("//locators/PPT/Basepricemrr")));
+			Thread.sleep(2000);
+			EnterText2(Keys.BACK_SPACE);
+			EnterText2(Keys.BACK_SPACE);
+			EnterText2(Keys.BACK_SPACE);
+			EnterText2(Keys.BACK_SPACE);
+			EnterText2(Keys.BACK_SPACE);
+			
+			EnterText("666");
 		}
 		
 		
 			//Return quote to sales
-			Clickon(getwebelement(xml.getlocator("//locators/PPT/Sendtosales")));
-		
-			openurl("CPQAdmin");
-			WaitforElementtobeclickable(xml.getlocator("//locators/InternalUser"));
-			Clickon(getwebelement(xml.getlocator("//locators/InternalUser")));
-			Clickon(getwebelement(xml.getlocator("//locators/Proxylogout")));
-			openurl2(CurrentQuoteURL.get());
-		
+		Thread.sleep(10000);
+		Clickon(getwebelement(xml.getlocator("//locators/PPT/Sendtosales")));
+		Thread.sleep(30000);
+		openurl("CPQAdmin");
+		WaitforElementtobeclickable(xml.getlocator("//locators/InternalUser"));
+		Clickon(getwebelement(xml.getlocator("//locators/InternalUser")));
+		Clickon(getwebelement(xml.getlocator("//locators/Proxylogout")));
+		Thread.sleep(30000);
+		openurl2(CurrentQuoteURL.get());
+		WaitforElementtobeclickable(xml.getlocator("//locators/ApprovalTab"));
 		
 	}
 }

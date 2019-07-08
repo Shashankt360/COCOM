@@ -167,19 +167,20 @@
 <Quotestatus>id=status_t-ro</Quotestatus>
 <PPT>
 <BasePrice>//td[text()='Price Not Found' or text()='POA']</BasePrice>
-<PartialSave>//div[@class='tab-content ' and not(contains(@style,'display: none'))]//input[@name='partialSave_Features' or @name='partialSave_SiteDetails']</PartialSave>
+<PartialSave>//div[@class='tab-content ' and not(contains(@style,'display:none'))]//input[@name='partialSave_Features' or @name='partialSave_SiteDetails']</PartialSave>
 <Save>id=save</Save>
 <AddtoTransaction>id=add_to_transaction</AddtoTransaction>
 <EngagePortfolio>(//span[text()='Engage Portfolio Pricing' or text()='Request POA Prices']/parent::*/parent::*[not(contains(@style,'display'))])</EngagePortfolio>
 <PLtab>//*[@id="ui-id-41"]/span</PLtab>
 <Portfolio>//div[@id='oj-select-choice-portfolioTeamAssignment']</Portfolio>
-<Assignquote>//span[text()='Assign Quote']</Assignquote>
+<Assignquote>//span[text()='Assign Quote']/parent::*/parent::*</Assignquote>
 <Bpnotfound>//span[text()='Base price not found']</Bpnotfound>
+<POA>//span[text()='POA']</POA>
 <Fastnotfound>//span[text()='FastTrack price not found']</Fastnotfound>
 <Pricingcitynotfound>//span[text()='A-END Pricing City ( Linz) Not Found']</Pricingcitynotfound>
-<Basepricenrr>//span[@title='Base price not found']/parent::*/parent::*/td[12]</Basepricenrr>
-<Basepricemrr>//span[@title='Base price not found']/parent::*/parent::*/td[12]</Basepricemrr>
-<Fastracknrr>//span[@title='FastTrack price not found']/parent::*/parent::*/td[12]</Fastracknrr>
+<Basepricenrr>//span[@title='Base price not found']/parent::*/parent::*/td[12]/span</Basepricenrr>
+<Basepricemrr>//span[@title='Base price not found']/parent::*/parent::*/td[14]/span</Basepricemrr>
+<Fastracknrr>//span[@title='FastTrack price not found']/parent::*/parent::*/td[12]/span</Fastracknrr>
 
 <Pricincity>//span[@title='A-END Pricing City ( Linz) Not Found']</Pricincity>
 <Selectrow>//span[@title='A-END Pricing City ( Linz) Not Found']//parent::*/parent::*[1]</Selectrow>
@@ -202,5 +203,11 @@
 <ExistingCapacityLeadTime>//select[@name="existingCapacityLeadTime_qto"]</ExistingCapacityLeadTime>
 <ProxyLink>(//img[@alt='Proxy Login']/parent::*)[1]</ProxyLink>
 <LineitemGrid>//*[@id='lig-wrapper']</LineitemGrid>
+<QuotetoOrderLink>(//a[@class='commerce-sidebar-item'])[1]</QuotetoOrderLink>
+<CPQQuotelink>//*[text()='QuoteId']/parent::*/parent::*/parent::*//td//a</CPQQuotelink>
+<InternalUser>//a[text()='Internal Users']</InternalUser>
+<Proxylogout>//img[contains(@title,'Logout')]/parent::*</Proxylogout>
+<Listexpander>//*[contains(@aria-labelledby,'TeamAssignment-label')]/*[contains(@class,'oj-select-arrow')]</Listexpander>
+<UserSelector>//*[text()='Username']</UserSelector>
 </locators>
 
