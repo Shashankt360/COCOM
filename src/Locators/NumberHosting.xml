@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<locators>
+<ManageNumber>//a[text()='Manage Numbers ']</ManageNumber>
+<NumberEnquiry>//a[text()='Number Enquiry']</NumberEnquiry>
+<ResellerName>id=domainId</ResellerName>
+<Country>id=countryCode</Country>
+<ServiceProfile>id=serviceProfileId</ServiceProfile>
+<SearchCriteria>id=searchCriteriaDD</SearchCriteria>
+<NumberStatus>id=numStatusDD</NumberStatus>
+<AreaName>id=areaCodGN</AreaName>
+<SearchButton>id=searchBtn</SearchButton>
+<NumberRangeCheckbox>id=forAll</NumberRangeCheckbox>
+<Action>id=userActionDD</Action>
+<GoButton>//input[@value='Go']</GoButton>
+<CustomerReference>id=customerReference1</CustomerReference>
+<Submit>id=submit</Submit>
+<TransactionId>//h3[text()='Transaction Id']/ancestor::table[1]//tbody/tr/td/a</TransactionId>
+<TransactionStatus>//td[contains(text(),'Transaction Status')]/../td[2]</TransactionStatus>
+<InputTransactionId>id=trnxRef</InputTransactionId>
+<SearchButton>id=searchBtn</SearchButton>
+<Status>//table[@id="numberList"]//tbody/tr[1]/td[8]</Status>
+<RadioButton>//input[@value="0"][@type="radio"]</RadioButton>
+<UserAction>//table[@id="numberList"]//tbody[1]/tr[1]/td[13]/select</UserAction>
+<UserGo>//table[@id="numberList"]//tbody[1]/tr[1]/td[14]/span/input</UserGo>
+<CustomerName>id=emerSerUpdBusinessName</CustomerName>
+<BuildingNumber>id=emerSerUpdBuildingNumber</BuildingNumber>
+<city>id=emerSerUpdTown</city>
+<BuildingName>id=emerSerUpdBuildingName</BuildingName>
+<Street>id=emerSerUpdStreet</Street>
+<PostCode>id=emerSerUpdPostCode</PostCode>
+<SubmitButton>//input[@type="submit"]</SubmitButton>
+<NewBuildingName>id=emerSerUpdBuildingName</NewBuildingName>
+<NewBuildingNumber>id=emerSerUpdBuildingNumber</NewBuildingNumber>
+<NewStreet>id=emerSerUpdStreet</NewStreet>
+<NewCity>id=emerSerUpdTown2</NewCity>
+<NewPostCode>id=emerSerUpdPostCode</NewPostCode>
+<TransactionResult>//td[contains(text(),'The Transaction ID for your request is:')]//a</TransactionResult>
+<TransactionIdLink>//table[@id="numberList"]//tbody/tr[1]/td[10]/a</TransactionIdLink>
+<VerifyBuldingNumber>//td[contains(text(),'Building Number')]/../td[2]</VerifyBuldingNumber>
+<VerifyBuildingName>//td[contains(text(),'Building Name')]/../td[2]</VerifyBuildingName>
+<VerifyStreetName>//td[contains(text(),'Street Name')]/../td[2]</VerifyStreetName>
+<VerifyCity>//td[contains(text(),'City/Town')]/../td[2]</VerifyCity>
+<VerifyPostCode>//td[contains(text(),'Post Code')]/../td[2]</VerifyPostCode>
+</locators>

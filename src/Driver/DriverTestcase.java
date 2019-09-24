@@ -42,17 +42,10 @@ import org.testng.annotations.BeforeTest;
 
 
 import Listeners.TestListener;
-import ScriptHelper.BCNUpdateHelper;
-import ScriptHelper.BespokandNonStandard;
-import ScriptHelper.C4CHelper;
-import ScriptHelper.ConfigurationHelper;
-import ScriptHelper.ContainerJourneyHelper;
-import ScriptHelper.DisscountAndAprrovalHelper;
-import ScriptHelper.ExploreHelper;
-import ScriptHelper.GenralInfoHelper;
+
 import ScriptHelper.LoginHelper;
-import ScriptHelper.OrderingHelper;
-import ScriptHelper.SendProposalHelper;
+import ScriptHelper.NumberHostingHelper;
+
 
 
 public class DriverTestcase{
@@ -63,18 +56,7 @@ public static final ThreadLocal<WebDriver> WEB_DRIVER_THREAD_LOCAL = new Inherit
 //public static final ThreadLocal<RemoteWebDriver> WEB_DRIVER_THREAD_LOCAL = new InheritableThreadLocal<>();
 	
 	public static final ThreadLocal<LoginHelper> Login= new InheritableThreadLocal<>();
-	public static final ThreadLocal<BCNUpdateHelper> BCNupdatehelper= new InheritableThreadLocal<>();
-	public static final ThreadLocal<C4CHelper> C4Chelper= new InheritableThreadLocal<>();
-	//public static final ThreadLocal<AccountNavigationHelper> SiebelNavigationHelper= new InheritableThreadLocal<>();
-	public static final ThreadLocal<ConfigurationHelper> Configurationhelper= new InheritableThreadLocal<>();
-	public static final ThreadLocal<DisscountAndAprrovalHelper> DisscountAndAprrovalhelper= new InheritableThreadLocal<>();
-	public static final ThreadLocal<GenralInfoHelper> GenralInfohelper= new InheritableThreadLocal<>();
-	public static final ThreadLocal<OrderingHelper> Orderinghelper= new InheritableThreadLocal<>();
-	public static final ThreadLocal<SendProposalHelper> SendProposalhelper= new InheritableThreadLocal<>();
-	public static final ThreadLocal<ExploreHelper> Explorehelper= new InheritableThreadLocal<>();
-	public static final ThreadLocal<BespokandNonStandard> BspokeNonStandard= new InheritableThreadLocal<>();
-	public static final ThreadLocal<ContainerJourneyHelper> ContainerHelper= new InheritableThreadLocal<>();
-	
+	public static final ThreadLocal<NumberHostingHelper> numberHostingHelper= new InheritableThreadLocal<>();
 	public static ThreadLocal<String> QuoteID=new InheritableThreadLocal<>();
 	public static TestListener Testlistener;
 	//public static CarNorOrderHelper CarNorOrderhelper; 
@@ -140,6 +122,39 @@ public static final ThreadLocal<WebDriver> WEB_DRIVER_THREAD_LOCAL = new Inherit
 		    Log.info(st[st.length-2].toString());
 		    ctx.setAttribute("testName", st[st.length-2].toString());
 	      }
+	      if(method.getName().equals("EndtoEndScenario1"))
+	      {
+	   		//DataReader dt=new DataReader();
+	   		//Object[][] data=dt.datareader();
+		    //Object[] st= (Object[]) data[itr][0];
+		    Log.info(st[st.length-2].toString());
+		    ctx.setAttribute("testName", st[st.length-2].toString());
+	      }
+	      if(method.getName().equals("EndtoEndScenario2"))
+	      {
+	   		//DataReader dt=new DataReader();
+	   		//Object[][] data=dt.datareader();
+		    //Object[] st= (Object[]) data[itr][0];
+		    Log.info(st[st.length-2].toString());
+		    ctx.setAttribute("testName", st[st.length-2].toString());
+	      }
+	      if(method.getName().equals("EndtoEndScenario3"))
+	      {
+	   		//DataReader dt=new DataReader();
+	   		//Object[][] data=dt.datareader();
+		    //Object[] st= (Object[]) data[itr][0];
+		    Log.info(st[st.length-2].toString());
+		    ctx.setAttribute("testName", st[st.length-2].toString());
+	      }
+	      if(method.getName().equals("EndtoEndScenario4"))
+	      {
+	   		//DataReader dt=new DataReader();
+	   		//Object[][] data=dt.datareader();
+		    //Object[] st= (Object[]) data[itr][0];
+		    Log.info(st[st.length-2].toString());
+		    ctx.setAttribute("testName", st[st.length-2].toString());
+	      }
+	      
 	    
 	}
 
@@ -180,17 +195,17 @@ public static final ThreadLocal<WebDriver> WEB_DRIVER_THREAD_LOCAL = new Inherit
 			//driver.manage().window().maximize();
 			
 			
-			dr.get("chrome://settings/content/popups");
-			//dr.findElement(By.xpath(h1[text()='Pop-ups and redirects']);
-			//dr.switchTo().frame("settings");
-			//Thread.sleep(2000);
-			//dr.findElement(By.xpath("//*[@id='popups']")).click();
-			Thread.sleep(6000);
-			Actions builder = new Actions(dr);
-			builder.sendKeys(Keys.TAB).build().perform();
-			builder.sendKeys(Keys.TAB).build().perform();
-			builder.sendKeys(Keys.TAB).build().perform();
-			builder.sendKeys(Keys.ENTER).build().perform();
+//			dr.get("chrome://settings/content/popups");
+//			//dr.findElement(By.xpath(h1[text()='Pop-ups and redirects']);
+//			//dr.switchTo().frame("settings");
+//			//Thread.sleep(2000);
+//			//dr.findElement(By.xpath("//*[@id='popups']")).click();
+//			Thread.sleep(6000);
+//			Actions builder = new Actions(dr);
+//			builder.sendKeys(Keys.TAB).build().perform();
+//			builder.sendKeys(Keys.TAB).build().perform();
+//			builder.sendKeys(Keys.TAB).build().perform();
+//			builder.sendKeys(Keys.ENTER).build().perform();
 			//dr.findElement(By.id("control")).click();
 			//Thread.sleep(4000);
 		}
@@ -318,28 +333,10 @@ public static final ThreadLocal<WebDriver> WEB_DRIVER_THREAD_LOCAL = new Inherit
 		}
 		
 		LoginHelper LN= new LoginHelper(getwebdriver());
-		BCNUpdateHelper BCN= new BCNUpdateHelper(getwebdriver());
-		C4CHelper C4C= new C4CHelper(getwebdriver());
-		ConfigurationHelper CON= new ConfigurationHelper(getwebdriver());
-		DisscountAndAprrovalHelper DISAAPR= new DisscountAndAprrovalHelper(getwebdriver());
-		GenralInfoHelper GEN= new GenralInfoHelper(getwebdriver());
-		OrderingHelper ORD= new OrderingHelper(getwebdriver());
-		SendProposalHelper PRO= new SendProposalHelper(getwebdriver());
-		ExploreHelper EXP=new ExploreHelper(getwebdriver());
-		BespokandNonStandard BEN=new BespokandNonStandard(getwebdriver());
-		ContainerJourneyHelper CONTN=new ContainerJourneyHelper(getwebdriver());
+		NumberHostingHelper NHH= new NumberHostingHelper(getwebdriver());
 		Login.set(LN);
-		BCNupdatehelper.set(BCN);
-		C4Chelper.set(C4C);
-		Configurationhelper.set(CON);
-		DisscountAndAprrovalhelper.set(DISAAPR);
-		GenralInfohelper.set(GEN);
-		Orderinghelper.set(ORD);
-		SendProposalhelper.set(PRO);
-		Explorehelper.set(EXP);
-		BspokeNonStandard.set(BEN);
-		ContainerHelper.set(CONTN);
 		
+		numberHostingHelper.set(NHH);
 	}
 
 	@org.testng.annotations.BeforeSuite

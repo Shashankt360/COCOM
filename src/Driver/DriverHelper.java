@@ -46,7 +46,7 @@ import Reporter.ExtentTestManager;
 
 public class DriverHelper {
 	
-	WebDriver driver;
+	protected WebDriver driver;
 	Wait<WebDriver> wait;
 	WebElement el;
 	List<WebElement> ellist;
@@ -790,12 +790,12 @@ public void Clickonoutofviewportwithstring(String locator) throws Exception {
 	public void VerifyText(String text) throws IOException
 		{ 
 			Log.info(text);
-			Assert.assertTrue(driver.findElement(By.xpath("//*[text()='"+text+"']")).isDisplayed());
+			Assert.assertTrue(driver.findElement(By.xpath("//*[contains(text(),'"+text+"')]")).isDisplayed());
 		}
 	
 	public String Gettext(WebElement el) throws IOException
 		{ 
-			String text=el.getText().toString();
+			String text=el.getText().trim().toString();
 			return text;
 		}
 	public String GetValueofInput(WebElement el) throws IOException
@@ -828,8 +828,10 @@ public void Clickonoutofviewportwithstring(String locator) throws Exception {
 	{ //Thread.sleep(3000);
 		Select s1=new Select(el);
 		s1.selectByValue(value);
+		
 		//Thread.sleep(3000);
 	}
+	
 	public void Clear(WebElement el) throws IOException, InterruptedException
 		{ //Thread.sleep(3000);
 			el.clear();
