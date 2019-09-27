@@ -21,6 +21,7 @@
 <Status>//table[@id="numberList"]//tbody/tr[1]/td[8]</Status>
 <RadioButton>//input[@value="0"][@type="radio"]</RadioButton>
 <UserAction>//table[@id="numberList"]//tbody[1]/tr[1]/td[13]/select</UserAction>
+<UserActionOne>//select[@id='userActionDD']</UserActionOne>
 <UserGo>//table[@id="numberList"]//tbody[1]/tr[1]/td[14]/span/input</UserGo>
 <CustomerName>id=emerSerUpdBusinessName</CustomerName>
 <BuildingNumber>id=emerSerUpdBuildingNumber</BuildingNumber>
@@ -41,4 +42,12 @@
 <VerifyStreetName>//td[contains(text(),'Street Name')]/../td[2]</VerifyStreetName>
 <VerifyCity>//td[contains(text(),'City/Town')]/../td[2]</VerifyCity>
 <VerifyPostCode>//td[contains(text(),'Post Code')]/../td[2]</VerifyPostCode>
+<LocalAreaCode>//select[@id='localareacode']</LocalAreaCode>
+<mainNumber>//input[@id='areaCodeExtn']</mainNumber>
+<RangeStart>//input[@id='rangeFrom']</RangeStart>
+<RangeEnd>//input[@id='rangeTo']</RangeEnd>
+<CustomerReferenceNumber>//input[@id='custRef']</CustomerReferenceNumber>
+<SelectAreaName>id=areaCodGN</SelectAreaName>
+
+
 </locators>

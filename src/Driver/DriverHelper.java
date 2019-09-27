@@ -38,6 +38,7 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.w3c.dom.Element;
 
 import com.relevantcodes.extentreports.LogStatus;
@@ -50,54 +51,12 @@ public class DriverHelper {
 	Wait<WebDriver> wait;
 	WebElement el;
 	List<WebElement> ellist;
-	public static ThreadLocal<String> QuoteID=new ThreadLocal<>();
-	public static ThreadLocal<String> CurrentQuoteURL=new ThreadLocal<>();
-	public static ThreadLocal<String> DealClass=new ThreadLocal<>();
-	public static ThreadLocal<String> TechnicalComplexity=new ThreadLocal<>();
-	public static ThreadLocal<String> LeagalComplexity=new ThreadLocal<>();
-	public static ThreadLocal<Float> TotalTCVdisscount=new ThreadLocal<>();
-	public static ThreadLocal<String> Ordernumber= new ThreadLocal<>();
-	public static ThreadLocal<String> ApprovalCase= new ThreadLocal<>();
-	public static ThreadLocal<String> OrderscreenURL= new ThreadLocal<>();
-	public static ThreadLocal<String> SchedulerURL= new ThreadLocal<>();
-	public static ThreadLocal<Integer> workitemcounter= new ThreadLocal<>();
-	public static ThreadLocal<String> NCServiceId= new ThreadLocal<>();
-	public static ThreadLocal<String> HubNCServiceId= new ThreadLocal<>();
-	public static ThreadLocal<String> HubOrdernumber= new ThreadLocal<>();
-	public static ThreadLocal<String> HubOrderscreenURL= new ThreadLocal<>();
-	public static ThreadLocal<String> ProductId= new ThreadLocal<>();
-	public static ThreadLocal<String> SpokeOrdernumber= new ThreadLocal<>();
-	public static ThreadLocal<String> SpokeOrderscreenURL= new ThreadLocal<>();
-	public static ThreadLocal<String> SpokeNCServiceId= new ThreadLocal<>();
-	public static ThreadLocal<String> SpokeProductId= new ThreadLocal<>();
-	public static ThreadLocal<String> ProductInstancenumber= new ThreadLocal<>();
-	public static ThreadLocal<String> ModifiedOrdernumber= new ThreadLocal<>();
-	public static ThreadLocal<String> ModifyOrderscreenURL= new ThreadLocal<>();
-	public static ThreadLocal<String> EndCheck= new ThreadLocal<>();
-	public static ThreadLocal<String> CeaseOrderscreenURL= new ThreadLocal<>();
-	public static ThreadLocal<String> CeaseOrdernumber= new ThreadLocal<>();
-	public static ThreadLocal<String> CompOrdernumber= new ThreadLocal<>();
-	public static ThreadLocal<String> EthernetProductOrdernumber= new ThreadLocal<>();
-	public static ThreadLocal<String> SiebelCeaseOrdernumber= new ThreadLocal<>();									 
-	public static ThreadLocal<String> CircuitReference= new ThreadLocal<>();						   
-	public static ThreadLocal<String> ANTCheck= new ThreadLocal<>();
-	public static ThreadLocal<String> Errors= new ThreadLocal<>();
-	public static ThreadLocal<String> SiebelOrdernumber= new ThreadLocal<>();
-	public static ThreadLocal<String> HubSiebelOrdernumber= new ThreadLocal<>();
-	public static ThreadLocal<String> SpokeSiebelOrdernumber= new ThreadLocal<>();
-	public static ThreadLocal<String> ServiceOrder= new ThreadLocal<>();
-	public static ThreadLocal<String> CircuitRefnumber= new ThreadLocal<>();
-	public static ThreadLocal<String> CircuitRefnumberHub= new ThreadLocal<>();
-    public static ThreadLocal<String> HubNetworkReference= new ThreadLocal<>();
-    public static ThreadLocal<String> TechnicalOrderStatus= new ThreadLocal<>();
-	public static ThreadLocal<String> SpokeCircuitRefnumber= new ThreadLocal<>();
-	public static ThreadLocal<String> ModifiedSiebelOrdernumber= new ThreadLocal<>();
-	public static ThreadLocal<String> AendBuildingId= new ThreadLocal<>();
-	public static ThreadLocal<List> RequestID= new ThreadLocal<>();
-	public static ThreadLocal<List> RequestIDNearnet= new ThreadLocal<>();
+
 	public static ThreadLocal<String>  Rerunrequired=new ThreadLocal<>();
 	public static ThreadLocal<String> OpportunityID=new ThreadLocal<>();
-	public static ThreadLocal<String> Quotestatus=new ThreadLocal<>();
+	public static ThreadLocal<String> Transactionresult=new ThreadLocal<>();
+	public static ThreadLocal<String> TransactionStatus=new ThreadLocal<>();
+	
 	public DriverHelper(WebDriver dr)
 	{
 		driver=dr;
@@ -843,15 +802,9 @@ public void Clickonoutofviewportwithstring(String locator) throws Exception {
 		try {
 			//Thread.sleep(3000);
 			System.out.println(driver.findElement(By.xpath("//html")).getAttribute("class"));
-			//wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//html[contains(@class,'loading')]"))));
-			//System.out.println(driver.findElement(By.xpath("//html")).getAttribute("class"));
-			//wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//html[contains(@class,'loading')]")));
+	
 			System.out.println(driver.findElement(By.xpath("//html")).getAttribute("class"));
-			//Thread.sleep(3000);
-			//wait.until(ExpectedConditions.attributeContains(driver.findElement(By.xpath("//html")), "class", "loading")ExpectedConditions.attributeContains(driver.findElement(By.xpath("//html")), "class", "page-loaded loading"));
-			//wait.until(ExpectedConditions.and(),
-				//	ExpectedConditions.and(ExpectedConditions.attributeContains(driver.findElement(By.xpath("//html")), "class", "page-loaded loading")));
-			//wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//html[contains(@class,'page-loaded')]")));
+			
 			System.out.println(driver.findElement(By.xpath("//html")).getAttribute("class"));
 			
 			wait.until(ExpectedConditions.attributeContains(driver.findElement(By.xpath("//html")), "class", "loading"));
@@ -873,9 +826,7 @@ public void Clickonoutofviewportwithstring(String locator) throws Exception {
 		
 		
 	}
-	public void CurrentURL() {
-		CurrentQuoteURL.set(driver.getCurrentUrl());
-	}
+
 	public void WaitforCPQloader2( ) throws IOException, InterruptedException
 	{
 		for(int i=0;i<=20;i++) {
@@ -893,25 +844,7 @@ public void Clickonoutofviewportwithstring(String locator) throws Exception {
 		
 	}
 		Thread.sleep(2000);
-//		System.out.println("In second loader");
-//		
-//		try {
-//			//Thread.sleep(3000);
-//			System.out.println(driver.findElement(By.xpath("//html")).getAttribute("class"));
-//			//wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//html[contains(@class,'loading')]"))));
-//			//System.out.println(driver.findElement(By.xpath("//html")).getAttribute("class"));
-//			wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.xpath("//html[contains(@class,'loading')]"))));
-//			System.out.println(driver.findElement(By.xpath("//html")).getAttribute("class"));
-//			
-//			wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//html[contains(@class,'page-loaded')]"))));
-//				}
-//				catch(Exception e) {
-//					Log.info("No Loader displayed");
-//					System.out.println("in catch");
-//					Thread.sleep(500);
-//					WaitforCPQloader2();
-//				}
-		
+
 	}
 	public void WaitforC4Cloader(String el, int timeout ) throws IOException, InterruptedException
 	{ Thread.sleep(1500);
@@ -924,24 +857,7 @@ public void Clickonoutofviewportwithstring(String locator) throws Exception {
 		catch(Exception e) {
 			Log.info("No Loader displayed");
 		}
-//		for(int i=0;i<=timeout*60/20;i++){
-//			try {
-//	            if (isElementPresent(el)){
-//	            	//Log.info("Refreshing the Pages");
-//		        	//driver.navigate().refresh();
-//		        	Log.info("Waiting For 20 Sec");
-//		        	Thread.sleep(20000);
-//	            }
-//	            else{
-//	            	//Log.info("Refreshing the Pages");
-//		        	//driver.navigate().refresh();
-//		        	break;
-//	            }
-//	            }
-//	        catch (Exception e) {
-//	        	Log.info(e.getMessage());
-//	        }
-//		}
+
 		Thread.sleep(1000);
 	}
 	public void AcceptJavaScriptMethod() throws InterruptedException{
@@ -1084,5 +1000,14 @@ public void Clickonoutofviewportwithstring(String locator) throws Exception {
     screenshot2 = "data:image/png;base64,"+Base64.getMimeEncoder().encodeToString(imageBytes);
     bos.close();
     return screenshot2;
+	}
+	public void log(String Message)
+	{
+		Reporter.log(Message,true);
+		ExtentTestManager.getTest().log(LogStatus.PASS, Message);
+	}
+	public void implicitwait(int Time)
+	{
+		driver.manage().timeouts().implicitlyWait(Time, TimeUnit.SECONDS);
 	}
 	}

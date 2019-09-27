@@ -3,44 +3,19 @@
 <suite thread-count="1" data-provider-thread-count="1" verbose="1" name="NH Automation" annotations="JDK">
 	  <listeners>
 	  <listener class-name="Listeners.TestListener"/>
-	  <listener class-name="Listeners.AnnotationTransformer"/>  
+	 
     </listeners>
     
-     <test name="Scenario 1" junit="false" preserve-order="true">
+    
+      <test name="Scenario 0" junit="false" preserve-order="true">
 		<classes>
 			<class name="Testscript.NumberHosting">	
 				<methods>
-					<include name="FreetoReserve"/>
+					<include name="NumberInquiry"/>
 				</methods>	
 			</class>
 		</classes>	
 	</test>  
-  	<test name="Scenario 2" junit="false" preserve-order="true">
-		<classes>
-			<class name="Testscript.NumberHosting">	
-				<methods>
-					<include name="ActivateReserverNumbe"/>
-				</methods>	
-			</class>
-		</classes>	
-	</test> 
-	<test name="Scenario 3" junit="false" preserve-order="true">
-		<classes>
-			<class name="Testscript.NumberHosting">	
-				<methods>
-					<include name="AddressUpdateReserveNumber"/>
-				</methods>	
-			</class>
-		</classes>	
-	</test> 
-	<test name="Scenario 4" junit="false" preserve-order="true">
-		<classes>
-			<class name="Testscript.NumberHosting">	
-				<methods>
-					<include name="DeactivateReserveNumber"/>
-				</methods>	
-			</class>
-		</classes>	
-	</test>    
-	
+    
+
 	</suite>

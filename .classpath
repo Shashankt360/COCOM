@@ -23,5 +23,7 @@
 	<classpathentry kind="lib" path="lib/selenium-server-standalone-3.4.0.jar"/>
 	<classpathentry kind="lib" path="lib/testng-6.8.5.jar"/>
 	<classpathentry kind="lib" path="lib/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/opencsv-4.6.jar"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

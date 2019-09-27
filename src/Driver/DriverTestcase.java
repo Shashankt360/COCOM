@@ -57,6 +57,8 @@ public static final ThreadLocal<WebDriver> WEB_DRIVER_THREAD_LOCAL = new Inherit
 	
 	public static final ThreadLocal<LoginHelper> Login= new InheritableThreadLocal<>();
 	public static final ThreadLocal<NumberHostingHelper> numberHostingHelper= new InheritableThreadLocal<>();
+	
+//s	public static final ThreadLocal<CocomHelper> cocomHelper= new InheritableThreadLocal<>();
 	public static ThreadLocal<String> QuoteID=new InheritableThreadLocal<>();
 	public static TestListener Testlistener;
 	//public static CarNorOrderHelper CarNorOrderhelper; 
@@ -98,7 +100,7 @@ public static final ThreadLocal<WebDriver> WEB_DRIVER_THREAD_LOCAL = new Inherit
 		}
 	
 	//Log.info("Index is:"+itr+"Length od data is:"+data.length);
-	      if(method.getName().equals("EndtoEndOrder"))
+	      if(method.getName().equals("FreetoReserve"))
 	      {
 	   		//DataReader dt=new DataReader();
 	   		//Object[][] data=dt.datareader();
@@ -106,7 +108,7 @@ public static final ThreadLocal<WebDriver> WEB_DRIVER_THREAD_LOCAL = new Inherit
 		    Log.info(st[st.length-2].toString());
 		    ctx.setAttribute("testName", st[st.length-2].toString());
 	      }
-	      if(method.getName().equals("EndtoEndOrderOffnet"))
+	      if(method.getName().equals("ActivateReserverNumber"))
 	      {
 	   		//DataReader dt=new DataReader();
 	   		//Object[][] data=dt.datareader();
@@ -114,7 +116,7 @@ public static final ThreadLocal<WebDriver> WEB_DRIVER_THREAD_LOCAL = new Inherit
 		    Log.info(st[st.length-2].toString());
 		    ctx.setAttribute("testName", st[st.length-2].toString());
 	      }
-	      if(method.getName().equals("EndtoEndOrderContainerNew"))
+	      if(method.getName().equals("AddressUpdateReserveNumber"))
 	      {
 	   		//DataReader dt=new DataReader();
 	   		//Object[][] data=dt.datareader();
@@ -122,7 +124,7 @@ public static final ThreadLocal<WebDriver> WEB_DRIVER_THREAD_LOCAL = new Inherit
 		    Log.info(st[st.length-2].toString());
 		    ctx.setAttribute("testName", st[st.length-2].toString());
 	      }
-	      if(method.getName().equals("EndtoEndScenario1"))
+	      if(method.getName().equals("DeactivateReserveNumber"))
 	      {
 	   		//DataReader dt=new DataReader();
 	   		//Object[][] data=dt.datareader();
@@ -153,6 +155,16 @@ public static final ThreadLocal<WebDriver> WEB_DRIVER_THREAD_LOCAL = new Inherit
 		    //Object[] st= (Object[]) data[itr][0];
 		    Log.info(st[st.length-2].toString());
 		    ctx.setAttribute("testName", st[st.length-2].toString());
+	      }
+	      if(method.getName().equals("NumberStatus"))
+	      {
+	    	  Log.info(st[st.length-2].toString());
+			    ctx.setAttribute("testName", st[st.length-2].toString());
+	      }
+	      if(method.getName().equals("NumberInquiry"))
+	      {
+	    	  Log.info(st[st.length-2].toString());
+			    ctx.setAttribute("testName", st[st.length-2].toString());
 	      }
 	      
 	    
@@ -344,7 +356,11 @@ public static final ThreadLocal<WebDriver> WEB_DRIVER_THREAD_LOCAL = new Inherit
 	itr=0;
 	DOMConfigurator.configure("log4j.xml");
 	}
-	
+	public  String readTesCase(Object[][] Inputdata, int i)
+	{
+		String Tcname = Inputdata[i][0].toString();
+		return Tcname;
+	}
 	
 	public static WebDriver createDriverFromSession(final SessionId sessionId, URL command_executor){
 		WebDriver drsession = null;
@@ -444,7 +460,7 @@ public static final ThreadLocal<WebDriver> WEB_DRIVER_THREAD_LOCAL = new Inherit
 	public void Teardown2()
 	{
 		System.out.println("Cuurent Thread of diriver need to close-"+getwebdriver());
-		//getwebdriver().quit();
+		getwebdriver().quit();
 	}
 	@AfterTest
 	public void Teardown()

@@ -216,20 +216,6 @@ public class LoginHelper extends DriverHelper{
 			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on Login Button");
 			
 		}
-		public void NMTS(String Application)
-		{
-			//openurl(Application);
-			//SendKeys(getwebelement()), value);
-			//validation
-
-		}
 		
-		public void Cocom(String Application)
-		{
-			//openurl(Application);
-			//SendKeys(getwebelement()), value);
-			//validation
-		}
-
 
 }

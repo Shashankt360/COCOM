@@ -1,93 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="CPQ End to End Order" duration-ms="2237005" started-at="2019-07-05T08:18:40Z" finished-at="2019-07-05T08:55:57Z">
+  <suite name="NH Automation" duration-ms="109560" started-at="2019-09-27T12:13:25Z" finished-at="2019-09-27T12:15:15Z">
     <groups>
     </groups>
-    <test name="CPQ End to End Container New Bussiness" duration-ms="2237005" started-at="2019-07-05T08:18:40Z" finished-at="2019-07-05T08:55:57Z">
-      <class name="Testscript.StandardOrderOnnet">
-        <test-method status="PASS" signature="BeforeSuite()[pri:0, instance:Testscript.StandardOrderOnnet@3a82f6ef]" name="BeforeSuite" is-config="true" duration-ms="137" started-at="2019-07-05T13:48:40Z" finished-at="2019-07-05T13:48:40Z">
+    <test name="Scenario 0" duration-ms="109560" started-at="2019-09-27T12:13:25Z" finished-at="2019-09-27T12:15:15Z">
+      <class name="Testscript.NumberHosting">
+        <test-method status="PASS" signature="BeforeSuite()[pri:0, instance:Testscript.NumberHosting@39aeed2f]" name="BeforeSuite" is-config="true" duration-ms="357" started-at="2019-09-27T13:13:25Z" finished-at="2019-09-27T13:13:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeSuite -->
-        <test-method status="PASS" signature="BeforeMethod(java.lang.reflect.Method, org.testng.ITestContext, [Ljava.lang.Object;)[pri:0, instance:Testscript.StandardOrderOnnet@3a82f6ef]" name="BeforeMethod" is-config="true" duration-ms="13245" started-at="2019-07-05T13:48:41Z" finished-at="2019-07-05T13:48:54Z">
+        <test-method status="PASS" signature="BeforeMethod(java.lang.reflect.Method, org.testng.ITestContext, [Ljava.lang.Object;)[pri:0, instance:Testscript.NumberHosting@39aeed2f]" name="BeforeMethod" is-config="true" duration-ms="5586" started-at="2019-09-27T13:13:26Z" finished-at="2019-09-27T13:13:32Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Testscript.StandardOrderOnnet.EndtoEndOrderContainerNew(java.lang.Object[][]) throws java.lang.Exception]]>
+                <![CDATA[public void Testscript.NumberHosting.NumberInquiry(java.lang.Object[][]) throws java.lang.Exception]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@18e36d14]]>
+                <![CDATA[org.testng.TestRunner@7b4b8199]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[[Ljava.lang.Object;@5082d622]]>
+                <![CDATA[[Ljava.lang.Object;@4bbf20d1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method status="PASS" signature="BeforeMethod(java.lang.reflect.Method, org.testng.ITestContext, [Ljava.lang.Object;)[pri:0, instance:Testscript.StandardOrderOnnet@3a82f6ef]" name="BeforeMethod" is-config="true" duration-ms="13196" started-at="2019-07-05T13:48:41Z" finished-at="2019-07-05T13:48:54Z">
+        <test-method status="PASS" signature="NumberInquiry([[Ljava.lang.Object;)[pri:0, instance:Testscript.NumberHosting@39aeed2f]" name="NumberInquiry" duration-ms="13017" started-at="2019-09-27T13:13:32Z" data-provider="NumberHosting" finished-at="2019-09-27T13:13:45Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Testscript.StandardOrderOnnet.EndtoEndOrderContainerNew(java.lang.Object[][]) throws java.lang.Exception]]>
+                <![CDATA[[[Ljava.lang.Object;@45b96e4c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NumberInquiry -->
+        <test-method status="PASS" signature="Teardown2()[pri:0, instance:Testscript.NumberHosting@39aeed2f]" name="Teardown2" is-config="true" duration-ms="1093" started-at="2019-09-27T13:13:45Z" finished-at="2019-09-27T13:13:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown2 -->
+        <test-method status="PASS" signature="BeforeMethod(java.lang.reflect.Method, org.testng.ITestContext, [Ljava.lang.Object;)[pri:0, instance:Testscript.NumberHosting@39aeed2f]" name="BeforeMethod" is-config="true" duration-ms="4108" started-at="2019-09-27T13:13:46Z" finished-at="2019-09-27T13:13:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Testscript.NumberHosting.NumberInquiry(java.lang.Object[][]) throws java.lang.Exception]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@18e36d14]]>
+                <![CDATA[org.testng.TestRunner@7b4b8199]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[[Ljava.lang.Object;@13d4992d]]>
+                <![CDATA[[Ljava.lang.Object;@1b94c789]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method status="PASS" signature="EndtoEndOrderContainerNew([[Ljava.lang.Object;)[pri:0, instance:Testscript.StandardOrderOnnet@3a82f6ef]" name="EndtoEndOrderContainerNew" duration-ms="1690583" started-at="2019-07-05T13:48:54Z" data-provider="NewContainer" finished-at="2019-07-05T14:17:05Z">
+        <test-method status="PASS" signature="NumberInquiry([[Ljava.lang.Object;)[pri:0, instance:Testscript.NumberHosting@39aeed2f]" name="NumberInquiry" duration-ms="37736" started-at="2019-09-27T13:13:50Z" data-provider="NumberHosting" finished-at="2019-09-27T13:14:28Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[[Ljava.lang.Object;@606e4010]]>
+                <![CDATA[[[Ljava.lang.Object;@8383a14]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EndtoEndOrderContainerNew -->
-        <test-method status="PASS" signature="EndtoEndOrderContainerNew([[Ljava.lang.Object;)[pri:0, instance:Testscript.StandardOrderOnnet@3a82f6ef]" name="EndtoEndOrderContainerNew" duration-ms="2222698" started-at="2019-07-05T13:48:54Z" data-provider="NewContainer" finished-at="2019-07-05T14:25:57Z">
+        </test-method> <!-- NumberInquiry -->
+        <test-method status="PASS" signature="Teardown2()[pri:0, instance:Testscript.NumberHosting@39aeed2f]" name="Teardown2" is-config="true" duration-ms="1034" started-at="2019-09-27T13:14:28Z" finished-at="2019-09-27T13:14:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown2 -->
+        <test-method status="PASS" signature="BeforeMethod(java.lang.reflect.Method, org.testng.ITestContext, [Ljava.lang.Object;)[pri:0, instance:Testscript.NumberHosting@39aeed2f]" name="BeforeMethod" is-config="true" duration-ms="4150" started-at="2019-09-27T13:14:29Z" finished-at="2019-09-27T13:14:33Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[[Ljava.lang.Object;@8458f04]]>
+                <![CDATA[public void Testscript.NumberHosting.NumberInquiry(java.lang.Object[][]) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@7b4b8199]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@299fc582]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EndtoEndOrderContainerNew -->
-        <test-method status="PASS" signature="Teardown2()[pri:0, instance:Testscript.StandardOrderOnnet@3a82f6ef]" name="Teardown2" is-config="true" duration-ms="0" started-at="2019-07-05T14:17:05Z" finished-at="2019-07-05T14:17:05Z">
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="NumberInquiry([[Ljava.lang.Object;)[pri:0, instance:Testscript.NumberHosting@39aeed2f]" name="NumberInquiry" duration-ms="17557" started-at="2019-09-27T13:14:33Z" data-provider="NumberHosting" finished-at="2019-09-27T13:14:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[[Ljava.lang.Object;@4b691611]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NumberInquiry -->
+        <test-method status="PASS" signature="Teardown2()[pri:0, instance:Testscript.NumberHosting@39aeed2f]" name="Teardown2" is-config="true" duration-ms="1083" started-at="2019-09-27T13:14:51Z" finished-at="2019-09-27T13:14:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown2 -->
-        <test-method status="PASS" signature="Teardown2()[pri:0, instance:Testscript.StandardOrderOnnet@3a82f6ef]" name="Teardown2" is-config="true" duration-ms="1" started-at="2019-07-05T14:25:57Z" finished-at="2019-07-05T14:25:57Z">
+        <test-method status="PASS" signature="BeforeMethod(java.lang.reflect.Method, org.testng.ITestContext, [Ljava.lang.Object;)[pri:0, instance:Testscript.NumberHosting@39aeed2f]" name="BeforeMethod" is-config="true" duration-ms="4260" started-at="2019-09-27T13:14:52Z" finished-at="2019-09-27T13:14:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Testscript.NumberHosting.NumberInquiry(java.lang.Object[][]) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@7b4b8199]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@305aaedf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="NumberInquiry([[Ljava.lang.Object;)[pri:0, instance:Testscript.NumberHosting@39aeed2f]" name="NumberInquiry" duration-ms="17716" started-at="2019-09-27T13:14:56Z" data-provider="NumberHosting" finished-at="2019-09-27T13:15:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[[Ljava.lang.Object;@395a573c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NumberInquiry -->
+        <test-method status="PASS" signature="Teardown2()[pri:0, instance:Testscript.NumberHosting@39aeed2f]" name="Teardown2" is-config="true" duration-ms="1176" started-at="2019-09-27T13:15:14Z" finished-at="2019-09-27T13:15:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown2 -->
-        <test-method status="PASS" signature="Teardown()[pri:0, instance:Testscript.StandardOrderOnnet@3a82f6ef]" name="Teardown" is-config="true" duration-ms="0" started-at="2019-07-05T14:25:57Z" finished-at="2019-07-05T14:25:57Z">
+        <test-method status="PASS" signature="Teardown()[pri:0, instance:Testscript.NumberHosting@39aeed2f]" name="Teardown" is-config="true" duration-ms="0" started-at="2019-09-27T13:15:15Z" finished-at="2019-09-27T13:15:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
-      </class> <!-- Testscript.StandardOrderOnnet -->
-    </test> <!-- CPQ End to End Container New Bussiness -->
-  </suite> <!-- CPQ End to End Order -->
+      </class> <!-- Testscript.NumberHosting -->
+    </test> <!-- Scenario 0 -->
+  </suite> <!-- NH Automation -->
 </testng-results>
