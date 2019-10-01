@@ -56,6 +56,8 @@ public class DriverHelper {
 	public static ThreadLocal<String> OpportunityID=new ThreadLocal<>();
 	public static ThreadLocal<String> Transactionresult=new ThreadLocal<>();
 	public static ThreadLocal<String> TransactionStatus=new ThreadLocal<>();
+	public static ThreadLocal<String> TransactionId=new ThreadLocal<>();
+	
 	
 	public DriverHelper(WebDriver dr)
 	{
@@ -138,7 +140,7 @@ public void ClickswithAction(String el) throws InterruptedException {
 	public void WaitforElementtobeclickable(String locator) throws InterruptedException
 	{
 		System.out.print("In Wait for Element Clickable method for - "+locator);
-		waitForpageload();
+		//waitForpageload();
 		if(locator.startsWith("//") || locator.startsWith("(")) {
 		
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator))); 
@@ -614,8 +616,34 @@ public void Clickonoutofviewportwithstring(String locator) throws Exception {
 	
 	public void waitandForElementDisplayed(String locator) throws InterruptedException
 	{
-		Thread.sleep(2000);
-	wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(locator))));
+		System.out.print("In Wait for Element Clickable method for - "+locator);
+		//waitForpageload();
+		if(locator.startsWith("//") || locator.startsWith("(")) {
+		
+			wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(locator))));
+		//getwebelement(xml.getlocator("//locators/StandrdQuote"));
+		System.out.println("Waiting for Element to be clickabal and active"+locator);
+		//Thread.sleep(2000);
+		}
+		else if(locator.startsWith("name"))
+		{
+			wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.name(locator.split("=")[1]))));
+			//wait.until(ExpectedConditions.visibilityOf(By.name(locator.split("=")[1]))); 
+			//getwebelement(xml.getlocator("//locators/StandrdQuote"));
+			System.out.println("Waiting for Element to be clickabal and active"+locator);
+			//Thread.sleep(2000);
+			
+		}
+		else if(locator.startsWith("id"))
+		{
+			wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id(locator.split("=")[1]))));
+			//wait.until(ExpectedConditions.elementToBeClickable(By.id(locator.split("=")[1]))); 
+			//getwebelement(xml.getlocator("//locators/StandrdQuote"));
+			System.out.println("Waiting for Element to be clickabal and active"+locator);
+			//Thread.sleep(2000);
+			
+		}
+	 
 	}
 	public void waitandForElementDisplay(String locator, int timeout) throws InterruptedException
 	{
@@ -1009,5 +1037,17 @@ public void Clickonoutofviewportwithstring(String locator) throws Exception {
 	public void implicitwait(int Time)
 	{
 		driver.manage().timeouts().implicitlyWait(Time, TimeUnit.SECONDS);
+	}
+	public void RedLog(String Message)
+	{
+	Reporter.log(" <font color='red'> " +  Message   +" </font>", true);
+	ExtentTestManager.getTest().log(LogStatus.PASS, " <font color='red'> " +  Message   +" </font>");
+
+	}
+	public void GreenLog(String Message)
+	{
+	Reporter.log(" <font color='green'> " +  Message   +" </font>", true);
+	ExtentTestManager.getTest().log(LogStatus.PASS, " <font color='green'> " +  Message   +" </font>");
+
 	}
 	}

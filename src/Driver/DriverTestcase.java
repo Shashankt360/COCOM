@@ -163,7 +163,7 @@ public static final ThreadLocal<WebDriver> WEB_DRIVER_THREAD_LOCAL = new Inherit
 	      }
 	      if(method.getName().equals("NumberInquiry"))
 	      {
-	    	  Log.info(st[st.length-2].toString());
+	    	    Log.info(st[st.length-2].toString());
 			    ctx.setAttribute("testName", st[st.length-2].toString());
 	      }
 	      

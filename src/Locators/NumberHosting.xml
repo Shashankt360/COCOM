@@ -48,6 +48,9 @@
 <RangeEnd>//input[@id='rangeTo']</RangeEnd>
 <CustomerReferenceNumber>//input[@id='custRef']</CustomerReferenceNumber>
 <SelectAreaName>id=areaCodGN</SelectAreaName>
+<blockSize>id=blockSizeINF</blockSize>
+<Quantity>id=quantitySizeINF</Quantity>
+<Griddata>//table[@id='numberList']/tbody</Griddata>
 
 
 </locators>

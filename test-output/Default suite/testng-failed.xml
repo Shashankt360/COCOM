@@ -8,7 +8,7 @@
           <include name="BeforeMethod"/>
           <include name="Teardown2"/>
           <include name="BeforeSuite"/>
-          <include name="ActivateReserverNumber" invocation-numbers="0"/>
+          <include name="NumberInquiry" invocation-numbers="0"/>
           <include name="Teardown"/>
         </methods>
       </class> <!-- Testscript.NumberHosting -->

@@ -8,10 +8,11 @@
     <classes>
       <class name="Testscript.NumberHosting">
         <methods>
-          <include name="TransactionID"/>
           <include name="BeforeMethod"/>
           <include name="Teardown2"/>
           <include name="BeforeSuite"/>
+          <include name="NumberInquiry" invocation-numbers="0"/>
+          <include name="Teardown"/>
         </methods>
       </class> <!-- Testscript.NumberHosting -->
     </classes>
