@@ -23,6 +23,8 @@
 <UserAction>//table[@id="numberList"]//tbody[1]/tr[1]/td[13]/select</UserAction>
 <UserActionOne>//select[@id='userActionDD']</UserActionOne>
 <UserGo>//table[@id="numberList"]//tbody[1]/tr[1]/td[14]/span/input</UserGo>
+<UserGo2>//table[@id="numberList"]//tbody[1]/tr[1]/td[15]/span/input</UserGo2>
+<UserAction2>//table[@id="numberList"]//tbody[1]/tr[1]/td[14]/select</UserAction2>
 <CustomerName>id=emerSerUpdBusinessName</CustomerName>
 <BuildingNumber>id=emerSerUpdBuildingNumber</BuildingNumber>
 <city>id=emerSerUpdTown</city>
@@ -33,6 +35,8 @@
 <NewBuildingName>id=emerSerUpdBuildingName</NewBuildingName>
 <NewBuildingNumber>id=emerSerUpdBuildingNumber</NewBuildingNumber>
 <NewStreet>id=emerSerUpdStreet</NewStreet>
+<statusQuery>//a[text()='Status Query ']</statusQuery>
+<statusQueryTransactionID>//input[@id='transactionId']</statusQueryTransactionID>
 <NewCity>id=emerSerUpdTown2</NewCity>
 <NewPostCode>id=emerSerUpdPostCode</NewPostCode>
 <TransactionResult>//td[contains(text(),'The Transaction ID for your request is:')]//a</TransactionResult>
@@ -51,6 +55,9 @@
 <blockSize>id=blockSizeINF</blockSize>
 <Quantity>id=quantitySizeINF</Quantity>
 <Griddata>//table[@id='numberList']/tbody</Griddata>
-
+<NumberHostingTransaction>//a[text()='Number Hosting Transaction ']</NumberHostingTransaction>
+<StatusQuerySearchbutton>//input[@value='SEARCH']</StatusQuerySearchbutton>
+<TransactionType>(//table[@id='DomainTable']//td)[5]</TransactionType>
+<StatusQueryTransactionStatus>(//table[@id='DomainTable']//td)[6]</StatusQueryTransactionStatus>
 
 </locators>

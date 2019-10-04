@@ -1,27 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[ <font color='red'> System does not have search result with SearchNumber Range with country!! Number Range is 9902 to 9902 And Country is UNITED KINGDOM </font>]]>
-    </line>
-    <line>
-      <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
-    </line>
-    <line>
-      <![CDATA[ <font color='red'> System does not have search result with Search Transaction Id with country!! Transection id is ryuururtyury And Country is UNITED KINGDOM </font>]]>
-    </line>
-    <line>
-      <![CDATA[ <font color='red'> System does not have search result with Customer Reference  with country!! Customer Reference is 21312213 And Country is UNITED KINGDOM </font>]]>
-    </line>
-    <line>
-      <![CDATA[ <font color='red'> System does not have search result with Customer Reference  with country!! Customer Reference is 213213 And Country is UNITED KINGDOM </font>]]>
-    </line>
-    <line>
-      <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
-    </line>
-    <line>
-      <![CDATA[No action performed!!]]>
-    </line>
     <line>
       <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
     </line>
@@ -32,40 +11,22 @@
       <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
     </line>
     <line>
-      <![CDATA[In Sheet, Perform Action column  having data to perform action but not correct spelled with Free Number Query!]]>
+      <![CDATA[Start]]>
     </line>
     <line>
-      <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
-    </line>
-    <line>
-      <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
-    </line>
-    <line>
-      <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
-    </line>
-    <line>
-      <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
-    </line>
-    <line>
-      <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
-    </line>
-    <line>
-      <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
-    </line>
-    <line>
-      <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
+      <![CDATA[Free to Activated without Reserve Scenario competed.]]>
     </line>
   </reporter-output>
-  <suite name="NH Automation" duration-ms="227834" started-at="2019-10-01T13:52:52Z" finished-at="2019-10-01T13:56:40Z">
+  <suite started-at="2019-10-04T10:45:32Z" name="NH Automation" finished-at="2019-10-04T10:46:43Z" duration-ms="71024">
     <groups>
     </groups>
-    <test name="Scenario 0" duration-ms="227834" started-at="2019-10-01T13:52:52Z" finished-at="2019-10-01T13:56:40Z">
+    <test started-at="2019-10-04T10:45:32Z" name="Scenario" finished-at="2019-10-04T10:46:43Z" duration-ms="71024">
       <class name="Testscript.NumberHosting">
-        <test-method status="PASS" signature="BeforeSuite()[pri:0, instance:Testscript.NumberHosting@39aeed2f]" name="BeforeSuite" is-config="true" duration-ms="172" started-at="2019-10-01T14:52:52Z" finished-at="2019-10-01T14:52:52Z">
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:Testscript.NumberHosting@6b419da]" started-at="2019-10-04T11:45:32Z" name="BeforeSuite" finished-at="2019-10-04T11:45:32Z" duration-ms="219" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeSuite -->
-        <test-method status="PASS" signature="BeforeMethod(java.lang.reflect.Method, org.testng.ITestContext, [Ljava.lang.Object;)[pri:0, instance:Testscript.NumberHosting@39aeed2f]" name="BeforeMethod" is-config="true" duration-ms="4890" started-at="2019-10-01T14:52:53Z" finished-at="2019-10-01T14:52:58Z">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, org.testng.ITestContext, [Ljava.lang.Object;)[pri:0, instance:Testscript.NumberHosting@6b419da]" started-at="2019-10-04T11:45:33Z" name="BeforeMethod" finished-at="2019-10-04T11:45:39Z" duration-ms="5448" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -74,200 +35,89 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@5b7737eb]]>
+                <![CDATA[org.testng.TestRunner@1dd76982]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[[Ljava.lang.Object;@3415ecfe]]>
+                <![CDATA[[Ljava.lang.Object;@7e76a66f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method status="PASS" signature="NumberInquiry([[Ljava.lang.Object;)[pri:0, instance:Testscript.NumberHosting@39aeed2f]" name="NumberInquiry" duration-ms="14642" started-at="2019-10-01T14:52:58Z" data-provider="NumberHosting" finished-at="2019-10-01T14:53:12Z">
+        <test-method signature="NumberInquiry([[Ljava.lang.Object;)[pri:0, instance:Testscript.NumberHosting@6b419da]" started-at="2019-10-04T11:45:39Z" name="NumberInquiry" data-provider="NumberHosting" finished-at="2019-10-04T11:46:16Z" duration-ms="37365" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[[Ljava.lang.Object;@c9f1951]]>
+                <![CDATA[[[Ljava.lang.Object;@6282f1eb]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[ <font color='red'> System does not have search result with SearchNumber Range with country!! Number Range is 9902 to 9902 And Country is UNITED KINGDOM </font>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- NumberInquiry -->
-        <test-method status="PASS" signature="Teardown2()[pri:0, instance:Testscript.NumberHosting@39aeed2f]" name="Teardown2" is-config="true" duration-ms="1266" started-at="2019-10-01T14:53:12Z" finished-at="2019-10-01T14:53:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown2 -->
-        <test-method status="PASS" signature="BeforeMethod(java.lang.reflect.Method, org.testng.ITestContext, [Ljava.lang.Object;)[pri:0, instance:Testscript.NumberHosting@39aeed2f]" name="BeforeMethod" is-config="true" duration-ms="4168" started-at="2019-10-01T14:53:14Z" finished-at="2019-10-01T14:53:18Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Testscript.NumberHosting.NumberInquiry(java.lang.Object[][]) throws java.lang.Exception]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@5b7737eb]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@7fa498b3]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method status="PASS" signature="NumberInquiry([[Ljava.lang.Object;)[pri:0, instance:Testscript.NumberHosting@39aeed2f]" name="NumberInquiry" duration-ms="42192" started-at="2019-10-01T14:53:18Z" data-provider="NumberHosting" finished-at="2019-10-01T14:54:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[[Ljava.lang.Object;@6a4859fc]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
-            </line>
-            <line>
-              <![CDATA[ <font color='red'> System does not have search result with Search Transaction Id with country!! Transection id is ryuururtyury And Country is UNITED KINGDOM </font>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- NumberInquiry -->
-        <test-method status="PASS" signature="Teardown2()[pri:0, instance:Testscript.NumberHosting@39aeed2f]" name="Teardown2" is-config="true" duration-ms="1142" started-at="2019-10-01T14:54:00Z" finished-at="2019-10-01T14:54:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown2 -->
-        <test-method status="PASS" signature="BeforeMethod(java.lang.reflect.Method, org.testng.ITestContext, [Ljava.lang.Object;)[pri:0, instance:Testscript.NumberHosting@39aeed2f]" name="BeforeMethod" is-config="true" duration-ms="4694" started-at="2019-10-01T14:54:01Z" finished-at="2019-10-01T14:54:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Testscript.NumberHosting.NumberInquiry(java.lang.Object[][]) throws java.lang.Exception]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@5b7737eb]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@64cde9a5]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method status="PASS" signature="NumberInquiry([[Ljava.lang.Object;)[pri:0, instance:Testscript.NumberHosting@39aeed2f]" name="NumberInquiry" duration-ms="38354" started-at="2019-10-01T14:54:06Z" data-provider="NumberHosting" finished-at="2019-10-01T14:54:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[[Ljava.lang.Object;@3532f633]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[ <font color='red'> System does not have search result with Customer Reference  with country!! Customer Reference is 21312213 And Country is UNITED KINGDOM </font>]]>
-            </line>
-            <line>
-              <![CDATA[ <font color='red'> System does not have search result with Customer Reference  with country!! Customer Reference is 213213 And Country is UNITED KINGDOM </font>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- NumberInquiry -->
-        <test-method status="PASS" signature="Teardown2()[pri:0, instance:Testscript.NumberHosting@39aeed2f]" name="Teardown2" is-config="true" duration-ms="1049" started-at="2019-10-01T14:54:44Z" finished-at="2019-10-01T14:54:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown2 -->
-        <test-method status="PASS" signature="BeforeMethod(java.lang.reflect.Method, org.testng.ITestContext, [Ljava.lang.Object;)[pri:0, instance:Testscript.NumberHosting@39aeed2f]" name="BeforeMethod" is-config="true" duration-ms="4176" started-at="2019-10-01T14:54:45Z" finished-at="2019-10-01T14:54:49Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Testscript.NumberHosting.NumberInquiry(java.lang.Object[][]) throws java.lang.Exception]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@5b7737eb]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@5efb3259]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method status="PASS" signature="NumberInquiry([[Ljava.lang.Object;)[pri:0, instance:Testscript.NumberHosting@39aeed2f]" name="NumberInquiry" duration-ms="109331" started-at="2019-10-01T14:54:49Z" data-provider="NumberHosting" finished-at="2019-10-01T14:56:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[[Ljava.lang.Object;@6d49bd08]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
-            </line>
-            <line>
-              <![CDATA[No action performed!!]]>
-            </line>
             <line>
               <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
             </line>
             <line>
               <![CDATA[ <font color='green'> Numbwer Query status id update Successfully from Free to Reserve </font>]]>
             </line>
-            <line>
-              <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
-            </line>
-            <line>
-              <![CDATA[In Sheet, Perform Action column  having data to perform action but not correct spelled with Free Number Query!]]>
-            </line>
-            <line>
-              <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
-            </line>
-            <line>
-              <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
-            </line>
-            <line>
-              <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
-            </line>
-            <line>
-              <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
-            </line>
-            <line>
-              <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
-            </line>
-            <line>
-              <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
-            </line>
-            <line>
-              <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
-            </line>
           </reporter-output>
         </test-method> <!-- NumberInquiry -->
-        <test-method status="PASS" signature="Teardown2()[pri:0, instance:Testscript.NumberHosting@39aeed2f]" name="Teardown2" is-config="true" duration-ms="1200" started-at="2019-10-01T14:56:39Z" finished-at="2019-10-01T14:56:40Z">
+        <test-method is-config="true" signature="Teardown2()[pri:0, instance:Testscript.NumberHosting@6b419da]" started-at="2019-10-04T11:46:16Z" name="Teardown2" finished-at="2019-10-04T11:46:18Z" duration-ms="1402" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown2 -->
-        <test-method status="PASS" signature="Teardown()[pri:0, instance:Testscript.NumberHosting@39aeed2f]" name="Teardown" is-config="true" duration-ms="0" started-at="2019-10-01T14:56:40Z" finished-at="2019-10-01T14:56:40Z">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, org.testng.ITestContext, [Ljava.lang.Object;)[pri:0, instance:Testscript.NumberHosting@6b419da]" started-at="2019-10-04T11:46:18Z" name="BeforeMethod" finished-at="2019-10-04T11:46:27Z" duration-ms="9971" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Testscript.NumberHosting.NumberInquiry(java.lang.Object[][]) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@1dd76982]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@68f69ca3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="NumberInquiry([[Ljava.lang.Object;)[pri:0, instance:Testscript.NumberHosting@6b419da]" started-at="2019-10-04T11:46:27Z" name="NumberInquiry" data-provider="NumberHosting" finished-at="2019-10-04T11:46:42Z" duration-ms="14503" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[[Ljava.lang.Object;@120d6cbf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
+            </line>
+            <line>
+              <![CDATA[Start]]>
+            </line>
+            <line>
+              <![CDATA[Free to Activated without Reserve Scenario competed.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- NumberInquiry -->
+        <test-method is-config="true" signature="Teardown2()[pri:0, instance:Testscript.NumberHosting@6b419da]" started-at="2019-10-04T11:46:42Z" name="Teardown2" finished-at="2019-10-04T11:46:43Z" duration-ms="1195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown2 -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:Testscript.NumberHosting@6b419da]" started-at="2019-10-04T11:46:43Z" name="Teardown" finished-at="2019-10-04T11:46:43Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
       </class> <!-- Testscript.NumberHosting -->
-    </test> <!-- Scenario 0 -->
+    </test> <!-- Scenario -->
   </suite> <!-- NH Automation -->
 </testng-results>

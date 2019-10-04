@@ -39,7 +39,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.testng.Assert;
 import org.testng.Reporter;
-import org.w3c.dom.Element;
+//import org.w3c.dom.Element;
 
 import com.relevantcodes.extentreports.LogStatus;
 

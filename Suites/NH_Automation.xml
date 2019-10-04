@@ -7,7 +7,7 @@
     </listeners>
     
     
-      <test name="Scenario 0" junit="false" preserve-order="true">
+      <test name="Scenario" junit="false" preserve-order="true">
 		<classes>
 			<class name="Testscript.NumberHosting">	
 				<methods>
@@ -16,6 +16,6 @@
 			</class>
 		</classes>	
 	</test>  
-    
-
 	</suite>
+	
+	
