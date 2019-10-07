@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Scenario</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Oct 07 06:27:51 BST 2019</td>
+<td>Started on:</td><td>Mon Oct 07 11:06:42 BST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>215 seconds (215526 ms)</td>
+<tr><td>Total time:</td><td>71 seconds (71210 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,26 +67,81 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Testscript.NumberHosting.NumberInquiry()'><b>NumberInquiry</b><br>Test class: Testscript.NumberHosting<br>Parameters: [[Ljava.lang.Object;@9c0d0bd<br/>
-<a href="#Output-1109258131" onClick='toggleBox("Output-1109258131", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1109258131" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1109258131">
- <font color='green'> Data are displaying with serach creteria!! </font><br/>
- <font color='green'> Status Query has been passed with Transaction Status : In Progress </font><br/>
-Free to Activated with Address completed.<br/>
-</div>
-</td>
-<td></td>
-<td>179</td>
+<td title='Testscript.NumberHosting.NumberInquiry()'><b>NumberInquiry</b><br>Test class: Testscript.NumberHosting<br>Parameters: [[Ljava.lang.Object;@290aeb20</td>
+<td><div><pre>java.lang.NullPointerException
+	at Driver.DriverHelper.getwebelement(DriverHelper.java:371)
+	at ScriptHelper.LoginHelper.Login(LoginHelper.java:117)
+	at Testscript.NumberHosting.NumberInquiry(NumberHosting.java:15)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1940737740", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1940737740'><pre>java.lang.NullPointerException
+	at Driver.DriverHelper.getwebelement(DriverHelper.java:371)
+	at ScriptHelper.LoginHelper.Login(LoginHelper.java:117)
+	at Testscript.NumberHosting.NumberInquiry(NumberHosting.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>60</td>
+<td>Testscript.NumberHosting@6b419da</td></tr>
+<tr>
+<td title='Testscript.NumberHosting.NumberInquiry()'><b>NumberInquiry</b><br>Test class: Testscript.NumberHosting</td>
+<td><div><pre>java.lang.NullPointerException
+	at Listeners.TestListener.onTestFailure(TestListener.java:70)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1775897362", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1775897362'><pre>java.lang.NullPointerException
+	at Listeners.TestListener.onTestFailure(TestListener.java:70)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1895)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:778)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>70</td>
 <td>Testscript.NumberHosting@6b419da</td></tr>
 </table><p>
 </body>

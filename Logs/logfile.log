@@ -3621,3 +3621,231 @@
 2019-10-07 07:00:54,758 INFO  [Log] NH_URL 
 2019-10-07 07:01:10,894 INFO  [Log] Element Found: True 
 2019-10-07 07:01:20,724 INFO  [Log] Element Found: True 
+2019-10-07 08:20:05,872 INFO  [Log] I am on Start method Scenario 
+2019-10-07 08:20:08,538 INFO  [Log] URL 
+2019-10-07 08:20:14,360 INFO  [Log] Number Enquiry (Number Range) 
+2019-10-07 08:20:14,375 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-07 08:20:14,375 INFO  [Log] I am in onStart method null 
+2019-10-07 08:20:14,471 INFO  [Log] NH_URL 
+2019-10-07 08:20:14,523 INFO  [Log] NH_URL 
+2019-10-07 08:20:31,509 INFO  [Log] Element Found: False 
+2019-10-07 08:20:31,512 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-07 08:20:33,015 INFO  [Log] URL 
+2019-10-07 08:20:37,246 INFO  [Log] Number Enquiry (Transaction Id) 
+2019-10-07 08:20:37,249 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-07 08:20:37,249 INFO  [Log] I am in onStart method null 
+2019-10-07 08:20:37,250 INFO  [Log] NH_URL 
+2019-10-07 08:20:37,266 INFO  [Log] NH_URL 
+2019-10-07 08:20:51,497 INFO  [Log] Element Found: True 
+2019-10-07 08:21:21,070 INFO  [Log] Element Found: False 
+2019-10-07 08:21:21,070 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-07 08:21:22,243 INFO  [Log] URL 
+2019-10-07 08:21:26,514 INFO  [Log] Number Enquiry (Customer Reference) 
+2019-10-07 08:21:26,514 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-07 08:21:26,514 INFO  [Log] I am in onStart method null 
+2019-10-07 08:21:26,514 INFO  [Log] NH_URL 
+2019-10-07 08:21:26,536 INFO  [Log] NH_URL 
+2019-10-07 08:21:48,263 INFO  [Log] Element Found: False 
+2019-10-07 08:22:04,722 INFO  [Log] Element Found: False 
+2019-10-07 08:22:04,722 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-07 08:22:05,992 INFO  [Log] URL 
+2019-10-07 08:22:10,319 INFO  [Log] Number Enquiry (Number Status) 
+2019-10-07 08:22:10,319 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-07 08:22:10,319 INFO  [Log] I am in onStart method null 
+2019-10-07 08:22:10,319 INFO  [Log] NH_URL 
+2019-10-07 08:22:10,391 INFO  [Log] NH_URL 
+2019-10-07 08:22:24,444 INFO  [Log] Element Found: True 
+2019-10-07 08:22:36,107 INFO  [Log] Element Found: True 
+2019-10-07 08:23:45,130 INFO  [Log] URL 
+2019-10-07 08:23:49,342 INFO  [Log] Free to Reserve 
+2019-10-07 08:23:49,342 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-07 08:23:49,342 INFO  [Log] I am in onStart method null 
+2019-10-07 08:23:49,342 INFO  [Log] NH_URL 
+2019-10-07 08:23:49,367 INFO  [Log] NH_URL 
+2019-10-07 08:24:03,022 INFO  [Log] Element Found: True 
+2019-10-07 08:24:22,035 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-07 08:24:23,543 INFO  [Log] URL 
+2019-10-07 08:24:27,901 INFO  [Log] Reserve to activate with Address 
+2019-10-07 08:24:27,901 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-07 08:24:27,901 INFO  [Log] I am in onStart method null 
+2019-10-07 08:24:27,901 INFO  [Log] NH_URL 
+2019-10-07 08:24:28,703 INFO  [Log] NH_URL 
+2019-10-07 08:24:44,608 INFO  [Log] Element Found: True 
+2019-10-07 08:25:13,812 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-07 08:25:14,953 INFO  [Log] URL 
+2019-10-07 08:25:19,279 INFO  [Log] Reserve to Activate without Address 
+2019-10-07 08:25:19,279 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-07 08:25:19,279 INFO  [Log] I am in onStart method null 
+2019-10-07 08:25:19,279 INFO  [Log] NH_URL 
+2019-10-07 08:25:19,320 INFO  [Log] NH_URL 
+2019-10-07 08:25:33,527 INFO  [Log] Element Found: True 
+2019-10-07 08:25:38,210 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-07 08:25:39,450 INFO  [Log] URL 
+2019-10-07 08:25:43,859 INFO  [Log] Free to Activate with Address 
+2019-10-07 08:25:43,859 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-07 08:25:43,859 INFO  [Log] I am in onStart method null 
+2019-10-07 08:25:43,859 INFO  [Log] NH_URL 
+2019-10-07 08:25:43,885 INFO  [Log] NH_URL 
+2019-10-07 08:25:56,059 INFO  [Log] Element Found: True 
+2019-10-07 08:27:03,926 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-07 08:27:05,132 INFO  [Log] URL 
+2019-10-07 08:27:09,290 INFO  [Log] Free to Activate Without Address 
+2019-10-07 08:27:09,290 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-07 08:27:09,290 INFO  [Log] I am in onStart method null 
+2019-10-07 08:27:09,290 INFO  [Log] NH_URL 
+2019-10-07 08:27:09,331 INFO  [Log] NH_URL 
+2019-10-07 08:27:22,234 INFO  [Log] Element Found: True 
+2019-10-07 08:27:24,437 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-07 08:27:25,659 INFO  [Log] URL 
+2019-10-07 08:27:30,058 INFO  [Log] Update the Address with port-in 
+2019-10-07 08:27:30,058 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-07 08:27:30,058 INFO  [Log] I am in onStart method null 
+2019-10-07 08:27:30,058 INFO  [Log] NH_URL 
+2019-10-07 08:27:30,078 INFO  [Log] NH_URL 
+2019-10-07 08:27:51,705 INFO  [Log] Element Found: True 
+2019-10-07 08:29:59,420 INFO  [Log] I am on Start method Scenario 
+2019-10-07 08:30:02,092 INFO  [Log] URL 
+2019-10-07 08:30:22,224 INFO  [Log] Number Enquiry (Number Range) 
+2019-10-07 08:30:22,238 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-07 08:30:22,239 INFO  [Log] I am in onStart method null 
+2019-10-07 08:30:22,337 INFO  [Log] NH_URL 
+2019-10-07 08:30:22,397 INFO  [Log] NH_URL 
+2019-10-07 08:30:54,366 INFO  [Log] Element Found: False 
+2019-10-07 08:30:54,369 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-07 08:31:03,554 INFO  [Log] URL 
+2019-10-07 08:31:16,110 INFO  [Log] Number Enquiry (Transaction Id) 
+2019-10-07 08:31:16,203 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-07 08:31:16,203 INFO  [Log] I am in onStart method null 
+2019-10-07 08:31:16,235 INFO  [Log] NH_URL 
+2019-10-07 08:31:16,491 INFO  [Log] NH_URL 
+2019-10-07 08:32:33,004 INFO  [Log] Element Found: True 
+2019-10-07 08:33:28,654 INFO  [Log] Element Found: False 
+2019-10-07 08:33:28,655 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-07 08:33:45,814 INFO  [Log] URL 
+2019-10-07 08:34:00,391 INFO  [Log] Number Enquiry (Customer Reference) 
+2019-10-07 08:34:00,392 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-07 08:34:00,392 INFO  [Log] I am in onStart method null 
+2019-10-07 08:34:00,392 INFO  [Log] NH_URL 
+2019-10-07 08:34:00,570 INFO  [Log] NH_URL 
+2019-10-07 08:35:03,791 INFO  [Log] URL 
+2019-10-07 08:35:22,633 INFO  [Log] Number Enquiry (Number Status) 
+2019-10-07 08:35:22,642 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-07 08:35:22,642 INFO  [Log] I am in onStart method null 
+2019-10-07 08:35:22,642 INFO  [Log] NH_URL 
+2019-10-07 08:35:23,246 INFO  [Log] NH_URL 
+2019-10-07 08:37:26,759 INFO  [Log] Element Found: True 
+2019-10-07 08:37:36,495 INFO  [Log] Element Found: True 
+2019-10-07 08:38:52,215 INFO  [Log] Element Found: True 
+2019-10-07 08:39:07,372 INFO  [Log] Element Found: True 
+2019-10-07 08:39:17,531 INFO  [Log] Element Found: True 
+2019-10-07 08:39:24,897 INFO  [Log] Element Found: True 
+2019-10-07 08:39:39,888 INFO  [Log] Element Found: True 
+2019-10-07 08:39:45,864 INFO  [Log] Element Found: True 
+2019-10-07 08:39:53,160 INFO  [Log] Element Found: True 
+2019-10-07 08:40:04,358 INFO  [Log] Element Found: True 
+2019-10-07 08:40:04,359 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-07 08:40:05,666 INFO  [Log] URL 
+2019-10-07 08:40:09,898 INFO  [Log] Free to Reserve 
+2019-10-07 08:40:09,901 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-07 08:40:09,901 INFO  [Log] I am in onStart method null 
+2019-10-07 08:40:09,902 INFO  [Log] NH_URL 
+2019-10-07 08:40:10,008 INFO  [Log] NH_URL 
+2019-10-07 08:40:22,113 INFO  [Log] Element Found: True 
+2019-10-07 08:41:28,961 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-07 08:41:30,132 INFO  [Log] URL 
+2019-10-07 08:41:35,377 INFO  [Log] Reserve to activate with Address 
+2019-10-07 08:41:35,377 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-07 08:41:35,377 INFO  [Log] I am in onStart method null 
+2019-10-07 08:41:35,377 INFO  [Log] NH_URL 
+2019-10-07 08:41:35,905 INFO  [Log] NH_URL 
+2019-10-07 08:42:06,010 INFO  [Log] Element Found: True 
+2019-10-07 08:44:38,019 INFO  [Log] URL 
+2019-10-07 08:44:42,339 INFO  [Log] Reserve to Activate without Address 
+2019-10-07 08:44:42,339 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-07 08:44:42,339 INFO  [Log] I am in onStart method null 
+2019-10-07 08:44:42,339 INFO  [Log] NH_URL 
+2019-10-07 08:44:42,385 INFO  [Log] NH_URL 
+2019-10-07 08:44:59,059 INFO  [Log] Element Found: True 
+2019-10-07 08:45:05,134 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-07 08:45:06,321 INFO  [Log] URL 
+2019-10-07 08:45:10,575 INFO  [Log] Free to Activate with Address 
+2019-10-07 08:45:10,576 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-07 08:45:10,576 INFO  [Log] I am in onStart method null 
+2019-10-07 08:45:10,576 INFO  [Log] NH_URL 
+2019-10-07 08:45:10,595 INFO  [Log] NH_URL 
+2019-10-07 08:45:23,728 INFO  [Log] Element Found: True 
+2019-10-07 08:46:31,751 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-07 08:46:32,936 INFO  [Log] URL 
+2019-10-07 08:46:37,104 INFO  [Log] Free to Activate Without Address 
+2019-10-07 08:46:37,104 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-07 08:46:37,104 INFO  [Log] I am in onStart method null 
+2019-10-07 08:46:37,104 INFO  [Log] NH_URL 
+2019-10-07 08:46:37,131 INFO  [Log] NH_URL 
+2019-10-07 08:46:49,681 INFO  [Log] Element Found: True 
+2019-10-07 08:46:51,631 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-07 08:46:52,746 INFO  [Log] URL 
+2019-10-07 08:46:56,997 INFO  [Log] Update the Address with port-in 
+2019-10-07 08:46:56,997 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-07 08:46:56,997 INFO  [Log] I am in onStart method null 
+2019-10-07 08:46:56,997 INFO  [Log] NH_URL 
+2019-10-07 08:46:57,032 INFO  [Log] NH_URL 
+2019-10-07 08:47:19,088 INFO  [Log] Element Found: True 
+2019-10-07 08:50:17,207 INFO  [Log] I am on Finish method Scenario 
+2019-10-07 08:55:07,233 INFO  [Log] I am on Start method Scenario 
+2019-10-07 08:55:08,814 INFO  [Log] URL 
+2019-10-07 08:55:32,403 INFO  [Log] Update the Address with Activate  
+2019-10-07 08:55:32,408 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-07 08:55:32,408 INFO  [Log] I am in onStart method null 
+2019-10-07 08:55:32,484 INFO  [Log] NH_URL 
+2019-10-07 08:55:32,563 INFO  [Log] NH_URL 
+2019-10-07 08:57:00,456 INFO  [Log] Element Found: True 
+2019-10-07 08:58:52,267 INFO  [Log] I am on Finish method Scenario 
+2019-10-07 09:04:44,358 INFO  [Log] I am on Start method Scenario 
+2019-10-07 09:04:45,539 INFO  [Log] URL 
+2019-10-07 09:04:50,937 INFO  [Log] Update the Address with Activate  
+2019-10-07 09:04:50,968 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-07 09:04:50,968 INFO  [Log] I am in onStart method null 
+2019-10-07 09:04:51,055 INFO  [Log] NH_URL 
+2019-10-07 09:04:51,104 INFO  [Log] NH_URL 
+2019-10-07 09:05:12,694 INFO  [Log] Element Found: True 
+2019-10-07 09:06:27,191 INFO  [Log] I am on Finish method Scenario 
+2019-10-07 10:33:01,303 INFO  [Log] I am on Start method Scenario 
+2019-10-07 10:33:11,940 INFO  [Log] URL 
+2019-10-07 10:33:27,261 INFO  [Log] Update the Address with Activate  
+2019-10-07 10:33:27,276 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-07 10:33:27,276 INFO  [Log] I am in onStart method null 
+2019-10-07 10:33:27,380 INFO  [Log] NH_URL 
+2019-10-07 10:33:27,389 INFO  [Log] NH_URL 
+2019-10-07 10:34:31,137 INFO  [Log] I am on Finish method Scenario 
+2019-10-07 10:34:55,601 INFO  [Log] I am on Start method Scenario 
+2019-10-07 10:35:04,207 INFO  [Log] URL 
+2019-10-07 10:35:25,295 INFO  [Log] Update the Address with Activate  
+2019-10-07 10:35:25,315 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-07 10:35:25,315 INFO  [Log] I am in onStart method null 
+2019-10-07 10:35:25,543 INFO  [Log] NH_URL 
+2019-10-07 10:35:25,564 INFO  [Log] NH_URL 
+2019-10-07 10:35:54,770 INFO  [Log] I am on Finish method Scenario 
+2019-10-07 10:36:17,239 INFO  [Log] I am on Start method Scenario 
+2019-10-07 10:36:21,747 INFO  [Log] URL 
+2019-10-07 10:36:43,896 INFO  [Log] Update the Address with Activate  
+2019-10-07 10:36:43,900 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-07 10:36:43,901 INFO  [Log] I am in onStart method null 
+2019-10-07 10:36:44,139 INFO  [Log] NH_URL 
+2019-10-07 10:36:44,174 INFO  [Log] NH_URL 
+2019-10-07 10:37:35,333 INFO  [Log] I am on Finish method Scenario 
+2019-10-07 10:40:08,191 INFO  [Log] I am on Start method Scenario 
+2019-10-07 10:40:19,229 INFO  [Log] URL 
+2019-10-07 10:40:43,920 INFO  [Log] Update the Address with Activate  
+2019-10-07 10:40:43,925 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-07 10:40:43,925 INFO  [Log] I am in onStart method null 
+2019-10-07 10:40:44,029 INFO  [Log] NH_URL 
+2019-10-07 10:40:44,057 INFO  [Log] NH_URL 
+2019-10-07 10:41:23,866 INFO  [Log] I am on Finish method Scenario 
+2019-10-07 11:06:42,578 INFO  [Log] I am on Start method Scenario 
+2019-10-07 11:06:45,693 INFO  [Log] URL 
+2019-10-07 11:06:51,365 INFO  [Log] Update the Address with Activate  
+2019-10-07 11:06:51,365 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-07 11:06:51,365 INFO  [Log] I am in onStart method null 
+2019-10-07 11:06:51,459 INFO  [Log] NH_URL 
+2019-10-07 11:06:51,493 INFO  [Log] NH_URL 
+2019-10-07 11:07:53,932 INFO  [Log] I am on Finish method Scenario 

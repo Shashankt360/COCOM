@@ -350,7 +350,7 @@ public class NumberHostingHelper extends DriverHelper {
 						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the submit button");
 						Thread.sleep(5000);
 						String Transactionresult = Gettext(
-								getwebelement(xml.getlocator("//locators/TransactionResult")));
+								getwebelement(xml.getlocator("//locators/TransactionIdLink")));
 						TransactionId.set(Transactionresult);
 						ExtentTestManager.getTest().log(LogStatus.PASS,
 								" Step: Transaction Id is : " + TransactionId.get());
@@ -898,13 +898,25 @@ public class NumberHostingHelper extends DriverHelper {
 		 SendKeys(getwebelement(xml.getlocator("//locators/statusQueryTransactionID")),TransactionID);
 		
 		
-		 WaitforElementtobeclickable(xml.getlocator("//locators/StatusQuerySearchbutton"));
-		 Clickon(getwebelement(xml.getlocator("//locators/StatusQuerySearchbutton")));
-//		 if(waitandForElementDisplayed(xml.getlocator("//locators/NoRecordFound"))=="No records found!")
-//		 {
-//			 
-//		 }
+//		 WaitforElementtobeclickable(xml.getlocator("//locators/StatusQuerySearchbutton"));
+//		 Clickon(getwebelement(xml.getlocator("//locators/StatusQuerySearchbutton")));
+		 
+		
+		 String Norecord = Gettext(getwebelement(xml.getlocator("//locators/NoRecordFound")));
 		 //EnterText2(Keys.ENTER);
+		 if(Norecord.contains("No records found!"))
+		 {
+			 Clickon(getwebelement(xml.getlocator("//locators/StatusQuerySearchbutton")));
+		 }
+		 else 
+		 {
+			 WaitforElementtobeclickable(xml.getlocator("//locators/StatusQuerySearchbutton"));
+			 Clickon(getwebelement(xml.getlocator("//locators/StatusQuerySearchbutton")));
+		}
+			 
+			 
+			 
+			 
 		 implicitwait(20);
 		
 		 String transType = Gettext(getwebelement(xml.getlocator("//locators/TransactionType")));
