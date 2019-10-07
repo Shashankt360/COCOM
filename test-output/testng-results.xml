@@ -1,32 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="2" passed="2" failed="0" skipped="0">
+<testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
     </line>
     <line>
-      <![CDATA[ <font color='green'> Numbwer Query status id update Successfully from Free to Reserve </font>]]>
+      <![CDATA[ <font color='green'> Status Query has been passed with Transaction Status : In Progress </font>]]>
     </line>
     <line>
-      <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
-    </line>
-    <line>
-      <![CDATA[Start]]>
-    </line>
-    <line>
-      <![CDATA[Free to Activated without Reserve Scenario competed.]]>
+      <![CDATA[Free to Activated with Address completed.]]>
     </line>
   </reporter-output>
-  <suite started-at="2019-10-04T10:45:32Z" name="NH Automation" finished-at="2019-10-04T10:46:43Z" duration-ms="71024">
+  <suite started-at="2019-10-07T05:27:51Z" name="NH Automation" finished-at="2019-10-07T05:31:26Z" duration-ms="215526">
     <groups>
     </groups>
-    <test started-at="2019-10-04T10:45:32Z" name="Scenario" finished-at="2019-10-04T10:46:43Z" duration-ms="71024">
+    <test started-at="2019-10-07T05:27:51Z" name="Scenario" finished-at="2019-10-07T05:31:26Z" duration-ms="215526">
       <class name="Testscript.NumberHosting">
-        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:Testscript.NumberHosting@6b419da]" started-at="2019-10-04T11:45:32Z" name="BeforeSuite" finished-at="2019-10-04T11:45:32Z" duration-ms="219" status="PASS">
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:Testscript.NumberHosting@6b419da]" started-at="2019-10-07T06:27:50Z" name="BeforeSuite" finished-at="2019-10-07T06:27:51Z" duration-ms="391" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeSuite -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, org.testng.ITestContext, [Ljava.lang.Object;)[pri:0, instance:Testscript.NumberHosting@6b419da]" started-at="2019-10-04T11:45:33Z" name="BeforeMethod" finished-at="2019-10-04T11:45:39Z" duration-ms="5448" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, org.testng.ITestContext, [Ljava.lang.Object;)[pri:0, instance:Testscript.NumberHosting@6b419da]" started-at="2019-10-07T06:27:56Z" name="BeforeMethod" finished-at="2019-10-07T06:28:16Z" duration-ms="19585" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -35,23 +29,23 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@1dd76982]]>
+                <![CDATA[org.testng.TestRunner@410382cb]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[[Ljava.lang.Object;@7e76a66f]]>
+                <![CDATA[[Ljava.lang.Object;@399f5daf]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="NumberInquiry([[Ljava.lang.Object;)[pri:0, instance:Testscript.NumberHosting@6b419da]" started-at="2019-10-04T11:45:39Z" name="NumberInquiry" data-provider="NumberHosting" finished-at="2019-10-04T11:46:16Z" duration-ms="37365" status="PASS">
+        <test-method signature="NumberInquiry([[Ljava.lang.Object;)[pri:0, instance:Testscript.NumberHosting@6b419da]" started-at="2019-10-07T06:28:16Z" name="NumberInquiry" data-provider="NumberHosting" finished-at="2019-10-07T06:31:15Z" duration-ms="179109" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[[Ljava.lang.Object;@6282f1eb]]>
+                <![CDATA[[[Ljava.lang.Object;@9c0d0bd]]>
               </value>
             </param>
           </params>
@@ -60,60 +54,18 @@
               <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
             </line>
             <line>
-              <![CDATA[ <font color='green'> Numbwer Query status id update Successfully from Free to Reserve </font>]]>
+              <![CDATA[ <font color='green'> Status Query has been passed with Transaction Status : In Progress </font>]]>
+            </line>
+            <line>
+              <![CDATA[Free to Activated with Address completed.]]>
             </line>
           </reporter-output>
         </test-method> <!-- NumberInquiry -->
-        <test-method is-config="true" signature="Teardown2()[pri:0, instance:Testscript.NumberHosting@6b419da]" started-at="2019-10-04T11:46:16Z" name="Teardown2" finished-at="2019-10-04T11:46:18Z" duration-ms="1402" status="PASS">
+        <test-method is-config="true" signature="Teardown2()[pri:0, instance:Testscript.NumberHosting@6b419da]" started-at="2019-10-07T06:31:15Z" name="Teardown2" finished-at="2019-10-07T06:31:26Z" duration-ms="11284" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown2 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, org.testng.ITestContext, [Ljava.lang.Object;)[pri:0, instance:Testscript.NumberHosting@6b419da]" started-at="2019-10-04T11:46:18Z" name="BeforeMethod" finished-at="2019-10-04T11:46:27Z" duration-ms="9971" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Testscript.NumberHosting.NumberInquiry(java.lang.Object[][]) throws java.lang.Exception]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@1dd76982]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@68f69ca3]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="NumberInquiry([[Ljava.lang.Object;)[pri:0, instance:Testscript.NumberHosting@6b419da]" started-at="2019-10-04T11:46:27Z" name="NumberInquiry" data-provider="NumberHosting" finished-at="2019-10-04T11:46:42Z" duration-ms="14503" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[[Ljava.lang.Object;@120d6cbf]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
-            </line>
-            <line>
-              <![CDATA[Start]]>
-            </line>
-            <line>
-              <![CDATA[Free to Activated without Reserve Scenario competed.]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- NumberInquiry -->
-        <test-method is-config="true" signature="Teardown2()[pri:0, instance:Testscript.NumberHosting@6b419da]" started-at="2019-10-04T11:46:42Z" name="Teardown2" finished-at="2019-10-04T11:46:43Z" duration-ms="1195" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown2 -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:Testscript.NumberHosting@6b419da]" started-at="2019-10-04T11:46:43Z" name="Teardown" finished-at="2019-10-04T11:46:43Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:Testscript.NumberHosting@6b419da]" started-at="2019-10-07T06:31:26Z" name="Teardown" finished-at="2019-10-07T06:31:26Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->

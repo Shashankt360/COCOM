@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -99,11 +99,6 @@
                       <a href="#" panel-name="suite-NH_Automation" class="show-methods passed suite-NH_Automation"> (show)</a> <!-- show-methods passed suite-NH_Automation -->
                     </span>
                     <div class="method-list-content passed suite-NH_Automation">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-NH_Automation" title="Testscript.NumberHosting" class="method navigator-link" hash-for-method="NumberInquiry([[Number Status, COLT, UNITED KINGDOM, ANH, Free, 0113 - Leeds, 123456, ABC, Soverign House, 123, Ki...)">NumberInquiry([[Number Status, COLT, UNITED KINGDOM, ANH, Free, 0113 - Leeds, 123456, ABC, Soverign House, 123, Ki...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-NH_Automation" title="Testscript.NumberHosting" class="method navigator-link" hash-for-method="NumberInquiry([[Number Status, COLT, UNITED KINGDOM, ANH, Free, 0113 - Leeds, 123456, ABC, Soverign House, 123, Ki...)">NumberInquiry([[Number Status, COLT, UNITED KINGDOM, ANH, Free, 0113 - Leeds, 123456, ABC, Soverign House, 123, Ki...)</a> <!-- method navigator-link -->
@@ -132,15 +127,7 @@
                   <a name="NumberInquiry([[Number Status, COLT, UNITED KINGDOM, ANH, Free, 0113 - Leeds, 123456, ABC, Soverign House, 123, Ki...)">
                   </a> <!-- NumberInquiry([[Number Status, COLT, UNITED KINGDOM, ANH, Free, 0113 - Leeds, 123456, ABC, Soverign House, 123, Ki...) -->
                   <span class="method-name">NumberInquiry</span>
-                  <span class="parameters">([[Number Status, COLT, UNITED KINGDOM, ANH, Free, 0113 - Leeds, 123456, ABC, Soverign House, 123, King Jhon Court, London, EC2A 3EZ, , , , Activate, , , Reserve, , , null, Free to Reserve, Yes]])</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="NumberInquiry([[Number Status, COLT, UNITED KINGDOM, ANH, Free, 0113 - Leeds, 123456, ABC, Soverign House, 123, Ki...)">
-                  </a> <!-- NumberInquiry([[Number Status, COLT, UNITED KINGDOM, ANH, Free, 0113 - Leeds, 123456, ABC, Soverign House, 123, Ki...) -->
-                  <span class="method-name">NumberInquiry</span>
-                  <span class="parameters">([[Number Status, COLT, UNITED KINGDOM, ANH, Free, 0113 - Leeds, 123456, ABC, Soverign House, 123, King Jhon Court, London, EC2A 3EZ, , , , Activate, , , Activated, WithoutAddress, , null, Free to Activate Without Address, Yes]])</span>
+                  <span class="parameters">([[Number Status, COLT, UNITED KINGDOM, ANH, Free, 0113 - Leeds, 123456, ABC, Soverign House, 123, King Jhon Court, London, EC2A 3EZ, , , , Activate, , , Activated, WithAddress, , null, Free to Activate with Address, Yes]])</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -204,20 +191,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'NumberInquiry')
 data.setCell(0, 2, 'Testscript.NumberHosting')
-data.setCell(0, 3, 37365);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'NumberInquiry')
-data.setCell(1, 2, 'Testscript.NumberHosting')
-data.setCell(1, 3, 14503);
+data.setCell(0, 3, 179109);
 window.suiteTableData['NH_Automation']= { tableData: data, tableDiv: 'times-div-NH_Automation'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 51 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-NH_Automation">
               </div> <!-- times-div-NH_Automation -->
             </div> <!-- times-div -->
@@ -232,15 +215,8 @@ return data;
               <span class="reporter-method-name">NumberInquiry([[Number Status, COLT, UNITED KINGDOM, ANH, Free, 0113 - Leeds, 123456, ABC, Soverign House, 123, Ki...)</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output"> <font color='green'> Data are displaying with serach creteria!! </font></span>
-                <span class="reporter-method-output"> <font color='green'> Numbwer Query status id update Successfully from Free to Reserve </font></span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">NumberInquiry([[Number Status, COLT, UNITED KINGDOM, ANH, Free, 0113 - Leeds, 123456, ABC, Soverign House, 123, Ki...)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output"> <font color='green'> Data are displaying with serach creteria!! </font></span>
-                <span class="reporter-method-output">Start</span>
-                <span class="reporter-method-output">Free to Activated without Reserve Scenario competed.</span>
+                <span class="reporter-method-output"> <font color='green'> Status Query has been passed with Transaction Status : In Progress </font></span>
+                <span class="reporter-method-output">Free to Activated with Address completed.</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -265,31 +241,19 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">BeforeMethod(public void Testscript.NumberHosting.NumberInquiry(java.lang.Object[][]) throws java.lang.Exception,...)</span>
-                <span class="method-start">1350 ms</span>
+                <span class="method-start">5938 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">NumberInquiry([[Number Status, COLT, UNITED KINGDOM, ANH, Free, 0113 - Leeds, 123456, ABC, Soverign House, 123, Ki...)</span>
-                <span class="method-start">6798 ms</span>
+                <span class="method-start">25523 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">Teardown2</span>
-                <span class="method-start">44168 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">BeforeMethod(public void Testscript.NumberHosting.NumberInquiry(java.lang.Object[][]) throws java.lang.Exception,...)</span>
-                <span class="method-start">45570 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">NumberInquiry([[Number Status, COLT, UNITED KINGDOM, ANH, Free, 0113 - Leeds, 123456, ABC, Soverign House, 123, Ki...)</span>
-                <span class="method-start">55541 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">Teardown2</span>
-                <span class="method-start">70048 ms</span>
+                <span class="method-start">204633 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">Teardown</span>
-                <span class="method-start">71243 ms</span>
+                <span class="method-start">215917 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

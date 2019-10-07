@@ -59,5 +59,6 @@
 <StatusQuerySearchbutton>//input[@value='SEARCH']</StatusQuerySearchbutton>
 <TransactionType>(//table[@id='DomainTable']//td)[5]</TransactionType>
 <StatusQueryTransactionStatus>(//table[@id='DomainTable']//td)[6]</StatusQueryTransactionStatus>
+<NoRecordFound>(//table[@id='tableError']/following-sibling::table//span) [9]</NoRecordFound>
 
 </locators>
