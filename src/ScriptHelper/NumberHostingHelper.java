@@ -80,6 +80,7 @@ public class NumberHostingHelper extends DriverHelper {
 
 			Select(getwebelement(xml.getlocator("//locators/Country")), Inputdata[i][2].toString());
 			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Country");
+			implicitwait(20);
 			waitandForElementDisplayed(xml.getlocator("//locators/ServiceProfile"));
 			Select(getwebelement(xml.getlocator("//locators/ServiceProfile")), Inputdata[i][3].toString());
 			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Service Profile");
@@ -150,6 +151,18 @@ public class NumberHostingHelper extends DriverHelper {
 						WaitforElementtobeclickable(xml.getlocator("//locators/SubmitButton"));
 						Clickon(getwebelement(xml.getlocator("//locators/SubmitButton")));
 						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Submit button");
+						Thread.sleep(4000);
+						waitandForElementDisplayed(xml.getlocator("//locators/TransactionResult"));
+						String Transactionresult = Gettext(
+								getwebelement(xml.getlocator("//locators/TransactionResult")));
+						TransactionId.set(Transactionresult);
+						ExtentTestManager.getTest().log(LogStatus.PASS,
+								" Step: Transaction Id is : " + TransactionId.get());
+						Thread.sleep(2000);
+						implicitwait(20);
+						// Status Query	************************************************************
+						
+						StatuQuerybyTransitionId(Transactionresult);
 						log("Successfully Updated status");
 
 					}
@@ -300,6 +313,19 @@ public class NumberHostingHelper extends DriverHelper {
 						WaitforElementtobeclickable(xml.getlocator("//locators/SubmitButton"));
 						Clickon(getwebelement(xml.getlocator("//locators/SubmitButton")));
 						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Submit button");
+						Thread.sleep(5000);
+						//editing
+						waitandForElementDisplayed(xml.getlocator("//locators/TransactionIdwithoutAddress"));
+						String Transactionresult = Gettext(
+								getwebelement(xml.getlocator("//locators/TransactionIdwithoutAddress")));
+						TransactionId.set(Transactionresult);
+						ExtentTestManager.getTest().log(LogStatus.PASS,
+								" Step: Transaction Id is : " + TransactionId.get());
+						Thread.sleep(3000);
+						implicitwait(20);
+						// Status Query	************************************************************
+						
+						StatuQuerybyTransitionId(Transactionresult);
 						log("Free to Activated without Reserve Scenario competed.");
 
 					}
@@ -322,19 +348,20 @@ public class NumberHostingHelper extends DriverHelper {
 				Clickon(getwebelement(xml.getlocator("//locators/SearchButton")));
 				ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Search button");
 
-				Thread.sleep(10000);
+				Thread.sleep(5000);
 
 				if (isElementPresent(xml.getlocator("//locators/Griddata"))) {
 
 					GreenLog("Data are displaying with serach creteria!!");
-					if (Inputdata[i][19].toString().contains("UpdateAddress")) {
+					if (Inputdata[i][19].toString().contains("UpdateAddress")) 
+					{
 						Clickon(getwebelement(xml.getlocator("//locators/RadioButton")));
 						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Radio button");
 						Select(getwebelement(xml.getlocator("//locators/UserAction")), Inputdata[i][16].toString());
 						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the User Action");
 						Clickon(getwebelement(xml.getlocator("//locators/UserGo")));
 						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Go button");
-						Thread.sleep(5000);
+						Thread.sleep(1000);
 						SendKeys(getwebelement(xml.getlocator("//locators/BuildingName")), Inputdata[i][8].toString());
 						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the Building name field");
 						SendKeys(getwebelement(xml.getlocator("//locators/BuildingNumber")),
@@ -348,16 +375,17 @@ public class NumberHostingHelper extends DriverHelper {
 						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the Post Code");
 						Clickon(getwebelement(xml.getlocator("//locators/SubmitButton")));
 						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the submit button");
-						Thread.sleep(5000);
+						Thread.sleep(1000);
 						String Transactionresult = Gettext(
 								getwebelement(xml.getlocator("//locators/TransactionIdLink")));
 						TransactionId.set(Transactionresult);
 						ExtentTestManager.getTest().log(LogStatus.PASS,
 								" Step: Transaction Id is : " + TransactionId.get());
-						Thread.sleep(3000);
+						//Thread.sleep(3000);
+						implicitwait(20);
 						// Status Query	************************************************************
 						
-						StatuQuerybyTransitionId(TransactionId.get());
+						StatuQuerybyTransitionId(Transactionresult);
 						// Store the current window handle
 //						String winHandleBefore = driver.getWindowHandle();
 //
@@ -456,6 +484,18 @@ public class NumberHostingHelper extends DriverHelper {
 						WaitforElementtobeclickable(xml.getlocator("//locators/SubmitButton"));
 						Clickon(getwebelement(xml.getlocator("//locators/SubmitButton")));
 						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Submit button");
+						Thread.sleep(1000);
+						String Transactionresult = Gettext(
+								getwebelement(xml.getlocator("//locators/TransactionIdLink")));
+						TransactionId.set(Transactionresult);
+						ExtentTestManager.getTest().log(LogStatus.PASS,
+								" Step: Transaction Id is : " + TransactionId.get());
+						//Thread.sleep(3000);
+						implicitwait(20);
+						// Status Query	************************************************************
+						
+						StatuQuerybyTransitionId(Transactionresult);
+						
 
 					}
 					else {
@@ -492,6 +532,16 @@ public class NumberHostingHelper extends DriverHelper {
 						WaitforElementtobeclickable(xml.getlocator("//locators/SubmitButton"));
 						Clickon(getwebelement(xml.getlocator("//locators/SubmitButton")));
 						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Submit button");
+						String Transactionresult = Gettext(
+								getwebelement(xml.getlocator("//locators/TransactionIdLink")));
+						TransactionId.set(Transactionresult);
+						ExtentTestManager.getTest().log(LogStatus.PASS,
+								" Step: Transaction Id is : " + TransactionId.get());
+						//Thread.sleep(3000);
+						implicitwait(20);
+						// Status Query	************************************************************
+						
+						StatuQuerybyTransitionId(Transactionresult);
 					}
 					
 
@@ -512,6 +562,17 @@ public class NumberHostingHelper extends DriverHelper {
 				ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Search button");
 				if (isElementPresent(xml.getlocator("//locators/Griddata"))) {
 					GreenLog("Data are displaying with serach creteria!!");
+					Thread.sleep(5000l);
+					String Transactionresult = Gettext(
+							getwebelement(xml.getlocator("//locators/TransactionIdLink")));
+					TransactionId.set(Transactionresult);
+					ExtentTestManager.getTest().log(LogStatus.PASS,
+							" Step: Transaction Id is : " + TransactionId.get());
+					Thread.sleep(1000);
+					implicitwait(20);
+					// Status Query	************************************************************
+					
+					StatuQuerybyTransitionId(Transactionresult);
 
 				} else {
 					RedLog("System does not have search result with Number Status with country!! Number status is "
@@ -527,7 +588,7 @@ public class NumberHostingHelper extends DriverHelper {
 				WaitforElementtobeclickable(xml.getlocator("//locators/SearchButton"));
 				Clickon(getwebelement(xml.getlocator("//locators/SearchButton")));
 				ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Search button");
-				Thread.sleep(10000);
+				Thread.sleep(5000);
 
 				if (isElementPresent(xml.getlocator("//locators/Griddata"))) {
 					GreenLog("Data are displaying with serach creteria!!");
@@ -552,99 +613,103 @@ public class NumberHostingHelper extends DriverHelper {
 						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the Post Code");
 						Clickon(getwebelement(xml.getlocator("//locators/SubmitButton")));
 						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the submit button");
-						Thread.sleep(10000);
+						Thread.sleep(1000);
 						String Transactionresult = Gettext(
 								getwebelement(xml.getlocator("//locators/TransactionResult")));
 						TransactionId.set(Transactionresult);
 						ExtentTestManager.getTest().log(LogStatus.PASS,
 								" Step: Transaction Id is : " + TransactionId.get());
-						Thread.sleep(10000);
+						Thread.sleep(1000);
 						// Store the current window handle
-						String winHandleBefore = driver.getWindowHandle();
-
-						Clickon(getwebelement(xml.getlocator("//locators/TransactionResult")));
-						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Transaction ID");
-						System.out.println(Transactionresult);
-						Thread.sleep(5000);
-
-						Set<String> handles = driver.getWindowHandles();
-						Iterator<String> iterator = handles.iterator();
-						iterator.next();
-						String curent = iterator.next();
-						System.out.println("Window handel" + curent);
-						driver.switchTo().window(curent);
-						// Perform the actions on new window
-						String TransactionStatus1 = null;
-						do {
-							TransactionStatus1 = Gettext(getwebelement(xml.getlocator("//locators/TransactionStatus")));
-							TransactionStatus.set(TransactionStatus1);
-							System.out.println(TransactionStatus.get());
-							Thread.sleep(5000);
-							Pagerefresh();
-						} while (!TransactionStatus.equals("Completed"));
-
-						Assert.assertTrue(TransactionStatus.get().contains("Completed"));
-						ExtentTestManager.getTest().log(LogStatus.PASS,
-								" Step: Transaction Id is : " + TransactionStatus);
-						Thread.sleep(5000);
-						driver.close();
-						driver.switchTo().window(winHandleBefore);
-						Clickon(getwebelement(xml.getlocator("//locators/ManageNumber")));
-						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Manage Number");
-						Clickon(getwebelement(xml.getlocator("//locators/NumberEnquiry")));
-						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Number Enquiry");
-						Select(getwebelement(xml.getlocator("//locators/ResellerName")), Inputdata[0][0].toString());
-						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Reseller name");
-						Select(getwebelement(xml.getlocator("//locators/Country")), Inputdata[i][1].toString());
-						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Country");
-						Thread.sleep(3000);
-						Select(getwebelement(xml.getlocator("//locators/ServiceProfile")), Inputdata[i][2].toString());
-						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Service Profile");
-						Thread.sleep(3000);
-						Select(getwebelement(xml.getlocator("//locators/SearchCriteria")), "Transaction ID");
-						ExtentTestManager.getTest().log(LogStatus.PASS,
-								" Step: Select the Search Criteria as Transaction Id");
-						SendKeys(getwebelement(xml.getlocator("//locators/InputTransactionId")), Transactionresult);
-						ExtentTestManager.getTest().log(LogStatus.PASS,
-								" Step: Enter the Transaction Id: " + Transactionresult);
-						Clickon(getwebelement(xml.getlocator("//locators/SearchButton")));
-						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Search button");
-						Thread.sleep(5000);
-						// Store the current window handle
-						// String WinHandleBefore = driver.getWindowHandle();
-						Clickon(getwebelement(xml.getlocator("//locators/TransactionIdLink")));
-						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Transaction Id");
-						Thread.sleep(5000);
-
-						Set<String> handle = driver.getWindowHandles();
-						Iterator<String> iterators = handle.iterator();
-						iterators.next();
-						String current = iterators.next();
-						System.out.println("Window handel" + current);
-						driver.switchTo().window(current);
-						// Perform the actions on new window
-						String BuildingNumber = Gettext(
-								getwebelement(xml.getlocator("//locators/VerifyBuldingNumber")));
-						String BuildingName = Gettext(getwebelement(xml.getlocator("//locators/VerifyBuildingName")));
-						String StreetName = Gettext(getwebelement(xml.getlocator("//locators/VerifyStreetName")));
-						String City = Gettext(getwebelement(xml.getlocator("//locators/VerifyCity")));
-						String PostCode = Gettext(getwebelement(xml.getlocator("//locators/VerifyPostCode")));
-						Assert.assertTrue(BuildingNumber.contains(Inputdata[0][9].toString()));
-						ExtentTestManager.getTest().log(LogStatus.PASS,
-								" Step: Verify Building number: " + BuildingNumber);
-
-						Assert.assertTrue(BuildingName.contains(Inputdata[0][8].toString()));
-						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Verify Building name: " + BuildingName);
-						Assert.assertTrue(StreetName.contains(Inputdata[0][10].toString()));
-						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Verify Street name: " + StreetName);
-						Assert.assertTrue(City.contains(Inputdata[0][11].toString()));
-						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Verify City : " + City);
-						Assert.assertTrue(PostCode.contains(Inputdata[0][12].toString()));
-						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Verify Post Code: " + PostCode);
-						Thread.sleep(5000);
-						driver.close();
-						driver.switchTo().window(winHandleBefore);
+//						String winHandleBefore = driver.getWindowHandle();
+//
+//						Clickon(getwebelement(xml.getlocator("//locators/TransactionResult")));
+//						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Transaction ID");
+//						System.out.println(Transactionresult);
+//						Thread.sleep(5000);
+//
+//						Set<String> handles = driver.getWindowHandles();
+//						Iterator<String> iterator = handles.iterator();
+//						iterator.next();
+//						String curent = iterator.next();
+//						System.out.println("Window handel" + curent);
+//						driver.switchTo().window(curent);
+//						// Perform the actions on new window
+//						String TransactionStatus1 = null;
+//						do {
+//							TransactionStatus1 = Gettext(getwebelement(xml.getlocator("//locators/TransactionStatus")));
+//							TransactionStatus.set(TransactionStatus1);
+//							System.out.println(TransactionStatus.get());
+//							Thread.sleep(5000);
+//							Pagerefresh();
+//						} while (!TransactionStatus.equals("Completed"));
+//
+//						Assert.assertTrue(TransactionStatus.get().contains("Completed"));
+//						ExtentTestManager.getTest().log(LogStatus.PASS,
+//								" Step: Transaction Id is : " + TransactionStatus);
+//						Thread.sleep(5000);
+//						driver.close();
+//						driver.switchTo().window(winHandleBefore);
+//						Clickon(getwebelement(xml.getlocator("//locators/ManageNumber")));
+//						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Manage Number");
+//						Clickon(getwebelement(xml.getlocator("//locators/NumberEnquiry")));
+//						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Number Enquiry");
+//						Select(getwebelement(xml.getlocator("//locators/ResellerName")), Inputdata[0][0].toString());
+//						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Reseller name");
+//						Select(getwebelement(xml.getlocator("//locators/Country")), Inputdata[i][1].toString());
+//						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Country");
+//						Thread.sleep(3000);
+//						Select(getwebelement(xml.getlocator("//locators/ServiceProfile")), Inputdata[i][2].toString());
+//						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Service Profile");
+//						Thread.sleep(3000);
+//						Select(getwebelement(xml.getlocator("//locators/SearchCriteria")), "Transaction ID");
+//						ExtentTestManager.getTest().log(LogStatus.PASS,
+//								" Step: Select the Search Criteria as Transaction Id");
+//						SendKeys(getwebelement(xml.getlocator("//locators/InputTransactionId")), Transactionresult);
+//						ExtentTestManager.getTest().log(LogStatus.PASS,
+//								" Step: Enter the Transaction Id: " + Transactionresult);
+//						Clickon(getwebelement(xml.getlocator("//locators/SearchButton")));
+//						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Search button");
+//						Thread.sleep(5000);
+//						// Store the current window handle
+//						// String WinHandleBefore = driver.getWindowHandle();
+//						Clickon(getwebelement(xml.getlocator("//locators/TransactionIdLink")));
+//						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Transaction Id");
+//						Thread.sleep(5000);
+//
+//						Set<String> handle = driver.getWindowHandles();
+//						Iterator<String> iterators = handle.iterator();
+//						iterators.next();
+//						String current = iterators.next();
+//						System.out.println("Window handel" + current);
+//						driver.switchTo().window(current);
+//						// Perform the actions on new window
+//						String BuildingNumber = Gettext(
+//								getwebelement(xml.getlocator("//locators/VerifyBuldingNumber")));
+//						String BuildingName = Gettext(getwebelement(xml.getlocator("//locators/VerifyBuildingName")));
+//						String StreetName = Gettext(getwebelement(xml.getlocator("//locators/VerifyStreetName")));
+//						String City = Gettext(getwebelement(xml.getlocator("//locators/VerifyCity")));
+//						String PostCode = Gettext(getwebelement(xml.getlocator("//locators/VerifyPostCode")));
+//						Assert.assertTrue(BuildingNumber.contains(Inputdata[0][9].toString()));
+//						ExtentTestManager.getTest().log(LogStatus.PASS,
+//								" Step: Verify Building number: " + BuildingNumber);
+//
+//						Assert.assertTrue(BuildingName.contains(Inputdata[0][8].toString()));
+//						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Verify Building name: " + BuildingName);
+//						Assert.assertTrue(StreetName.contains(Inputdata[0][10].toString()));
+//						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Verify Street name: " + StreetName);
+//						Assert.assertTrue(City.contains(Inputdata[0][11].toString()));
+//						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Verify City : " + City);
+//						Assert.assertTrue(PostCode.contains(Inputdata[0][12].toString()));
+//						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Verify Post Code: " + PostCode);
+//						Thread.sleep(5000);
+//						driver.close();
+//						driver.switchTo().window(winHandleBefore);
+						
+						
+						StatuQuerybyTransitionId(Transactionresult);
 					}
+//					}
 					else if (Inputdata[i][19].toString().contains("Deactivate")) {
 						WaitforElementtobeclickable(xml.getlocator("//locators/RadioButton"));
 						Clickon(getwebelement(xml.getlocator("//locators/RadioButton")));
@@ -657,6 +722,16 @@ public class NumberHostingHelper extends DriverHelper {
 						WaitforElementtobeclickable(xml.getlocator("//locators/SubmitButton"));
 						Clickon(getwebelement(xml.getlocator("//locators/SubmitButton")));
 						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Submit button");
+						String Transactionresult = Gettext(
+								getwebelement(xml.getlocator("//locators/TransactionIdLink")));
+						TransactionId.set(Transactionresult);
+						ExtentTestManager.getTest().log(LogStatus.PASS,
+								" Step: Transaction Id is : " + TransactionId.get());
+						//Thread.sleep(3000);
+						implicitwait(20);
+						// Status Query	************************************************************
+						
+						StatuQuerybyTransitionId(Transactionresult);
 					}
 					else {
 						log("Search Scenario with port-in activated has been successfully performed");
@@ -676,7 +751,17 @@ public class NumberHostingHelper extends DriverHelper {
 				ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Search button");
 				if (isElementPresent(xml.getlocator("//locators/Griddata"))) {
 					GreenLog("Data are displaying with serach creteria!!");
-
+//					Thread.sleep(5000);
+//					String Transactionresult = Gettext(
+//							getwebelement(xml.getlocator("//locators/TransactionIdLink")));
+//					TransactionId.set(Transactionresult);
+//					ExtentTestManager.getTest().log(LogStatus.PASS,
+//							" Step: Transaction Id is : " + TransactionId.get());
+//					//Thread.sleep(3000);
+//					implicitwait(20);
+//					// Status Query	************************************************************
+//					
+//					StatuQuerybyTransitionId(Transactionresult);
 				} else {
 					RedLog("System does not have search result with Number Status with country!! Number status is "
 							+ Inputdata[i][4].toString().trim() + " And Country is " + Inputdata[i][2].toString());
@@ -692,6 +777,16 @@ public class NumberHostingHelper extends DriverHelper {
 				ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Search button");
 				if (isElementPresent(xml.getlocator("//locators/Griddata"))) {
 					GreenLog("Data are displaying with serach creteria!!");
+					String Transactionresult = Gettext(
+							getwebelement(xml.getlocator("//locators/TransactionIdLink")));
+					TransactionId.set(Transactionresult);
+					ExtentTestManager.getTest().log(LogStatus.PASS,
+							" Step: Transaction Id is : " + TransactionId.get());
+					//Thread.sleep(3000);
+					implicitwait(20);
+					// Status Query	************************************************************
+					
+					StatuQuerybyTransitionId(Transactionresult);
 
 				} else {
 					RedLog("System does not have search result with Number Status with country!! Number status is "
@@ -707,6 +802,16 @@ public class NumberHostingHelper extends DriverHelper {
 				ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Search button");
 				if (isElementPresent(xml.getlocator("//locators/Griddata"))) {
 					GreenLog("Data are displaying with serach creteria!!");
+					String Transactionresult = Gettext(
+							getwebelement(xml.getlocator("//locators/TransactionIdLink")));
+					TransactionId.set(Transactionresult);
+					ExtentTestManager.getTest().log(LogStatus.PASS,
+							" Step: Transaction Id is : " + TransactionId.get());
+					//Thread.sleep(3000);
+					implicitwait(20);
+					// Status Query	************************************************************
+					
+					StatuQuerybyTransitionId(Transactionresult);
 
 				} else {
 					RedLog("System does not have search result with Number Status with country!! Number status is "
@@ -761,6 +866,17 @@ public class NumberHostingHelper extends DriverHelper {
 			if (isElementPresent(xml.getlocator("//locators/Griddata"))) {
 				GreenLog("Data are displaying with serach creteria!!");
 
+				Thread.sleep(1000);
+				String Transactionresult = Gettext(
+						getwebelement(xml.getlocator("//locators/TransactionIdLink")));
+				TransactionId.set(Transactionresult);
+				ExtentTestManager.getTest().log(LogStatus.PASS,
+						" Step: Transaction Id is : " + TransactionId.get());
+				//Thread.sleep(3000);
+				implicitwait(20);
+				// Status Query	************************************************************
+				
+				StatuQuerybyTransitionId(Transactionresult);
 			} else {
 				RedLog("System does not have search result with Search Transaction Id with country!! Transection id is "
 						+ Inputdata[i][18].toString() + " And Country is " + Inputdata[i][2].toString());
@@ -798,8 +914,22 @@ public class NumberHostingHelper extends DriverHelper {
 			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Enter the RangeEnd");
 			Clickon(getwebelement(xml.getlocator("//locators/SearchButton")));
 			ExtentTestManager.getTest().log(LogStatus.PASS, " Step:click the Search button");
+			
+			
+			
 			if (isElementPresent(xml.getlocator("//locators/Griddata"))) {
 				GreenLog("Data are displaying with serach creteria!!");
+				Thread.sleep(1000);
+				String Transactionresult = Gettext(
+						getwebelement(xml.getlocator("//locators/TransactionIdLink")));
+				TransactionId.set(Transactionresult);
+				ExtentTestManager.getTest().log(LogStatus.PASS,
+						" Step: Transaction Id is : " + TransactionId.get());
+				//Thread.sleep(3000);
+				implicitwait(20);
+				// Status Query	************************************************************
+				
+				StatuQuerybyTransitionId(Transactionresult);
 
 			} else {
 				RedLog("System does not have search result with SearchNumber Range with country!! Number Range is "
@@ -823,6 +953,7 @@ public class NumberHostingHelper extends DriverHelper {
 
 			Select(getwebelement(xml.getlocator("//locators/Country")), Inputdata[i][2].toString());
 			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Country");
+			implicitwait(20);
 			Select(getwebelement(xml.getlocator("//locators/ServiceProfile")), Inputdata[i][3].toString());
 			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Service Profile");
 			Thread.sleep(3000);
@@ -840,7 +971,16 @@ public class NumberHostingHelper extends DriverHelper {
 			Thread.sleep(1500);
 			if (isElementPresent(xml.getlocator("//locators/Griddata"))) {
 				GreenLog("Data are displaying with serach creteria!!");
-
+				String Transactionresult = Gettext(
+						getwebelement(xml.getlocator("//locators/TransactionIdLink")));
+				TransactionId.set(Transactionresult);
+				ExtentTestManager.getTest().log(LogStatus.PASS,
+						" Step: Transaction Id is : " + TransactionId.get());
+				//Thread.sleep(3000);
+				implicitwait(20);
+				// Status Query	************************************************************
+				
+				StatuQuerybyTransitionId(Transactionresult);
 			} else {
 				RedLog("System does not have search result with Customer Reference  with country!! Customer Reference is "
 						+ Inputdata[i][6].toString().trim() + " And Country is " + Inputdata[i][2].toString());
@@ -873,12 +1013,12 @@ public class NumberHostingHelper extends DriverHelper {
 		WaitforElementtobeclickable(xml.getlocator("//locators/SubmitButton"));
 		Clickon(getwebelement(xml.getlocator("//locators/SubmitButton")));
 		ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Submit button");
-		Thread.sleep(10000);
+		Thread.sleep(1000);
 
 		String Transactionresult = Gettext(getwebelement(xml.getlocator("//locators/TransactionResult")));
 		TransactionId.set(Transactionresult);
 		ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Transaction Id is : " + TransactionId.get());
-		Thread.sleep(10000);
+		//Thread.sleep(10000);
 		// Store the current window handle
 
 //		Clickon(getwebelement(xml.getlocator("//locators/TransactionResult")));
@@ -901,11 +1041,12 @@ public class NumberHostingHelper extends DriverHelper {
 //		 WaitforElementtobeclickable(xml.getlocator("//locators/StatusQuerySearchbutton"));
 //		 Clickon(getwebelement(xml.getlocator("//locators/StatusQuerySearchbutton")));
 		 
-		
+		 implicitwait(20);
 		 String Norecord = Gettext(getwebelement(xml.getlocator("//locators/NoRecordFound")));
 		 //EnterText2(Keys.ENTER);
 		 if(Norecord.contains("No records found!"))
 		 {
+			 implicitwait(20);
 			 Clickon(getwebelement(xml.getlocator("//locators/StatusQuerySearchbutton")));
 		 }
 		 else 
@@ -916,7 +1057,7 @@ public class NumberHostingHelper extends DriverHelper {
 			 
 			 
 			 
-			 
+			 Thread.sleep(1000);
 		 implicitwait(20);
 		
 		 String transType = Gettext(getwebelement(xml.getlocator("//locators/TransactionType")));
@@ -952,7 +1093,7 @@ public class NumberHostingHelper extends DriverHelper {
 			 
 		 }
 		 
-		 
+		 //shashank Tiwari
 		 
 	 
 	 }

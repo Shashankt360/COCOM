@@ -42,6 +42,7 @@
 <TransactionResult>//td[contains(text(),'The Transaction ID for your request is:')]//a</TransactionResult>
 <TransactionIdLink>//table[@id="numberList"]//tbody/tr[1]/td[10]/a</TransactionIdLink>
 <VerifyBuldingNumber>//td[contains(text(),'Building Number')]/../td[2]</VerifyBuldingNumber>
+<TransactionIdwithoutAddress>//h3[text()='Transaction Id']/../../../..//tbody//a</TransactionIdwithoutAddress>
 <VerifyBuildingName>//td[contains(text(),'Building Name')]/../td[2]</VerifyBuildingName>
 <VerifyStreetName>//td[contains(text(),'Street Name')]/../td[2]</VerifyStreetName>
 <VerifyCity>//td[contains(text(),'City/Town')]/../td[2]</VerifyCity>

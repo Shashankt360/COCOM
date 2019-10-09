@@ -5,8 +5,7 @@
 	  <listener class-name="Listeners.TestListener"/>
 	 
     </listeners>
-    
-    
+  
       <test name="Scenario" junit="false" preserve-order="true">
 		<classes>
 			<class name="Testscript.NumberHosting">	
