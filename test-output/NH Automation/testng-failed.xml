@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" name="Failed suite [NH Automation]" data-provider-thread-count="1">
+<suite thread-count="1" data-provider-thread-count="1" name="Failed suite [NH Automation]">
   <listeners>
     <listener class-name="Listeners.TestListener"/>
   </listeners>
@@ -11,7 +11,7 @@
           <include name="BeforeMethod"/>
           <include name="Teardown2"/>
           <include name="BeforeSuite"/>
-          <include name="NumberInquiry" invocation-numbers="2"/>
+          <include name="NumberInquiry" invocation-numbers="0"/>
           <include name="Teardown"/>
         </methods>
       </class> <!-- Testscript.NumberHosting -->

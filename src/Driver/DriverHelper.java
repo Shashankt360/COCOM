@@ -805,10 +805,10 @@ public void Clickonoutofviewportwithstring(String locator) throws Exception {
 			return text;
 		}
 	
-	public void Select(WebElement el, String value) throws IOException, InterruptedException
+	public void Select(WebElement el, String inputdata) throws IOException, InterruptedException
 		{ //Thread.sleep(3000);
 			Select s1=new Select(el);
-			s1.selectByVisibleText(value);
+			s1.selectByVisibleText(inputdata);
 			//Thread.sleep(3000);
 		}
 	public void Select2(WebElement el, String value) throws IOException, InterruptedException
@@ -1039,7 +1039,7 @@ public void Clickonoutofviewportwithstring(String locator) throws Exception {
 		driver.manage().timeouts().implicitlyWait(Time, TimeUnit.SECONDS);
 	}
 	public void RedLog(String Message)
-	{
+	{		
 	Reporter.log(" <font color='red'> " +  Message   +" </font>", true);
 	ExtentTestManager.getTest().log(LogStatus.PASS, " <font color='red'> " +  Message   +" </font>");
 

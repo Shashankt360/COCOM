@@ -14,6 +14,7 @@ public class NumberHosting extends DriverTestcase {
 		numberHostingHelper.get().OpenApplication();
 		Login.get().Login("NH");
 		numberHostingHelper.get().Search(Data);
+
 		
 		
 		
@@ -24,7 +25,6 @@ public class NumberHosting extends DriverTestcase {
 		
 		
 		
-//		numberHostingHelperMTS.get().Search();
 //		numberHostingHelper.get().Reserve(Data);
 //		numberHostingHelper.get().Activation(Data);
 //		numberHostingHelper.get().DeActivation(Data);

@@ -55,11 +55,29 @@
 <SelectAreaName>id=areaCodGN</SelectAreaName>
 <blockSize>id=blockSizeINF</blockSize>
 <Quantity>id=quantitySizeINF</Quantity>
+<blockSize2>id=blockSizeIN</blockSize2>
+<Quantity2>id=quantitySizeIN</Quantity2>
+<Province>//tr[@id="provinceES"]//select[@id="acProvince"]</Province>
+<cityandtown>//select[@id="acCitytown"]</cityandtown>
 <Griddata>//table[@id='numberList']/tbody</Griddata>
 <NumberHostingTransaction>//a[text()='Number Hosting Transaction ']</NumberHostingTransaction>
 <StatusQuerySearchbutton>//input[@value='SEARCH']</StatusQuerySearchbutton>
 <TransactionType>(//table[@id='DomainTable']//td)[5]</TransactionType>
 <StatusQueryTransactionStatus>(//table[@id='DomainTable']//td)[6]</StatusQueryTransactionStatus>
 <NoRecordFound>(//table[@id='tableError']/following-sibling::table//span) [9]</NoRecordFound>
-
+<Error>//span[@class="errortxt"]/b/span</Error>
+<mainError>//label[@for="searchCriteria"]/span</mainError>
+<NubmerRadioButtonNameGeo>//div[@id="numType"]//label[contains(text(),"Geographical Numbers")]</NubmerRadioButtonNameGeo>
+<NubmerRadioButtonNameNonGeo>//div[@id="numType"]//label[contains(text(),"Location Independent Numbers")]</NubmerRadioButtonNameNonGeo>
+<NumberRadioButtonNameUK>//div[@id="numType"]//label[contains(text(),"UK WIDE (Any Services)")]</NumberRadioButtonNameUK>
+<NumberRadioButtonNameUKpublic>//div[@id="numType"]//label[contains(text(),"UK WIDE (Public Services)")]</NumberRadioButtonNameUKpublic>
+<NumberRadioButtonNamesearchBy>//div[@id="searchCri"]//label[contains(text(),"Search by Local Area")]</NumberRadioButtonNamesearchBy>
+<NumberRadioButtonNameSearchbycity>//div[@id="searchCri"]//label[contains(text(),"Search by City")]</NumberRadioButtonNameSearchbycity>
+<NumberRadioButton>//div[@id="numType"]//input[@id="geoNum"]</NumberRadioButton>
+<NumberRadioButton2>//div[@id="numType"]//input[@id="nonGeoNum"]</NumberRadioButton2>
+<NumberRadioButton3>//div[@id="numType"]//input[@id="nonGeoAnyServiceNum"]</NumberRadioButton3>
+<NumberRadioButton4>//div[@id="numType"]//input[@id="nonGeoPublicServiceNum"]</NumberRadioButton4>
+<NumberRadioButton5>//div[@id="searchCri"]//input[@id="lacSearch"]</NumberRadioButton5>
+<NumberRadioButton6>//div[@id="searchCri"]//input[@id="citySearch"]</NumberRadioButton6>
+<rishabh></rishabh>
 </locators>
