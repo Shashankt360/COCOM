@@ -79,5 +79,86 @@
 <NumberRadioButton4>//div[@id="numType"]//input[@id="nonGeoPublicServiceNum"]</NumberRadioButton4>
 <NumberRadioButton5>//div[@id="searchCri"]//input[@id="lacSearch"]</NumberRadioButton5>
 <NumberRadioButton6>//div[@id="searchCri"]//input[@id="citySearch"]</NumberRadioButton6>
-<rishabh></rishabh>
+<CompletedTxStatus>//td[contains(text(),'Transaction Status')]/..//td[contains(text(),'Completed')]</CompletedTxStatus>
+<DownloadExcel>//a[@id='generatExcel']</DownloadExcel>
+<LocalAreaCodeone>(//td[contains(text(),'Local Area Code')]/../td)[2]</LocalAreaCodeone>
+
+<LocalAreaCodeonePortout>//select[@id='areaCodeDD0']</LocalAreaCodeonePortout>
+<mainNumberone>//td[contains(text(),'Main Number')]/following-sibling::td</mainNumberone>
+<RangeStartone>//td[contains(text(),'Range Start')]/following-sibling::td</RangeStartone>
+<RangeEndone>//td[contains(text(),'Range End')]/following-sibling::td</RangeEndone>
+<mainNumberportout>//input[@name='areaCodeExt']</mainNumberportout>
+<Rangestartport-out>//input[@name='rangeFrom']</Rangestartport-out>
+<RangeEndport-out>//input[@name='rangeTo']</RangeEndport-out>#
+<PostCodeforport-out>//td[contains(text(),'Post Code')]/following-sibling::td</PostCodeforport-out>
+<ManagePorting>//a[text()='Manage Porting ']</ManagePorting>
+<RequestPort-out>(//a[text()='Manage Porting ']/..//li)[4]/a</RequestPort-out>
+<NEXT>//a[text()='NEXT']</NEXT>
+<ANH>//a[text()='ANH']</ANH>
+<CommonANH>(//table[@id='NHListTable']//td/a)</CommonANH>
+<ServiceProfileone>(//table[@id='NHListTable']//td/a)[index]</ServiceProfileone>
+<ClickonCalender>//input[@id='datePortOut']/../img</ClickonCalender>
+<Clickonmonth>//button[text()='this month']</Clickonmonth>
+<Highterdate>//td[@class='dpDayHighlightTD']</Highterdate>
+<daterow>(//div[@id='datepicker']//tr)[index]</daterow>
+<dateclm>((//div[@id='datepicker']//tr)[x])//td[index1]</dateclm>
+<alltabledata>//div[@id='datepicker']//td</alltabledata>
+
+<portoutdate>//input[@id='datePortOut']</portoutdate>
+<OperatorName-Portout>//input[@id='gainingOperatorNumber']</OperatorName-Portout>
+<Postcode-portout>//input[@id='endCustPostCode']</Postcode-portout>
+<updateportinRequest>(//a[contains(text(),'Update Porting Request')])[2]</updateportinRequest>
+<portout-Go>(//img[@alt='Search Here'])[2]</portout-Go>
+<transactionType-portout>//select[@id='transactionType']</transactionType-portout>
+<changeType-portout>//select[@id='portOutAction']</changeType-portout>
+<NewStatus-portout>//select[@id='newStatusPortOut']</NewStatus-portout>
+<TransactionID-forPortout>//input[@id='transactionId2']</TransactionID-forPortout>
+
+<ManagePorting>//a[text()='Manage Porting ']</ManagePorting>
+<RequestPortin>//a[text()='Request Port-in ']</RequestPortin>
+<NEXT>//a[text()='NEXT']</NEXT>
+<ANH>//a[text()='ANH']</ANH>
+<MainBillingNumber>//input[@id='mainBilling0']</MainBillingNumber>
+<MainNumber>//input[@id='mainNumber0']</MainNumber>
+<RangeStart2>//input[@id='rangeFrom0']</RangeStart2>
+<RangeEnd2>//input[@id='rangeTo0']</RangeEnd2>
+<SingleLine>//input[@id='singleLine0']</SingleLine>
+<MultiLine>//input[@id='multiLine0']</MultiLine>
+<CurrentProvider>//select[@id='currentProvider0']</CurrentProvider>
+<customernamepost>//input[@id="customerName"]</customernamepost>
+<Street2>id=cadstreetAddress</Street2>
+<BuildingNumber2>id=cadBuildingNumber</BuildingNumber2>
+<city2>id=cadcitytown</city2>
+<postcode2>id=cadpostCode</postcode2>
+<localareacode2>//select[@id='areaCodeDD']</localareacode2>
+<portindate>//input[@id='requestPortDate']</portindate>
+<searchportin>//input[@type="submit"]</searchportin>
+<updateportinRequest>(//a[contains(text(),'Update Porting Request')])[2]</updateportinRequest>
+<updateportinRequesthover>(//a[contains(text(),'Update Porting Request')])[1]</updateportinRequesthover>
+
+<portout-Go>(//img[@alt='Search Here'])[2]</portout-Go>
+<transactionType-portout>//select[@id='transactionType']</transactionType-portout>
+<changeType-portout>//select[@id='portOutAction']</changeType-portout>
+<NewStatus-portout>//select[@id='newStatusPortOut']</NewStatus-portout>
+<TransactionID-forPortout>//input[@id='transactionId2']</TransactionID-forPortout>
+<portinTransactionlink>//table[@class="form"]//a</portinTransactionlink>
+<checkbox>//input[@type="checkbox"]</checkbox>
+<ActionPortin>id=transasAction</ActionPortin>
+<GoButon>(//input[@type="submit"])[2]</GoButon>
+<currentStatusPortin>//tr[@id='row_0']//td[7]</currentStatusPortin>
+<ChildStatus>(//table[@id='finalTable']//tbody//td[5])[1]</ChildStatus>
+<ChildStatusmain>//table[@id='finalTable']//tbody//td[contains(text(),'Completed')]</ChildStatusmain>
+<CommonANH>(//table[@id='NHListTable']//td/a)</CommonANH>
+<ParentStatus>((//table[@id='finalTable']//tbody//td[1]))[1]</ParentStatus>
+<GriddataforTX>//div[@id='paginationheader']/..</GriddataforTX>
+<ElementAll>//table[@id='numberList']//tr/td[10]/a</ElementAll>
+
+<Getcheckbox>(//table[@id='numberList']//tr/td[10]/a[contains(text(),'Transactionid')]/../../td/input)[1]</Getcheckbox>
+
+<ReserveElementall>//h1[contains(text(),'Number Enquiry - Search Result')]/../../..//td/a</ReserveElementall>
+<SelectAction>//h1[contains(text(),'Number Enquiry - Search Result')]/../../..//td/a[contains(text(),'Transactionid')]/../..//td/select</SelectAction>
+<ReserveElement>(//h1[contains(text(),'Number Enquiry - Search Result')]/../../..//td/a[contains(text(),'Transactionid')]/../..//td/input)[1]</ReserveElement>
+
+<Gobtnmain>//h1[contains(text(),'Number Enquiry - Search Result')]/../../..//td/a[contains(text(),'Transactionid')]/../..//td/span/input</Gobtnmain>
+
 </locators>

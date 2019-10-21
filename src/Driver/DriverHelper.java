@@ -58,6 +58,19 @@ public class DriverHelper {
 	public static ThreadLocal<String> TransactionStatus=new ThreadLocal<>();
 	public static ThreadLocal<String> TransactionId=new ThreadLocal<>();
 	
+	public static ThreadLocal<String> MainNumber=new ThreadLocal<>();
+	public static ThreadLocal<String> StartRange=new ThreadLocal<>();
+	public static ThreadLocal<String> EndRange=new ThreadLocal<>();
+	public static ThreadLocal<String> PostCode=new ThreadLocal<>();
+//	public static ThreadLocal<String> TransactionId=new ThreadLocal<>();
+	public static ThreadLocal<String> TransactionIdForPortout=new ThreadLocal<>();
+	public static ThreadLocal<String> TransactionIdForPortoutstatus=new ThreadLocal<>();
+	public static ThreadLocal<String> TransactionPortoutstatus=new ThreadLocal<>();
+
+	public static ThreadLocal<String> CurrentStatus=new ThreadLocal<>();
+	public static ThreadLocal<String> CurrentStat=new ThreadLocal<>();
+	public static ThreadLocal<String> ChildCurrentStat=new ThreadLocal<>();
+	public static ThreadLocal<String> ParentCurrentStat=new ThreadLocal<>();
 	
 	public DriverHelper(WebDriver dr)
 	{
@@ -394,6 +407,16 @@ public void ClickswithAction(String el) throws InterruptedException {
 		URL=pr.readproperty(environment+"_URL");
 		
 		driver.get(URL);
+		
+	}
+	public String GetExcelpath(String environment) throws Exception {
+		String URL=null;
+		PropertyReader pr=new PropertyReader();
+		Log.info(environment+"_URL");
+		URL=pr.readproperty(environment+"_URL");
+		
+		
+		return URL;
 		
 	}
 	public void openurl2(String environment) throws Exception {
@@ -742,6 +765,16 @@ public void Clickonoutofviewportwithstring(String locator) throws Exception {
 		
 		//Thread.sleep(3000);
 	}
+	public void SendKeys1(WebElement el,String value) throws InterruptedException, IOException {
+		//Thread.sleep(3000);
+		//el.
+		//System.out.println(el.getRect().getHeight()+"-"+el.getRect().getWidth()+"-"+el.getRect().x+"-"+el.getRect().x);
+		//ExtentTestManager.getTest().log(LogStatus.PASS,ExtentTestManager.getTest().addBase64ScreenShot(capturescreenshotforelement(el)));
+		el.sendKeys(value);
+		
+		//Thread.sleep(3000);
+	}
+	
 	
 
 	public void SendkeaboardKeys(WebElement el,Keys k) throws InterruptedException {
@@ -811,6 +844,14 @@ public void Clickonoutofviewportwithstring(String locator) throws Exception {
 			s1.selectByVisibleText(inputdata);
 			//Thread.sleep(3000);
 		}
+	
+	public void Select1(WebElement el, String inputdata) throws IOException, InterruptedException
+		{ //Thread.sleep(3000);
+			Select s1=new Select(el);
+			s1.selectByVisibleText(inputdata);
+			//Thread.sleep(3000);
+		}
+	
 	public void Select2(WebElement el, String value) throws IOException, InterruptedException
 	{ //Thread.sleep(3000);
 		Select s1=new Select(el);
@@ -818,6 +859,7 @@ public void Clickonoutofviewportwithstring(String locator) throws Exception {
 		
 		//Thread.sleep(3000);
 	}
+	
 	
 	public void Clear(WebElement el) throws IOException, InterruptedException
 		{ //Thread.sleep(3000);
@@ -1050,4 +1092,32 @@ public void Clickonoutofviewportwithstring(String locator) throws Exception {
 	ExtentTestManager.getTest().log(LogStatus.PASS, " <font color='green'> " +  Message   +" </font>");
 
 	}
+	public void javaexecutotSendKeys(String value, WebElement webl)
+	{
+		
+		{
+			JavascriptExecutor jse = (JavascriptExecutor)driver;
+			String val = "arguments[0].value='"+value+"';";
+			   jse.executeScript(val, webl);
+			}
+	
 	}
+	public boolean isFileDownloaded(String downloadPath, String fileName) 
+	{
+		 boolean flag = false;     
+		File dir = new File(downloadPath);    
+		 File[] dir_contents = dir.listFiles();         
+		  for (int i = 0; i < dir_contents.length; i++)
+		 {       
+		  if (dir_contents[i].getName().contains(fileName))       
+		      return flag=true;        
+		     }     
+		return flag; 
+		} 
+
+public List<WebElement> getwebelements(String locator) throws InterruptedException
+{ 
+	return ellist=driver.findElements(By.xpath(locator));
+	
+}
+}
