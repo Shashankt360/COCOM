@@ -1014,8 +1014,8 @@ public class NumberHostingHelper extends DriverHelper {
 
 			// Deafault case  replace("index"),transid
 			default: {
-//				>>>>>>>>>>>>>>>>RedLog("In Excel data, It seems like Number Status data is misspelled or not correct!! Data is "
-//						+ Inputdata[i][4].toString());
+				RedLog("In Excel data, It seems like Number Status data is misspelled or not correct!! Data is "
+						+ Inputdata[i][4].toString());
 			}
 			}
 			GreenLog("/******************************* current Step  has been finished * ******************************************");
