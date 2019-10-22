@@ -2,7 +2,10 @@ package ScriptHelper;
 
 import java.awt.List;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -15,6 +18,8 @@ import org.testng.Assert;
 import com.relevantcodes.extentreports.LogStatus;
 
 import Driver.DriverHelper;
+import Driver.Log;
+import Driver.PropertyReader;
 import Driver.xmlreader;
 import Reporter.ExtentTestManager;
 
@@ -30,7 +35,13 @@ public class NumberHostingHelper extends DriverHelper {
 
 	public void OpenApplication() throws Exception {
 		openurl("NH");
-		ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Opening the Url");
+		PropertyReader pr=new PropertyReader();
+		
+		String URL=null;
+	
+		URL=pr.readproperty("NH_URL");
+		
+		ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Opening the Url : <font color='green'> " +  URL   +" </font>"  );
 
 	}
 
@@ -79,14 +90,14 @@ public class NumberHostingHelper extends DriverHelper {
 			Clickon(getwebelement(xml.getlocator("//locators/NumberEnquiry")));
 			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Number Enquiry");
 			Select(getwebelement(xml.getlocator("//locators/ResellerName")), Inputdata[i][1].toString());
-			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Reseller name");
+			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Reseller name: "+Inputdata[i][1].toString());
 
 			Select(getwebelement(xml.getlocator("//locators/Country")), Inputdata[i][2].toString());
-			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Country");
+			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Country: "+Inputdata[i][2].toString());
 			implicitwait(20);
 			waitandForElementDisplayed(xml.getlocator("//locators/ServiceProfile"));
 			Select(getwebelement(xml.getlocator("//locators/ServiceProfile")), Inputdata[i][3].toString());
-			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Service Profile");
+			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Service Profile: "+Inputdata[i][3].toString());
 			Thread.sleep(3000);
 			Select(getwebelement(xml.getlocator("//locators/SearchCriteria")), "Number Status");
 			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Search Criteria as Number Status");
@@ -121,7 +132,7 @@ public class NumberHostingHelper extends DriverHelper {
 						Clickon(getwebelement(xml.getlocator("//locators/RadioButton")));
 						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Radio button");
 						Select(getwebelement(xml.getlocator("//locators/UserAction")), "Activate");
-						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the User Action");
+						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the User Action as Activate");
 						Clickon(getwebelement(xml.getlocator("//locators/UserGo")));
 						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Go button");
 						log("Address is not mandatory for this transaction ID");
@@ -184,12 +195,12 @@ public class NumberHostingHelper extends DriverHelper {
 					implicitwait(20);
 					Select(getwebelement(xml.getlocator("//locators/blockSize")),Inputdata[i][22].toString());
 					implicitwait(5);
-					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Block Size");
+					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Block Size: "+Inputdata[i][22].toString());
 					implicitwait(5);
                     waitandForElementDisplayed(xml.getlocator("//locators/Quantity"));
 					Select(getwebelement(xml.getlocator("//locators/Quantity")), Inputdata[i][23].toString());
 					implicitwait(5);
-					ExtentTestManager.getTest().log(LogStatus.PASS, " Select the Quantity Size");
+					ExtentTestManager.getTest().log(LogStatus.PASS, " Select the Quantity Size: "+Inputdata[i][23].toString());
 
 				}
 				
@@ -198,11 +209,11 @@ public class NumberHostingHelper extends DriverHelper {
 					Clickon(getwebelement(xml.getlocator("//locators/NumberRadioButton2")));
 					Select(getwebelement(xml.getlocator("//locators/blockSize2")),Inputdata[i][22].toString());
 					implicitwait(5);
-					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Block Size");
+					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Block Size: "+Inputdata[i][22].toString());
 
 					Select(getwebelement(xml.getlocator("//locators/Quantity2")), Inputdata[i][23].toString());
 					implicitwait(5);
-					ExtentTestManager.getTest().log(LogStatus.PASS, " Select the Quantity Size");
+					ExtentTestManager.getTest().log(LogStatus.PASS, " Select the Quantity Size: "+Inputdata[i][23].toString());
 				}
 				
 				else if (Inputdata[i][24].toString().equals("UK WIDE (Any Services)")) {
@@ -210,11 +221,11 @@ public class NumberHostingHelper extends DriverHelper {
 					Clickon(getwebelement(xml.getlocator("//locators/NumberRadioButton3")));
 					Select(getwebelement(xml.getlocator("//locators/blockSize2")),Inputdata[i][22].toString());
 					implicitwait(5);
-					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Block Size");
+					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Block Size: "+Inputdata[i][22].toString());
 
 					Select(getwebelement(xml.getlocator("//locators/Quantity2")), Inputdata[i][23].toString());
 					implicitwait(5);
-					ExtentTestManager.getTest().log(LogStatus.PASS, " Select the Quantity Size");
+					ExtentTestManager.getTest().log(LogStatus.PASS, " Select the Quantity Size: "+Inputdata[i][23].toString());
 				}
 				
 				else if (Inputdata[i][24].toString().equals("UK WIDE (Public Services)")) {
@@ -222,11 +233,11 @@ public class NumberHostingHelper extends DriverHelper {
 					Clickon(getwebelement(xml.getlocator("//locators/NumberRadioButton4")));
 					Select(getwebelement(xml.getlocator("//locators/blockSize2")),Inputdata[i][22].toString());
 					implicitwait(5);
-					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Block Size");
+					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Block Size: "+Inputdata[i][22].toString());
 
 					Select(getwebelement(xml.getlocator("//locators/Quantity2")), Inputdata[i][23].toString());
 					implicitwait(5);
-					ExtentTestManager.getTest().log(LogStatus.PASS, " Select the Quantity Size");
+					ExtentTestManager.getTest().log(LogStatus.PASS, " Select the Quantity Size: "+Inputdata[i][23].toString());
 				} 
 				
 				else if(Inputdata[i][24].toString().equals("Search by City")) {
@@ -235,16 +246,16 @@ public class NumberHostingHelper extends DriverHelper {
 					Clickon(getwebelement(xml.getlocator("//locators/NumberRadioButton6")));
 					
 					Select(getwebelement(xml.getlocator("//locators/Province")),Inputdata[i][25].toString());
-					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Province");
+					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Province: "+Inputdata[i][25].toString());
 					Select(getwebelement(xml.getlocator("//locators/cityandtown")),Inputdata[i][26].toString());
-					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the City/Town");
+					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the City/Town: "+Inputdata[i][26].toString());
 					Select(getwebelement(xml.getlocator("//locators/blockSize2")),Inputdata[i][22].toString());
 					implicitwait(5);
-					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Block Size");
+					ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Block Size: "+Inputdata[i][22].toString());
 
 					Select(getwebelement(xml.getlocator("//locators/Quantity2")), Inputdata[i][23].toString());
 					implicitwait(5);
-					ExtentTestManager.getTest().log(LogStatus.PASS, " Select the Quantity Size");
+					ExtentTestManager.getTest().log(LogStatus.PASS, " Select the Quantity Size: "+Inputdata[i][23].toString());
 					
 				}
 				
@@ -269,14 +280,14 @@ public class NumberHostingHelper extends DriverHelper {
 						Clickon(getwebelement(xml.getlocator("//locators/NumberRangeCheckbox")));
 						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Number Range Checkbox");
 						Select(getwebelement(xml.getlocator("//locators/Action")), "Reserve");
-						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Action");
+						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Action as Reserve");
 						Clickon(getwebelement(xml.getlocator("//locators/GoButton")));
 						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Go button");
 	
 						Thread.sleep(4000);
 						SendKeys(getwebelement(xml.getlocator("//locators/CustomerReference")),
 								Inputdata[i][6].toString());
-						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Enter Customer Reference number");
+						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Enter Customer Reference number: "+Inputdata[i][6].toString());
 						WaitforElementtobeclickable(xml.getlocator("//locators/Submit"));
 
 						Clickon(getwebelement(xml.getlocator("//locators/Submit")));
@@ -309,24 +320,24 @@ public class NumberHostingHelper extends DriverHelper {
 							
 							
 							Select(getwebelement(xml.getlocator("//locators/Action")), "Activate");
-							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Action");
+							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Action as Activate");
 							Clickon(getwebelement(xml.getlocator("//locators/GoButton")));
 							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Go button");
 							SendKeys(getwebelement(xml.getlocator("//locators/CustomerName")),
 									Inputdata[i][7].toString());
-							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the Customer name Field");
+							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the Customer name Field: "+Inputdata[i][7].toString());
 							SendKeys(getwebelement(xml.getlocator("//locators/BuildingNumber")),
 									Inputdata[i][9].toString());
-							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the building number Field");
+							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the building number Field: "+Inputdata[i][9].toString());
 							SendKeys(getwebelement(xml.getlocator("//locators/city")), Inputdata[i][11].toString());
-							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the City Field");
+							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the City Field: "+Inputdata[i][11].toString());
 							SendKeys(getwebelement(xml.getlocator("//locators/BuildingName")),
 									Inputdata[i][8].toString());
-							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the Building name field");
+							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the Building name field: "+Inputdata[i][8].toString());
 							SendKeys(getwebelement(xml.getlocator("//locators/Street")), Inputdata[i][10].toString());
-							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the Street Field");
+							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the Building name field: "+Inputdata[i][8].toString());
 							SendKeys(getwebelement(xml.getlocator("//locators/PostCode")), Inputdata[i][12].toString());
-							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the Post Code");
+							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the Post Code: "+Inputdata[i][12].toString());
 							WaitforElementtobeclickable(xml.getlocator("//locators/SubmitButton"));
 							Clickon(getwebelement(xml.getlocator("//locators/SubmitButton")));
 							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Submit button");
@@ -356,18 +367,32 @@ public class NumberHostingHelper extends DriverHelper {
 														String LocalAreaCode = null;
 														implicitwait(20);
 														boolean flag =false;
+														String date3 = null;
+														DateFormat dateFormat = new SimpleDateFormat("HH:mm");
+
+														String date1= dateFormat.format(new Date(System.currentTimeMillis()));
+														Date dd=new Date(System.currentTimeMillis()+20*60*1000);
+														String date2 = dateFormat.format(dd);
+														
 														do {
 															
 															Thread.sleep(2000);
 														//	TransactionStatus1 = Gettext(getwebelement(xml.getlocator("//locators/TransactionStatus")));
 															Pagerefresh();
 															Pagerefresh();
-													     flag = 	isElementPresent(xml.getlocator("//locators/CompletedTxStatus"));
-													    
-													    
-//															
+													      flag = 	isElementPresent(xml.getlocator("//locators/CompletedTxStatus"));
+													      
+													      date3 =  dateFormat.format(new Date(System.currentTimeMillis()));
+													    System.out.println(date3);
+									                     System.out.println(date2);
 															Thread.sleep(1000);
 															Pagerefresh();
+															if(date3.trim().equals(date2.trim()))
+																	{
+																System.out.println("System is waiting for 20 minutes to change status, But still status in not changed!");
+																Assert.fail("System is taking longer time to change Status from InProgress to Complted!");
+																break;
+																	}
 														}
 														
 														while (flag==false );
@@ -431,7 +456,7 @@ public class NumberHostingHelper extends DriverHelper {
 											// TODO Auto-generated catch block
 											e.printStackTrace();
 										}
-										  ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on Service profile "+Inputdata[i][3].toString().trim());
+										  ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on Service profile: "+Inputdata[i][3].toString().trim());
 									
 								   Thread.sleep(2000);
 									   break;
@@ -440,23 +465,24 @@ public class NumberHostingHelper extends DriverHelper {
 							   
 			
 							Select(getwebelement(xml.getlocator("//locators/LocalAreaCodeonePortout")), Inputdata[i][5].toString());
-							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: gSelect the Local Area code");
+							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: gSelect the Local Area code: "+Inputdata[i][5].toString());
 							
 							SendKeys(getwebelement(xml.getlocator("//locators/mainNumberportout")), MainNumber.get());
-							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Enter the main number for port-out number ");
+							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Enter the main number for port-out number:  "+MainNumber.get());
 							SendKeys(getwebelement(xml.getlocator("//locators/Rangestartport-out")), StartRange.get());
-							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Enter the Range Start number for port-out");
+							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Enter the Range Start number for port-out: "+StartRange.get());
 							SendKeys(getwebelement(xml.getlocator("//locators/RangeEndport-out")), EndRange.get());
-							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Enter the Range End number for port-out");
+							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Enter the Range End number for port-out: "+EndRange.get());
 						
 							implicitwait(20);
 							Thread.sleep(2000);
 							javaexecutotSendKeys(Inputdata[i][22].toString(), getwebelement(xml.getlocator("//locators/portoutdate")));
-							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Port-out date from Calender ");
+							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Port-out date from Calender: "+Inputdata[i][22].toString());
 							SendKeys(getwebelement(xml.getlocator("//locators/OperatorName-Portout")), Inputdata[i][23].toString());
-							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Enter the Operator Name ");
+							//ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Enter the Operator Name "+Inputdata[i][23].toString());
+							log(" Step: Enter the Operator Name:  "+Inputdata[i][23].toString());
 							SendKeys(getwebelement(xml.getlocator("//locators/Postcode-portout")), postcode);
-							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Enter the PostCode for port-out");
+							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Enter the PostCode for port-out: "+postcode);
 							implicitwait(20);
 							Thread.sleep(3000);
 							Clickon(getwebelement(xml.getlocator("//locators/SubmitButton")));
@@ -489,19 +515,19 @@ public class NumberHostingHelper extends DriverHelper {
 							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on Go button ");
 							waitandForElementDisplayed(xml.getlocator("//locators/transactionType-portout"));
 							Select(getwebelement(xml.getlocator("//locators/transactionType-portout")), Inputdata[i][24].toString());
-						    ExtentTestManager.getTest().log(LogStatus.PASS, " Step: the Tranasction Type ");
+						    ExtentTestManager.getTest().log(LogStatus.PASS, " Step: the Tranasction Type: "+Inputdata[i][24].toString());
 						    Thread.sleep(1000);
 							waitandForElementDisplayed(xml.getlocator("//locators/TransactionID-forPortout"));
 							log(TransactionIdForPortout.get().toString().trim());
 							SendKeys(getwebelement(xml.getlocator("//locators/TransactionID-forPortout")),TransactionIdForPortout.get().toString().trim().toLowerCase());
 							waitandForElementDisplayed(xml.getlocator("//locators/changeType-portout"));
-							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Enter the Transaction ID for port-out Request");
+							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Enter the Transaction ID for port-out Request: "+Inputdata[i][25].toString());
 							Select(getwebelement(xml.getlocator("//locators/changeType-portout")), Inputdata[i][25].toString());
 					
 							Thread.sleep(1000);
 							waitandForElementDisplayed(xml.getlocator("//locators/NewStatus-portout"));
 							Select(getwebelement(xml.getlocator("//locators/NewStatus-portout")), Inputdata[i][26].toString());
-							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Status from dropdown");
+							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Status from dropdown: "+Inputdata[i][26].toString());
 							WaitforElementtobeclickable((xml.getlocator("//locators/SubmitButton")));
 							Clickon(getwebelement(xml.getlocator("//locators/SubmitButton")));
 							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on Submit button");
@@ -584,7 +610,7 @@ public class NumberHostingHelper extends DriverHelper {
 						Clickon(getwebelement(xml.getlocator("//locators/NumberRangeCheckbox")));
 						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Number Range Checkbox");
 						Select(getwebelement(xml.getlocator("//locators/Action")), "Activate");
-						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Action");
+						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Action as Activate");
 						Clickon(getwebelement(xml.getlocator("//locators/GoButton")));
 						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Go button");
 						WaitforElementtobeclickable(xml.getlocator("//locators/SubmitButton"));
@@ -642,21 +668,21 @@ public class NumberHostingHelper extends DriverHelper {
 						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Radio button");
 						Thread.sleep(2000);
 						Select(getwebelement(xml.getlocator("//locators/UserAction")), Inputdata[i][16].toString());
-						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the User Action");
+						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the User Action: "+ Inputdata[i][16].toString());
 						Clickon(getwebelement(xml.getlocator("//locators/UserGo")));
 						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Go button");
 						Thread.sleep(1000);
 						SendKeys(getwebelement(xml.getlocator("//locators/BuildingName")), Inputdata[i][8].toString());
-						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the Building name field");
+						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the Building name field: "+Inputdata[i][8].toString());
 						SendKeys(getwebelement(xml.getlocator("//locators/BuildingNumber")),
 								Inputdata[i][9].toString());
-						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the building number Field");
+						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the building number Field: "+Inputdata[i][9].toString());
 						SendKeys(getwebelement(xml.getlocator("//locators/NewStreet")), Inputdata[i][10].toString());
-						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the New Street Field");
+						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the New Street Field: "+Inputdata[i][10].toString());
 						SendKeys(getwebelement(xml.getlocator("//locators/NewCity")), Inputdata[i][11].toString());
-						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the  New City Field");
+						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the  New City Field: "+Inputdata[i][11].toString());
 						SendKeys(getwebelement(xml.getlocator("//locators/NewPostCode")), Inputdata[i][12].toString());
-						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the Post Code");
+						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the Post Code: "+Inputdata[i][12].toString());
 						Clickon(getwebelement(xml.getlocator("//locators/SubmitButton")));
 						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the submit button");
 						Thread.sleep(9000);
@@ -681,7 +707,7 @@ public class NumberHostingHelper extends DriverHelper {
 						Select(getwebelement(xml.getlocator("//locators/UserAction")), "Deactivate");
 						try
 						{
-						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select user action");
+						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select user action as Deactivate");
 						WaitforElementtobeclickable(xml.getlocator("//locators/UserGo"));
 						Clickon(getwebelement(xml.getlocator("//locators/UserGo")));
 						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Go button");
@@ -699,7 +725,7 @@ public class NumberHostingHelper extends DriverHelper {
 						}
 						catch(StaleElementReferenceException e)
 						{
-							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select user action");
+							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select user action as Deactivate");
 							WaitforElementtobeclickable(xml.getlocator("//locators/UserGo"));
 							Clickon(getwebelement(xml.getlocator("//locators/UserGo")));
 							ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Go button");
@@ -747,7 +773,7 @@ public class NumberHostingHelper extends DriverHelper {
 						Clickon(getwebelement(xml.getlocator("//locators/RadioButton")));
 						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Radio button");
 						Select(getwebelement(xml.getlocator("//locators/UserAction")), "Reactivate");
-						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select user action");
+						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select user action as Reactivate");
 						WaitforElementtobeclickable(xml.getlocator("//locators/UserGo"));
 						Clickon(getwebelement(xml.getlocator("//locators/UserGo")));
 						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Go button");
@@ -830,21 +856,21 @@ public class NumberHostingHelper extends DriverHelper {
 						Clickon(getwebelement(xml.getlocator("//locators/RadioButton")));
 						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Radio button");
 						Select(getwebelement(xml.getlocator("//locators/UserAction2")), Inputdata[i][16].toString());
-						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the User Action");
+						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the User Action: "+Inputdata[i][16].toString());
 						Clickon(getwebelement(xml.getlocator("//locators/UserGo2")));
 						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Go button");
 						Thread.sleep(5000);
 						SendKeys(getwebelement(xml.getlocator("//locators/BuildingName")), Inputdata[i][8].toString());
-						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the Building name field");
+						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the Building name field: "+Inputdata[i][8].toString());
 						SendKeys(getwebelement(xml.getlocator("//locators/BuildingNumber")),
 								Inputdata[i][9].toString());
-						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the building number Field");
+						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the building number Field: "+Inputdata[i][9].toString());
 						SendKeys(getwebelement(xml.getlocator("//locators/NewStreet")), Inputdata[i][10].toString());
-						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the New Street Field");
+						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the New Street Field: "+Inputdata[i][10].toString());
 						SendKeys(getwebelement(xml.getlocator("//locators/NewCity")), Inputdata[i][11].toString());
-						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the  New City Field");
+						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the  New City Field: "+Inputdata[i][11].toString());
 						SendKeys(getwebelement(xml.getlocator("//locators/NewPostCode")), Inputdata[i][12].toString());
-						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the Post Code");
+						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the Post Code: "+Inputdata[i][12].toString());
 						Clickon(getwebelement(xml.getlocator("//locators/SubmitButton")));
 						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the submit button");
 						Thread.sleep(1000);
@@ -865,7 +891,7 @@ public class NumberHostingHelper extends DriverHelper {
 						Clickon(getwebelement(xml.getlocator("//locators/RadioButton")));
 						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Radio button");
 						Select(getwebelement(xml.getlocator("//locators/UserAction2")), "Deactivate");
-						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select user action");
+						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select user action as Deactivate");
 						WaitforElementtobeclickable(xml.getlocator("//locators/UserGo2"));
 						Clickon(getwebelement(xml.getlocator("//locators/UserGo2")));
 						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Go button");
@@ -1035,14 +1061,14 @@ public class NumberHostingHelper extends DriverHelper {
 //		System.out.println(Inputdata[i][0].toString());
 //     WaitforElementtobeclickable(xml.getlocator("//locators/ResellerName"));
 			Select(getwebelement(xml.getlocator("//locators/ResellerName")), Inputdata[i][1].toString());
-			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Reseller name");
+			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Reseller name: "+Inputdata[i][1].toString());
 			Select(getwebelement(xml.getlocator("//locators/Country")), Inputdata[i][2].toString());
-			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Country");
+			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Country: "+Inputdata[i][2].toString());
 			implicitwait(20);
 			Thread.sleep(1000);
 			WaitforElementtobeclickable(xml.getlocator("//locators/ServiceProfile"));
 			Select(getwebelement(xml.getlocator("//locators/ServiceProfile")), Inputdata[i][3].toString().trim());
-			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Service Profile");
+			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Service Profile: "+Inputdata[i][3].toString());
 			Thread.sleep(2000);
 			// System.out.println(Inputdata[i][18].toString());
 			Select(getwebelement(xml.getlocator("//locators/SearchCriteria")), "Transaction ID");
@@ -1096,26 +1122,26 @@ public class NumberHostingHelper extends DriverHelper {
 			Clickon(getwebelement(xml.getlocator("//locators/NumberEnquiry")));
 			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Number Enquiry");
 			Select(getwebelement(xml.getlocator("//locators/ResellerName")), Inputdata[i][1].toString());
-			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Reseller name");
+			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Reseller name: "+Inputdata[i][1].toString());
 
 			Select(getwebelement(xml.getlocator("//locators/Country")), Inputdata[i][2].toString());
-			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Country");
+			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Country: "+Inputdata[i][2].toString());
 			Thread.sleep(2000);
 			Select(getwebelement(xml.getlocator("//locators/ServiceProfile")), Inputdata[i][3].toString());
-			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Service Profile");
+			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Service Profile: "+Inputdata[i][3].toString());
 			Thread.sleep(3000);
 
 			Select(getwebelement(xml.getlocator("//locators/SearchCriteria")), "Number Range");
 			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Search Criteria as Number Status");
 
 			Select(getwebelement(xml.getlocator("//locators/LocalAreaCode")), Inputdata[i][5].toString());
-			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Area Name");
+			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Local Area code: "+Inputdata[i][5].toString());
 			SendKeys(getwebelement(xml.getlocator("//locators/mainNumber")), Inputdata[i][13].toString());
-			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Enter the main number");
+			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Enter the main number: "+Inputdata[i][13].toString());
 			SendKeys(getwebelement(xml.getlocator("//locators/RangeStart")), Inputdata[i][14].toString());
-			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Enter the RangeStart");
+			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Enter the RangeStart: "+Inputdata[i][14].toString());
 			SendKeys(getwebelement(xml.getlocator("//locators/RangeEnd")), Inputdata[i][15].toString());
-			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Enter the RangeEnd");
+			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Enter the RangeEnd: "+Inputdata[i][15].toString());
 			Clickon(getwebelement(xml.getlocator("//locators/SearchButton")));
 			ExtentTestManager.getTest().log(LogStatus.PASS, " Step:click the Search button");
 			DownloadExcel("NumberEnquiryReport");
@@ -1148,13 +1174,13 @@ public class NumberHostingHelper extends DriverHelper {
 			Clickon(getwebelement(xml.getlocator("//locators/NumberEnquiry")));
 			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Number Enquiry");
 			Select(getwebelement(xml.getlocator("//locators/ResellerName")), Inputdata[i][1].toString());
-			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Reseller name");
+			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Reseller name: "+Inputdata[i][1].toString());
 
 			Select(getwebelement(xml.getlocator("//locators/Country")), Inputdata[i][2].toString());
-			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Country");
+			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Country: "+Inputdata[i][2].toString());
 			implicitwait(20);
 			Select(getwebelement(xml.getlocator("//locators/ServiceProfile")), Inputdata[i][3].toString());
-			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Service Profile");
+			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Service Profile: "+Inputdata[i][3].toString());
 			Thread.sleep(3000);
 
 			Select(getwebelement(xml.getlocator("//locators/SearchCriteria")), "Customer Reference");
@@ -1241,17 +1267,17 @@ public class NumberHostingHelper extends DriverHelper {
 		//Clickon(getwebelement(xml.getlocator("//locators/UserGo")));
 		ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Go button");
 		SendKeys(getwebelement(xml.getlocator("//locators/CustomerName")), Inputdata[i][7].toString());
-		ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the Customer name Field");
+		ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the Customer name Field: "+Inputdata[i][7].toString());
 		SendKeys(getwebelement(xml.getlocator("//locators/BuildingNumber")), Inputdata[i][9].toString());
-		ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the building number Field");
+		ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the building number Field: "+Inputdata[i][9].toString());
 		SendKeys(getwebelement(xml.getlocator("//locators/city")), Inputdata[i][11].toString());
-		ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the City Field");
+		ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the City Field: "+Inputdata[i][11].toString());
 		SendKeys(getwebelement(xml.getlocator("//locators/BuildingName")), Inputdata[i][8].toString());
-		ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the Building name field");
+		ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the Building name field: "+Inputdata[i][8].toString());
 		SendKeys(getwebelement(xml.getlocator("//locators/Street")), Inputdata[i][10].toString());
-		ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the Street Field");
+		ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the Building name field: "+Inputdata[i][8].toString());
 		SendKeys(getwebelement(xml.getlocator("//locators/PostCode")), Inputdata[i][12].toString());
-		ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the Post Code");
+		ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the Post Code: "+Inputdata[i][12].toString());
 		WaitforElementtobeclickable(xml.getlocator("//locators/SubmitButton"));
 		Clickon(getwebelement(xml.getlocator("//locators/SubmitButton")));
 		ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Submit button");
@@ -1297,7 +1323,7 @@ public class NumberHostingHelper extends DriverHelper {
 		ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on Number Hosting Transaction");
 		waitandForElementDisplayed(xml.getlocator("//locators/statusQueryTransactionID"));
 		SendKeys(getwebelement(xml.getlocator("//locators/statusQueryTransactionID")), TransactionID);
-		ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Enter the Transaction ID");
+		ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Enter the Transaction ID: "+TransactionID);
 		//WaitforElementtobeclickable(xml.getlocator("//locators/StatusQuerySearchbutton"));
 		Thread.sleep(10000);
 		Clickon(getwebelement(xml.getlocator("//locators/StatusQuerySearchbutton")));
@@ -1391,7 +1417,7 @@ public class NumberHostingHelper extends DriverHelper {
 			
 			e.printStackTrace();
 		}
-		   Assert.assertTrue(isFileDownloaded(downloadPath, Filaname), "Failed to download Expected document");
+		  // Assert.assertTrue(isFileDownloaded(downloadPath, Filaname), "Failed to download Expected document");
 			 Clickon(getwebelement(xml.getlocator("//locators/DownloadExcel")));
 			 GreenLog("Step: Excel has been downloded : Successfully");
 			 //ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Excel has been downloded : Successfully");
@@ -1483,7 +1509,7 @@ public class NumberHostingHelper extends DriverHelper {
 						TransactionId.get().toString().trim().toLowerCase());
 				Thread.sleep(3000);
 				System.out.println(TransactionId.get());
-				log("send the transaction ID");
+				log("send the transaction ID: "+TransactionId.get());
 
 				// -----------------
 				Thread.sleep(10000);
@@ -1541,7 +1567,7 @@ public class NumberHostingHelper extends DriverHelper {
 				Thread.sleep(1000);
 				String ChildCurrentStatus = Gettext(getwebelement(xml.getlocator("//locators/ChildStatus")));
 				ChildCurrentStat.set(ChildCurrentStatus);
-				log("get the child status");
+				log("get the child status: "+ChildCurrentStat.get());
 				Assert.assertEquals(ChildCurrentStat.get(), "Completed", "Child status is " + ChildCurrentStat.get());
 
 				String ParentCurrentStatus = Gettext(getwebelement(xml.getlocator("//locators/ParentStatus")));
@@ -1567,7 +1593,7 @@ public class NumberHostingHelper extends DriverHelper {
 				SendKeys(getwebelement(xml.getlocator("//locators/statusQueryTransactionID")),
 						ParentCurrentStat.get().toString().trim().toLowerCase());
 				Thread.sleep(5000);
-				log("send the transaction ID");
+				log("send the transaction ID: "+ParentCurrentStat.get());
 				// -------------
 
 				WaitforElementtobeclickable((xml.getlocator("//locators/StatusQuerySearchbutton")));
@@ -1631,13 +1657,13 @@ public class NumberHostingHelper extends DriverHelper {
 				Thread.sleep(1000);
 
 				// =========================================================================
-				log("get the child status");
+				log("get the child status: "+ChildCurrentStat.get());
 				Assert.assertEquals(ChildCurrentStat.get(), "Completed", "Child status is " + ChildCurrentStat.get());
 
 				String ParentCurrentStatus1 = Gettext(getwebelement(xml.getlocator("//locators/ParentStatus")));
 				ParentCurrentStat.set(ParentCurrentStatus1);
 
-				log("ParentCurrentStatus shown");
+				log("ParentCurrentStatus shown: "+ParentCurrentStat.get());
 //				//--------------------------------------------------------------------
 
 				WaitforElementtobeclickable(xml.getlocator("//locators/ManagePorting"));
@@ -1655,7 +1681,7 @@ public class NumberHostingHelper extends DriverHelper {
 				SendKeys(getwebelement(xml.getlocator("//locators/statusQueryTransactionID")),
 						ParentCurrentStat.get().toString().trim().toLowerCase());
 				Thread.sleep(5000);
-				log("send the transaction ID");
+				log("send the transaction ID: "+ParentCurrentStat.get());
 
 				WaitforElementtobeclickable((xml.getlocator("//locators/StatusQuerySearchbutton")));
 				Clickon(getwebelement(xml.getlocator("//locators/StatusQuerySearchbutton")));
@@ -1719,7 +1745,7 @@ public class NumberHostingHelper extends DriverHelper {
 				String ParentCurrentStatus12 = Gettext(getwebelement(xml.getlocator("//locators/ParentStatus")));
 				ParentCurrentStat.set(ParentCurrentStatus12);
 
-				log("ParentCurrentStatus shown");
+				log("ParentCurrentStatus shown: "+ParentCurrentStat.get());
 //				//--------------------------------------------------------------------
 				// ========================================================================
 
@@ -1736,7 +1762,7 @@ public class NumberHostingHelper extends DriverHelper {
 				log("click on the update port in request");
 				SendKeys(getwebelement(xml.getlocator("//locators/statusQueryTransactionID")),
 						ParentCurrentStat.get().toString().trim().toLowerCase());
-				log("send the transaction ID");
+				log("send the transaction ID: "+ParentCurrentStat.get());
 
 				Thread.sleep(5000);
 				WaitforElementtobeclickable((xml.getlocator("//locators/StatusQuerySearchbutton")));
@@ -1779,27 +1805,63 @@ public class NumberHostingHelper extends DriverHelper {
 				Thread.sleep(10000);
 				boolean flag3 = false;
 
+				String date3 = null;
+				DateFormat dateFormat = new SimpleDateFormat("HH:mm");
+
+				String date1= dateFormat.format(new Date(System.currentTimeMillis()));
+				Date dd=new Date(System.currentTimeMillis()+20*60*1000);
+				String date2 = dateFormat.format(dd);
+				
 				do {
-
-					// String ChildCurrentStatus =
-					// Gettext(getwebelement(xml.getlocator("//locators/ChildStatus")));
+					
+					Thread.sleep(2000);
+				//	TransactionStatus1 = Gettext(getwebelement(xml.getlocator("//locators/TransactionStatus")));
+					Pagerefresh();
+					Pagerefresh();
 					flag3 = isElementPresent(xml.getlocator("//locators/ChildStatus"));
-					// ChildCurrentStat.set(ChildCurrentStatus);
-
 					ExtentTestManager.getTest().log(LogStatus.PASS,
 							" Step: ChildCurrentStatus is : " + ChildCurrentStat.get());
 					log("if child Current Status shown than jump to the next step otherwise click on the refresh button");
 					WaitforElementtobeclickable((xml.getlocator("//locators/SubmitButton")));
 					Clickon(getwebelement(xml.getlocator("//locators/SubmitButton")));
-					
-				} while (flag3 == false);
+			      date3 =  dateFormat.format(new Date(System.currentTimeMillis()));
+			    System.out.println(date3);
+                 System.out.println(date2);
+					Thread.sleep(1000);
+					Pagerefresh();
+					if(date3.trim().equals(date2.trim()))
+							{
+						System.out.println("System is waiting for 20 minutes to change status, But still status in not changed!");
+						Assert.fail("System is taking longer time to change Status from InProgress to Complted!");
+						break;
+							}
+				}
+				
+				while (flag3==false );
+				
+//				do {
+//
+//					// String ChildCurrentStatus =
+//					// Gettext(getwebelement(xml.getlocator("//locators/ChildStatus")));
+//					flag3 = isElementPresent(xml.getlocator("//locators/ChildStatus"));
+//					// ChildCurrentStat.set(ChildCurrentStatus);
+//
+//					ExtentTestManager.getTest().log(LogStatus.PASS,
+//							" Step: ChildCurrentStatus is : " + ChildCurrentStat.get());
+//					log("if child Current Status shown than jump to the next step otherwise click on the refresh button");
+//					WaitforElementtobeclickable((xml.getlocator("//locators/SubmitButton")));
+//					Clickon(getwebelement(xml.getlocator("//locators/SubmitButton")));
+//					
+//				} while (flag3 == false);
+				
+				
 				Thread.sleep(5000);
 				log("childcurrent status id successfully submited");
 				Assert.assertEquals(ChildCurrentStat.get(), "Completed", "Child status is " + ChildCurrentStat.get());
 
 				String ParentCurrentStatus13 = Gettext(getwebelement(xml.getlocator("//locators/ParentStatus")));
 				ParentCurrentStat.set(ParentCurrentStatus13);
-				log("ParentCurrentStatus shown");
+				log("ParentCurrentStatus shown: "+ParentCurrentStat.get());
 
 				WaitforElementtobeclickable(xml.getlocator("//locators/ManagePorting"));
 				Moveon(getwebelement(xml.getlocator("//locators/ManagePorting")));
@@ -1815,7 +1877,7 @@ public class NumberHostingHelper extends DriverHelper {
 				SendKeys(getwebelement(xml.getlocator("//locators/statusQueryTransactionID")),
 						ParentCurrentStat.get().toString().trim().toLowerCase());
 				Thread.sleep(5000);
-				log("send the transaction ID");
+				log("send the transaction ID: "+ParentCurrentStat.get());
 				WaitforElementtobeclickable((xml.getlocator("//locators/StatusQuerySearchbutton")));
 				Clickon(getwebelement(xml.getlocator("//locators/StatusQuerySearchbutton")));
 				log("click on the search button");
@@ -1834,7 +1896,7 @@ public class NumberHostingHelper extends DriverHelper {
 				 }
 		 }
 		 
-//final
+//finalrishabh
 		}
 
 }

@@ -1084,7 +1084,7 @@ public void Clickonoutofviewportwithstring(String locator) throws Exception {
 	{		
 	Reporter.log(" <font color='red'> " +  Message   +" </font>", true);
 	ExtentTestManager.getTest().log(LogStatus.PASS, " <font color='red'> " +  Message   +" </font>");
-
+	Assert.fail(" <font color='red'> " +"Either data is incorrect in excel sheet or no Record found in system Application"+" </font>");
 	}
 	public void GreenLog(String Message)
 	{

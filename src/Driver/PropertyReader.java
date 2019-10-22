@@ -8,7 +8,7 @@ import java.util.Properties;
 
 public class PropertyReader {
 
-	public String readproperty(String key) throws IOException
+	public  String readproperty(String key) throws IOException
 	{ String St=null;
 	
 	Properties pr= new Properties();
