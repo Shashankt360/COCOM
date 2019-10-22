@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
     <line>
       <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
@@ -8,22 +8,121 @@
       <![CDATA[ <font color='green'> Step: Excel has been downloded : Successfully </font>]]>
     </line>
     <line>
-      <![CDATA[Start]]>
+      <![CDATA[ <font color='green'> /******************************* current Step  has been finished * ****************************************** </font>]]>
     </line>
     <line>
-      <![CDATA[ <font color='green'> Status Query has been passed with Transaction Status : In Progress </font>]]>
+      <![CDATA[ <font color='red'> System does not have search result with Number Status with country!! Number status is Free And Country is UNITED KINGDOM And Block size 1 And Quantity 9 </font>]]>
+    </line>
+    <line>
+      <![CDATA[ <font color='green'> /******************************* current Step  has been finished * ****************************************** </font>]]>
+    </line>
+    <line>
+      <![CDATA[ <font color='red'> System does not have search result with Number Status with country!! Number status is Free And Country is UNITED KINGDOM And Block size 1 And Quantity 9 </font>]]>
+    </line>
+    <line>
+      <![CDATA[ <font color='green'> /******************************* current Step  has been finished * ****************************************** </font>]]>
+    </line>
+    <line>
+      <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
+    </line>
+    <line>
+      <![CDATA[ <font color='green'> Step: Excel has been downloded : Successfully </font>]]>
+    </line>
+    <line>
+      <![CDATA[Search Scenario with activate scenario has been successfull performed]]>
+    </line>
+    <line>
+      <![CDATA[ <font color='green'> /******************************* current Step  has been finished * ****************************************** </font>]]>
+    </line>
+    <line>
+      <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
+    </line>
+    <line>
+      <![CDATA[ <font color='green'> Step: Excel has been downloded : Successfully </font>]]>
+    </line>
+    <line>
+      <![CDATA[ <font color='green'> /******************************* current Step  has been finished * ****************************************** </font>]]>
+    </line>
+    <line>
+      <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
+    </line>
+    <line>
+      <![CDATA[ <font color='green'> Step: Excel has been downloded : Successfully </font>]]>
+    </line>
+    <line>
+      <![CDATA[ <font color='red'> it seems like there is no any Transaction Status value which contained Completed or In Process or Firm order commitment </font>]]>
+    </line>
+    <line>
+      <![CDATA[ <font color='green'> /******************************* current Step  has been finished * ****************************************** </font>]]>
+    </line>
+    <line>
+      <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
+    </line>
+    <line>
+      <![CDATA[ <font color='green'> Step: Excel has been downloded : Successfully </font>]]>
+    </line>
+    <line>
+      <![CDATA[Search Scenario with port-in activated has been successfully performed]]>
+    </line>
+    <line>
+      <![CDATA[ <font color='green'> /******************************* current Step  has been finished * ****************************************** </font>]]>
+    </line>
+    <line>
+      <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
+    </line>
+    <line>
+      <![CDATA[ <font color='green'> Step: Excel has been downloded : Successfully </font>]]>
+    </line>
+    <line>
+      <![CDATA[ <font color='green'> /******************************* current Step  has been finished * ****************************************** </font>]]>
+    </line>
+    <line>
+      <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
+    </line>
+    <line>
+      <![CDATA[ <font color='green'> Step: Excel has been downloded : Successfully </font>]]>
+    </line>
+    <line>
+      <![CDATA[ <font color='red'> System does not have search result with Transaction ID - check your Transaction ID and field Details  </font>]]>
+    </line>
+    <line>
+      <![CDATA[ <font color='green'> /******************************* current Step  has been finished * ****************************************** </font>]]>
+    </line>
+    <line>
+      <![CDATA[ <font color='green'> Step: Excel has been downloded : Successfully </font>]]>
+    </line>
+    <line>
+      <![CDATA[ <font color='green'> /******************************* current Step  has been finished * ****************************************** </font>]]>
+    </line>
+    <line>
+      <![CDATA[Don't need to click on geographical and nongeographical radio Button]]>
+    </line>
+    <line>
+      <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
+    </line>
+    <line>
+      <![CDATA[ <font color='green'> Step: Excel has been downloded : Successfully </font>]]>
+    </line>
+    <line>
+      <![CDATA[ <font color='green'> Status Query has been passed with Transaction Status Completed </font>]]>
+    </line>
+    <line>
+      <![CDATA[ <font color='green'> Numbwer Query status id update Successfully from Free to Reserve </font>]]>
+    </line>
+    <line>
+      <![CDATA[ <font color='green'> /******************************* current Step  has been finished * ****************************************** </font>]]>
     </line>
   </reporter-output>
-  <suite name="NH Automation" duration-ms="49833" started-at="2019-10-21T12:34:25Z" finished-at="2019-10-21T12:35:15Z">
+  <suite name="NH Automation" duration-ms="270268" started-at="2019-10-22T07:25:31Z" finished-at="2019-10-22T07:30:01Z">
     <groups>
     </groups>
-    <test name="Scenario" duration-ms="49833" started-at="2019-10-21T12:34:25Z" finished-at="2019-10-21T12:35:15Z">
+    <test name="Scenario" duration-ms="270268" started-at="2019-10-22T07:25:31Z" finished-at="2019-10-22T07:30:01Z">
       <class name="Testscript.NumberHosting">
-        <test-method status="PASS" signature="BeforeSuite()[pri:0, instance:Testscript.NumberHosting@71d8cfe7]" name="BeforeSuite" is-config="true" duration-ms="295" started-at="2019-10-21T13:34:25Z" finished-at="2019-10-21T13:34:25Z">
+        <test-method status="PASS" signature="BeforeSuite()[pri:0, instance:Testscript.NumberHosting@39aeed2f]" name="BeforeSuite" is-config="true" duration-ms="273" started-at="2019-10-22T08:25:30Z" finished-at="2019-10-22T08:25:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeSuite -->
-        <test-method status="PASS" signature="BeforeMethod(java.lang.reflect.Method, org.testng.ITestContext, [Ljava.lang.Object;)[pri:0, instance:Testscript.NumberHosting@71d8cfe7]" name="BeforeMethod" is-config="true" duration-ms="5237" started-at="2019-10-21T13:34:27Z" finished-at="2019-10-21T13:34:32Z">
+        <test-method status="PASS" signature="BeforeMethod(java.lang.reflect.Method, org.testng.ITestContext, [Ljava.lang.Object;)[pri:0, instance:Testscript.NumberHosting@39aeed2f]" name="BeforeMethod" is-config="true" duration-ms="4915" started-at="2019-10-22T08:25:32Z" finished-at="2019-10-22T08:25:37Z">
           <params>
             <param index="0">
               <value>
@@ -32,23 +131,23 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@76975a22]]>
+                <![CDATA[org.testng.TestRunner@1e9be192]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[[Ljava.lang.Object;@178a3d14]]>
+                <![CDATA[[Ljava.lang.Object;@6ca146d9]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method status="PASS" signature="NumberInquiry([[Ljava.lang.Object;)[pri:0, instance:Testscript.NumberHosting@71d8cfe7]" name="NumberInquiry" duration-ms="41574" started-at="2019-10-21T13:34:32Z" data-provider="NumberHosting" finished-at="2019-10-21T13:35:13Z">
+        <test-method status="PASS" signature="NumberInquiry([[Ljava.lang.Object;)[pri:0, instance:Testscript.NumberHosting@39aeed2f]" name="NumberInquiry" duration-ms="221316" started-at="2019-10-22T08:25:37Z" data-provider="NumberHosting" finished-at="2019-10-22T08:29:18Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[[Ljava.lang.Object;@748723c2]]>
+                <![CDATA[[[Ljava.lang.Object;@7a74da6f]]>
               </value>
             </param>
           </params>
@@ -60,18 +159,153 @@
               <![CDATA[ <font color='green'> Step: Excel has been downloded : Successfully </font>]]>
             </line>
             <line>
-              <![CDATA[Start]]>
+              <![CDATA[ <font color='green'> /******************************* current Step  has been finished * ****************************************** </font>]]>
             </line>
             <line>
-              <![CDATA[ <font color='green'> Status Query has been passed with Transaction Status : In Progress </font>]]>
+              <![CDATA[ <font color='red'> System does not have search result with Number Status with country!! Number status is Free And Country is UNITED KINGDOM And Block size 1 And Quantity 9 </font>]]>
+            </line>
+            <line>
+              <![CDATA[ <font color='green'> /******************************* current Step  has been finished * ****************************************** </font>]]>
+            </line>
+            <line>
+              <![CDATA[ <font color='red'> System does not have search result with Number Status with country!! Number status is Free And Country is UNITED KINGDOM And Block size 1 And Quantity 9 </font>]]>
+            </line>
+            <line>
+              <![CDATA[ <font color='green'> /******************************* current Step  has been finished * ****************************************** </font>]]>
+            </line>
+            <line>
+              <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
+            </line>
+            <line>
+              <![CDATA[ <font color='green'> Step: Excel has been downloded : Successfully </font>]]>
+            </line>
+            <line>
+              <![CDATA[Search Scenario with activate scenario has been successfull performed]]>
+            </line>
+            <line>
+              <![CDATA[ <font color='green'> /******************************* current Step  has been finished * ****************************************** </font>]]>
+            </line>
+            <line>
+              <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
+            </line>
+            <line>
+              <![CDATA[ <font color='green'> Step: Excel has been downloded : Successfully </font>]]>
+            </line>
+            <line>
+              <![CDATA[ <font color='green'> /******************************* current Step  has been finished * ****************************************** </font>]]>
+            </line>
+            <line>
+              <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
+            </line>
+            <line>
+              <![CDATA[ <font color='green'> Step: Excel has been downloded : Successfully </font>]]>
+            </line>
+            <line>
+              <![CDATA[ <font color='red'> it seems like there is no any Transaction Status value which contained Completed or In Process or Firm order commitment </font>]]>
+            </line>
+            <line>
+              <![CDATA[ <font color='green'> /******************************* current Step  has been finished * ****************************************** </font>]]>
+            </line>
+            <line>
+              <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
+            </line>
+            <line>
+              <![CDATA[ <font color='green'> Step: Excel has been downloded : Successfully </font>]]>
+            </line>
+            <line>
+              <![CDATA[Search Scenario with port-in activated has been successfully performed]]>
+            </line>
+            <line>
+              <![CDATA[ <font color='green'> /******************************* current Step  has been finished * ****************************************** </font>]]>
+            </line>
+            <line>
+              <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
+            </line>
+            <line>
+              <![CDATA[ <font color='green'> Step: Excel has been downloded : Successfully </font>]]>
+            </line>
+            <line>
+              <![CDATA[ <font color='green'> /******************************* current Step  has been finished * ****************************************** </font>]]>
+            </line>
+            <line>
+              <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
+            </line>
+            <line>
+              <![CDATA[ <font color='green'> Step: Excel has been downloded : Successfully </font>]]>
+            </line>
+            <line>
+              <![CDATA[ <font color='red'> System does not have search result with Transaction ID - check your Transaction ID and field Details  </font>]]>
+            </line>
+            <line>
+              <![CDATA[ <font color='green'> /******************************* current Step  has been finished * ****************************************** </font>]]>
+            </line>
+            <line>
+              <![CDATA[ <font color='green'> Step: Excel has been downloded : Successfully </font>]]>
+            </line>
+            <line>
+              <![CDATA[ <font color='green'> /******************************* current Step  has been finished * ****************************************** </font>]]>
             </line>
           </reporter-output>
         </test-method> <!-- NumberInquiry -->
-        <test-method status="PASS" signature="Teardown2()[pri:0, instance:Testscript.NumberHosting@71d8cfe7]" name="Teardown2" is-config="true" duration-ms="1322" started-at="2019-10-21T13:35:13Z" finished-at="2019-10-21T13:35:15Z">
+        <test-method status="PASS" signature="Teardown2()[pri:0, instance:Testscript.NumberHosting@39aeed2f]" name="Teardown2" is-config="true" duration-ms="2102" started-at="2019-10-22T08:29:18Z" finished-at="2019-10-22T08:29:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown2 -->
-        <test-method status="PASS" signature="Teardown()[pri:0, instance:Testscript.NumberHosting@71d8cfe7]" name="Teardown" is-config="true" duration-ms="1" started-at="2019-10-21T13:35:15Z" finished-at="2019-10-21T13:35:15Z">
+        <test-method status="PASS" signature="BeforeMethod(java.lang.reflect.Method, org.testng.ITestContext, [Ljava.lang.Object;)[pri:0, instance:Testscript.NumberHosting@39aeed2f]" name="BeforeMethod" is-config="true" duration-ms="4088" started-at="2019-10-22T08:29:20Z" finished-at="2019-10-22T08:29:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Testscript.NumberHosting.NumberInquiry(java.lang.Object[][]) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@1e9be192]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@c5e96b7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="NumberInquiry([[Ljava.lang.Object;)[pri:0, instance:Testscript.NumberHosting@39aeed2f]" name="NumberInquiry" duration-ms="35345" started-at="2019-10-22T08:29:24Z" data-provider="NumberHosting" finished-at="2019-10-22T08:30:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[[Ljava.lang.Object;@762bdb37]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Don't need to click on geographical and nongeographical radio Button]]>
+            </line>
+            <line>
+              <![CDATA[ <font color='green'> Data are displaying with serach creteria!! </font>]]>
+            </line>
+            <line>
+              <![CDATA[ <font color='green'> Step: Excel has been downloded : Successfully </font>]]>
+            </line>
+            <line>
+              <![CDATA[ <font color='green'> Status Query has been passed with Transaction Status Completed </font>]]>
+            </line>
+            <line>
+              <![CDATA[ <font color='green'> Numbwer Query status id update Successfully from Free to Reserve </font>]]>
+            </line>
+            <line>
+              <![CDATA[ <font color='green'> /******************************* current Step  has been finished * ****************************************** </font>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- NumberInquiry -->
+        <test-method status="PASS" signature="Teardown2()[pri:0, instance:Testscript.NumberHosting@39aeed2f]" name="Teardown2" is-config="true" duration-ms="1040" started-at="2019-10-22T08:30:00Z" finished-at="2019-10-22T08:30:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown2 -->
+        <test-method status="PASS" signature="Teardown()[pri:0, instance:Testscript.NumberHosting@39aeed2f]" name="Teardown" is-config="true" duration-ms="0" started-at="2019-10-22T08:30:01Z" finished-at="2019-10-22T08:30:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->

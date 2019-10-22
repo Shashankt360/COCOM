@@ -11,7 +11,7 @@
           <include name="BeforeMethod"/>
           <include name="Teardown2"/>
           <include name="BeforeSuite"/>
-          <include name="NumberInquiry" invocation-numbers="0"/>
+          <include name="NumberInquiry" invocation-numbers="22"/>
           <include name="Teardown"/>
         </methods>
       </class> <!-- Testscript.NumberHosting -->

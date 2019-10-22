@@ -272,7 +272,8 @@ public class NumberHostingHelper extends DriverHelper {
 						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Action");
 						Clickon(getwebelement(xml.getlocator("//locators/GoButton")));
 						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Go button");
-
+	
+						Thread.sleep(4000);
 						SendKeys(getwebelement(xml.getlocator("//locators/CustomerReference")),
 								Inputdata[i][6].toString());
 						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Enter Customer Reference number");
@@ -285,7 +286,7 @@ public class NumberHostingHelper extends DriverHelper {
 						String TransactionIdres = Gettext(getwebelement(xml.getlocator("//locators/TransactionId")));
 						TransactionId.set(TransactionIdres);
 						ExtentTestManager.getTest().log(LogStatus.PASS,
-								" Step: The Transaction Id generated is : " + TransactionId);
+								" Step: The Transaction Id generated is : " + TransactionIdres);
 						Thread.sleep(1000);
 
 						// Status Query ************************************************************
@@ -658,7 +659,7 @@ public class NumberHostingHelper extends DriverHelper {
 						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the Post Code");
 						Clickon(getwebelement(xml.getlocator("//locators/SubmitButton")));
 						ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the submit button");
-						Thread.sleep(4000);
+						Thread.sleep(9000);
 						
 			
 						String Transactionresult = Gettext(
@@ -793,7 +794,7 @@ public class NumberHostingHelper extends DriverHelper {
 				if (isElementPresent(xml.getlocator("//locators/Griddata"))) {
 					GreenLog("Data are displaying with serach creteria!!");
 					DownloadExcel("NumberEnquiryReport");
-					Thread.sleep(5000l);
+					Thread.sleep(5000);
 					String Transactionresult = Gettext(getwebelement(xml.getlocator("//locators/TransactionIdLink")));
 					TransactionId.set(Transactionresult);
 					ExtentTestManager.getTest().log(LogStatus.PASS,
@@ -1013,11 +1014,11 @@ public class NumberHostingHelper extends DriverHelper {
 
 			// Deafault case  replace("index"),transid
 			default: {
-				RedLog("In Excel data, It seems like Number Status data is misspelled or not correct!! Data is "
-						+ Inputdata[i][4].toString());
+//				>>>>>>>>>>>>>>>>RedLog("In Excel data, It seems like Number Status data is misspelled or not correct!! Data is "
+//						+ Inputdata[i][4].toString());
 			}
 			}
-System.out.println("//////////////////////////// * Step first has been finished *  ////////////////////////////////////");
+			GreenLog("/******************************* current Step  has been finished * ******************************************");
 		}
 
 	}
@@ -1083,7 +1084,7 @@ System.out.println("//////////////////////////// * Step first has been finished 
 				RedLog("System does not have search result with Search Transaction Id with country!! Transection id is "
 						+ Inputdata[i][18].toString() + " And Country is " + Inputdata[i][2].toString());
 			}
-			System.out.println("//////////////////////////// * Step first has been finished *  ////////////////////////////////////");
+			GreenLog("/******************************* current Step  has been finished * ******************************************");
 		}
 	}
 
@@ -1099,7 +1100,7 @@ System.out.println("//////////////////////////// * Step first has been finished 
 
 			Select(getwebelement(xml.getlocator("//locators/Country")), Inputdata[i][2].toString());
 			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Country");
-			Thread.sleep(2000l);
+			Thread.sleep(2000);
 			Select(getwebelement(xml.getlocator("//locators/ServiceProfile")), Inputdata[i][3].toString());
 			ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Service Profile");
 			Thread.sleep(3000);
@@ -1183,7 +1184,7 @@ System.out.println("//////////////////////////// * Step first has been finished 
 				RedLog("System does not have search result with Customer Reference  with country!! Customer Reference is "
 						+ Inputdata[i][6].toString().trim() + " And Country is " + Inputdata[i][2].toString());
 			}
-			System.out.println("//////////////////////////// * Step first has been finished *  ////////////////////////////////////");
+			GreenLog("/******************************* current Step  has been finished * ******************************************");
 		}
 	}
 
@@ -1203,16 +1204,17 @@ System.out.println("//////////////////////////// * Step first has been finished 
 		System.out.println(transid);
 		
 //	
-		//------------------------------- 35
+		//------------------------------- 35f
 		
 	if(isElementPresent(xml.getlocator("locators/ReserveElement").replace("Transactionid", Inputdata[i][35].toString())))
 	{
-		WaitforElementtobeclickable(xml.getlocator("//locators/RadioButton"));
+		//WaitforElementtobeclickable(xml.getlocator("//locators/RadioButton"));
 		javascriptexecutor(getwebelement(xml.getlocator("locators/ReserveElement").replace("Transactionid", Inputdata[i][35].toString())));
 	     implicitwait(20);
 	     ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Radio button");
 		Clickon(getwebelement(xml.getlocator("locators/ReserveElement").replace("Transactionid", Inputdata[i][35].toString())));
 		implicitwait(20);
+		 waitandForElementDisplayed(xml.getlocator("//locators/SelectAction"));
 		Select(getwebelement(xml.getlocator("//locators/SelectAction").replace("Transactionid", Inputdata[i][35].toString())), "Activate");
 		ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the User Action");
 		//SendKeys1(getwebelement(xml.getlocator("//locators/ActivateReserve").replace("Activate", Inputdata[i][16].toString())));
@@ -1236,7 +1238,7 @@ System.out.println("//////////////////////////// * Step first has been finished 
 //		ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Radio button");
 		//Select(getwebelement(xml.getlocator("//locators/UserAction")), "Activate");
 		ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the User Action");
-		Clickon(getwebelement(xml.getlocator("//locators/UserGo")));
+		//Clickon(getwebelement(xml.getlocator("//locators/UserGo")));
 		ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on the Go button");
 		SendKeys(getwebelement(xml.getlocator("//locators/CustomerName")), Inputdata[i][7].toString());
 		ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Fill the Customer name Field");
@@ -1376,6 +1378,8 @@ System.out.println("//////////////////////////// * Step first has been finished 
 	}
 
 	               
+	
+	
 		
 	 
 	 public void DownloadExcel(String Filaname) throws InterruptedException, DocumentException

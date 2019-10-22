@@ -24058,3 +24058,1835 @@ UK WIDE (Public Services)
 2019-10-21 13:35:13,781 INFO  [Log] Element Found: True 
 2019-10-21 13:35:13,960 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
 2019-10-21 13:35:15,309 INFO  [Log] I am on Finish method Scenario 
+2019-10-21 13:48:03,099 INFO  [Log] I am on Start method Scenario 
+2019-10-21 13:48:04,878 INFO  [Log] URL 
+2019-10-21 13:48:09,958 INFO  [Log] Number Enquiry (Search by Number Range) 
+2019-10-21 13:48:09,966 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 13:48:09,966 INFO  [Log] I am in onStart method null 
+2019-10-21 13:48:10,077 INFO  [Log] NH_URL 
+2019-10-21 13:48:10,093 INFO  [Log] NH_URL 
+2019-10-21 13:48:22,680 INFO  [Log] Excel_URL 
+2019-10-21 13:48:24,256 INFO  [Log] Element Found: True 
+2019-10-21 13:48:41,371 INFO  [Log] Element Found: True 
+2019-10-21 13:48:41,547 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 13:48:42,740 INFO  [Log] URL 
+2019-10-21 13:48:46,890 INFO  [Log] Number Enquiry (Search by Transaction Id) 
+2019-10-21 13:48:46,891 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 13:48:46,891 INFO  [Log] I am in onStart method null 
+2019-10-21 13:48:46,891 INFO  [Log] NH_URL 
+2019-10-21 13:48:46,900 INFO  [Log] NH_URL 
+2019-10-21 13:49:00,134 INFO  [Log] Element Found: True 
+2019-10-21 13:49:00,134 INFO  [Log] Excel_URL 
+2019-10-21 13:49:17,234 INFO  [Log] Element Found: True 
+2019-10-21 13:49:46,883 INFO  [Log] Element Found: False 
+2019-10-21 13:49:46,884 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 13:49:48,064 INFO  [Log] URL 
+2019-10-21 13:49:52,155 INFO  [Log] Number Enquiry (Search by Customer Reference) 
+2019-10-21 13:49:52,156 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 13:49:52,156 INFO  [Log] I am in onStart method null 
+2019-10-21 13:49:52,156 INFO  [Log] NH_URL 
+2019-10-21 13:49:52,166 INFO  [Log] NH_URL 
+2019-10-21 13:50:02,911 INFO  [Log] Element Found: True 
+2019-10-21 13:50:02,911 INFO  [Log] Excel_URL 
+2019-10-21 13:50:19,591 INFO  [Log] Element Found: True 
+2019-10-21 13:50:25,586 INFO  [Log] Element Found: True 
+2019-10-21 13:50:25,586 INFO  [Log] Excel_URL 
+2019-10-21 13:50:41,967 INFO  [Log] Element Found: True 
+2019-10-21 13:50:42,130 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 13:50:43,211 INFO  [Log] URL 
+2019-10-21 13:50:47,295 INFO  [Log] Number Enquiry (Search by Number Status) 
+2019-10-21 13:50:47,297 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 13:50:47,297 INFO  [Log] I am in onStart method null 
+2019-10-21 13:50:47,297 INFO  [Log] NH_URL 
+2019-10-21 13:50:47,303 INFO  [Log] NH_URL 
+2019-10-21 13:50:59,919 INFO  [Log] Element Found: True 
+2019-10-21 13:50:59,919 INFO  [Log] Excel_URL 
+2019-10-21 13:51:09,479 INFO  [Log] Element Found: True 
+2019-10-21 13:51:09,479 INFO  [Log] Excel_URL 
+2019-10-21 13:51:28,611 INFO  [Log] Element Found: True 
+2019-10-21 13:51:36,254 INFO  [Log] Element Found: True 
+2019-10-21 13:51:36,254 INFO  [Log] Excel_URL 
+2019-10-21 13:51:45,893 INFO  [Log] Element Found: True 
+2019-10-21 13:51:45,893 INFO  [Log] Excel_URL 
+2019-10-21 13:51:55,479 INFO  [Log] Element Found: True 
+2019-10-21 13:51:55,480 INFO  [Log] Excel_URL 
+2019-10-21 13:52:02,152 INFO  [Log] Element Found: True 
+2019-10-21 13:52:02,152 INFO  [Log] Excel_URL 
+2019-10-21 13:52:24,457 INFO  [Log] Element Found: True 
+2019-10-21 13:52:33,944 INFO  [Log] Element Found: True 
+2019-10-21 13:52:33,944 INFO  [Log] Excel_URL 
+2019-10-21 13:52:40,470 INFO  [Log] Element Found: True 
+2019-10-21 13:52:40,470 INFO  [Log] Excel_URL 
+2019-10-21 13:52:45,938 INFO  [Log] Element Found: True 
+2019-10-21 13:52:45,938 INFO  [Log] Excel_URL 
+2019-10-21 13:54:23,702 INFO  [Log] Element Found: False 
+2019-10-21 13:54:30,727 INFO  [Log] Element Found: True 
+2019-10-21 13:54:30,727 INFO  [Log] Excel_URL 
+2019-10-21 13:54:35,017 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 13:54:36,662 INFO  [Log] URL 
+2019-10-21 13:54:40,741 INFO  [Log] Number Enquiry (Search by Number Range with country Austria) 
+2019-10-21 13:54:40,742 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 13:54:40,742 INFO  [Log] I am in onStart method null 
+2019-10-21 13:54:40,743 INFO  [Log] NH_URL 
+2019-10-21 13:54:40,746 INFO  [Log] NH_URL 
+2019-10-21 13:54:53,707 INFO  [Log] Excel_URL 
+2019-10-21 13:54:55,226 INFO  [Log] Element Found: True 
+2019-10-21 13:55:13,412 INFO  [Log] Element Found: True 
+2019-10-21 13:55:13,579 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 13:55:14,695 INFO  [Log] URL 
+2019-10-21 13:55:18,834 INFO  [Log] Number Enquiry (Search by Transaction Id with country Austria) 
+2019-10-21 13:55:18,835 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 13:55:18,835 INFO  [Log] I am in onStart method null 
+2019-10-21 13:55:18,835 INFO  [Log] NH_URL 
+2019-10-21 13:55:18,839 INFO  [Log] NH_URL 
+2019-10-21 13:55:31,450 INFO  [Log] Element Found: True 
+2019-10-21 13:55:31,450 INFO  [Log] Excel_URL 
+2019-10-21 13:55:48,397 INFO  [Log] Element Found: True 
+2019-10-21 13:55:57,453 INFO  [Log] Element Found: True 
+2019-10-21 13:55:57,453 INFO  [Log] Excel_URL 
+2019-10-21 13:56:14,605 INFO  [Log] Element Found: True 
+2019-10-21 13:56:14,780 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 13:56:15,959 INFO  [Log] URL 
+2019-10-21 13:56:20,030 INFO  [Log] Number Enquiry (Search by Customer Reference with country Austria) 
+2019-10-21 13:56:20,031 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 13:56:20,031 INFO  [Log] I am in onStart method null 
+2019-10-21 13:56:20,031 INFO  [Log] NH_URL 
+2019-10-21 13:56:20,036 INFO  [Log] NH_URL 
+2019-10-21 13:56:31,287 INFO  [Log] Element Found: True 
+2019-10-21 13:56:31,287 INFO  [Log] Excel_URL 
+2019-10-21 13:57:07,655 INFO  [Log] Element Found: False 
+2019-10-21 13:57:13,455 INFO  [Log] Element Found: True 
+2019-10-21 13:57:13,456 INFO  [Log] Excel_URL 
+2019-10-21 13:57:49,742 INFO  [Log] Element Found: False 
+2019-10-21 13:57:49,743 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 13:57:50,745 INFO  [Log] URL 
+2019-10-21 13:57:54,802 INFO  [Log] Number Enquiry(Search by Number Status with country Austria) 
+2019-10-21 13:57:54,803 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 13:57:54,803 INFO  [Log] I am in onStart method null 
+2019-10-21 13:57:54,804 INFO  [Log] NH_URL 
+2019-10-21 13:57:54,809 INFO  [Log] NH_URL 
+2019-10-21 13:58:06,886 INFO  [Log] Element Found: True 
+2019-10-21 13:58:06,886 INFO  [Log] Excel_URL 
+2019-10-21 13:58:16,370 INFO  [Log] Element Found: True 
+2019-10-21 13:58:16,370 INFO  [Log] Excel_URL 
+2019-10-21 13:58:25,922 INFO  [Log] Element Found: True 
+2019-10-21 13:58:25,923 INFO  [Log] Excel_URL 
+2019-10-21 13:58:35,450 INFO  [Log] Element Found: True 
+2019-10-21 13:58:35,451 INFO  [Log] Excel_URL 
+2019-10-21 13:58:42,030 INFO  [Log] Element Found: True 
+2019-10-21 13:58:42,030 INFO  [Log] Excel_URL 
+2019-10-21 13:59:04,053 INFO  [Log] Element Found: True 
+2019-10-21 13:59:13,574 INFO  [Log] Element Found: True 
+2019-10-21 13:59:13,574 INFO  [Log] Excel_URL 
+2019-10-21 13:59:40,054 INFO  [Log] Element Found: False 
+2019-10-21 13:59:45,329 INFO  [Log] Element Found: True 
+2019-10-21 13:59:45,329 INFO  [Log] Excel_URL 
+2019-10-21 14:01:23,089 INFO  [Log] Element Found: False 
+2019-10-21 14:01:28,643 INFO  [Log] Element Found: True 
+2019-10-21 14:01:28,644 INFO  [Log] Excel_URL 
+2019-10-21 14:01:28,752 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 14:01:29,816 INFO  [Log] URL 
+2019-10-21 14:01:33,899 INFO  [Log] Number Enquiry1 (Search by reserved to activate  with country UK) 
+2019-10-21 14:01:33,900 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 14:01:33,900 INFO  [Log] I am in onStart method null 
+2019-10-21 14:01:33,900 INFO  [Log] NH_URL 
+2019-10-21 14:01:33,905 INFO  [Log] NH_URL 
+2019-10-21 14:01:46,222 INFO  [Log] Element Found: True 
+2019-10-21 14:01:46,222 INFO  [Log] Excel_URL 
+2019-10-21 14:01:48,323 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 14:01:49,388 INFO  [Log] URL 
+2019-10-21 14:01:53,460 INFO  [Log] Number Enquiry (Search by Number Status with country UK) 
+2019-10-21 14:01:53,461 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 14:01:53,461 INFO  [Log] I am in onStart method null 
+2019-10-21 14:01:53,461 INFO  [Log] NH_URL 
+2019-10-21 14:01:53,465 INFO  [Log] NH_URL 
+2019-10-21 14:02:05,417 INFO  [Log] Element Found: True 
+2019-10-21 14:02:05,418 INFO  [Log] Excel_URL 
+2019-10-21 14:02:14,995 INFO  [Log] Element Found: True 
+2019-10-21 14:02:14,995 INFO  [Log] Excel_URL 
+2019-10-21 14:02:33,975 INFO  [Log] Element Found: True 
+2019-10-21 14:02:41,383 INFO  [Log] Element Found: True 
+2019-10-21 14:02:41,383 INFO  [Log] Excel_URL 
+2019-10-21 14:02:54,040 INFO  [Log] Element Found: True 
+2019-10-21 14:02:54,040 INFO  [Log] Excel_URL 
+2019-10-21 14:03:03,605 INFO  [Log] Element Found: True 
+2019-10-21 14:03:03,605 INFO  [Log] Excel_URL 
+2019-10-21 14:03:13,164 INFO  [Log] Element Found: True 
+2019-10-21 14:03:13,164 INFO  [Log] Excel_URL 
+2019-10-21 14:03:19,659 INFO  [Log] Element Found: True 
+2019-10-21 14:03:19,659 INFO  [Log] Excel_URL 
+2019-10-21 14:03:41,693 INFO  [Log] Element Found: True 
+2019-10-21 14:03:51,139 INFO  [Log] Element Found: True 
+2019-10-21 14:03:51,139 INFO  [Log] Excel_URL 
+2019-10-21 14:04:14,976 INFO  [Log] Element Found: True 
+2019-10-21 14:04:21,448 INFO  [Log] Element Found: True 
+2019-10-21 14:04:21,448 INFO  [Log] Excel_URL 
+2019-10-21 14:04:27,124 INFO  [Log] Element Found: True 
+2019-10-21 14:04:27,124 INFO  [Log] Excel_URL 
+2019-10-21 14:06:05,114 INFO  [Log] Element Found: False 
+2019-10-21 14:06:12,097 INFO  [Log] Element Found: True 
+2019-10-21 14:06:12,097 INFO  [Log] Excel_URL 
+2019-10-21 14:06:15,496 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 14:06:16,984 INFO  [Log] URL 
+2019-10-21 14:06:21,109 INFO  [Log] Change -Free to Reserve 
+2019-10-21 14:06:21,110 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 14:06:21,110 INFO  [Log] I am in onStart method null 
+2019-10-21 14:06:21,110 INFO  [Log] NH_URL 
+2019-10-21 14:06:21,126 INFO  [Log] NH_URL 
+2019-10-21 14:06:33,480 INFO  [Log] Element Found: True 
+2019-10-21 14:06:33,480 INFO  [Log] Excel_URL 
+2019-10-21 14:06:52,789 INFO  [Log] Element Found: True 
+2019-10-21 14:06:52,943 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 14:06:54,009 INFO  [Log] URL 
+2019-10-21 14:06:58,140 INFO  [Log] Number Enquiry (Number Status)with Address scenario 
+2019-10-21 14:06:58,141 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 14:06:58,141 INFO  [Log] I am in onStart method null 
+2019-10-21 14:06:58,141 INFO  [Log] NH_URL 
+2019-10-21 14:06:58,145 INFO  [Log] NH_URL 
+2019-10-21 14:07:12,111 INFO  [Log] Element Found: True 
+2019-10-21 14:07:12,112 INFO  [Log] Excel_URL 
+2019-10-21 14:07:36,291 INFO  [Log] Element Found: True 
+2019-10-21 14:07:36,443 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 14:07:37,465 INFO  [Log] URL 
+2019-10-21 14:07:41,554 INFO  [Log] Change -Reserve to activate with Address 
+2019-10-21 14:07:41,555 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 14:07:41,555 INFO  [Log] I am in onStart method null 
+2019-10-21 14:07:41,555 INFO  [Log] NH_URL 
+2019-10-21 14:07:41,559 INFO  [Log] NH_URL 
+2019-10-21 14:07:53,543 INFO  [Log] Element Found: True 
+2019-10-21 14:07:53,544 INFO  [Log] Excel_URL 
+2019-10-21 14:07:57,736 INFO  [Log] Element Found: True 
+2019-10-21 14:09:22,908 INFO  [Log] Element Found: True 
+2019-10-21 14:09:23,049 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 14:09:24,122 INFO  [Log] URL 
+2019-10-21 14:09:28,222 INFO  [Log] Change -Reserve to Activate without Address 
+2019-10-21 14:09:28,223 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 14:09:28,223 INFO  [Log] I am in onStart method null 
+2019-10-21 14:09:28,223 INFO  [Log] NH_URL 
+2019-10-21 14:09:28,227 INFO  [Log] NH_URL 
+2019-10-21 14:09:40,401 INFO  [Log] Element Found: True 
+2019-10-21 14:09:40,402 INFO  [Log] Excel_URL 
+2019-10-21 14:10:07,128 INFO  [Log] Element Found: True 
+2019-10-21 14:10:07,273 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 14:10:08,314 INFO  [Log] URL 
+2019-10-21 14:10:12,453 INFO  [Log] Change -Free to Activate with Address 
+2019-10-21 14:10:12,454 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 14:10:12,454 INFO  [Log] I am in onStart method null 
+2019-10-21 14:10:12,454 INFO  [Log] NH_URL 
+2019-10-21 14:10:12,458 INFO  [Log] NH_URL 
+2019-10-21 14:10:25,808 INFO  [Log] Element Found: True 
+2019-10-21 14:10:25,809 INFO  [Log] Excel_URL 
+2019-10-21 14:10:29,555 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 14:10:30,613 INFO  [Log] URL 
+2019-10-21 14:10:34,659 INFO  [Log] Change -Free to Activate Without Address 
+2019-10-21 14:10:34,659 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 14:10:34,659 INFO  [Log] I am in onStart method null 
+2019-10-21 14:10:34,660 INFO  [Log] NH_URL 
+2019-10-21 14:10:34,668 INFO  [Log] NH_URL 
+2019-10-21 14:10:47,491 INFO  [Log] Element Found: True 
+2019-10-21 14:10:47,491 INFO  [Log] Excel_URL 
+2019-10-21 14:10:47,601 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 14:10:48,669 INFO  [Log] URL 
+2019-10-21 14:10:52,776 INFO  [Log] Change -Update the Address with port-in 
+2019-10-21 14:10:52,777 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 14:10:52,777 INFO  [Log] I am in onStart method null 
+2019-10-21 14:10:52,777 INFO  [Log] NH_URL 
+2019-10-21 14:10:52,783 INFO  [Log] NH_URL 
+2019-10-21 14:11:06,542 INFO  [Log] Element Found: True 
+2019-10-21 14:11:06,543 INFO  [Log] Excel_URL 
+2019-10-21 14:11:30,536 INFO  [Log] Element Found: True 
+2019-10-21 14:11:30,672 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 14:11:31,716 INFO  [Log] URL 
+2019-10-21 14:11:35,858 INFO  [Log] Change -Update the Address with Activate  
+2019-10-21 14:11:35,858 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 14:11:35,858 INFO  [Log] I am in onStart method null 
+2019-10-21 14:11:35,859 INFO  [Log] NH_URL 
+2019-10-21 14:11:35,864 INFO  [Log] NH_URL 
+2019-10-21 14:11:51,637 INFO  [Log] Element Found: True 
+2019-10-21 14:11:51,637 INFO  [Log] Excel_URL 
+2019-10-21 14:12:15,930 INFO  [Log] Element Found: True 
+2019-10-21 14:12:16,069 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 14:12:17,119 INFO  [Log] URL 
+2019-10-21 14:12:21,232 INFO  [Log] Change -Activate to Deactivate with Activate Senario 
+2019-10-21 14:12:21,233 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 14:12:21,233 INFO  [Log] I am in onStart method null 
+2019-10-21 14:12:21,233 INFO  [Log] NH_URL 
+2019-10-21 14:12:21,238 INFO  [Log] NH_URL 
+2019-10-21 14:12:35,497 INFO  [Log] Element Found: True 
+2019-10-21 14:12:35,497 INFO  [Log] Excel_URL 
+2019-10-21 14:12:55,766 INFO  [Log] Element Found: True 
+2019-10-21 14:12:55,904 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 14:12:56,958 INFO  [Log] URL 
+2019-10-21 14:13:01,105 INFO  [Log] Change -Activate to Deactivate with port-in Scenario 
+2019-10-21 14:13:01,106 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 14:13:01,106 INFO  [Log] I am in onStart method null 
+2019-10-21 14:13:01,106 INFO  [Log] NH_URL 
+2019-10-21 14:13:01,129 INFO  [Log] NH_URL 
+2019-10-21 14:13:15,025 INFO  [Log] Element Found: True 
+2019-10-21 14:13:15,025 INFO  [Log] Excel_URL 
+2019-10-21 14:13:35,361 INFO  [Log] Element Found: True 
+2019-10-21 14:13:35,501 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 14:13:36,564 INFO  [Log] URL 
+2019-10-21 14:13:40,641 INFO  [Log] Change -Free to Reserve with geo number 
+2019-10-21 14:13:40,642 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 14:13:40,642 INFO  [Log] I am in onStart method null 
+2019-10-21 14:13:40,642 INFO  [Log] NH_URL 
+2019-10-21 14:13:40,658 INFO  [Log] NH_URL 
+2019-10-21 14:13:52,378 INFO  [Log] Element Found: True 
+2019-10-21 14:13:52,378 INFO  [Log] Excel_URL 
+2019-10-21 14:14:11,105 INFO  [Log] Element Found: True 
+2019-10-21 14:14:11,246 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 14:14:12,239 INFO  [Log] URL 
+2019-10-21 14:14:16,337 INFO  [Log] Change -Free to Reserve
+with Location Independent Numbers 
+2019-10-21 14:14:16,344 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 14:14:16,344 INFO  [Log] I am in onStart method null 
+2019-10-21 14:14:16,344 INFO  [Log] NH_URL 
+2019-10-21 14:14:16,387 INFO  [Log] NH_URL 
+2019-10-21 14:14:32,278 INFO  [Log] Element Found: False 
+2019-10-21 14:14:32,278 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 14:14:33,307 INFO  [Log] URL 
+2019-10-21 14:14:37,394 INFO  [Log] Change -Free to Reserve with
+UK WIDE (Any Services) 
+2019-10-21 14:14:37,395 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 14:14:37,395 INFO  [Log] I am in onStart method null 
+2019-10-21 14:14:37,395 INFO  [Log] NH_URL 
+2019-10-21 14:14:37,408 INFO  [Log] NH_URL 
+2019-10-21 14:14:53,094 INFO  [Log] Element Found: False 
+2019-10-21 14:14:53,094 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 14:14:54,165 INFO  [Log] URL 
+2019-10-21 14:14:58,239 INFO  [Log] Change -Free to Reserve with
+UK WIDE (Public Services) 
+2019-10-21 14:14:58,240 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 14:14:58,240 INFO  [Log] I am in onStart method null 
+2019-10-21 14:14:58,240 INFO  [Log] NH_URL 
+2019-10-21 14:14:58,262 INFO  [Log] NH_URL 
+2019-10-21 14:15:09,058 INFO  [Log] Element Found: True 
+2019-10-21 14:15:09,058 INFO  [Log] Excel_URL 
+2019-10-21 14:15:27,911 INFO  [Log] Element Found: True 
+2019-10-21 14:15:28,053 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 14:15:29,107 INFO  [Log] URL 
+2019-10-21 14:15:33,257 INFO  [Log] Change -Free to Reserve with Country Denmark 
+2019-10-21 14:15:33,260 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 14:15:33,260 INFO  [Log] I am in onStart method null 
+2019-10-21 14:15:33,260 INFO  [Log] NH_URL 
+2019-10-21 14:15:33,283 INFO  [Log] NH_URL 
+2019-10-21 14:15:45,449 INFO  [Log] Element Found: True 
+2019-10-21 14:15:45,449 INFO  [Log] Excel_URL 
+2019-10-21 14:16:04,139 INFO  [Log] Element Found: True 
+2019-10-21 14:16:04,283 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 14:16:05,285 INFO  [Log] URL 
+2019-10-21 14:16:09,406 INFO  [Log] Change -Free to Reserve with Country Portugal 
+2019-10-21 14:16:09,407 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 14:16:09,407 INFO  [Log] I am in onStart method null 
+2019-10-21 14:16:09,407 INFO  [Log] NH_URL 
+2019-10-21 14:16:09,414 INFO  [Log] NH_URL 
+2019-10-21 14:16:21,385 INFO  [Log] Element Found: True 
+2019-10-21 14:16:21,385 INFO  [Log] Excel_URL 
+2019-10-21 14:16:39,978 INFO  [Log] Element Found: True 
+2019-10-21 14:16:40,116 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 14:16:41,134 INFO  [Log] URL 
+2019-10-21 14:16:45,205 INFO  [Log] Change -Free to Reserve with Country Spain 
+2019-10-21 14:16:45,205 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 14:16:45,206 INFO  [Log] I am in onStart method null 
+2019-10-21 14:16:45,206 INFO  [Log] NH_URL 
+2019-10-21 14:16:45,211 INFO  [Log] NH_URL 
+2019-10-21 14:16:53,967 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 14:16:54,981 INFO  [Log] URL 
+2019-10-21 14:16:59,102 INFO  [Log] Change -Reserve to activate with Address 
+2019-10-21 14:16:59,102 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 14:16:59,103 INFO  [Log] I am in onStart method null 
+2019-10-21 14:16:59,103 INFO  [Log] NH_URL 
+2019-10-21 14:16:59,108 INFO  [Log] NH_URL 
+2019-10-21 14:17:11,106 INFO  [Log] Element Found: True 
+2019-10-21 14:17:11,106 INFO  [Log] Excel_URL 
+2019-10-21 14:17:35,280 INFO  [Log] Element Found: False 
+2019-10-21 14:17:55,308 INFO  [Log] Element Found: False 
+2019-10-21 14:18:15,371 INFO  [Log] Element Found: False 
+2019-10-21 14:18:35,408 INFO  [Log] Element Found: False 
+2019-10-21 14:18:55,441 INFO  [Log] Element Found: False 
+2019-10-21 14:19:15,488 INFO  [Log] Element Found: False 
+2019-10-21 14:19:35,544 INFO  [Log] Element Found: False 
+2019-10-21 14:19:55,587 INFO  [Log] Element Found: False 
+2019-10-21 14:20:15,650 INFO  [Log] Element Found: False 
+2019-10-21 14:20:35,687 INFO  [Log] Element Found: False 
+2019-10-21 14:20:55,727 INFO  [Log] Element Found: False 
+2019-10-21 14:21:15,772 INFO  [Log] Element Found: False 
+2019-10-21 14:21:35,830 INFO  [Log] Element Found: False 
+2019-10-21 14:21:55,892 INFO  [Log] Element Found: False 
+2019-10-21 14:22:15,933 INFO  [Log] Element Found: False 
+2019-10-21 14:22:36,004 INFO  [Log] Element Found: False 
+2019-10-21 14:22:56,080 INFO  [Log] Element Found: False 
+2019-10-21 14:23:16,135 INFO  [Log] Element Found: False 
+2019-10-21 14:23:36,203 INFO  [Log] Element Found: False 
+2019-10-21 14:23:56,226 INFO  [Log] Element Found: False 
+2019-10-21 14:24:16,288 INFO  [Log] Element Found: False 
+2019-10-21 14:24:36,350 INFO  [Log] Element Found: False 
+2019-10-21 14:24:56,394 INFO  [Log] Element Found: False 
+2019-10-21 14:25:16,454 INFO  [Log] Element Found: False 
+2019-10-21 14:25:36,528 INFO  [Log] Element Found: False 
+2019-10-21 14:25:56,571 INFO  [Log] Element Found: False 
+2019-10-21 14:26:16,643 INFO  [Log] Element Found: False 
+2019-10-21 14:26:36,708 INFO  [Log] Element Found: False 
+2019-10-21 14:26:56,771 INFO  [Log] Element Found: False 
+2019-10-21 14:27:16,823 INFO  [Log] Element Found: False 
+2019-10-21 14:27:36,857 INFO  [Log] Element Found: False 
+2019-10-21 14:27:56,924 INFO  [Log] Element Found: False 
+2019-10-21 14:28:16,941 INFO  [Log] Element Found: False 
+2019-10-21 14:28:36,995 INFO  [Log] Element Found: False 
+2019-10-21 14:28:57,052 INFO  [Log] Element Found: False 
+2019-10-21 14:29:17,077 INFO  [Log] Element Found: False 
+2019-10-21 14:29:37,149 INFO  [Log] Element Found: False 
+2019-10-21 14:29:57,167 INFO  [Log] Element Found: False 
+2019-10-21 14:30:17,199 INFO  [Log] Element Found: False 
+2019-10-21 14:30:37,221 INFO  [Log] Element Found: False 
+2019-10-21 14:30:57,263 INFO  [Log] Element Found: False 
+2019-10-21 14:31:17,285 INFO  [Log] Element Found: False 
+2019-10-21 14:31:37,319 INFO  [Log] Element Found: False 
+2019-10-21 14:31:57,337 INFO  [Log] Element Found: False 
+2019-10-21 14:32:17,374 INFO  [Log] Element Found: False 
+2019-10-21 14:32:37,451 INFO  [Log] Element Found: False 
+2019-10-21 14:32:57,481 INFO  [Log] Element Found: False 
+2019-10-21 14:33:17,532 INFO  [Log] Element Found: False 
+2019-10-21 14:33:37,572 INFO  [Log] Element Found: False 
+2019-10-21 14:33:57,600 INFO  [Log] Element Found: False 
+2019-10-21 14:34:17,643 INFO  [Log] Element Found: False 
+2019-10-21 14:34:37,679 INFO  [Log] Element Found: False 
+2019-10-21 14:34:57,704 INFO  [Log] Element Found: False 
+2019-10-21 14:35:17,750 INFO  [Log] Element Found: False 
+2019-10-21 14:35:37,818 INFO  [Log] Element Found: False 
+2019-10-21 14:35:57,879 INFO  [Log] Element Found: False 
+2019-10-21 14:36:17,926 INFO  [Log] Element Found: False 
+2019-10-21 14:36:37,996 INFO  [Log] Element Found: False 
+2019-10-21 14:36:58,017 INFO  [Log] Element Found: False 
+2019-10-21 14:37:18,035 INFO  [Log] Element Found: False 
+2019-10-21 14:37:38,089 INFO  [Log] Element Found: False 
+2019-10-21 14:37:58,155 INFO  [Log] Element Found: False 
+2019-10-21 14:38:18,214 INFO  [Log] Element Found: False 
+2019-10-21 14:38:38,280 INFO  [Log] Element Found: False 
+2019-10-21 14:38:58,346 INFO  [Log] Element Found: False 
+2019-10-21 14:39:18,405 INFO  [Log] Element Found: False 
+2019-10-21 14:39:38,455 INFO  [Log] Element Found: False 
+2019-10-21 14:39:58,486 INFO  [Log] Element Found: False 
+2019-10-21 14:40:18,514 INFO  [Log] Element Found: False 
+2019-10-21 14:40:38,580 INFO  [Log] Element Found: False 
+2019-10-21 14:40:58,602 INFO  [Log] Element Found: False 
+2019-10-21 14:41:18,667 INFO  [Log] Element Found: False 
+2019-10-21 14:41:38,719 INFO  [Log] Element Found: False 
+2019-10-21 14:41:58,747 INFO  [Log] Element Found: False 
+2019-10-21 14:42:18,774 INFO  [Log] Element Found: False 
+2019-10-21 14:42:38,796 INFO  [Log] Element Found: False 
+2019-10-21 14:42:58,846 INFO  [Log] Element Found: False 
+2019-10-21 14:43:18,889 INFO  [Log] Element Found: False 
+2019-10-21 14:43:38,911 INFO  [Log] Element Found: False 
+2019-10-21 14:43:58,977 INFO  [Log] Element Found: False 
+2019-10-21 14:44:19,032 INFO  [Log] Element Found: False 
+2019-10-21 14:44:39,086 INFO  [Log] Element Found: False 
+2019-10-21 14:44:59,115 INFO  [Log] Element Found: False 
+2019-10-21 14:45:19,142 INFO  [Log] Element Found: False 
+2019-10-21 14:45:39,164 INFO  [Log] Element Found: False 
+2019-10-21 14:45:59,242 INFO  [Log] Element Found: False 
+2019-10-21 14:46:19,308 INFO  [Log] Element Found: False 
+2019-10-21 14:46:39,351 INFO  [Log] Element Found: False 
+2019-10-21 14:46:59,398 INFO  [Log] Element Found: False 
+2019-10-21 14:47:19,416 INFO  [Log] Element Found: False 
+2019-10-21 14:47:39,488 INFO  [Log] Element Found: False 
+2019-10-21 14:47:59,527 INFO  [Log] Element Found: False 
+2019-10-21 14:48:19,547 INFO  [Log] Element Found: False 
+2019-10-21 14:48:39,584 INFO  [Log] Element Found: False 
+2019-10-21 14:48:59,603 INFO  [Log] Element Found: False 
+2019-10-21 14:49:19,639 INFO  [Log] Element Found: False 
+2019-10-21 14:49:39,706 INFO  [Log] Element Found: False 
+2019-10-21 14:49:59,738 INFO  [Log] Element Found: False 
+2019-10-21 14:50:19,760 INFO  [Log] Element Found: False 
+2019-10-21 14:50:39,776 INFO  [Log] Element Found: False 
+2019-10-21 14:50:59,834 INFO  [Log] Element Found: False 
+2019-10-21 14:51:19,858 INFO  [Log] Element Found: False 
+2019-10-21 14:51:39,923 INFO  [Log] Element Found: False 
+2019-10-21 14:51:59,997 INFO  [Log] Element Found: False 
+2019-10-21 14:52:20,046 INFO  [Log] Element Found: False 
+2019-10-21 14:52:40,075 INFO  [Log] Element Found: False 
+2019-10-21 14:53:00,147 INFO  [Log] Element Found: False 
+2019-10-21 14:53:20,193 INFO  [Log] Element Found: False 
+2019-10-21 14:53:40,248 INFO  [Log] Element Found: False 
+2019-10-21 14:54:00,321 INFO  [Log] Element Found: False 
+2019-10-21 14:54:20,379 INFO  [Log] Element Found: False 
+2019-10-21 14:54:40,457 INFO  [Log] Element Found: False 
+2019-10-21 14:55:00,476 INFO  [Log] Element Found: False 
+2019-10-21 14:55:20,509 INFO  [Log] Element Found: False 
+2019-10-21 14:55:40,547 INFO  [Log] Element Found: False 
+2019-10-21 14:56:00,598 INFO  [Log] Element Found: False 
+2019-10-21 14:56:20,639 INFO  [Log] Element Found: False 
+2019-10-21 14:56:40,683 INFO  [Log] Element Found: False 
+2019-10-21 14:57:00,727 INFO  [Log] Element Found: False 
+2019-10-21 14:57:20,775 INFO  [Log] Element Found: False 
+2019-10-21 14:57:40,845 INFO  [Log] Element Found: False 
+2019-10-21 14:58:00,867 INFO  [Log] Element Found: False 
+2019-10-21 14:58:20,896 INFO  [Log] Element Found: False 
+2019-10-21 14:58:40,960 INFO  [Log] Element Found: False 
+2019-10-21 14:59:01,026 INFO  [Log] Element Found: False 
+2019-10-21 14:59:21,091 INFO  [Log] Element Found: False 
+2019-10-21 14:59:41,161 INFO  [Log] Element Found: False 
+2019-10-21 15:00:01,222 INFO  [Log] Element Found: False 
+2019-10-21 15:00:21,285 INFO  [Log] Element Found: False 
+2019-10-21 15:00:41,319 INFO  [Log] Element Found: False 
+2019-10-21 15:01:01,359 INFO  [Log] Element Found: False 
+2019-10-21 15:01:21,392 INFO  [Log] Element Found: False 
+2019-10-21 15:01:41,424 INFO  [Log] Element Found: False 
+2019-10-21 15:02:01,487 INFO  [Log] Element Found: False 
+2019-10-21 15:02:21,516 INFO  [Log] Element Found: False 
+2019-10-21 15:02:41,574 INFO  [Log] Element Found: False 
+2019-10-21 15:03:01,606 INFO  [Log] Element Found: False 
+2019-10-21 15:03:21,673 INFO  [Log] Element Found: False 
+2019-10-21 15:03:41,740 INFO  [Log] Element Found: False 
+2019-10-21 15:04:01,767 INFO  [Log] Element Found: False 
+2019-10-21 15:04:21,796 INFO  [Log] Element Found: False 
+2019-10-21 15:04:41,833 INFO  [Log] Element Found: False 
+2019-10-21 15:05:01,894 INFO  [Log] Element Found: False 
+2019-10-21 15:05:21,920 INFO  [Log] Element Found: False 
+2019-10-21 15:05:41,975 INFO  [Log] Element Found: False 
+2019-10-21 15:06:02,026 INFO  [Log] Element Found: False 
+2019-10-21 15:06:22,159 INFO  [Log] Element Found: False 
+2019-10-21 15:06:42,193 INFO  [Log] Element Found: False 
+2019-10-21 15:07:02,237 INFO  [Log] Element Found: False 
+2019-10-21 15:07:22,263 INFO  [Log] Element Found: False 
+2019-10-21 15:07:42,332 INFO  [Log] Element Found: False 
+2019-10-21 15:08:02,372 INFO  [Log] Element Found: False 
+2019-10-21 15:08:22,445 INFO  [Log] Element Found: False 
+2019-10-21 15:08:42,461 INFO  [Log] Element Found: False 
+2019-10-21 15:09:02,488 INFO  [Log] Element Found: False 
+2019-10-21 15:09:22,558 INFO  [Log] Element Found: False 
+2019-10-21 15:09:42,625 INFO  [Log] Element Found: False 
+2019-10-21 15:10:02,666 INFO  [Log] Element Found: False 
+2019-10-21 15:10:22,744 INFO  [Log] Element Found: False 
+2019-10-21 15:10:42,769 INFO  [Log] Element Found: False 
+2019-10-21 15:11:02,804 INFO  [Log] Element Found: False 
+2019-10-21 15:11:22,860 INFO  [Log] Element Found: False 
+2019-10-21 15:11:42,891 INFO  [Log] Element Found: False 
+2019-10-21 15:12:02,937 INFO  [Log] Element Found: False 
+2019-10-21 15:12:08,823 INFO  [Log] Element Found: True 
+2019-10-21 15:12:28,007 INFO  [Log] I am on Finish method Scenario 
+2019-10-21 15:14:56,849 INFO  [Log] I am on Start method Scenario 
+2019-10-21 15:14:58,088 INFO  [Log] URL 
+2019-10-21 15:15:03,488 INFO  [Log] Change -Reserve to activate with Address 
+2019-10-21 15:15:03,492 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 15:15:03,493 INFO  [Log] I am in onStart method null 
+2019-10-21 15:15:03,558 INFO  [Log] NH_URL 
+2019-10-21 15:15:03,573 INFO  [Log] NH_URL 
+2019-10-21 15:15:15,818 INFO  [Log] Element Found: True 
+2019-10-21 15:15:15,818 INFO  [Log] Excel_URL 
+2019-10-21 15:15:40,139 INFO  [Log] Element Found: False 
+2019-10-21 15:16:00,191 INFO  [Log] Element Found: False 
+2019-10-21 15:16:20,265 INFO  [Log] Element Found: False 
+2019-10-21 15:16:40,330 INFO  [Log] Element Found: False 
+2019-10-21 15:17:00,383 INFO  [Log] Element Found: False 
+2019-10-21 15:17:20,461 INFO  [Log] Element Found: False 
+2019-10-21 15:17:46,341 INFO  [Log] I am on Start method Scenario 
+2019-10-21 15:17:47,546 INFO  [Log] URL 
+2019-10-21 15:17:52,434 INFO  [Log] Change -Reserve to activate with Address 
+2019-10-21 15:17:52,441 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 15:17:52,441 INFO  [Log] I am in onStart method null 
+2019-10-21 15:17:52,499 INFO  [Log] NH_URL 
+2019-10-21 15:17:52,512 INFO  [Log] NH_URL 
+2019-10-21 15:18:04,609 INFO  [Log] Element Found: True 
+2019-10-21 15:18:04,610 INFO  [Log] Excel_URL 
+2019-10-21 15:18:08,883 INFO  [Log] Element Found: True 
+2019-10-21 15:19:47,854 INFO  [Log] I am on Start method Scenario 
+2019-10-21 15:19:49,051 INFO  [Log] URL 
+2019-10-21 15:19:53,922 INFO  [Log] Change -Reserve to activate with Address 
+2019-10-21 15:19:53,927 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 15:19:53,927 INFO  [Log] I am in onStart method null 
+2019-10-21 15:19:54,016 INFO  [Log] NH_URL 
+2019-10-21 15:19:54,043 INFO  [Log] NH_URL 
+2019-10-21 15:20:06,360 INFO  [Log] Element Found: True 
+2019-10-21 15:20:06,360 INFO  [Log] Excel_URL 
+2019-10-21 15:20:10,641 INFO  [Log] Element Found: True 
+2019-10-21 15:24:24,969 INFO  [Log] I am on Start method Scenario 
+2019-10-21 15:24:26,200 INFO  [Log] URL 
+2019-10-21 15:24:30,942 INFO  [Log] Number Enquiry (Search by Number Range) 
+2019-10-21 15:24:30,948 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 15:24:30,948 INFO  [Log] I am in onStart method null 
+2019-10-21 15:24:31,014 INFO  [Log] NH_URL 
+2019-10-21 15:24:31,028 INFO  [Log] NH_URL 
+2019-10-21 15:24:45,965 INFO  [Log] Excel_URL 
+2019-10-21 15:24:47,571 INFO  [Log] Element Found: True 
+2019-10-21 15:25:05,553 INFO  [Log] Element Found: True 
+2019-10-21 15:25:05,718 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 15:25:06,968 INFO  [Log] URL 
+2019-10-21 15:25:11,119 INFO  [Log] Number Enquiry (Search by Transaction Id) 
+2019-10-21 15:25:11,121 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 15:25:11,121 INFO  [Log] I am in onStart method null 
+2019-10-21 15:25:11,121 INFO  [Log] NH_URL 
+2019-10-21 15:25:11,125 INFO  [Log] NH_URL 
+2019-10-21 15:25:24,202 INFO  [Log] Element Found: True 
+2019-10-21 15:25:24,202 INFO  [Log] Excel_URL 
+2019-10-21 15:25:41,208 INFO  [Log] Element Found: True 
+2019-10-21 15:26:10,520 INFO  [Log] Element Found: False 
+2019-10-21 15:26:10,521 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 15:26:11,569 INFO  [Log] URL 
+2019-10-21 15:26:15,626 INFO  [Log] Number Enquiry (Search by Customer Reference) 
+2019-10-21 15:26:15,628 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 15:26:15,628 INFO  [Log] I am in onStart method null 
+2019-10-21 15:26:15,628 INFO  [Log] NH_URL 
+2019-10-21 15:26:15,632 INFO  [Log] NH_URL 
+2019-10-21 15:26:26,408 INFO  [Log] Element Found: True 
+2019-10-21 15:26:26,408 INFO  [Log] Excel_URL 
+2019-10-21 15:26:42,966 INFO  [Log] Element Found: True 
+2019-10-21 15:26:48,883 INFO  [Log] Element Found: True 
+2019-10-21 15:26:48,884 INFO  [Log] Excel_URL 
+2019-10-21 15:27:05,352 INFO  [Log] Element Found: True 
+2019-10-21 15:27:05,501 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 15:27:06,557 INFO  [Log] URL 
+2019-10-21 15:27:10,608 INFO  [Log] Number Enquiry (Search by Number Status) 
+2019-10-21 15:27:10,609 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 15:27:10,609 INFO  [Log] I am in onStart method null 
+2019-10-21 15:27:10,609 INFO  [Log] NH_URL 
+2019-10-21 15:27:10,628 INFO  [Log] NH_URL 
+2019-10-21 15:27:22,860 INFO  [Log] Element Found: True 
+2019-10-21 15:27:22,860 INFO  [Log] Excel_URL 
+2019-10-21 15:27:32,347 INFO  [Log] Element Found: True 
+2019-10-21 15:27:32,347 INFO  [Log] Excel_URL 
+2019-10-21 15:27:51,366 INFO  [Log] Element Found: True 
+2019-10-21 15:27:58,885 INFO  [Log] Element Found: True 
+2019-10-21 15:27:58,885 INFO  [Log] Excel_URL 
+2019-10-21 15:28:08,430 INFO  [Log] Element Found: True 
+2019-10-21 15:28:08,430 INFO  [Log] Excel_URL 
+2019-10-21 15:28:18,065 INFO  [Log] Element Found: True 
+2019-10-21 15:28:18,066 INFO  [Log] Excel_URL 
+2019-10-21 15:28:24,708 INFO  [Log] Element Found: True 
+2019-10-21 15:28:24,708 INFO  [Log] Excel_URL 
+2019-10-21 15:28:46,990 INFO  [Log] Element Found: True 
+2019-10-21 15:28:56,540 INFO  [Log] Element Found: True 
+2019-10-21 15:28:56,541 INFO  [Log] Excel_URL 
+2019-10-21 15:29:03,161 INFO  [Log] Element Found: True 
+2019-10-21 15:29:03,162 INFO  [Log] Excel_URL 
+2019-10-21 15:29:08,659 INFO  [Log] Element Found: True 
+2019-10-21 15:29:08,660 INFO  [Log] Excel_URL 
+2019-10-21 15:30:46,725 INFO  [Log] Element Found: False 
+2019-10-21 15:30:54,016 INFO  [Log] Element Found: True 
+2019-10-21 15:30:54,017 INFO  [Log] Excel_URL 
+2019-10-21 15:30:57,708 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 15:30:59,180 INFO  [Log] URL 
+2019-10-21 15:31:03,351 INFO  [Log] Number Enquiry (Search by Number Range with country Austria) 
+2019-10-21 15:31:03,352 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 15:31:03,352 INFO  [Log] I am in onStart method null 
+2019-10-21 15:31:03,352 INFO  [Log] NH_URL 
+2019-10-21 15:31:03,356 INFO  [Log] NH_URL 
+2019-10-21 15:31:15,747 INFO  [Log] Excel_URL 
+2019-10-21 15:31:17,168 INFO  [Log] Element Found: True 
+2019-10-21 15:31:34,098 INFO  [Log] Element Found: True 
+2019-10-21 15:31:34,273 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 15:31:35,478 INFO  [Log] URL 
+2019-10-21 15:31:39,608 INFO  [Log] Number Enquiry (Search by Transaction Id with country Austria) 
+2019-10-21 15:31:39,611 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 15:31:39,611 INFO  [Log] I am in onStart method null 
+2019-10-21 15:31:39,612 INFO  [Log] NH_URL 
+2019-10-21 15:31:39,630 INFO  [Log] NH_URL 
+2019-10-21 15:31:52,997 INFO  [Log] Element Found: True 
+2019-10-21 15:31:52,997 INFO  [Log] Excel_URL 
+2019-10-21 15:32:09,864 INFO  [Log] Element Found: True 
+2019-10-21 15:32:19,094 INFO  [Log] Element Found: True 
+2019-10-21 15:32:19,094 INFO  [Log] Excel_URL 
+2019-10-21 15:32:36,285 INFO  [Log] Element Found: True 
+2019-10-21 15:32:36,420 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 15:32:37,439 INFO  [Log] URL 
+2019-10-21 15:32:41,557 INFO  [Log] Number Enquiry (Search by Customer Reference with country Austria) 
+2019-10-21 15:32:41,558 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 15:32:41,558 INFO  [Log] I am in onStart method null 
+2019-10-21 15:32:41,558 INFO  [Log] NH_URL 
+2019-10-21 15:32:41,581 INFO  [Log] NH_URL 
+2019-10-21 15:32:52,525 INFO  [Log] Element Found: True 
+2019-10-21 15:32:52,525 INFO  [Log] Excel_URL 
+2019-10-21 15:33:28,953 INFO  [Log] Element Found: False 
+2019-10-21 15:33:34,763 INFO  [Log] Element Found: True 
+2019-10-21 15:33:34,763 INFO  [Log] Excel_URL 
+2019-10-21 15:34:11,212 INFO  [Log] Element Found: False 
+2019-10-21 15:34:11,214 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 15:34:12,279 INFO  [Log] URL 
+2019-10-21 15:34:16,405 INFO  [Log] Number Enquiry(Search by Number Status with country Austria) 
+2019-10-21 15:34:16,406 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 15:34:16,406 INFO  [Log] I am in onStart method null 
+2019-10-21 15:34:16,406 INFO  [Log] NH_URL 
+2019-10-21 15:34:16,440 INFO  [Log] NH_URL 
+2019-10-21 15:34:28,331 INFO  [Log] Element Found: True 
+2019-10-21 15:34:28,331 INFO  [Log] Excel_URL 
+2019-10-21 15:34:37,597 INFO  [Log] Element Found: True 
+2019-10-21 15:34:37,598 INFO  [Log] Excel_URL 
+2019-10-21 15:34:47,160 INFO  [Log] Element Found: True 
+2019-10-21 15:34:47,160 INFO  [Log] Excel_URL 
+2019-10-21 15:34:56,784 INFO  [Log] Element Found: True 
+2019-10-21 15:34:56,784 INFO  [Log] Excel_URL 
+2019-10-21 15:35:03,496 INFO  [Log] Element Found: True 
+2019-10-21 15:35:03,496 INFO  [Log] Excel_URL 
+2019-10-21 15:35:25,564 INFO  [Log] Element Found: True 
+2019-10-21 15:35:35,035 INFO  [Log] Element Found: True 
+2019-10-21 15:35:35,035 INFO  [Log] Excel_URL 
+2019-10-21 15:36:01,530 INFO  [Log] Element Found: False 
+2019-10-21 15:36:06,770 INFO  [Log] Element Found: True 
+2019-10-21 15:36:06,771 INFO  [Log] Excel_URL 
+2019-10-21 15:37:44,780 INFO  [Log] Element Found: False 
+2019-10-21 15:37:50,005 INFO  [Log] Element Found: True 
+2019-10-21 15:37:50,005 INFO  [Log] Excel_URL 
+2019-10-21 15:37:50,117 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 15:37:51,196 INFO  [Log] URL 
+2019-10-21 15:37:55,349 INFO  [Log] Number Enquiry1 (Search by reserved to activate  with country UK) 
+2019-10-21 15:37:55,350 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 15:37:55,350 INFO  [Log] I am in onStart method null 
+2019-10-21 15:37:55,350 INFO  [Log] NH_URL 
+2019-10-21 15:37:55,355 INFO  [Log] NH_URL 
+2019-10-21 15:38:07,868 INFO  [Log] Element Found: True 
+2019-10-21 15:38:07,868 INFO  [Log] Excel_URL 
+2019-10-21 15:38:09,978 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 15:38:10,992 INFO  [Log] URL 
+2019-10-21 15:38:15,052 INFO  [Log] Number Enquiry (Search by Number Status with country UK) 
+2019-10-21 15:38:15,053 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 15:38:15,053 INFO  [Log] I am in onStart method null 
+2019-10-21 15:38:15,053 INFO  [Log] NH_URL 
+2019-10-21 15:38:15,058 INFO  [Log] NH_URL 
+2019-10-21 15:38:27,188 INFO  [Log] Element Found: True 
+2019-10-21 15:38:27,188 INFO  [Log] Excel_URL 
+2019-10-21 15:38:36,644 INFO  [Log] Element Found: True 
+2019-10-21 15:38:36,645 INFO  [Log] Excel_URL 
+2019-10-21 15:38:55,438 INFO  [Log] Element Found: True 
+2019-10-21 15:39:02,837 INFO  [Log] Element Found: True 
+2019-10-21 15:39:02,838 INFO  [Log] Excel_URL 
+2019-10-21 15:39:17,262 INFO  [Log] Element Found: True 
+2019-10-21 15:39:17,263 INFO  [Log] Excel_URL 
+2019-10-21 15:39:26,918 INFO  [Log] Element Found: True 
+2019-10-21 15:39:26,918 INFO  [Log] Excel_URL 
+2019-10-21 15:39:36,536 INFO  [Log] Element Found: True 
+2019-10-21 15:39:36,536 INFO  [Log] Excel_URL 
+2019-10-21 15:39:43,236 INFO  [Log] Element Found: True 
+2019-10-21 15:39:43,236 INFO  [Log] Excel_URL 
+2019-10-21 15:40:05,598 INFO  [Log] Element Found: True 
+2019-10-21 15:40:14,993 INFO  [Log] Element Found: True 
+2019-10-21 15:40:14,993 INFO  [Log] Excel_URL 
+2019-10-21 15:40:39,046 INFO  [Log] Element Found: True 
+2019-10-21 15:40:45,451 INFO  [Log] Element Found: True 
+2019-10-21 15:40:45,451 INFO  [Log] Excel_URL 
+2019-10-21 15:40:51,038 INFO  [Log] Element Found: True 
+2019-10-21 15:40:51,039 INFO  [Log] Excel_URL 
+2019-10-21 15:42:29,131 INFO  [Log] Element Found: False 
+2019-10-21 15:42:36,076 INFO  [Log] Element Found: True 
+2019-10-21 15:42:36,076 INFO  [Log] Excel_URL 
+2019-10-21 15:42:40,364 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 15:42:41,883 INFO  [Log] URL 
+2019-10-21 15:42:45,974 INFO  [Log] Change -Free to Reserve 
+2019-10-21 15:42:45,975 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 15:42:45,975 INFO  [Log] I am in onStart method null 
+2019-10-21 15:42:45,975 INFO  [Log] NH_URL 
+2019-10-21 15:42:45,980 INFO  [Log] NH_URL 
+2019-10-21 15:42:59,487 INFO  [Log] Element Found: True 
+2019-10-21 15:42:59,487 INFO  [Log] Excel_URL 
+2019-10-21 15:43:18,638 INFO  [Log] Element Found: True 
+2019-10-21 15:43:18,785 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 15:43:19,838 INFO  [Log] URL 
+2019-10-21 15:43:23,908 INFO  [Log] Number Enquiry (Number Status)with Address scenario 
+2019-10-21 15:43:23,908 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 15:43:23,909 INFO  [Log] I am in onStart method null 
+2019-10-21 15:43:23,909 INFO  [Log] NH_URL 
+2019-10-21 15:43:23,913 INFO  [Log] NH_URL 
+2019-10-21 15:43:37,846 INFO  [Log] Element Found: True 
+2019-10-21 15:43:37,847 INFO  [Log] Excel_URL 
+2019-10-21 15:44:02,163 INFO  [Log] Element Found: True 
+2019-10-21 15:44:02,302 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 15:44:03,367 INFO  [Log] URL 
+2019-10-21 15:44:07,506 INFO  [Log] Change -Reserve to Activate without Address 
+2019-10-21 15:44:07,506 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 15:44:07,507 INFO  [Log] I am in onStart method null 
+2019-10-21 15:44:07,507 INFO  [Log] NH_URL 
+2019-10-21 15:44:07,512 INFO  [Log] NH_URL 
+2019-10-21 15:44:19,566 INFO  [Log] Element Found: True 
+2019-10-21 15:44:19,567 INFO  [Log] Excel_URL 
+2019-10-21 15:45:07,086 INFO  [Log] Element Found: False 
+2019-10-21 15:45:07,087 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 15:45:08,127 INFO  [Log] URL 
+2019-10-21 15:45:12,196 INFO  [Log] Change -Free to Activate with Address 
+2019-10-21 15:45:12,198 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 15:45:12,198 INFO  [Log] I am in onStart method null 
+2019-10-21 15:45:12,198 INFO  [Log] NH_URL 
+2019-10-21 15:45:12,203 INFO  [Log] NH_URL 
+2019-10-21 15:45:24,295 INFO  [Log] Element Found: True 
+2019-10-21 15:45:24,295 INFO  [Log] Excel_URL 
+2019-10-21 15:45:29,414 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 15:45:30,465 INFO  [Log] URL 
+2019-10-21 15:45:34,530 INFO  [Log] Change -Free to Activate Without Address 
+2019-10-21 15:45:34,531 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 15:45:34,531 INFO  [Log] I am in onStart method null 
+2019-10-21 15:45:34,531 INFO  [Log] NH_URL 
+2019-10-21 15:45:34,536 INFO  [Log] NH_URL 
+2019-10-21 15:45:50,321 INFO  [Log] Element Found: True 
+2019-10-21 15:45:50,321 INFO  [Log] Excel_URL 
+2019-10-21 15:45:50,409 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 15:45:51,465 INFO  [Log] URL 
+2019-10-21 15:45:55,522 INFO  [Log] Change -Update the Address with port-in 
+2019-10-21 15:45:55,523 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 15:45:55,523 INFO  [Log] I am in onStart method null 
+2019-10-21 15:45:55,523 INFO  [Log] NH_URL 
+2019-10-21 15:45:55,527 INFO  [Log] NH_URL 
+2019-10-21 15:46:09,503 INFO  [Log] Element Found: True 
+2019-10-21 15:46:09,503 INFO  [Log] Excel_URL 
+2019-10-21 15:46:33,711 INFO  [Log] Element Found: True 
+2019-10-21 15:46:33,859 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 15:46:34,879 INFO  [Log] URL 
+2019-10-21 15:46:38,941 INFO  [Log] Change -Update the Address with Activate  
+2019-10-21 15:46:38,942 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 15:46:38,942 INFO  [Log] I am in onStart method null 
+2019-10-21 15:46:38,942 INFO  [Log] NH_URL 
+2019-10-21 15:46:38,958 INFO  [Log] NH_URL 
+2019-10-21 15:46:53,150 INFO  [Log] Element Found: True 
+2019-10-21 15:46:53,150 INFO  [Log] Excel_URL 
+2019-10-21 15:48:05,167 INFO  [Log] URL 
+2019-10-21 15:48:09,254 INFO  [Log] Change -Activate to Deactivate with Activate Senario 
+2019-10-21 15:48:09,255 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 15:48:09,255 INFO  [Log] I am in onStart method null 
+2019-10-21 15:48:09,255 INFO  [Log] NH_URL 
+2019-10-21 15:48:09,260 INFO  [Log] NH_URL 
+2019-10-21 15:48:23,853 INFO  [Log] Element Found: True 
+2019-10-21 15:48:23,854 INFO  [Log] Excel_URL 
+2019-10-21 15:48:44,284 INFO  [Log] Element Found: True 
+2019-10-21 15:48:44,423 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 15:48:45,509 INFO  [Log] URL 
+2019-10-21 15:48:49,612 INFO  [Log] Change -Activate to Deactivate with port-in Scenario 
+2019-10-21 15:48:49,613 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 15:48:49,613 INFO  [Log] I am in onStart method null 
+2019-10-21 15:48:49,614 INFO  [Log] NH_URL 
+2019-10-21 15:48:49,625 INFO  [Log] NH_URL 
+2019-10-21 15:49:03,488 INFO  [Log] Element Found: True 
+2019-10-21 15:49:03,488 INFO  [Log] Excel_URL 
+2019-10-21 15:49:23,714 INFO  [Log] Element Found: True 
+2019-10-21 15:49:23,852 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 15:49:24,872 INFO  [Log] URL 
+2019-10-21 15:49:28,956 INFO  [Log] Change -Free to Reserve with geo number 
+2019-10-21 15:49:28,957 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 15:49:28,957 INFO  [Log] I am in onStart method null 
+2019-10-21 15:49:28,957 INFO  [Log] NH_URL 
+2019-10-21 15:49:28,961 INFO  [Log] NH_URL 
+2019-10-21 15:49:40,936 INFO  [Log] Element Found: True 
+2019-10-21 15:49:40,936 INFO  [Log] Excel_URL 
+2019-10-21 15:49:59,817 INFO  [Log] Element Found: True 
+2019-10-21 15:49:59,946 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 15:50:00,987 INFO  [Log] URL 
+2019-10-21 15:50:05,100 INFO  [Log] Change -Free to Reserve
+with Location Independent Numbers 
+2019-10-21 15:50:05,101 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 15:50:05,101 INFO  [Log] I am in onStart method null 
+2019-10-21 15:50:05,101 INFO  [Log] NH_URL 
+2019-10-21 15:50:05,106 INFO  [Log] NH_URL 
+2019-10-21 15:50:21,055 INFO  [Log] Element Found: False 
+2019-10-21 15:50:21,055 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 15:50:22,268 INFO  [Log] URL 
+2019-10-21 15:50:26,386 INFO  [Log] Change -Free to Reserve with
+UK WIDE (Any Services) 
+2019-10-21 15:50:26,387 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 15:50:26,387 INFO  [Log] I am in onStart method null 
+2019-10-21 15:50:26,387 INFO  [Log] NH_URL 
+2019-10-21 15:50:26,423 INFO  [Log] NH_URL 
+2019-10-21 15:50:42,930 INFO  [Log] Element Found: False 
+2019-10-21 15:50:42,930 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 15:50:43,953 INFO  [Log] URL 
+2019-10-21 15:50:48,098 INFO  [Log] Change -Free to Reserve with
+UK WIDE (Public Services) 
+2019-10-21 15:50:48,098 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 15:50:48,098 INFO  [Log] I am in onStart method null 
+2019-10-21 15:50:48,098 INFO  [Log] NH_URL 
+2019-10-21 15:50:48,103 INFO  [Log] NH_URL 
+2019-10-21 15:50:58,470 INFO  [Log] Element Found: True 
+2019-10-21 15:50:58,470 INFO  [Log] Excel_URL 
+2019-10-21 15:51:16,987 INFO  [Log] Element Found: True 
+2019-10-21 15:51:17,131 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 15:51:18,188 INFO  [Log] URL 
+2019-10-21 15:51:22,305 INFO  [Log] Change -Free to Reserve with Country Denmark 
+2019-10-21 15:51:22,305 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 15:51:22,305 INFO  [Log] I am in onStart method null 
+2019-10-21 15:51:22,305 INFO  [Log] NH_URL 
+2019-10-21 15:51:22,311 INFO  [Log] NH_URL 
+2019-10-21 15:51:34,949 INFO  [Log] Element Found: True 
+2019-10-21 15:51:34,949 INFO  [Log] Excel_URL 
+2019-10-21 15:51:53,715 INFO  [Log] Element Found: True 
+2019-10-21 15:51:53,855 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 15:51:54,944 INFO  [Log] URL 
+2019-10-21 15:51:59,013 INFO  [Log] Change -Free to Reserve with Country Portugal 
+2019-10-21 15:51:59,013 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 15:51:59,013 INFO  [Log] I am in onStart method null 
+2019-10-21 15:51:59,013 INFO  [Log] NH_URL 
+2019-10-21 15:51:59,018 INFO  [Log] NH_URL 
+2019-10-21 15:52:16,094 INFO  [Log] Element Found: False 
+2019-10-21 15:52:16,095 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 15:52:17,140 INFO  [Log] URL 
+2019-10-21 15:52:21,213 INFO  [Log] Change -Free to Reserve with Country Spain 
+2019-10-21 15:52:21,213 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 15:52:21,213 INFO  [Log] I am in onStart method null 
+2019-10-21 15:52:21,214 INFO  [Log] NH_URL 
+2019-10-21 15:52:21,218 INFO  [Log] NH_URL 
+2019-10-21 15:52:30,168 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 15:52:31,198 INFO  [Log] URL 
+2019-10-21 15:52:35,255 INFO  [Log] Change -Reserve to activate with Address 
+2019-10-21 15:52:35,255 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 15:52:35,255 INFO  [Log] I am in onStart method null 
+2019-10-21 15:52:35,256 INFO  [Log] NH_URL 
+2019-10-21 15:52:35,260 INFO  [Log] NH_URL 
+2019-10-21 15:52:47,235 INFO  [Log] Element Found: True 
+2019-10-21 15:52:47,235 INFO  [Log] Excel_URL 
+2019-10-21 15:52:51,427 INFO  [Log] Element Found: True 
+2019-10-21 15:55:54,364 INFO  [Log] I am on Finish method Scenario 
+2019-10-21 17:51:25,458 INFO  [Log] I am on Start method Scenario 
+2019-10-21 17:51:26,689 INFO  [Log] URL 
+2019-10-21 17:51:31,458 INFO  [Log] Number Enquiry (Search by Number Range) 
+2019-10-21 17:51:31,470 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 17:51:31,470 INFO  [Log] I am in onStart method null 
+2019-10-21 17:51:31,554 INFO  [Log] NH_URL 
+2019-10-21 17:51:31,578 INFO  [Log] NH_URL 
+2019-10-21 17:51:43,070 INFO  [Log] Excel_URL 
+2019-10-21 17:51:45,179 INFO  [Log] Element Found: True 
+2019-10-21 17:52:02,368 INFO  [Log] Element Found: True 
+2019-10-21 17:52:02,554 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 17:52:03,699 INFO  [Log] URL 
+2019-10-21 17:52:07,872 INFO  [Log] Number Enquiry (Search by Transaction Id) 
+2019-10-21 17:52:07,874 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 17:52:07,875 INFO  [Log] I am in onStart method null 
+2019-10-21 17:52:07,875 INFO  [Log] NH_URL 
+2019-10-21 17:52:07,898 INFO  [Log] NH_URL 
+2019-10-21 17:52:20,854 INFO  [Log] Element Found: True 
+2019-10-21 17:52:20,855 INFO  [Log] Excel_URL 
+2019-10-21 17:52:38,113 INFO  [Log] Element Found: True 
+2019-10-21 17:53:07,445 INFO  [Log] Element Found: False 
+2019-10-21 17:53:07,446 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 17:53:08,500 INFO  [Log] URL 
+2019-10-21 17:53:12,568 INFO  [Log] Number Enquiry (Search by Customer Reference) 
+2019-10-21 17:53:12,574 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 17:53:12,574 INFO  [Log] I am in onStart method null 
+2019-10-21 17:53:12,574 INFO  [Log] NH_URL 
+2019-10-21 17:53:12,594 INFO  [Log] NH_URL 
+2019-10-21 17:53:23,364 INFO  [Log] Element Found: True 
+2019-10-21 17:53:23,364 INFO  [Log] Excel_URL 
+2019-10-21 17:53:39,947 INFO  [Log] Element Found: True 
+2019-10-21 17:53:45,847 INFO  [Log] Element Found: True 
+2019-10-21 17:53:45,847 INFO  [Log] Excel_URL 
+2019-10-21 17:54:02,316 INFO  [Log] Element Found: True 
+2019-10-21 17:54:02,463 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 17:54:03,524 INFO  [Log] URL 
+2019-10-21 17:54:07,605 INFO  [Log] Number Enquiry (Search by Number Status) 
+2019-10-21 17:54:07,607 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 17:54:07,607 INFO  [Log] I am in onStart method null 
+2019-10-21 17:54:07,607 INFO  [Log] NH_URL 
+2019-10-21 17:54:07,621 INFO  [Log] NH_URL 
+2019-10-21 17:54:19,804 INFO  [Log] Element Found: True 
+2019-10-21 17:54:19,805 INFO  [Log] Excel_URL 
+2019-10-21 17:54:29,393 INFO  [Log] Element Found: True 
+2019-10-21 17:54:29,393 INFO  [Log] Excel_URL 
+2019-10-21 17:54:48,393 INFO  [Log] Element Found: True 
+2019-10-21 17:54:55,886 INFO  [Log] Element Found: True 
+2019-10-21 17:54:55,886 INFO  [Log] Excel_URL 
+2019-10-21 17:55:05,528 INFO  [Log] Element Found: True 
+2019-10-21 17:55:05,528 INFO  [Log] Excel_URL 
+2019-10-21 17:55:15,062 INFO  [Log] Element Found: True 
+2019-10-21 17:55:15,062 INFO  [Log] Excel_URL 
+2019-10-21 17:55:21,775 INFO  [Log] Element Found: True 
+2019-10-21 17:55:21,775 INFO  [Log] Excel_URL 
+2019-10-21 17:55:44,223 INFO  [Log] Element Found: True 
+2019-10-21 17:55:53,738 INFO  [Log] Element Found: True 
+2019-10-21 17:55:53,738 INFO  [Log] Excel_URL 
+2019-10-21 17:56:00,388 INFO  [Log] Element Found: True 
+2019-10-21 17:56:00,389 INFO  [Log] Excel_URL 
+2019-10-21 17:56:06,005 INFO  [Log] Element Found: True 
+2019-10-21 17:56:06,005 INFO  [Log] Excel_URL 
+2019-10-21 17:57:44,121 INFO  [Log] Element Found: False 
+2019-10-21 17:57:51,376 INFO  [Log] Element Found: True 
+2019-10-21 17:57:51,376 INFO  [Log] Excel_URL 
+2019-10-21 17:57:56,317 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 17:57:57,834 INFO  [Log] URL 
+2019-10-21 17:58:01,907 INFO  [Log] Number Enquiry (Search by Number Range with country Austria) 
+2019-10-21 17:58:01,908 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 17:58:01,908 INFO  [Log] I am in onStart method null 
+2019-10-21 17:58:01,908 INFO  [Log] NH_URL 
+2019-10-21 17:58:01,915 INFO  [Log] NH_URL 
+2019-10-21 17:58:12,867 INFO  [Log] Excel_URL 
+2019-10-21 17:58:14,300 INFO  [Log] Element Found: True 
+2019-10-21 17:58:31,578 INFO  [Log] Element Found: True 
+2019-10-21 17:58:31,730 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 17:58:32,833 INFO  [Log] URL 
+2019-10-21 17:58:36,922 INFO  [Log] Number Enquiry (Search by Transaction Id with country Austria) 
+2019-10-21 17:58:36,928 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 17:58:36,928 INFO  [Log] I am in onStart method null 
+2019-10-21 17:58:36,928 INFO  [Log] NH_URL 
+2019-10-21 17:58:36,934 INFO  [Log] NH_URL 
+2019-10-21 17:58:50,140 INFO  [Log] Element Found: True 
+2019-10-21 17:58:50,140 INFO  [Log] Excel_URL 
+2019-10-21 17:59:07,023 INFO  [Log] Element Found: True 
+2019-10-21 17:59:16,156 INFO  [Log] Element Found: True 
+2019-10-21 17:59:16,156 INFO  [Log] Excel_URL 
+2019-10-21 17:59:33,273 INFO  [Log] Element Found: True 
+2019-10-21 17:59:33,407 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 17:59:34,456 INFO  [Log] URL 
+2019-10-21 17:59:38,523 INFO  [Log] Number Enquiry (Search by Customer Reference with country Austria) 
+2019-10-21 17:59:38,524 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 17:59:38,524 INFO  [Log] I am in onStart method null 
+2019-10-21 17:59:38,524 INFO  [Log] NH_URL 
+2019-10-21 17:59:38,548 INFO  [Log] NH_URL 
+2019-10-21 17:59:48,864 INFO  [Log] Element Found: True 
+2019-10-21 17:59:48,864 INFO  [Log] Excel_URL 
+2019-10-21 18:00:25,377 INFO  [Log] Element Found: False 
+2019-10-21 18:00:31,236 INFO  [Log] Element Found: True 
+2019-10-21 18:00:31,237 INFO  [Log] Excel_URL 
+2019-10-21 18:01:07,732 INFO  [Log] Element Found: False 
+2019-10-21 18:01:07,733 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 18:01:09,029 INFO  [Log] URL 
+2019-10-21 18:01:13,446 INFO  [Log] Number Enquiry(Search by Number Status with country Austria) 
+2019-10-21 18:01:13,447 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 18:01:13,447 INFO  [Log] I am in onStart method null 
+2019-10-21 18:01:13,447 INFO  [Log] NH_URL 
+2019-10-21 18:01:13,452 INFO  [Log] NH_URL 
+2019-10-21 18:01:26,213 INFO  [Log] Element Found: True 
+2019-10-21 18:01:26,214 INFO  [Log] Excel_URL 
+2019-10-21 18:01:35,389 INFO  [Log] Element Found: True 
+2019-10-21 18:01:35,389 INFO  [Log] Excel_URL 
+2019-10-21 18:01:44,998 INFO  [Log] Element Found: True 
+2019-10-21 18:01:44,998 INFO  [Log] Excel_URL 
+2019-10-21 18:01:54,486 INFO  [Log] Element Found: True 
+2019-10-21 18:01:54,487 INFO  [Log] Excel_URL 
+2019-10-21 18:02:01,246 INFO  [Log] Element Found: True 
+2019-10-21 18:02:01,246 INFO  [Log] Excel_URL 
+2019-10-21 18:02:23,426 INFO  [Log] Element Found: True 
+2019-10-21 18:02:32,807 INFO  [Log] Element Found: True 
+2019-10-21 18:02:32,807 INFO  [Log] Excel_URL 
+2019-10-21 18:02:59,321 INFO  [Log] Element Found: False 
+2019-10-21 18:03:04,592 INFO  [Log] Element Found: True 
+2019-10-21 18:03:04,592 INFO  [Log] Excel_URL 
+2019-10-21 18:04:42,513 INFO  [Log] Element Found: False 
+2019-10-21 18:04:47,776 INFO  [Log] Element Found: True 
+2019-10-21 18:04:47,776 INFO  [Log] Excel_URL 
+2019-10-21 18:04:47,880 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 18:04:48,977 INFO  [Log] URL 
+2019-10-21 18:04:53,066 INFO  [Log] Number Enquiry1 (Search by reserved to activate  with country UK) 
+2019-10-21 18:04:53,069 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 18:04:53,069 INFO  [Log] I am in onStart method null 
+2019-10-21 18:04:53,069 INFO  [Log] NH_URL 
+2019-10-21 18:04:53,090 INFO  [Log] NH_URL 
+2019-10-21 18:05:05,288 INFO  [Log] Element Found: True 
+2019-10-21 18:05:05,288 INFO  [Log] Excel_URL 
+2019-10-21 18:05:07,377 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 18:05:08,428 INFO  [Log] URL 
+2019-10-21 18:05:12,544 INFO  [Log] Number Enquiry (Search by Number Status with country UK) 
+2019-10-21 18:05:12,545 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 18:05:12,545 INFO  [Log] I am in onStart method null 
+2019-10-21 18:05:12,545 INFO  [Log] NH_URL 
+2019-10-21 18:05:12,555 INFO  [Log] NH_URL 
+2019-10-21 18:05:24,415 INFO  [Log] Element Found: True 
+2019-10-21 18:05:24,415 INFO  [Log] Excel_URL 
+2019-10-21 18:05:33,983 INFO  [Log] Element Found: True 
+2019-10-21 18:05:33,984 INFO  [Log] Excel_URL 
+2019-10-21 18:05:53,096 INFO  [Log] Element Found: True 
+2019-10-21 18:06:00,468 INFO  [Log] Element Found: True 
+2019-10-21 18:06:00,468 INFO  [Log] Excel_URL 
+2019-10-21 18:06:15,147 INFO  [Log] Element Found: True 
+2019-10-21 18:06:15,148 INFO  [Log] Excel_URL 
+2019-10-21 18:06:25,043 INFO  [Log] Element Found: True 
+2019-10-21 18:06:25,043 INFO  [Log] Excel_URL 
+2019-10-21 18:06:34,667 INFO  [Log] Element Found: True 
+2019-10-21 18:06:34,667 INFO  [Log] Excel_URL 
+2019-10-21 18:06:41,232 INFO  [Log] Element Found: True 
+2019-10-21 18:06:41,232 INFO  [Log] Excel_URL 
+2019-10-21 18:07:03,484 INFO  [Log] Element Found: True 
+2019-10-21 18:07:12,903 INFO  [Log] Element Found: True 
+2019-10-21 18:07:12,903 INFO  [Log] Excel_URL 
+2019-10-21 18:07:36,732 INFO  [Log] Element Found: True 
+2019-10-21 18:07:43,133 INFO  [Log] Element Found: True 
+2019-10-21 18:07:43,133 INFO  [Log] Excel_URL 
+2019-10-21 18:07:48,751 INFO  [Log] Element Found: True 
+2019-10-21 18:07:48,751 INFO  [Log] Excel_URL 
+2019-10-21 18:09:26,821 INFO  [Log] Element Found: False 
+2019-10-21 18:09:34,147 INFO  [Log] Element Found: True 
+2019-10-21 18:09:34,147 INFO  [Log] Excel_URL 
+2019-10-21 18:09:38,872 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 18:09:40,646 INFO  [Log] URL 
+2019-10-21 18:09:44,721 INFO  [Log] Change -Free to Reserve 
+2019-10-21 18:09:44,722 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 18:09:44,722 INFO  [Log] I am in onStart method null 
+2019-10-21 18:09:44,722 INFO  [Log] NH_URL 
+2019-10-21 18:09:44,726 INFO  [Log] NH_URL 
+2019-10-21 18:09:56,597 INFO  [Log] Element Found: True 
+2019-10-21 18:09:56,597 INFO  [Log] Excel_URL 
+2019-10-21 18:10:15,915 INFO  [Log] Element Found: True 
+2019-10-21 18:10:16,059 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 18:10:17,117 INFO  [Log] URL 
+2019-10-21 18:10:21,221 INFO  [Log] Number Enquiry (Number Status)with Address scenario 
+2019-10-21 18:10:21,222 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 18:10:21,222 INFO  [Log] I am in onStart method null 
+2019-10-21 18:10:21,222 INFO  [Log] NH_URL 
+2019-10-21 18:10:21,232 INFO  [Log] NH_URL 
+2019-10-21 18:10:34,818 INFO  [Log] Element Found: True 
+2019-10-21 18:10:34,819 INFO  [Log] Excel_URL 
+2019-10-21 18:10:59,016 INFO  [Log] Element Found: True 
+2019-10-21 18:10:59,152 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 18:11:00,175 INFO  [Log] URL 
+2019-10-21 18:11:04,230 INFO  [Log] Change -Reserve to Activate without Address 
+2019-10-21 18:11:04,230 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 18:11:04,230 INFO  [Log] I am in onStart method null 
+2019-10-21 18:11:04,230 INFO  [Log] NH_URL 
+2019-10-21 18:11:04,235 INFO  [Log] NH_URL 
+2019-10-21 18:11:16,497 INFO  [Log] Element Found: True 
+2019-10-21 18:11:16,497 INFO  [Log] Excel_URL 
+2019-10-21 18:11:42,815 INFO  [Log] Element Found: True 
+2019-10-21 18:11:42,946 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 18:11:43,955 INFO  [Log] URL 
+2019-10-21 18:11:48,023 INFO  [Log] Change -Free to Activate with Address 
+2019-10-21 18:11:48,024 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 18:11:48,024 INFO  [Log] I am in onStart method null 
+2019-10-21 18:11:48,024 INFO  [Log] NH_URL 
+2019-10-21 18:11:48,031 INFO  [Log] NH_URL 
+2019-10-21 18:12:01,524 INFO  [Log] Element Found: True 
+2019-10-21 18:12:01,524 INFO  [Log] Excel_URL 
+2019-10-21 18:12:05,084 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 18:12:06,141 INFO  [Log] URL 
+2019-10-21 18:12:10,252 INFO  [Log] Change -Free to Activate Without Address 
+2019-10-21 18:12:10,253 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 18:12:10,253 INFO  [Log] I am in onStart method null 
+2019-10-21 18:12:10,253 INFO  [Log] NH_URL 
+2019-10-21 18:12:10,258 INFO  [Log] NH_URL 
+2019-10-21 18:12:22,541 INFO  [Log] Element Found: True 
+2019-10-21 18:12:22,541 INFO  [Log] Excel_URL 
+2019-10-21 18:12:22,641 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 18:12:23,694 INFO  [Log] URL 
+2019-10-21 18:12:27,780 INFO  [Log] Change -Update the Address with port-in 
+2019-10-21 18:12:27,780 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 18:12:27,780 INFO  [Log] I am in onStart method null 
+2019-10-21 18:12:27,781 INFO  [Log] NH_URL 
+2019-10-21 18:12:27,787 INFO  [Log] NH_URL 
+2019-10-21 18:12:41,557 INFO  [Log] Element Found: True 
+2019-10-21 18:12:41,557 INFO  [Log] Excel_URL 
+2019-10-21 18:13:06,115 INFO  [Log] Element Found: True 
+2019-10-21 18:13:06,251 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 18:13:07,278 INFO  [Log] URL 
+2019-10-21 18:13:11,400 INFO  [Log] Change -Update the Address with Activate  
+2019-10-21 18:13:11,401 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 18:13:11,401 INFO  [Log] I am in onStart method null 
+2019-10-21 18:13:11,401 INFO  [Log] NH_URL 
+2019-10-21 18:13:11,406 INFO  [Log] NH_URL 
+2019-10-21 18:13:25,194 INFO  [Log] Element Found: True 
+2019-10-21 18:13:25,195 INFO  [Log] Excel_URL 
+2019-10-21 18:14:41,815 INFO  [Log] URL 
+2019-10-21 18:14:45,879 INFO  [Log] Change -Activate to Deactivate with Activate Senario 
+2019-10-21 18:14:45,879 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 18:14:45,879 INFO  [Log] I am in onStart method null 
+2019-10-21 18:14:45,880 INFO  [Log] NH_URL 
+2019-10-21 18:14:45,884 INFO  [Log] NH_URL 
+2019-10-21 18:14:59,864 INFO  [Log] Element Found: True 
+2019-10-21 18:14:59,864 INFO  [Log] Excel_URL 
+2019-10-21 18:15:20,375 INFO  [Log] Element Found: True 
+2019-10-21 18:15:20,518 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 18:15:21,593 INFO  [Log] URL 
+2019-10-21 18:15:25,890 INFO  [Log] Change -Activate to Deactivate with port-in Scenario 
+2019-10-21 18:15:25,890 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 18:15:25,890 INFO  [Log] I am in onStart method null 
+2019-10-21 18:15:25,891 INFO  [Log] NH_URL 
+2019-10-21 18:15:25,895 INFO  [Log] NH_URL 
+2019-10-21 18:15:39,886 INFO  [Log] Element Found: True 
+2019-10-21 18:15:39,886 INFO  [Log] Excel_URL 
+2019-10-21 18:16:00,128 INFO  [Log] Element Found: True 
+2019-10-21 18:16:00,260 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 18:16:01,320 INFO  [Log] URL 
+2019-10-21 18:16:05,422 INFO  [Log] Change -Free to Reserve with geo number 
+2019-10-21 18:16:05,422 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 18:16:05,422 INFO  [Log] I am in onStart method null 
+2019-10-21 18:16:05,422 INFO  [Log] NH_URL 
+2019-10-21 18:16:05,426 INFO  [Log] NH_URL 
+2019-10-21 18:16:22,258 INFO  [Log] Element Found: False 
+2019-10-21 18:16:22,259 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 18:16:23,346 INFO  [Log] URL 
+2019-10-21 18:16:27,404 INFO  [Log] Change -Free to Reserve
+with Location Independent Numbers 
+2019-10-21 18:16:27,404 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 18:16:27,404 INFO  [Log] I am in onStart method null 
+2019-10-21 18:16:27,404 INFO  [Log] NH_URL 
+2019-10-21 18:16:27,408 INFO  [Log] NH_URL 
+2019-10-21 18:16:43,125 INFO  [Log] Element Found: False 
+2019-10-21 18:16:43,128 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 18:16:44,175 INFO  [Log] URL 
+2019-10-21 18:16:48,329 INFO  [Log] Change -Free to Reserve with
+UK WIDE (Any Services) 
+2019-10-21 18:16:48,329 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 18:16:48,329 INFO  [Log] I am in onStart method null 
+2019-10-21 18:16:48,329 INFO  [Log] NH_URL 
+2019-10-21 18:16:48,340 INFO  [Log] NH_URL 
+2019-10-21 18:17:03,816 INFO  [Log] Element Found: False 
+2019-10-21 18:17:03,817 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 18:17:04,853 INFO  [Log] URL 
+2019-10-21 18:17:08,923 INFO  [Log] Change -Free to Reserve with
+UK WIDE (Public Services) 
+2019-10-21 18:17:08,924 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 18:17:08,924 INFO  [Log] I am in onStart method null 
+2019-10-21 18:17:08,924 INFO  [Log] NH_URL 
+2019-10-21 18:17:08,960 INFO  [Log] NH_URL 
+2019-10-21 18:17:24,442 INFO  [Log] Element Found: False 
+2019-10-21 18:17:24,442 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 18:17:25,494 INFO  [Log] URL 
+2019-10-21 18:17:29,583 INFO  [Log] Change -Free to Reserve with Country Denmark 
+2019-10-21 18:17:29,583 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 18:17:29,583 INFO  [Log] I am in onStart method null 
+2019-10-21 18:17:29,583 INFO  [Log] NH_URL 
+2019-10-21 18:17:29,588 INFO  [Log] NH_URL 
+2019-10-21 18:17:42,434 INFO  [Log] Element Found: True 
+2019-10-21 18:17:42,435 INFO  [Log] Excel_URL 
+2019-10-21 18:18:02,368 INFO  [Log] Element Found: True 
+2019-10-21 18:18:02,507 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 18:18:03,563 INFO  [Log] URL 
+2019-10-21 18:18:07,618 INFO  [Log] Change -Free to Reserve with Country Portugal 
+2019-10-21 18:18:07,618 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 18:18:07,618 INFO  [Log] I am in onStart method null 
+2019-10-21 18:18:07,619 INFO  [Log] NH_URL 
+2019-10-21 18:18:07,623 INFO  [Log] NH_URL 
+2019-10-21 18:18:24,182 INFO  [Log] Element Found: False 
+2019-10-21 18:18:24,182 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 18:18:25,214 INFO  [Log] URL 
+2019-10-21 18:18:29,327 INFO  [Log] Change -Free to Reserve with Country Spain 
+2019-10-21 18:18:29,327 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 18:18:29,327 INFO  [Log] I am in onStart method null 
+2019-10-21 18:18:29,328 INFO  [Log] NH_URL 
+2019-10-21 18:18:29,341 INFO  [Log] NH_URL 
+2019-10-21 18:18:38,667 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 18:18:39,716 INFO  [Log] URL 
+2019-10-21 18:18:43,784 INFO  [Log] Change -Reserve to activate with Address 
+2019-10-21 18:18:43,784 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 18:18:43,784 INFO  [Log] I am in onStart method null 
+2019-10-21 18:18:43,784 INFO  [Log] NH_URL 
+2019-10-21 18:18:43,791 INFO  [Log] NH_URL 
+2019-10-21 18:18:56,014 INFO  [Log] Element Found: True 
+2019-10-21 18:18:56,014 INFO  [Log] Excel_URL 
+2019-10-21 18:19:00,186 INFO  [Log] Element Found: True 
+2019-10-21 18:21:22,604 INFO  [Log] I am on Finish method Scenario 
+2019-10-21 18:48:30,059 INFO  [Log] I am on Start method Scenario 
+2019-10-21 18:48:31,344 INFO  [Log] URL 
+2019-10-21 18:48:36,141 INFO  [Log] Number Enquiry (Search by Number Range) 
+2019-10-21 18:48:36,147 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 18:48:36,147 INFO  [Log] I am in onStart method null 
+2019-10-21 18:48:36,210 INFO  [Log] NH_URL 
+2019-10-21 18:48:36,222 INFO  [Log] NH_URL 
+2019-10-21 18:48:47,761 INFO  [Log] Excel_URL 
+2019-10-21 18:48:49,867 INFO  [Log] Element Found: True 
+2019-10-21 18:49:07,512 INFO  [Log] Element Found: True 
+2019-10-21 18:49:07,706 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 18:49:08,826 INFO  [Log] URL 
+2019-10-21 18:49:12,964 INFO  [Log] Number Enquiry (Search by Transaction Id) 
+2019-10-21 18:49:12,965 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 18:49:12,965 INFO  [Log] I am in onStart method null 
+2019-10-21 18:49:12,966 INFO  [Log] NH_URL 
+2019-10-21 18:49:13,000 INFO  [Log] NH_URL 
+2019-10-21 18:49:26,227 INFO  [Log] Element Found: True 
+2019-10-21 18:49:26,227 INFO  [Log] Excel_URL 
+2019-10-21 18:49:43,166 INFO  [Log] Element Found: True 
+2019-10-21 18:50:12,293 INFO  [Log] Element Found: False 
+2019-10-21 18:50:12,294 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 18:50:13,329 INFO  [Log] URL 
+2019-10-21 18:50:17,460 INFO  [Log] Number Enquiry (Search by Customer Reference) 
+2019-10-21 18:50:17,465 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 18:50:17,465 INFO  [Log] I am in onStart method null 
+2019-10-21 18:50:17,465 INFO  [Log] NH_URL 
+2019-10-21 18:50:17,470 INFO  [Log] NH_URL 
+2019-10-21 18:50:28,219 INFO  [Log] Element Found: True 
+2019-10-21 18:50:28,219 INFO  [Log] Excel_URL 
+2019-10-21 18:50:44,800 INFO  [Log] Element Found: True 
+2019-10-21 18:50:50,688 INFO  [Log] Element Found: True 
+2019-10-21 18:50:50,688 INFO  [Log] Excel_URL 
+2019-10-21 18:51:06,888 INFO  [Log] Element Found: True 
+2019-10-21 18:51:07,033 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 18:51:08,075 INFO  [Log] URL 
+2019-10-21 18:51:12,143 INFO  [Log] Number Enquiry (Search by Number Status) 
+2019-10-21 18:51:12,144 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 18:51:12,144 INFO  [Log] I am in onStart method null 
+2019-10-21 18:51:12,144 INFO  [Log] NH_URL 
+2019-10-21 18:51:12,152 INFO  [Log] NH_URL 
+2019-10-21 18:51:26,616 INFO  [Log] Element Found: True 
+2019-10-21 18:51:26,616 INFO  [Log] Excel_URL 
+2019-10-21 18:51:41,263 INFO  [Log] Element Found: False 
+2019-10-21 18:51:53,583 INFO  [Log] Element Found: False 
+2019-10-21 18:52:02,944 INFO  [Log] Element Found: True 
+2019-10-21 18:52:02,944 INFO  [Log] Excel_URL 
+2019-10-21 18:52:12,579 INFO  [Log] Element Found: True 
+2019-10-21 18:52:12,579 INFO  [Log] Excel_URL 
+2019-10-21 18:52:19,083 INFO  [Log] Element Found: True 
+2019-10-21 18:52:19,083 INFO  [Log] Excel_URL 
+2019-10-21 18:52:41,109 INFO  [Log] Element Found: True 
+2019-10-21 18:52:50,545 INFO  [Log] Element Found: True 
+2019-10-21 18:52:50,545 INFO  [Log] Excel_URL 
+2019-10-21 18:52:57,153 INFO  [Log] Element Found: True 
+2019-10-21 18:52:57,154 INFO  [Log] Excel_URL 
+2019-10-21 18:53:02,767 INFO  [Log] Element Found: True 
+2019-10-21 18:53:02,767 INFO  [Log] Excel_URL 
+2019-10-21 18:54:40,597 INFO  [Log] Element Found: False 
+2019-10-21 18:54:48,419 INFO  [Log] Element Found: True 
+2019-10-21 18:54:48,419 INFO  [Log] Excel_URL 
+2019-10-21 18:54:53,271 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 18:54:54,760 INFO  [Log] URL 
+2019-10-21 18:54:58,812 INFO  [Log] Number Enquiry (Search by Number Range with country Austria) 
+2019-10-21 18:54:58,813 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 18:54:58,813 INFO  [Log] I am in onStart method null 
+2019-10-21 18:54:58,813 INFO  [Log] NH_URL 
+2019-10-21 18:54:58,818 INFO  [Log] NH_URL 
+2019-10-21 18:55:10,070 INFO  [Log] Excel_URL 
+2019-10-21 18:55:11,575 INFO  [Log] Element Found: True 
+2019-10-21 18:55:28,495 INFO  [Log] Element Found: True 
+2019-10-21 18:55:28,637 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 18:55:29,696 INFO  [Log] URL 
+2019-10-21 18:55:33,791 INFO  [Log] Number Enquiry (Search by Transaction Id with country Austria) 
+2019-10-21 18:55:33,797 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 18:55:33,797 INFO  [Log] I am in onStart method null 
+2019-10-21 18:55:33,797 INFO  [Log] NH_URL 
+2019-10-21 18:55:33,815 INFO  [Log] NH_URL 
+2019-10-21 18:55:46,917 INFO  [Log] Element Found: True 
+2019-10-21 18:55:46,917 INFO  [Log] Excel_URL 
+2019-10-21 18:56:03,780 INFO  [Log] Element Found: True 
+2019-10-21 18:56:13,028 INFO  [Log] Element Found: True 
+2019-10-21 18:56:13,028 INFO  [Log] Excel_URL 
+2019-10-21 18:56:30,115 INFO  [Log] Element Found: True 
+2019-10-21 18:56:30,260 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 18:56:31,349 INFO  [Log] URL 
+2019-10-21 18:56:35,456 INFO  [Log] Number Enquiry (Search by Customer Reference with country Austria) 
+2019-10-21 18:56:35,457 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 18:56:35,457 INFO  [Log] I am in onStart method null 
+2019-10-21 18:56:35,457 INFO  [Log] NH_URL 
+2019-10-21 18:56:35,465 INFO  [Log] NH_URL 
+2019-10-21 18:56:46,106 INFO  [Log] Element Found: True 
+2019-10-21 18:56:46,107 INFO  [Log] Excel_URL 
+2019-10-21 18:57:22,611 INFO  [Log] Element Found: False 
+2019-10-21 18:57:28,300 INFO  [Log] Element Found: True 
+2019-10-21 18:57:28,300 INFO  [Log] Excel_URL 
+2019-10-21 18:58:04,431 INFO  [Log] Element Found: False 
+2019-10-21 18:58:04,432 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 18:58:05,485 INFO  [Log] URL 
+2019-10-21 18:58:09,616 INFO  [Log] Number Enquiry(Search by Number Status with country Austria) 
+2019-10-21 18:58:09,617 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 18:58:09,617 INFO  [Log] I am in onStart method null 
+2019-10-21 18:58:09,617 INFO  [Log] NH_URL 
+2019-10-21 18:58:09,623 INFO  [Log] NH_URL 
+2019-10-21 18:58:21,520 INFO  [Log] Element Found: True 
+2019-10-21 18:58:21,520 INFO  [Log] Excel_URL 
+2019-10-21 18:58:30,819 INFO  [Log] Element Found: True 
+2019-10-21 18:58:30,819 INFO  [Log] Excel_URL 
+2019-10-21 18:58:40,331 INFO  [Log] Element Found: True 
+2019-10-21 18:58:40,331 INFO  [Log] Excel_URL 
+2019-10-21 18:58:49,914 INFO  [Log] Element Found: True 
+2019-10-21 18:58:49,914 INFO  [Log] Excel_URL 
+2019-10-21 18:58:56,433 INFO  [Log] Element Found: True 
+2019-10-21 18:58:56,433 INFO  [Log] Excel_URL 
+2019-10-21 18:59:18,353 INFO  [Log] Element Found: True 
+2019-10-21 18:59:27,748 INFO  [Log] Element Found: True 
+2019-10-21 18:59:27,748 INFO  [Log] Excel_URL 
+2019-10-21 18:59:54,354 INFO  [Log] Element Found: False 
+2019-10-21 18:59:59,646 INFO  [Log] Element Found: True 
+2019-10-21 18:59:59,646 INFO  [Log] Excel_URL 
+2019-10-21 19:01:37,397 INFO  [Log] Element Found: False 
+2019-10-21 19:01:42,775 INFO  [Log] Element Found: True 
+2019-10-21 19:01:42,775 INFO  [Log] Excel_URL 
+2019-10-21 19:01:42,882 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:01:43,933 INFO  [Log] URL 
+2019-10-21 19:01:48,057 INFO  [Log] Number Enquiry1 (Search by reserved to activate  with country UK) 
+2019-10-21 19:01:48,058 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:01:48,058 INFO  [Log] I am in onStart method null 
+2019-10-21 19:01:48,058 INFO  [Log] NH_URL 
+2019-10-21 19:01:48,062 INFO  [Log] NH_URL 
+2019-10-21 19:02:00,314 INFO  [Log] Element Found: True 
+2019-10-21 19:02:00,314 INFO  [Log] Excel_URL 
+2019-10-21 19:02:02,395 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:02:03,430 INFO  [Log] URL 
+2019-10-21 19:02:07,562 INFO  [Log] Number Enquiry (Search by Number Status with country UK) 
+2019-10-21 19:02:07,563 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:02:07,563 INFO  [Log] I am in onStart method null 
+2019-10-21 19:02:07,563 INFO  [Log] NH_URL 
+2019-10-21 19:02:07,570 INFO  [Log] NH_URL 
+2019-10-21 19:02:19,375 INFO  [Log] Element Found: True 
+2019-10-21 19:02:19,376 INFO  [Log] Excel_URL 
+2019-10-21 19:02:33,983 INFO  [Log] Element Found: False 
+2019-10-21 19:02:46,383 INFO  [Log] Element Found: False 
+2019-10-21 19:02:58,958 INFO  [Log] Element Found: False 
+2019-10-21 19:03:08,145 INFO  [Log] Element Found: True 
+2019-10-21 19:03:08,145 INFO  [Log] Excel_URL 
+2019-10-21 19:03:17,682 INFO  [Log] Element Found: True 
+2019-10-21 19:03:17,682 INFO  [Log] Excel_URL 
+2019-10-21 19:03:24,569 INFO  [Log] Element Found: True 
+2019-10-21 19:03:24,569 INFO  [Log] Excel_URL 
+2019-10-21 19:03:46,495 INFO  [Log] Element Found: True 
+2019-10-21 19:03:56,024 INFO  [Log] Element Found: True 
+2019-10-21 19:03:56,024 INFO  [Log] Excel_URL 
+2019-10-21 19:04:20,062 INFO  [Log] Element Found: True 
+2019-10-21 19:04:26,433 INFO  [Log] Element Found: True 
+2019-10-21 19:04:26,433 INFO  [Log] Excel_URL 
+2019-10-21 19:04:31,969 INFO  [Log] Element Found: True 
+2019-10-21 19:04:31,969 INFO  [Log] Excel_URL 
+2019-10-21 19:06:09,875 INFO  [Log] Element Found: False 
+2019-10-21 19:06:17,431 INFO  [Log] Element Found: True 
+2019-10-21 19:06:17,431 INFO  [Log] Excel_URL 
+2019-10-21 19:06:21,664 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:06:23,563 INFO  [Log] URL 
+2019-10-21 19:06:27,627 INFO  [Log] Change -Free to Reserve 
+2019-10-21 19:06:27,628 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:06:27,628 INFO  [Log] I am in onStart method null 
+2019-10-21 19:06:27,628 INFO  [Log] NH_URL 
+2019-10-21 19:06:27,633 INFO  [Log] NH_URL 
+2019-10-21 19:06:44,740 INFO  [Log] Element Found: False 
+2019-10-21 19:06:44,741 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:06:45,760 INFO  [Log] URL 
+2019-10-21 19:06:49,814 INFO  [Log] Number Enquiry (Number Status)with Address scenario 
+2019-10-21 19:06:49,815 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:06:49,815 INFO  [Log] I am in onStart method null 
+2019-10-21 19:06:49,815 INFO  [Log] NH_URL 
+2019-10-21 19:06:49,821 INFO  [Log] NH_URL 
+2019-10-21 19:07:05,624 INFO  [Log] Element Found: True 
+2019-10-21 19:07:05,625 INFO  [Log] Excel_URL 
+2019-10-21 19:07:29,714 INFO  [Log] Element Found: True 
+2019-10-21 19:07:29,856 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:07:30,909 INFO  [Log] URL 
+2019-10-21 19:07:36,032 INFO  [Log] Change -Reserve to Activate without Address 
+2019-10-21 19:07:36,033 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:07:36,033 INFO  [Log] I am in onStart method null 
+2019-10-21 19:07:36,033 INFO  [Log] NH_URL 
+2019-10-21 19:07:36,043 INFO  [Log] NH_URL 
+2019-10-21 19:07:48,584 INFO  [Log] Element Found: True 
+2019-10-21 19:07:48,584 INFO  [Log] Excel_URL 
+2019-10-21 19:08:15,193 INFO  [Log] Element Found: True 
+2019-10-21 19:08:15,332 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:08:16,394 INFO  [Log] URL 
+2019-10-21 19:08:20,460 INFO  [Log] Change -Free to Activate with Address 
+2019-10-21 19:08:20,462 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:08:20,462 INFO  [Log] I am in onStart method null 
+2019-10-21 19:08:20,462 INFO  [Log] NH_URL 
+2019-10-21 19:08:20,475 INFO  [Log] NH_URL 
+2019-10-21 19:08:37,761 INFO  [Log] Element Found: False 
+2019-10-21 19:08:37,762 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:08:38,773 INFO  [Log] URL 
+2019-10-21 19:08:42,886 INFO  [Log] Change -Free to Activate Without Address 
+2019-10-21 19:08:42,887 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:08:42,887 INFO  [Log] I am in onStart method null 
+2019-10-21 19:08:42,887 INFO  [Log] NH_URL 
+2019-10-21 19:08:42,901 INFO  [Log] NH_URL 
+2019-10-21 19:08:59,814 INFO  [Log] Element Found: False 
+2019-10-21 19:09:06,831 INFO  [Log] Element Found: False 
+2019-10-21 19:09:06,831 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:09:07,860 INFO  [Log] URL 
+2019-10-21 19:09:11,951 INFO  [Log] Change -Update the Address with port-in 
+2019-10-21 19:09:11,952 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:09:11,952 INFO  [Log] I am in onStart method null 
+2019-10-21 19:09:11,952 INFO  [Log] NH_URL 
+2019-10-21 19:09:11,957 INFO  [Log] NH_URL 
+2019-10-21 19:09:25,993 INFO  [Log] Element Found: True 
+2019-10-21 19:09:25,993 INFO  [Log] Excel_URL 
+2019-10-21 19:09:50,406 INFO  [Log] Element Found: True 
+2019-10-21 19:09:50,556 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:09:51,683 INFO  [Log] URL 
+2019-10-21 19:09:55,847 INFO  [Log] Change -Activate to Deactivate with Activate Senario 
+2019-10-21 19:09:55,848 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:09:55,848 INFO  [Log] I am in onStart method null 
+2019-10-21 19:09:55,848 INFO  [Log] NH_URL 
+2019-10-21 19:09:55,862 INFO  [Log] NH_URL 
+2019-10-21 19:10:10,181 INFO  [Log] Element Found: True 
+2019-10-21 19:10:10,181 INFO  [Log] Excel_URL 
+2019-10-21 19:10:31,184 INFO  [Log] Element Found: True 
+2019-10-21 19:10:31,322 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:10:32,357 INFO  [Log] URL 
+2019-10-21 19:10:36,523 INFO  [Log] Change -Activate to Deactivate with port-in Scenario 
+2019-10-21 19:10:36,524 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:10:36,524 INFO  [Log] I am in onStart method null 
+2019-10-21 19:10:36,524 INFO  [Log] NH_URL 
+2019-10-21 19:10:36,528 INFO  [Log] NH_URL 
+2019-10-21 19:10:50,403 INFO  [Log] Element Found: True 
+2019-10-21 19:10:50,403 INFO  [Log] Excel_URL 
+2019-10-21 19:11:10,784 INFO  [Log] Element Found: True 
+2019-10-21 19:11:10,914 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:11:11,977 INFO  [Log] URL 
+2019-10-21 19:11:16,128 INFO  [Log] Change -Free to Reserve with geo number 
+2019-10-21 19:11:16,128 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:11:16,128 INFO  [Log] I am in onStart method null 
+2019-10-21 19:11:16,128 INFO  [Log] NH_URL 
+2019-10-21 19:11:16,131 INFO  [Log] NH_URL 
+2019-10-21 19:11:33,255 INFO  [Log] Element Found: False 
+2019-10-21 19:11:33,256 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:11:34,267 INFO  [Log] URL 
+2019-10-21 19:11:38,326 INFO  [Log] Change -Free to Reserve
+with Location Independent Numbers 
+2019-10-21 19:11:38,326 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:11:38,326 INFO  [Log] I am in onStart method null 
+2019-10-21 19:11:38,327 INFO  [Log] NH_URL 
+2019-10-21 19:11:38,330 INFO  [Log] NH_URL 
+2019-10-21 19:11:53,924 INFO  [Log] Element Found: False 
+2019-10-21 19:11:53,925 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:11:54,952 INFO  [Log] URL 
+2019-10-21 19:11:59,063 INFO  [Log] Change -Free to Reserve with
+UK WIDE (Any Services) 
+2019-10-21 19:11:59,063 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:11:59,064 INFO  [Log] I am in onStart method null 
+2019-10-21 19:11:59,064 INFO  [Log] NH_URL 
+2019-10-21 19:11:59,068 INFO  [Log] NH_URL 
+2019-10-21 19:12:14,210 INFO  [Log] Element Found: False 
+2019-10-21 19:12:14,210 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:12:15,223 INFO  [Log] URL 
+2019-10-21 19:12:19,364 INFO  [Log] Change -Free to Reserve with
+UK WIDE (Public Services) 
+2019-10-21 19:12:19,364 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:12:19,364 INFO  [Log] I am in onStart method null 
+2019-10-21 19:12:19,365 INFO  [Log] NH_URL 
+2019-10-21 19:12:19,388 INFO  [Log] NH_URL 
+2019-10-21 19:12:34,881 INFO  [Log] Element Found: False 
+2019-10-21 19:12:34,882 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:12:35,950 INFO  [Log] URL 
+2019-10-21 19:12:40,081 INFO  [Log] Change -Free to Reserve with Country Denmark 
+2019-10-21 19:12:40,081 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:12:40,081 INFO  [Log] I am in onStart method null 
+2019-10-21 19:12:40,081 INFO  [Log] NH_URL 
+2019-10-21 19:12:40,086 INFO  [Log] NH_URL 
+2019-10-21 19:12:51,988 INFO  [Log] Element Found: True 
+2019-10-21 19:12:51,988 INFO  [Log] Excel_URL 
+2019-10-21 19:15:00,390 INFO  [Log] URL 
+2019-10-21 19:15:04,466 INFO  [Log] Change -Free to Reserve with Country Portugal 
+2019-10-21 19:15:04,467 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:15:04,467 INFO  [Log] I am in onStart method null 
+2019-10-21 19:15:04,467 INFO  [Log] NH_URL 
+2019-10-21 19:15:04,472 INFO  [Log] NH_URL 
+2019-10-21 19:15:21,392 INFO  [Log] Element Found: False 
+2019-10-21 19:15:21,393 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:15:22,614 INFO  [Log] URL 
+2019-10-21 19:15:26,710 INFO  [Log] Change -Free to Reserve with Country Spain 
+2019-10-21 19:15:26,710 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:15:26,710 INFO  [Log] I am in onStart method null 
+2019-10-21 19:15:26,710 INFO  [Log] NH_URL 
+2019-10-21 19:15:26,724 INFO  [Log] NH_URL 
+2019-10-21 19:15:35,362 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:15:36,483 INFO  [Log] I am on Finish method Scenario 
+2019-10-21 19:18:22,834 INFO  [Log] I am on Start method Scenario 
+2019-10-21 19:18:23,999 INFO  [Log] URL 
+2019-10-21 19:18:28,932 INFO  [Log] Number Enquiry (Search by Number Range) 
+2019-10-21 19:18:28,940 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:18:28,940 INFO  [Log] I am in onStart method null 
+2019-10-21 19:18:29,003 INFO  [Log] NH_URL 
+2019-10-21 19:18:29,050 INFO  [Log] NH_URL 
+2019-10-21 19:18:40,314 INFO  [Log] Excel_URL 
+2019-10-21 19:18:41,851 INFO  [Log] Element Found: True 
+2019-10-21 19:18:58,910 INFO  [Log] Element Found: True 
+2019-10-21 19:18:59,095 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:19:00,228 INFO  [Log] URL 
+2019-10-21 19:19:04,312 INFO  [Log] Number Enquiry (Search by Transaction Id) 
+2019-10-21 19:19:04,315 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:19:04,315 INFO  [Log] I am in onStart method null 
+2019-10-21 19:19:04,315 INFO  [Log] NH_URL 
+2019-10-21 19:19:04,342 INFO  [Log] NH_URL 
+2019-10-21 19:19:17,657 INFO  [Log] Element Found: True 
+2019-10-21 19:19:17,657 INFO  [Log] Excel_URL 
+2019-10-21 19:19:34,536 INFO  [Log] Element Found: True 
+2019-10-21 19:20:03,613 INFO  [Log] Element Found: False 
+2019-10-21 19:20:03,614 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:20:04,637 INFO  [Log] URL 
+2019-10-21 19:20:08,739 INFO  [Log] Number Enquiry (Search by Customer Reference) 
+2019-10-21 19:20:08,740 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:20:08,740 INFO  [Log] I am in onStart method null 
+2019-10-21 19:20:08,740 INFO  [Log] NH_URL 
+2019-10-21 19:20:08,745 INFO  [Log] NH_URL 
+2019-10-21 19:20:19,218 INFO  [Log] Element Found: True 
+2019-10-21 19:20:19,218 INFO  [Log] Excel_URL 
+2019-10-21 19:20:35,820 INFO  [Log] Element Found: True 
+2019-10-21 19:20:41,722 INFO  [Log] Element Found: True 
+2019-10-21 19:20:41,723 INFO  [Log] Excel_URL 
+2019-10-21 19:20:58,120 INFO  [Log] Element Found: True 
+2019-10-21 19:20:58,294 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:20:59,398 INFO  [Log] URL 
+2019-10-21 19:21:03,582 INFO  [Log] Number Enquiry (Search by Number Status) 
+2019-10-21 19:21:03,584 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:21:03,584 INFO  [Log] I am in onStart method null 
+2019-10-21 19:21:03,584 INFO  [Log] NH_URL 
+2019-10-21 19:21:03,608 INFO  [Log] NH_URL 
+2019-10-21 19:21:15,741 INFO  [Log] Element Found: True 
+2019-10-21 19:21:15,741 INFO  [Log] Excel_URL 
+2019-10-21 19:21:25,193 INFO  [Log] Element Found: True 
+2019-10-21 19:21:25,193 INFO  [Log] Excel_URL 
+2019-10-21 19:21:47,221 INFO  [Log] Element Found: True 
+2019-10-21 19:21:59,663 INFO  [Log] Element Found: False 
+2019-10-21 19:22:08,901 INFO  [Log] Element Found: True 
+2019-10-21 19:22:08,903 INFO  [Log] Excel_URL 
+2019-10-21 19:22:18,463 INFO  [Log] Element Found: True 
+2019-10-21 19:22:18,464 INFO  [Log] Excel_URL 
+2019-10-21 19:22:25,020 INFO  [Log] Element Found: True 
+2019-10-21 19:22:25,020 INFO  [Log] Excel_URL 
+2019-10-21 19:22:47,374 INFO  [Log] Element Found: True 
+2019-10-21 19:22:56,823 INFO  [Log] Element Found: True 
+2019-10-21 19:22:56,823 INFO  [Log] Excel_URL 
+2019-10-21 19:23:03,438 INFO  [Log] Element Found: True 
+2019-10-21 19:23:03,438 INFO  [Log] Excel_URL 
+2019-10-21 19:23:09,014 INFO  [Log] Element Found: True 
+2019-10-21 19:23:09,014 INFO  [Log] Excel_URL 
+2019-10-21 19:24:47,093 INFO  [Log] Element Found: False 
+2019-10-21 19:24:56,081 INFO  [Log] Element Found: True 
+2019-10-21 19:24:56,081 INFO  [Log] Excel_URL 
+2019-10-21 19:24:58,484 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:25:00,368 INFO  [Log] URL 
+2019-10-21 19:25:04,534 INFO  [Log] Number Enquiry (Search by Number Range with country Austria) 
+2019-10-21 19:25:04,538 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:25:04,538 INFO  [Log] I am in onStart method null 
+2019-10-21 19:25:04,538 INFO  [Log] NH_URL 
+2019-10-21 19:25:04,549 INFO  [Log] NH_URL 
+2019-10-21 19:25:16,665 INFO  [Log] Excel_URL 
+2019-10-21 19:25:18,132 INFO  [Log] Element Found: True 
+2019-10-21 19:25:35,198 INFO  [Log] Element Found: True 
+2019-10-21 19:25:35,363 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:25:36,420 INFO  [Log] URL 
+2019-10-21 19:25:40,534 INFO  [Log] Number Enquiry (Search by Transaction Id with country Austria) 
+2019-10-21 19:25:40,535 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:25:40,535 INFO  [Log] I am in onStart method null 
+2019-10-21 19:25:40,535 INFO  [Log] NH_URL 
+2019-10-21 19:25:40,560 INFO  [Log] NH_URL 
+2019-10-21 19:25:53,434 INFO  [Log] Element Found: True 
+2019-10-21 19:25:53,434 INFO  [Log] Excel_URL 
+2019-10-21 19:26:10,368 INFO  [Log] Element Found: True 
+2019-10-21 19:26:19,829 INFO  [Log] Element Found: True 
+2019-10-21 19:26:19,829 INFO  [Log] Excel_URL 
+2019-10-21 19:26:37,148 INFO  [Log] Element Found: True 
+2019-10-21 19:26:37,279 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:26:38,337 INFO  [Log] URL 
+2019-10-21 19:26:42,397 INFO  [Log] Number Enquiry (Search by Customer Reference with country Austria) 
+2019-10-21 19:26:42,399 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:26:42,399 INFO  [Log] I am in onStart method null 
+2019-10-21 19:26:42,399 INFO  [Log] NH_URL 
+2019-10-21 19:26:42,405 INFO  [Log] NH_URL 
+2019-10-21 19:26:52,606 INFO  [Log] Element Found: True 
+2019-10-21 19:26:52,606 INFO  [Log] Excel_URL 
+2019-10-21 19:27:29,023 INFO  [Log] Element Found: False 
+2019-10-21 19:27:34,748 INFO  [Log] Element Found: True 
+2019-10-21 19:27:34,748 INFO  [Log] Excel_URL 
+2019-10-21 19:28:11,101 INFO  [Log] Element Found: False 
+2019-10-21 19:28:11,102 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:28:12,156 INFO  [Log] URL 
+2019-10-21 19:28:16,272 INFO  [Log] Number Enquiry(Search by Number Status with country Austria) 
+2019-10-21 19:28:16,276 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:28:16,276 INFO  [Log] I am in onStart method null 
+2019-10-21 19:28:16,276 INFO  [Log] NH_URL 
+2019-10-21 19:28:16,295 INFO  [Log] NH_URL 
+2019-10-21 19:28:28,152 INFO  [Log] Element Found: True 
+2019-10-21 19:28:28,152 INFO  [Log] Excel_URL 
+2019-10-21 19:28:37,477 INFO  [Log] Element Found: True 
+2019-10-21 19:28:37,477 INFO  [Log] Excel_URL 
+2019-10-21 19:28:47,001 INFO  [Log] Element Found: True 
+2019-10-21 19:28:47,001 INFO  [Log] Excel_URL 
+2019-10-21 19:28:56,525 INFO  [Log] Element Found: True 
+2019-10-21 19:28:56,525 INFO  [Log] Excel_URL 
+2019-10-21 19:29:02,991 INFO  [Log] Element Found: True 
+2019-10-21 19:29:02,991 INFO  [Log] Excel_URL 
+2019-10-21 19:29:25,120 INFO  [Log] Element Found: True 
+2019-10-21 19:29:34,573 INFO  [Log] Element Found: True 
+2019-10-21 19:29:34,573 INFO  [Log] Excel_URL 
+2019-10-21 19:30:01,099 INFO  [Log] Element Found: False 
+2019-10-21 19:30:06,373 INFO  [Log] Element Found: True 
+2019-10-21 19:30:06,373 INFO  [Log] Excel_URL 
+2019-10-21 19:31:44,379 INFO  [Log] Element Found: False 
+2019-10-21 19:31:49,683 INFO  [Log] Element Found: True 
+2019-10-21 19:31:49,683 INFO  [Log] Excel_URL 
+2019-10-21 19:31:49,788 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:31:50,850 INFO  [Log] URL 
+2019-10-21 19:31:54,965 INFO  [Log] Number Enquiry1 (Search by reserved to activate  with country UK) 
+2019-10-21 19:31:54,966 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:31:54,966 INFO  [Log] I am in onStart method null 
+2019-10-21 19:31:54,966 INFO  [Log] NH_URL 
+2019-10-21 19:31:54,971 INFO  [Log] NH_URL 
+2019-10-21 19:32:06,862 INFO  [Log] Element Found: True 
+2019-10-21 19:32:06,862 INFO  [Log] Excel_URL 
+2019-10-21 19:32:09,014 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:32:10,074 INFO  [Log] URL 
+2019-10-21 19:32:14,155 INFO  [Log] Number Enquiry (Search by Number Status with country UK) 
+2019-10-21 19:32:14,156 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:32:14,156 INFO  [Log] I am in onStart method null 
+2019-10-21 19:32:14,156 INFO  [Log] NH_URL 
+2019-10-21 19:32:14,172 INFO  [Log] NH_URL 
+2019-10-21 19:32:26,301 INFO  [Log] Element Found: True 
+2019-10-21 19:32:26,301 INFO  [Log] Excel_URL 
+2019-10-21 19:32:40,595 INFO  [Log] Element Found: False 
+2019-10-21 19:32:52,853 INFO  [Log] Element Found: False 
+2019-10-21 19:33:05,078 INFO  [Log] Element Found: False 
+2019-10-21 19:33:14,253 INFO  [Log] Element Found: True 
+2019-10-21 19:33:14,253 INFO  [Log] Excel_URL 
+2019-10-21 19:33:23,790 INFO  [Log] Element Found: True 
+2019-10-21 19:33:23,791 INFO  [Log] Excel_URL 
+2019-10-21 19:33:30,314 INFO  [Log] Element Found: True 
+2019-10-21 19:33:30,315 INFO  [Log] Excel_URL 
+2019-10-21 19:33:52,270 INFO  [Log] Element Found: True 
+2019-10-21 19:34:01,602 INFO  [Log] Element Found: True 
+2019-10-21 19:34:01,602 INFO  [Log] Excel_URL 
+2019-10-21 19:34:25,347 INFO  [Log] Element Found: True 
+2019-10-21 19:34:31,671 INFO  [Log] Element Found: True 
+2019-10-21 19:34:31,671 INFO  [Log] Excel_URL 
+2019-10-21 19:34:37,148 INFO  [Log] Element Found: True 
+2019-10-21 19:34:37,148 INFO  [Log] Excel_URL 
+2019-10-21 19:36:14,977 INFO  [Log] Element Found: False 
+2019-10-21 19:36:22,741 INFO  [Log] Element Found: True 
+2019-10-21 19:36:22,741 INFO  [Log] Excel_URL 
+2019-10-21 19:36:27,578 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:36:29,036 INFO  [Log] URL 
+2019-10-21 19:36:33,093 INFO  [Log] Change -Free to Reserve 
+2019-10-21 19:36:33,093 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:36:33,093 INFO  [Log] I am in onStart method null 
+2019-10-21 19:36:33,094 INFO  [Log] NH_URL 
+2019-10-21 19:36:33,111 INFO  [Log] NH_URL 
+2019-10-21 19:36:50,055 INFO  [Log] Element Found: False 
+2019-10-21 19:36:50,056 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:36:51,097 INFO  [Log] URL 
+2019-10-21 19:36:55,235 INFO  [Log] Number Enquiry (Number Status)with Address scenario 
+2019-10-21 19:36:55,235 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:36:55,236 INFO  [Log] I am in onStart method null 
+2019-10-21 19:36:55,236 INFO  [Log] NH_URL 
+2019-10-21 19:36:55,240 INFO  [Log] NH_URL 
+2019-10-21 19:37:09,362 INFO  [Log] Element Found: True 
+2019-10-21 19:37:09,363 INFO  [Log] Excel_URL 
+2019-10-21 19:37:33,632 INFO  [Log] Element Found: True 
+2019-10-21 19:37:33,768 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:37:34,795 INFO  [Log] URL 
+2019-10-21 19:37:38,869 INFO  [Log] Change -Reserve to Activate without Address 
+2019-10-21 19:37:38,869 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:37:38,870 INFO  [Log] I am in onStart method null 
+2019-10-21 19:37:38,870 INFO  [Log] NH_URL 
+2019-10-21 19:37:38,874 INFO  [Log] NH_URL 
+2019-10-21 19:37:50,799 INFO  [Log] Element Found: True 
+2019-10-21 19:37:50,799 INFO  [Log] Excel_URL 
+2019-10-21 19:38:19,852 INFO  [Log] Element Found: True 
+2019-10-21 19:38:19,994 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:38:21,024 INFO  [Log] URL 
+2019-10-21 19:38:25,140 INFO  [Log] Change -Free to Activate with Address 
+2019-10-21 19:38:25,148 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:38:25,148 INFO  [Log] I am in onStart method null 
+2019-10-21 19:38:25,148 INFO  [Log] NH_URL 
+2019-10-21 19:38:25,168 INFO  [Log] NH_URL 
+2019-10-21 19:38:42,150 INFO  [Log] Element Found: False 
+2019-10-21 19:38:42,151 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:38:43,197 INFO  [Log] URL 
+2019-10-21 19:38:47,259 INFO  [Log] Change -Free to Activate Without Address 
+2019-10-21 19:38:47,259 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:38:47,259 INFO  [Log] I am in onStart method null 
+2019-10-21 19:38:47,260 INFO  [Log] NH_URL 
+2019-10-21 19:38:47,272 INFO  [Log] NH_URL 
+2019-10-21 19:39:04,080 INFO  [Log] Element Found: False 
+2019-10-21 19:39:11,089 INFO  [Log] Element Found: False 
+2019-10-21 19:39:11,090 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:39:12,115 INFO  [Log] URL 
+2019-10-21 19:39:16,230 INFO  [Log] Change -Update the Address with port-in 
+2019-10-21 19:39:16,230 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:39:16,230 INFO  [Log] I am in onStart method null 
+2019-10-21 19:39:16,231 INFO  [Log] NH_URL 
+2019-10-21 19:39:16,236 INFO  [Log] NH_URL 
+2019-10-21 19:39:30,035 INFO  [Log] Element Found: True 
+2019-10-21 19:39:30,035 INFO  [Log] Excel_URL 
+2019-10-21 19:39:54,151 INFO  [Log] Element Found: True 
+2019-10-21 19:39:54,286 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:39:55,337 INFO  [Log] URL 
+2019-10-21 19:39:59,401 INFO  [Log] Change -Activate to Deactivate with Activate Senario 
+2019-10-21 19:39:59,401 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:39:59,401 INFO  [Log] I am in onStart method null 
+2019-10-21 19:39:59,402 INFO  [Log] NH_URL 
+2019-10-21 19:39:59,409 INFO  [Log] NH_URL 
+2019-10-21 19:40:15,029 INFO  [Log] Element Found: True 
+2019-10-21 19:40:15,029 INFO  [Log] Excel_URL 
+2019-10-21 19:40:35,136 INFO  [Log] Element Found: True 
+2019-10-21 19:40:35,275 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:40:36,319 INFO  [Log] URL 
+2019-10-21 19:40:40,397 INFO  [Log] Change -Activate to Deactivate with port-in Scenario 
+2019-10-21 19:40:40,397 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:40:40,397 INFO  [Log] I am in onStart method null 
+2019-10-21 19:40:40,397 INFO  [Log] NH_URL 
+2019-10-21 19:40:40,417 INFO  [Log] NH_URL 
+2019-10-21 19:40:55,436 INFO  [Log] Element Found: True 
+2019-10-21 19:40:55,436 INFO  [Log] Excel_URL 
+2019-10-21 19:41:15,864 INFO  [Log] Element Found: True 
+2019-10-21 19:41:15,996 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:41:17,012 INFO  [Log] URL 
+2019-10-21 19:41:21,073 INFO  [Log] Change -Free to Reserve with geo number 
+2019-10-21 19:41:21,073 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:41:21,073 INFO  [Log] I am in onStart method null 
+2019-10-21 19:41:21,073 INFO  [Log] NH_URL 
+2019-10-21 19:41:21,078 INFO  [Log] NH_URL 
+2019-10-21 19:41:38,688 INFO  [Log] Element Found: False 
+2019-10-21 19:41:38,688 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:41:39,952 INFO  [Log] URL 
+2019-10-21 19:41:44,095 INFO  [Log] Change -Free to Reserve
+with Location Independent Numbers 
+2019-10-21 19:41:44,095 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:41:44,095 INFO  [Log] I am in onStart method null 
+2019-10-21 19:41:44,095 INFO  [Log] NH_URL 
+2019-10-21 19:41:44,100 INFO  [Log] NH_URL 
+2019-10-21 19:41:59,302 INFO  [Log] Element Found: False 
+2019-10-21 19:41:59,303 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:42:00,342 INFO  [Log] URL 
+2019-10-21 19:42:04,415 INFO  [Log] Change -Free to Reserve with
+UK WIDE (Any Services) 
+2019-10-21 19:42:04,416 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:42:04,416 INFO  [Log] I am in onStart method null 
+2019-10-21 19:42:04,416 INFO  [Log] NH_URL 
+2019-10-21 19:42:04,424 INFO  [Log] NH_URL 
+2019-10-21 19:42:19,662 INFO  [Log] Element Found: False 
+2019-10-21 19:42:19,662 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:42:20,693 INFO  [Log] URL 
+2019-10-21 19:42:24,824 INFO  [Log] Change -Free to Reserve with
+UK WIDE (Public Services) 
+2019-10-21 19:42:24,825 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:42:24,825 INFO  [Log] I am in onStart method null 
+2019-10-21 19:42:24,825 INFO  [Log] NH_URL 
+2019-10-21 19:42:24,866 INFO  [Log] NH_URL 
+2019-10-21 19:42:40,392 INFO  [Log] Element Found: False 
+2019-10-21 19:42:40,393 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:42:41,427 INFO  [Log] URL 
+2019-10-21 19:42:45,833 INFO  [Log] Change -Free to Reserve with Country Denmark 
+2019-10-21 19:42:45,834 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:42:45,834 INFO  [Log] I am in onStart method null 
+2019-10-21 19:42:45,834 INFO  [Log] NH_URL 
+2019-10-21 19:42:45,841 INFO  [Log] NH_URL 
+2019-10-21 19:42:58,460 INFO  [Log] Element Found: True 
+2019-10-21 19:42:58,461 INFO  [Log] Excel_URL 
+2019-10-21 19:43:20,931 INFO  [Log] Element Found: True 
+2019-10-21 19:43:21,066 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:43:22,124 INFO  [Log] URL 
+2019-10-21 19:43:26,226 INFO  [Log] Change -Free to Reserve with Country Portugal 
+2019-10-21 19:43:26,226 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:43:26,226 INFO  [Log] I am in onStart method null 
+2019-10-21 19:43:26,226 INFO  [Log] NH_URL 
+2019-10-21 19:43:26,232 INFO  [Log] NH_URL 
+2019-10-21 19:43:43,099 INFO  [Log] Element Found: False 
+2019-10-21 19:43:43,101 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:43:44,169 INFO  [Log] URL 
+2019-10-21 19:43:48,245 INFO  [Log] Change -Free to Reserve with Country Spain 
+2019-10-21 19:43:48,245 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-21 19:43:48,245 INFO  [Log] I am in onStart method null 
+2019-10-21 19:43:48,245 INFO  [Log] NH_URL 
+2019-10-21 19:43:48,253 INFO  [Log] NH_URL 
+2019-10-21 19:43:56,783 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-21 19:43:57,789 INFO  [Log] I am on Finish method Scenario 
+2019-10-22 08:25:31,084 INFO  [Log] I am on Start method Scenario 
+2019-10-22 08:25:32,542 INFO  [Log] URL 
+2019-10-22 08:25:37,454 INFO  [Log] Number Enquiry (Search by Number Status) 
+2019-10-22 08:25:37,459 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-22 08:25:37,459 INFO  [Log] I am in onStart method null 
+2019-10-22 08:25:37,588 INFO  [Log] NH_URL 
+2019-10-22 08:25:37,598 INFO  [Log] NH_URL 
+2019-10-22 08:25:50,671 INFO  [Log] Element Found: True 
+2019-10-22 08:25:50,672 INFO  [Log] Excel_URL 
+2019-10-22 08:26:05,432 INFO  [Log] Element Found: False 
+2019-10-22 08:26:17,855 INFO  [Log] Element Found: False 
+2019-10-22 08:26:27,228 INFO  [Log] Element Found: True 
+2019-10-22 08:26:27,229 INFO  [Log] Excel_URL 
+2019-10-22 08:26:36,888 INFO  [Log] Element Found: True 
+2019-10-22 08:26:36,888 INFO  [Log] Excel_URL 
+2019-10-22 08:26:43,645 INFO  [Log] Element Found: True 
+2019-10-22 08:26:43,646 INFO  [Log] Excel_URL 
+2019-10-22 08:27:05,922 INFO  [Log] Element Found: True 
+2019-10-22 08:27:15,334 INFO  [Log] Element Found: True 
+2019-10-22 08:27:15,334 INFO  [Log] Excel_URL 
+2019-10-22 08:27:22,029 INFO  [Log] Element Found: True 
+2019-10-22 08:27:22,029 INFO  [Log] Excel_URL 
+2019-10-22 08:27:27,806 INFO  [Log] Element Found: True 
+2019-10-22 08:27:27,806 INFO  [Log] Excel_URL 
+2019-10-22 08:29:05,929 INFO  [Log] Element Found: False 
+2019-10-22 08:29:13,881 INFO  [Log] Element Found: True 
+2019-10-22 08:29:13,881 INFO  [Log] Excel_URL 
+2019-10-22 08:29:18,771 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-22 08:29:20,873 INFO  [Log] URL 
+2019-10-22 08:29:24,961 INFO  [Log] Change -Free to Reserve with Country Denmark 
+2019-10-22 08:29:24,962 INFO  [Log] I am on TestStart method NumberInquiry start 
+2019-10-22 08:29:24,962 INFO  [Log] I am in onStart method null 
+2019-10-22 08:29:24,962 INFO  [Log] NH_URL 
+2019-10-22 08:29:24,968 INFO  [Log] NH_URL 
+2019-10-22 08:29:37,503 INFO  [Log] Element Found: True 
+2019-10-22 08:29:37,503 INFO  [Log] Excel_URL 
+2019-10-22 08:30:00,146 INFO  [Log] Element Found: True 
+2019-10-22 08:30:00,307 INFO  [Log] I am on TestSuccess method NumberInquiry succeed 
+2019-10-22 08:30:01,377 INFO  [Log] I am on Finish method Scenario 
