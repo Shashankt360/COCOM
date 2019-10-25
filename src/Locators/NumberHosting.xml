@@ -64,6 +64,7 @@
 <StatusQuerySearchbutton>//input[@value='SEARCH']</StatusQuerySearchbutton>
 <TransactionType>(//table[@id='DomainTable']//td)[5]</TransactionType>
 <StatusQueryTransactionStatus>(//table[@id='DomainTable']//td)[6]</StatusQueryTransactionStatus>
+<QuesryForCompleted>(//table[@id='DomainTable']//td)[contains(text(),'Completed')]</QuesryForCompleted>
 <NoRecordFound>(//table[@id='tableError']/following-sibling::table//span) [9]</NoRecordFound>
 <Error>//span[@class="errortxt"]/b/span</Error>
 <mainError>//label[@for="searchCriteria"]/span</mainError>
@@ -158,7 +159,8 @@
 <ReserveElementall>//h1[contains(text(),'Number Enquiry - Search Result')]/../../..//td/a</ReserveElementall>
 <SelectAction>//h1[contains(text(),'Number Enquiry - Search Result')]/../../..//td/a[contains(text(),'Transactionid')]/../..//td/select</SelectAction>
 <ReserveElement>(//h1[contains(text(),'Number Enquiry - Search Result')]/../../..//td/a[contains(text(),'Transactionid')]/../..//td/input)[1]</ReserveElement>
-
+<SelectNumber>(//table[@id='numberList']//tr//td[contains(text(),'Number')])[1]</SelectNumber>
+<SelectNumberCheck>//table[@id='numberList']//tr//td[contains(text(),'Number')]/..//input</SelectNumberCheck>
 <Gobtnmain>//h1[contains(text(),'Number Enquiry - Search Result')]/../../..//td/a[contains(text(),'Transactionid')]/../..//td/span/input</Gobtnmain>
-
+<Firmordercommitment>//table[@id='DomainTable']//td[contains(text(),'Firm order commitment')]</Firmordercommitment>
 </locators>
