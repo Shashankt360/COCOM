@@ -11,10 +11,32 @@ public class NumberHosting extends DriverTestcase {
 	@Test(dataProviderClass=DataReader.class,dataProvider="NumberHosting")
 	public void NumberInquiry(Object[][] Data) throws Exception 
 	{
+		
+		
 		numberHostingHelper.get().OpenApplication();
 		Login.get().Login("NH");
 		numberHostingHelper.get().Search(Data);
 		numberHostingHelper.get().PortIn(Data);
+		
+		
+//		numberHostingHelper.get().OpenApplication2();
+//		Login.get().LoginNMTS("NMTS");
+	//	numberHostingHelper.get().MergerdNumber(Data);
+		
+//		numberHostingHelper.get().ReservationOrCancelReservation(Data); // running well
+//		
+//		numberHostingHelper.get().PortInNMTS(Data);         //running well
+//		numberHostingHelper.get().ReservetoActivate(Data);	//running well
+//		
+//		numberHostingHelper.get().FreeToActivateOnNMTS(Data);    // running well
+		
+		
+		
+		
+		
+		
+		
+
 		
 		
 		

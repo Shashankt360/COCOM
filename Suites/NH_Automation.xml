@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" data-provider-thread-count="1" verbose="1" name="NH Automation" annotations="JDK">
-	  <listeners>
-	  <listener class-name="Listeners.TestListener"/>
-	 
-    </listeners>
-  
-      <test name="Scenario" junit="false" preserve-order="true">
+<suite thread-count="1" data-provider-thread-count="1" verbose="1"
+	name="NH Automation" annotations="JDK">
+	<listeners>
+		<listener class-name="Listeners.TestListener" />
+
+	</listeners>
+   <parameter name="browser" value="chrome" />  
+	<test name="Scenario" junit="false" preserve-order="true">
 		<classes>
-			<class name="Testscript.NumberHosting">	
+			<class name="Testscript.NumberHosting">
 				<methods>
-					<include name="NumberInquiry"/>
-				</methods>	
+					<include name="NumberInquiry" />
+
+				</methods>
 			</class>
-		</classes>	
-	</test>  
-	</suite>
+
+		</classes>
+	</test>
+</suite>
 	
 	

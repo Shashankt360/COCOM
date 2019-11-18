@@ -6,6 +6,7 @@ import java.net.URL;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 import java.util.logging.Level;
 
 import javax.swing.Action;
@@ -19,6 +20,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.logging.LoggingPreferences;
@@ -39,11 +42,12 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
-
+import org.testng.annotations.Parameters;
 
 import Listeners.TestListener;
 
 import ScriptHelper.LoginHelper;
+import ScriptHelper.NmtsHelper;
 import ScriptHelper.NumberHostingHelper;
 
 
@@ -57,7 +61,7 @@ public static final ThreadLocal<WebDriver> WEB_DRIVER_THREAD_LOCAL = new Inherit
 	
 	public static final ThreadLocal<LoginHelper> Login= new InheritableThreadLocal<>();
 	public static final ThreadLocal<NumberHostingHelper> numberHostingHelper= new InheritableThreadLocal<>();
-	
+	public static final ThreadLocal<NmtsHelper> nmtsHelper= new InheritableThreadLocal<>();
 //s	public static final ThreadLocal<CocomHelper> cocomHelper= new InheritableThreadLocal<>();
 	public static ThreadLocal<String> QuoteID=new InheritableThreadLocal<>();
 	public static TestListener Testlistener;
@@ -66,10 +70,12 @@ public static final ThreadLocal<WebDriver> WEB_DRIVER_THREAD_LOCAL = new Inherit
 	public static SessionId session_id;
 	public static ChromeDriver driver;
 	public static int  itr;
+	
+	
 	@BeforeMethod
 	   public void BeforeMethod(Method method,ITestContext ctx ,Object[] data) throws IOException, InterruptedException{
 		System.out.println("Size of Data in Before method"+data.length);
-		setup();
+		//setup();
 		//System.out.println("Driver at the time of initiation"+getwebdriver());
 		//EventFiringWebDriver eventDriver = new EventFiringWebDriver(getwebdriver());
 		//ActionListner handler = new ActionListner();
@@ -166,12 +172,17 @@ public static final ThreadLocal<WebDriver> WEB_DRIVER_THREAD_LOCAL = new Inherit
 	    	    Log.info(st[st.length-2].toString());
 			    ctx.setAttribute("testName", st[st.length-2].toString());
 	      }
+	      if(method.getName().equals("NumberInquiryForNMTS"))
+	      {
+	    	    Log.info(st[st.length-2].toString());
+			    ctx.setAttribute("testName", st[st.length-2].toString());
+	      }
 	      
-	    
+	     
 	}
 
-
-	//@BeforeTest
+	@Parameters(value="browser")
+	@BeforeTest
 	public void setup() throws IOException, InterruptedException
 	{
 		// Open Browser
@@ -191,7 +202,8 @@ public static final ThreadLocal<WebDriver> WEB_DRIVER_THREAD_LOCAL = new Inherit
 			
             // Create object of ChromeOption class
 			ChromeOptions options = new ChromeOptions();
-			options.setExperimentalOption("prefs", prefs);
+			//options.setExperimentalOption("prefs", prefs);
+			options.setExperimentalOption("useAutomationExtension", false);
 			options.addArguments("--start-maximized");
 			options.addArguments("disable-infobars");
 			options.addArguments("--disable-popup-blocking");
@@ -223,6 +235,25 @@ public static final ThreadLocal<WebDriver> WEB_DRIVER_THREAD_LOCAL = new Inherit
 		}
 		else if (targatedbrowser.equals("ie"))
 		{
+			DesiredCapabilities capabilities=DesiredCapabilities.internetExplorer();
+			Map<String, Object> prefs = new HashMap<String, Object>();
+			 // Set the notification setting it will override the default setting
+			prefs.put("profile.default_content_setting_values.notifications", 2);
+			
+			
+            // Create object of internetexplorerOption class
+			InternetExplorerOptions options = new InternetExplorerOptions()
+					   .requireWindowFocus();
+		//	capabilities.setCapability(InternetExplorerDriver.NATIVE_EVENTS, false);
+			capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
+			capabilities.setCapability("requireWindowFocus", true);
+			capabilities.setCapability(CapabilityType.PAGE_LOAD_STRATEGY, "none");
+			//capabilities.setCapability(CapabilityType.l, "none");
+			LoggingPreferences logs = new LoggingPreferences(); 
+		    logs.enable(LogType.DRIVER, Level.ALL); 
+			capabilities.setCapability(CapabilityType.LOGGING_PREFS, logs);
+			System.setProperty("webdriver.chrome.driver",".\\lib\\IEDriverServer.exe");
+			dr= new ChromeDriver(capabilities);
 			Log.info("For IE inprogress");
 		}
 		
@@ -347,10 +378,51 @@ public static final ThreadLocal<WebDriver> WEB_DRIVER_THREAD_LOCAL = new Inherit
 		LoginHelper LN= new LoginHelper(getwebdriver());
 		NumberHostingHelper NHH= new NumberHostingHelper(getwebdriver());
 		Login.set(LN);
-		
 		numberHostingHelper.set(NHH);
+	//*********************************************Why*************************************************************	//
+		
+		NmtsHelper NH=new NmtsHelper(getwebdriver());
+		Login.set(LN);
+		nmtsHelper.set(NH);
 	}
+	public void setupforChrome() throws Exception
+	{
+		
+		 
+			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+			Map<String, Object> prefs = new HashMap<String, Object>();
+			 // Set the notification setting it will override the default setting
+			prefs.put("profile.default_content_setting_values.notifications", 2);
+			
+			
+            // Create object of ChromeOption class
+			ChromeOptions options = new ChromeOptions();
+			//options.setExperimentalOption("prefs", prefs);
+			options.setExperimentalOption("useAutomationExtension", false);
+			options.addArguments("--start-maximized");
+			options.addArguments("disable-infobars");
+			options.addArguments("--disable-popup-blocking");
+			//options.setExperimentalOption("excludeSwitches", "disable-popup-blocking");
+			capabilities.setCapability(CapabilityType.PAGE_LOAD_STRATEGY, "none");
+			//capabilities.setCapability(CapabilityType.l, "none");
+			LoggingPreferences logs = new LoggingPreferences(); 
+		    logs.enable(LogType.DRIVER, Level.ALL); 
+			capabilities.setCapability(CapabilityType.LOGGING_PREFS, logs);
+			capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+			System.setProperty("webdriver.chrome.driver",".\\lib\\chromedriver.exe");
+		
+			//WebDriver dr=new ChromeDriver();
+			WebDriver dr = new ChromeDriver(capabilities);
+			WEB_DRIVER_THREAD_LOCAL.set(dr);
+			Thread.sleep(2000);
+			dr.get("http://amsros78:8080/wholesale1");
+			Thread.sleep(12000);
+			
+			LoginHelper h=new LoginHelper(getwebdriver());
+			h.IntergrationLogin("NH");
+			
 
+		}
 	@org.testng.annotations.BeforeSuite
 	public void BeforeSuite(){
 	itr=0;
@@ -460,13 +532,13 @@ public static final ThreadLocal<WebDriver> WEB_DRIVER_THREAD_LOCAL = new Inherit
 	public void Teardown2()
 	{
 		System.out.println("Cuurent Thread of diriver need to close-"+getwebdriver());
-		getwebdriver().quit();
+		//getwebdriver().quit();
 	}
 	@AfterTest
 	public void Teardown()
 	{
 		//System.out.println("Cuurent Thread of diriver need to close-"+getwebdriver());
-		//getwebdriver().close();
+		getwebdriver().close();
 	}
 	public WebDriver getwebdriver() {
 		WebDriver dr = WEB_DRIVER_THREAD_LOCAL.get();

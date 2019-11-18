@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" name="Failed suite [NH Automation]" data-provider-thread-count="1">
+<suite thread-count="1" data-provider-thread-count="1" name="Failed suite [NH Automation]">
+  <parameter name="browser" value="chrome"/>
   <listeners>
     <listener class-name="Listeners.TestListener"/>
   </listeners>
@@ -9,9 +10,10 @@
       <class name="Testscript.NumberHosting">
         <methods>
           <include name="BeforeMethod"/>
+          <include name="setup"/>
           <include name="Teardown2"/>
           <include name="BeforeSuite"/>
-          <include name="NumberInquiry" invocation-numbers="15 37 39 41 42 48"/>
+          <include name="NumberInquiry" invocation-numbers="0"/>
           <include name="Teardown"/>
         </methods>
       </class> <!-- Testscript.NumberHosting -->

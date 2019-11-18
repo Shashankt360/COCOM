@@ -70,7 +70,10 @@ public class DriverHelper {
 	public static ThreadLocal<String> CurrentStatus=new ThreadLocal<>();
 	public static ThreadLocal<String> CurrentStat=new ThreadLocal<>();
 	public static ThreadLocal<String> ChildCurrentStat=new ThreadLocal<>();
+	public static ThreadLocal<String> TransactionStatusNMTS=new ThreadLocal<>();
 	public static ThreadLocal<String> ParentCurrentStat=new ThreadLocal<>();
+
+	
 	
 	public DriverHelper(WebDriver dr)
 	{
@@ -475,8 +478,31 @@ public void ClickswithAction(String el) throws InterruptedException {
 			Log.info("Unable to click on element "+ e.getStackTrace());
 		}
 	}
+	public boolean safeJavaScriptClick1(WebElement element) throws Exception {
+		try {
+			if (element.isEnabled() && element.isDisplayed()) {
+				Log.info("Clicking on element with using java script click");
+
+				((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
+			} else {
+				Log.info("Unable to click on element");
+				((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
+			}
+		} catch (StaleElementReferenceException e) {
+			Log.info("Element is not attached to the page document "+ e.getStackTrace());
+		} catch (NoSuchElementException e) {
+			Log.info("Element was not found in DOM "+ e.getStackTrace());
+		} catch (Exception e) {
+			Log.info("Unable to click on element "+ e.getStackTrace());
+		}
+		return false;
+	}
 	public void switchtofram(WebElement el){
 		driver.switchTo().frame(el);
+		
+	}
+	public void switchtoframe(String frameName){
+		driver.switchTo().frame(frameName);
 		
 	}
 	public void switchtodefault(){
@@ -514,6 +540,12 @@ public void Moveon(WebElement el) {
 		 
 	    action.moveToElement(el).build().perform();
 	}
+public void DoubleClick(WebElement el) {
+	
+	Actions action = new Actions(driver);
+	 
+    action.doubleClick(el).perform();
+}
 	public boolean isElementPresent(String locator) {
 	    try {
 	        driver.findElement(By.xpath(locator));
@@ -935,6 +967,13 @@ public void Clickonoutofviewportwithstring(String locator) throws Exception {
 			Alert alert = driver.switchTo().alert();
 			alert.accept();
 			driver.switchTo().defaultContent();
+		}
+	public boolean AcceptJavaScriptMethod2() throws InterruptedException{
+		Thread.sleep(1000);
+			Alert alert = driver.switchTo().alert();
+			alert.accept();
+			driver.switchTo().defaultContent();
+			return true;
 		}
 	public void CancelJavaScriptMethod() throws InterruptedException{
 		Thread.sleep(1000);

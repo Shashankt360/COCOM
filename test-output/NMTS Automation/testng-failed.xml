@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" data-provider-thread-count="1" name="Failed suite [NMTS Automation]">
+  <listeners>
+    <listener class-name="Listeners.TestListener"/>
+  </listeners>
+  <test name="Scenario(failed)">
+    <classes>
+      <class name="Testscript.NMTS">
+        <methods>
+          <include name="BeforeMethod"/>
+          <include name="NumberInquiryForNMTS" invocation-numbers="1"/>
+          <include name="Teardown2"/>
+          <include name="BeforeSuite"/>
+          <include name="Teardown"/>
+        </methods>
+      </class> <!-- Testscript.NMTS -->
+    </classes>
+  </test> <!-- Scenario(failed) -->
+</suite> <!-- Failed suite [NMTS Automation] -->

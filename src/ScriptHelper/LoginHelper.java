@@ -36,6 +36,25 @@ public class LoginHelper extends DriverHelper{
 	{
 		
 	}
+//	public void IntergrationLogin() throws Exception
+//	{
+//
+//		Thread.sleep(2000);
+//	//openurl(Application);
+//		//ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Navigated to "+Application+" Login Page");
+//	//	WaitforElementtobeclickable(xml.getlocator("//locators/"+Application+"/Username"));  
+//		SendKeys(getwebelement(xml.getlocator("//locators/Usernametococom")),"Ychoudhary8");
+//		//ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Enter User Name");
+//	//	WaitforElementtobeclickable(xml.getlocator("//locators/"+Application+"/Password"));
+//		SendKeys(getwebelement(xml.getlocator("//locators/Password")),"London12");
+//		//ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Enter Password");
+//	//	WaitforElementtobeclickable(xml.getlocator("//locators/"+Application+"/Loginbutton"));
+//		
+//		Clickon(getwebelement(xml.getlocator("//locators/Loginbutton")));
+//		//ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on Login Button");
+//		
+	//}
+
 	public void Docusign(String url) throws Exception
 	{
 //		Gmail gm=new Gmail();
@@ -124,6 +143,26 @@ public class LoginHelper extends DriverHelper{
 		Clickon(getwebelement(xml.getlocator("//locators/"+Application+"/Loginbutton")));
 		//ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on Login Button");
 		
+	}
+	public void IntergrationLogin(String Application) throws Exception
+	{
+		//openurl(Application);
+		//ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Navigated to "+Application+" Login Page");
+	//	WaitforElementtobeclickable(xml.getlocator("//locators/"+Application+"/Username"));  
+		SendKeys(getwebelement(xml.getlocator("//locators/"+Application+"/Username")),Getkeyvalue(Application+"_Username"));
+		//ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Enter User Name");
+	//	WaitforElementtobeclickable(xml.getlocator("//locators/"+Application+"/Password"));
+		SendKeys(getwebelement(xml.getlocator("//locators/"+Application+"/Password")),Getkeyvalue(Application+"_Password"));
+		//ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Enter Password");
+	//	WaitforElementtobeclickable(xml.getlocator("//locators/"+Application+"/Loginbutton"));
+		
+		Clickon(getwebelement(xml.getlocator("//locators/"+Application+"/Loginbutton")));
+		//ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on Login Button");
+		
+	}
+	public void LoginNMTS(String Application) throws Exception
+	{
+		openurl(Application);		
 	}
 	public void Logout(String Application) throws Exception
 	{
