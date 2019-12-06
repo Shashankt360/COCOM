@@ -3,11 +3,15 @@ package ScriptHelper;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
 import java.util.Set;
 
 import org.dom4j.DocumentException;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -209,15 +213,20 @@ public class NmtsHelper extends DriverHelper{
 						int rangeStart = Integer.parseInt(Inputdata[i][40].toString());
 						log("enter the value of range end:-" + Inputdata[i][41].toString());
 						int rangeEnd = Integer.parseInt(Inputdata[i][41].toString());
-						if (isElementPresent(xml.getlocator("//locators/IEmorerecord"))) {
-							for (int k = rangeStart; k <= rangeEnd; k++) {
-								if (isElementPresent(xml.getlocator("//locators/IERandomCheckbox")
-										.replace("Rowindex", String.valueOf(k + 1)).replace("index", String.valueOf(k)))) {
+						if (isElementPresent(xml.getlocator("//locators/IEmorerecord")))
+						{
+							for (int k = rangeStart; k <= rangeEnd; k++) 
+							{
+								if (isElementPresent(xml.getlocator("//locators/IERandomCheckbox").replace("Rowindex", String.valueOf(k + 1)).replace("index", String.valueOf(k))))
+										
+								{
 									Clickon(getwebelement(xml.getlocator("//locators/IERandomCheckbox")
 											.replace("Rowindex", String.valueOf(k + 1))
 											.replace("index", String.valueOf(k))));
 									log("check the selected checkbox");
-								} else {
+								} 
+								else 
+								{
 									RedLog("Invalid range or more than one checkbox required.");
 								}
 								log("row work complete");
@@ -233,6 +242,7 @@ public class NmtsHelper extends DriverHelper{
 					WaitforElementtobeclickable((xml.getlocator("//locators/IEmergeButton")));
 					Clickon(getwebelement(xml.getlocator("//locators/IEmergeButton")));
 					log("click ont the merge Button");
+					
 				} else {
 					Select(getwebelement(xml.getlocator("//locators/targetStatus")), Inputdata[i][49].toString());
 					log("Target status is:-" + Inputdata[i][49].toString());
@@ -240,10 +250,11 @@ public class NmtsHelper extends DriverHelper{
 					Select(getwebelement(xml.getlocator("//locators/tgtavail")), Inputdata[i][50].toString());
 					log("Target availability is:-" + Inputdata[i][50].toString());
 					Thread.sleep(1000);
-					WaitforElementtobeclickable((xml.getlocator("//locators/checkboxformerge")));
-					Clickon(getwebelement(xml.getlocator("//locators/checkboxformerge")));
-					log("click ont the Switch task completed");
-					//checkboxformerge
+					
+					Thread.sleep(3000);
+					Select(getwebelement(xml.getlocator("//locators/SelectColtcategory")), Inputdata[i][46].toString());
+					log("select the Target Colt Category:-" + Inputdata[i][46].toString());
+//					
 					WaitforElementtobeclickable((xml.getlocator("//locators/poolandstatusbtn")));
 					Clickon(getwebelement(xml.getlocator("//locators/poolandstatusbtn")));
 					log("click ont the IEpoolandstatus button");
@@ -303,13 +314,35 @@ public class NmtsHelper extends DriverHelper{
 					SendKeys(getwebelement(xml.getlocator("//locators/IEMergeRangeEnd")), Inputdata[i][15].toString());
 					log("Enter the range end value:-" + Inputdata[i][15].toString());
 					Select(getwebelement(xml.getlocator("//locators/AddnumStatus")), Inputdata[i][4].toString());
+					
 					log("select the Status:-" + Inputdata[i][4].toString());
-					Select(getwebelement(xml.getlocator("//locators/AddnumGeo")), Inputdata[i][38].toString());
-					log("Select the Geo or non-Geo:-" + Inputdata[i][38].toString());
+					Thread.sleep(2000);
+					if(Inputdata[i][2].toString().equals("DE NON-GEO"))
+					{
+						System.out.println("GEO/non-GEO is not availble for country - DE NON-GEO");
+					}
+					else {
+						Thread.sleep(2000);
+						Select(getwebelement(xml.getlocator("//locators/AddnumGeo")), Inputdata[i][38].toString());
+						log("Select the Geo or non-Geo:-" + Inputdata[i][38].toString());
+					}
+					
+					
 					Select(getwebelement(xml.getlocator("//locators/AddnumCtg")), Inputdata[i][46].toString());
 					log("Select the Category:-" + Inputdata[i][46].toString());
-					Select(getwebelement(xml.getlocator("//locators/AddingAvailability")), Inputdata[i][37].toString());
-					log("Select the Availability:-" + Inputdata[i][37].toString());
+					
+					Thread.sleep(2000);
+					if(Inputdata[i][2].toString().equals("DE NON-GEO")) {
+						
+						System.out.println("Availbility is not availble for country - DE NON-GEO");
+						
+					}
+					else {
+						Thread.sleep(2000);
+						Select(getwebelement(xml.getlocator("//locators/AddingAvailability")), Inputdata[i][37].toString());
+						log("Select the Availability:-" + Inputdata[i][37].toString());
+					}
+					
 					WaitforElementtobeclickable((xml.getlocator("//locators/AddingSubmit")));
 					Clickon(getwebelement(xml.getlocator("//locators/AddingSubmit")));
 					log("Click on the submit button");
@@ -345,12 +378,14 @@ public class NmtsHelper extends DriverHelper{
 						log("Click on the PORT-OUT button");
 					}
 					else {
+						Thread.sleep(5000);
 					WaitforElementtobeclickable((xml.getlocator("//locators/retandtransfer")));
 					Clickon(getwebelement(xml.getlocator("//locators/retandtransfer")));
 					log("Click on the return and transfer button");
 					}
 					switchtodefault();
 					switchtoframe("fmMain");
+					Thread.sleep(3000);
 					if(Inputdata[i][2].toString().equals("CH")) {
 						waitandForElementDisplayed(xml.getlocator("//locators/wholesaleradiobtn"));
 						Clickon(getwebelement(xml.getlocator("//locators/wholesaleradiobtn")));
@@ -362,8 +397,31 @@ public class NmtsHelper extends DriverHelper{
 						Thread.sleep(3000);
 						//portoutradiobtn
 					}
-					Select(getwebelement(xml.getlocator("//locators/ReturnAvailability")), Inputdata[i][37].toString());
-					log("select the Availability:-" + Inputdata[i][37].toString());
+					Thread.sleep(3000);
+					if(Inputdata[i][2].toString().equals("FR") || Inputdata[i][2].toString().equals("IT")) 
+					{
+						waitandForElementDisplayed(xml.getlocator("//locators/sELECThOSTEDnO"));
+						Select(getwebelement(xml.getlocator("//locators/sELECThOSTEDnO")), Inputdata[i][88].toString());
+						log("Select the Colt/Hosted no:-"+Inputdata[i][88].toString());
+					//	Thread.sleep(2000);
+//						switchtodefault();
+//						switchtoframe("fmMain");
+						Thread.sleep(2000);
+						Select(getwebelement(xml.getlocator("//locators/ReturnAvailabilityIT")), Inputdata[i][37].toString());
+						log("select the Availability:-" + Inputdata[i][37].toString());
+					}
+					Thread.sleep(3000);
+					if(Inputdata[i][2].toString().equals("CH") ||Inputdata[i][2].toString().equals("DE NON-GEO")||Inputdata[i][2].toString().equals("IT") )
+					{
+                      System.out.println("this field is disble for Country - CH");
+					}
+					else {
+						Thread.sleep(3000);
+						Select(getwebelement(xml.getlocator("//locators/ReturnAvailability")), Inputdata[i][37].toString());
+						log("select the Availability:-" + Inputdata[i][37].toString());
+					}
+					
+					
 					Thread.sleep(2000);
 					SendKeys(getwebelement(xml.getlocator("//locators/AreaCodePrefix")), Inputdata[i][5].toString());
 					log("Enter the Area Code Prefix" + Inputdata[i][5].toString());
@@ -428,8 +486,10 @@ public class NmtsHelper extends DriverHelper{
 
 						Select(getwebelement(xml.getlocator("//locators/ProcessingDecession")), Inputdata[i][56].toString());
 						log("select the Processing Decession:-" + Inputdata[i][56].toString());
-						if (Inputdata[i][56].toString().equals("Transferred")) {
-							Thread.sleep(5000);
+						
+						if (Inputdata[i][56].toString().equals("Transferred"))
+						{
+							Thread.sleep(7000);
 							Select(getwebelement(xml.getlocator("//locators/operator")), Inputdata[i][69].toString());
 							log("select the operator:-" + Inputdata[i][69].toString());
 						}
@@ -451,10 +511,7 @@ public class NmtsHelper extends DriverHelper{
 						}
 						
 						
-						AcceptJavaScriptMethod();
-						
-						
-						
+                          isAlertPresent();	
 
 					}
 					else 
@@ -471,7 +528,13 @@ public class NmtsHelper extends DriverHelper{
 					UserGroupforPhnNoMgn(Inputdata);
 					switchtodefault();
 					switchtoframe("fmMenu");
-					
+					if(Inputdata[i][81].toString().equals("UAT"))
+					{
+						WaitforElementtobeclickable((xml.getlocator("//locators/IEceasebtnU")));
+						Clickon(getwebelement(xml.getlocator("//locators/IEceasebtnU")));
+						log("Click on the Cease Number button");
+						
+					}
 					if(Inputdata[i][2].toString().equals("FR")) 
 					{
 						WaitforElementtobeclickable((xml.getlocator("//locators/CeaseBtnforFR")));
@@ -488,15 +551,26 @@ public class NmtsHelper extends DriverHelper{
 					switchtoframe("fmMain");
 					Select(getwebelement(xml.getlocator("//locators/madeByNMTS")), Inputdata[i][57].toString());
 					log("select the Made By Name:-" + Inputdata[i][57].toString());
-					if (Inputdata[i][2].equals("FR") || Inputdata[i][2].equals("IT")) {
+					
+					if (Inputdata[i][2].equals("FR") || Inputdata[i][2].equals("IT")) 
+					{
 						Select(getwebelement(xml.getlocator("//locators/Coltandhostednumber")), Inputdata[i][67].toString());
 						log("select the Colt and hosted number:-" + Inputdata[i][67].toString());
 					}
-					Select(getwebelement(xml.getlocator("//locators/DeactivationAvail")), Inputdata[i][37].toString());
-					log("select the Availability:-" + Inputdata[i][37].toString());
+					if (Inputdata[i][2].equals("DE NON-GEO"))
+							{
+						System.out.println("Avilability is not present for country- DE NON-GEO");
+							}
+					else {
+						Select(getwebelement(xml.getlocator("//locators/DeactivationAvail")), Inputdata[i][37].toString());
+						log("select the Availability:-" + Inputdata[i][37].toString());
+					}
+					
+					
+					
 					Select(getwebelement(xml.getlocator("//locators/FilterBy")), Inputdata[i][58].toString());
 					log("select the Filter By:-" + Inputdata[i][58].toString());
-					Thread.sleep(1000);
+					Thread.sleep(4000);
 					Select(getwebelement(xml.getlocator("//locators/matching")), Inputdata[i][59].toString());
 					log("select the Matcing:-" + Inputdata[i][59].toString());
 					SendKeys(getwebelement(xml.getlocator("//locators/FilterText")), Inputdata[i][42].toString());
@@ -533,14 +607,34 @@ public class NmtsHelper extends DriverHelper{
 						log("Action to ok");
 						Thread.sleep(10000);
 						//AcceptJavaScriptMethod();
+						isAlertPresent();
 						GreenLog("number successfully deactivated");
 
 //
 						Thread.sleep(5000);
-						String CurrentNumberStatus = GetText(getwebelement(xml.getlocator("//locators/verifyStatus")));
-						TransactionStatusNMTS.set(CurrentNumberStatus);
 						
-						log("current  number status is:-"+CurrentNumberStatus);
+						
+						switchtodefault();
+						switchtoframe("fmMain");
+						
+						String DeactivationText="";
+						try
+						{
+							  DeactivationText= GetText(getwebelement(xml.getlocator("//locators/vv")));
+					  TransactionStatusNMTS.set(DeactivationText);
+					  System.out.println(TransactionStatusNMTS.get());
+						}
+						catch(StaleElementReferenceException r)
+						{
+							
+							  DeactivationText= GetText(getwebelement(xml.getlocator("//locators/vv")));
+							  
+							  String deactivate = DeactivationText.toLowerCase();
+							  TransactionStatusNMTS.set(deactivate);
+							  System.out.println(TransactionStatusNMTS.get());
+						}
+
+						log("current  number status is:-"+DeactivationText);
 						
 						Thread.sleep(3000);
 				
@@ -557,8 +651,8 @@ public class NmtsHelper extends DriverHelper{
 							String COCOMstatus = nmt.NumberQuiryUsingNumberRange(Inputdata);
 							Thread.sleep(3000);
 						  
-							if (TransactionStatusNMTS.get().contains("Ceased") && COCOMstatus.contains("Quarantined")) 
-							{
+							if (TransactionStatusNMTS.get().equalsIgnoreCase("ceased") && COCOMstatus.contains("Quarantined")) 
+							{ 	
 				
 								GreenLog("Status Under NMTS and COCOM have same and verified!!!");
 							} 
@@ -577,19 +671,35 @@ public class NmtsHelper extends DriverHelper{
 					UserGroupforPhnNoMgn(Inputdata);
 					switchtodefault();
 					switchtoframe("fmMenu");
-					if(Inputdata[i][2].toString().equals("CH")) {
+					
+				
+					if(Inputdata[i][2].toString().equals("CH")) 
+					{
 						WaitforElementtobeclickable((xml.getlocator("//locators/portoutforCH")));
 						Clickon(getwebelement(xml.getlocator("//locators/portoutforCH")));
 						log("Click on the PORT-OUT button for CH extension country");
 					}
+					
 					else {
+						Thread.sleep(5000);
 					WaitforElementtobeclickable((xml.getlocator("//locators/portoutNMTS")));
 					Clickon(getwebelement(xml.getlocator("//locators/portoutNMTS")));
 					log("Click on the PORT-OUT button");
 					}
 					switchtodefault();
 					switchtoframe("fmMain");
-					if(Inputdata[i][2].toString().equals("CH")) {
+					
+					if(Inputdata[i][2].toString().equals("IT") || Inputdata[i][2].toString().equals("FR"))
+					{
+
+						log("Click on the PORT-OUT button");
+						Thread.sleep(3000);
+						waitandForElementDisplayed(xml.getlocator("//locators/sELECThOSTEDnO"));
+						Select(getwebelement(xml.getlocator("//locators/sELECThOSTEDnO")), Inputdata[i][88].toString());
+						log("Select the Colt/Hosted no:-"+Inputdata[i][88].toString());
+					}
+					if(Inputdata[i][2].toString().equals("CH")) 
+					{
 						waitandForElementDisplayed(xml.getlocator("//locators/wholesaleradiobtn"));
 						Clickon(getwebelement(xml.getlocator("//locators/wholesaleradiobtn")));
 						log("Click on the radio button button for wholesale");
@@ -600,7 +710,10 @@ public class NmtsHelper extends DriverHelper{
 						Thread.sleep(3000);
 						//portoutradiobtn
 					}
-					if (isElementPresent(xml.getlocator("//locators/AreaCodePrefix"))) {
+					
+					
+					if (isElementPresent(xml.getlocator("//locators/AreaCodePrefix")))
+					{
 						waitandForElementDisplayed(xml.getlocator("//locators/AreaCodePrefix"));
 						SendKeys(getwebelement(xml.getlocator("//locators/AreaCodePrefix")), Inputdata[i][5].toString());
 						log("Enter the Area Code Prefix:-"+Inputdata[i][5].toString());
@@ -616,56 +729,71 @@ public class NmtsHelper extends DriverHelper{
 						waitandForElementDisplayed(xml.getlocator("//locators/Submitbtn"));
 						Clickon(getwebelement(xml.getlocator("//locators/Submitbtn")));
 						log("Click on Submit button");
-					} else {
+						Thread.sleep(3000);
+						switchtodefault();
+						switchtoframe("fmMain");
+						Thread.sleep(5000);
+						if (isElementPresent(xml.getlocator("//locators/GriddataNMTS")))
+						{
+							GreenLog("Data are displaying with search creteria!!");
+							waitandForElementDisplayed(xml.getlocator("//locators/checkbox3"));
+							Clickon(getwebelement(xml.getlocator("//locators/checkbox3")));
+							log("Click on Allocation checkbox");
+							waitandForElementDisplayed(xml.getlocator("//locators/Selectmark"));
+							Clickon(getwebelement(xml.getlocator("//locators/Selectmark")));
+							log("Click on Select mark");
+							Thread.sleep(3000);
+							waitandForElementDisplayed(xml.getlocator("//locators/AllocationCheckboxagain"));
+							Clickon(getwebelement(xml.getlocator("//locators/AllocationCheckboxagain")));
+							log("Click on Allocation checkbox again");
+							Thread.sleep(3000);
+							Select(getwebelement(xml.getlocator("//locators/RangeHolder")), Inputdata[i][63].toString());
+							log("select the New Number Range Holder:-" + Inputdata[i][63].toString());
+							SendKeys(getwebelement(xml.getlocator("//locators/ContractNumber")), Inputdata[i][64].toString());
+							log("Input the Contruct Number:-" + Inputdata[i][64].toString());
+							Select(getwebelement(xml.getlocator("//locators/ContractSrc")), Inputdata[i][61].toString());
+							log("select the Contract Source:-" + Inputdata[i][61].toString());
+							SendKeys(getwebelement(xml.getlocator("//locators/portoutdateNMTS")), Inputdata[i][65].toString());
+							log("Input the Port OUt Date:-" + Inputdata[i][65].toString());
+							waitandForElementDisplayed(xml.getlocator("//locators/Portoutselectedrangebtn"));
+							Clickon(getwebelement(xml.getlocator("//locators/Portoutselectedrangebtn")));
+							log("Click on Port out selected range button");
+							Thread.sleep(2000);
+							waitandForElementDisplayed(xml.getlocator("//locators/YesBtn"));
+							Clickon(getwebelement(xml.getlocator("//locators/YesBtn")));
+							log("Click on yes button");
+							Thread.sleep(3000);
+							//AcceptJavaScriptMethod();
+							isAlertPresent();
+							Thread.sleep(3000);
+							GreenLog("Number is Port-out successfully");
+					} 
+					else {
 
 						RedLog("please check the correct data in Excel sheet for - AreaCode, AreacodeExt and Rangefrom:(");
-					}
-					Thread.sleep(3000);
-					switchtodefault();
-					switchtoframe("fmMain");
-					Thread.sleep(5000);
-					if (isElementPresent(xml.getlocator("//locators/GriddataNMTS"))) {
-						GreenLog("Data are displaying with search creteria!!");
-						waitandForElementDisplayed(xml.getlocator("//locators/checkbox3"));
-						Clickon(getwebelement(xml.getlocator("//locators/checkbox3")));
-						log("Click on Allocation checkbox");
-						waitandForElementDisplayed(xml.getlocator("//locators/Selectmark"));
-						Clickon(getwebelement(xml.getlocator("//locators/Selectmark")));
-						log("Click on Select mark");
-						Thread.sleep(3000);
-						waitandForElementDisplayed(xml.getlocator("//locators/AllocationCheckboxagain"));
-						Clickon(getwebelement(xml.getlocator("//locators/AllocationCheckboxagain")));
-						log("Click on Allocation checkbox again");
-						Thread.sleep(3000);
-						Select(getwebelement(xml.getlocator("//locators/RangeHolder")), Inputdata[i][63].toString());
-						log("select the New Number Range Holder:-" + Inputdata[i][63].toString());
-						SendKeys(getwebelement(xml.getlocator("//locators/ContractNumber")), Inputdata[i][64].toString());
-						log("Input the Contruct Number:-" + Inputdata[i][64].toString());
-						Select(getwebelement(xml.getlocator("//locators/ContractSrc")), Inputdata[i][61].toString());
-						log("select the Contract Source:-" + Inputdata[i][61].toString());
-						SendKeys(getwebelement(xml.getlocator("//locators/portoutdateNMTS")), Inputdata[i][65].toString());
-						log("Input the Port OUt Date:-" + Inputdata[i][65].toString());
-						waitandForElementDisplayed(xml.getlocator("//locators/Portoutselectedrangebtn"));
-						Clickon(getwebelement(xml.getlocator("//locators/Portoutselectedrangebtn")));
-						log("Click on Port out selected range button");
-						Thread.sleep(2000);
-						waitandForElementDisplayed(xml.getlocator("//locators/YesBtn"));
-						Clickon(getwebelement(xml.getlocator("//locators/YesBtn")));
-						log("Click on yes button");
-						Thread.sleep(3000);
-						AcceptJavaScriptMethod();
-						Thread.sleep(3000);
-						GreenLog("Number is Port-out successfully");
-Thread.sleep(5000);
-//waitandForElementDisplayed(xml.getlocator("//locators/Port-outStatus"));
-//							 String CurrentNumberStatus1 = GetText(getwebelement(xml.getlocator("//locators/Port-outStatus")));
-//							log("Second Current number status is:-"+CurrentNumberStatus1);
-//							String CurrentNumberStatus = CurrentNumberStatus1.substring(9, 12);
-					String Portoutstatus="Port";
+					     }
 					
-						
-						TransactionStatusNMTS.set(Portoutstatus);
-						log("current  number status is:-"+"Port-out");
+      Thread.sleep(8000);
+      switchtodefault();
+      switchtoframe("fmMain");
+      String portout="";
+      Thread.sleep(5000);
+      try {
+  	         portout = GetText(getwebelement(xml.getlocator("//locators/Port-outStatus")));
+  	       log("Second Current number status is:-"+portout);
+  			System.out.println(portout);
+      }
+      catch(StaleElementReferenceException y)
+      {
+    	  Thread.sleep(5000);
+    	
+    	        portout = GetText(getwebelement(xml.getlocator("//locators/Port-outStatus")));
+    			log("Second Current number status is:-"+portout);
+      }
+       
+		String CurrentNumberStatus = portout.toLowerCase().substring(8, 12);
+		System.out.println(CurrentNumberStatus);
+					TransactionStatusNMTS.set(CurrentNumberStatus);
 						Thread.sleep(3000);
 				
 						
@@ -726,14 +854,95 @@ Thread.sleep(5000);
 				Thread.sleep(3000);
 				switchtodefault();
 				switchtoframe("fmMenu");
+				
+				if(Inputdata[i][2].toString().equals("CH"))
+				{
+					WaitforElementtobeclickable(xml.getlocator("//locators/DirectAllocationCH"));
+					Clickon(getwebelement(xml.getlocator("//locators/DirectAllocationCH"))); 
+					log("Click on Direct Allocation");
+					Thread.sleep(2000);
+					switchtodefault();
+					switchtoframe("fmMain");
+					Thread.sleep(2000);
+					WaitforElementtobeclickable(xml.getlocator("//locators/SelectWholesaleCh"));
+					Clickon(getwebelement(xml.getlocator("//locators/SelectWholesaleCh"))); 
+					log("Click on Radio button: wholesale");
+					switchtodefault();
+					switchtoframe("fmMenu");
+				}
+				
+				if(Inputdata[i][2].toString().equals("DE NON-GEO"))
+				{
+					WaitforElementtobeclickable(xml.getlocator("//locators/DirectAllocationDE"));
+					Clickon(getwebelement(xml.getlocator("//locators/DirectAllocationDE"))); 
+					log("Click on Direct Allocation");
+				}
+				
+				if(Inputdata[i][2].toString().equals("AT"))
+				{
+					
+
+					WaitforElementtobeclickable(xml.getlocator("//locators/DirectAllocationforIT"));
+					Clickon(getwebelement(xml.getlocator("//locators/DirectAllocationforIT"))); 
+					log("Click on Direct Allocation");
+				}
+				else {
+					//CD &DE
+					if(Inputdata[i][2].toString().equals("UK")||Inputdata[i][2].toString().equals("AT")||Inputdata[i][2].toString().equals("BE")||Inputdata[i][2].toString().equals("DK")||Inputdata[i][2].toString().equals("ES") ||Inputdata[i][2].toString().equals("FR") || Inputdata[i][2].toString().equals("IE") || Inputdata[i][2].toString().equals("IT") || Inputdata[i][2].toString().equals("NL")|| Inputdata[i][2].toString().equals("PT")|| Inputdata[i][2].toString().equals("SE"))
+					{
+						//System.out.println("12345");
 				WaitforElementtobeclickable(xml.getlocator("//locators/DirectAllocation"));
 				Clickon(getwebelement(xml.getlocator("//locators/DirectAllocation"))); 
 				log("Click on Direct Allocation");
+					}
+				}
 				switchtodefault();
 				switchtoframe("fmMain");
+				
+				Thread.sleep(2000);
+				
+				if(Inputdata[i][2].toString().equals("FR") || Inputdata[i][2].toString().equals("IT"))
+				{
+					waitandForElementDisplayed(xml.getlocator("//locators/sELECThOSTEDnO"));
+					Select(getwebelement(xml.getlocator("//locators/sELECThOSTEDnO")), Inputdata[i][88].toString());
+					log("Select the Colt/Hosted no:-"+Inputdata[i][88].toString());
+					
+				}
+				Thread.sleep(2000);
+				if(Inputdata[i][2].toString().equals("IT"))
+				{
+					try {
+
+				Thread.sleep(2000);
+				waitandForElementDisplayed(xml.getlocator("//locators/ReturnAvailabilityIT"));
+				Select(getwebelement(xml.getlocator("//locators/ReturnAvailabilityIT")), Inputdata[i][37].toString());
+				log("Select the Availibility:-"+Inputdata[i][37].toString());
+					}
+					catch(StaleElementReferenceException e)
+					{
+						Thread.sleep(2000);
+						waitandForElementDisplayed(xml.getlocator("//locators/ReturnAvailabilityIT"));
+						Select(getwebelement(xml.getlocator("//locators/ReturnAvailabilityIT")), Inputdata[i][37].toString());
+						log("Select the Availibility:-"+Inputdata[i][37].toString());
+					}
+				}
+				else {
+		
+				Thread.sleep(2000);
+				//adding
+				if(Inputdata[i][2].toString().equals("UK")||Inputdata[i][2].toString().equals("AT")||Inputdata[i][2].toString().equals("BE")||Inputdata[i][2].toString().equals("DK")||Inputdata[i][2].toString().equals("ES") ||Inputdata[i][2].toString().equals("FR") || Inputdata[i][2].toString().equals("IE") || Inputdata[i][2].toString().equals("IT") || Inputdata[i][2].toString().equals("NL")|| Inputdata[i][2].toString().equals("PT")|| Inputdata[i][2].toString().equals("SE"))
+				{
+				waitandForElementDisplayed(xml.getlocator("//locators/ReturnAvailability"));
+				Select(getwebelement(xml.getlocator("//locators/ReturnAvailability")), Inputdata[i][37].toString());
+				log("Select the Availibility:-"+Inputdata[i][37].toString());
+				}
+				}
+				
+				Thread.sleep(3000);
 				waitandForElementDisplayed(xml.getlocator("//locators/AreaCodePrefix"));
 				SendKeys(getwebelement(xml.getlocator("//locators/AreaCodePrefix")), Inputdata[i][5].toString());
 				log("Enter the Area Code Prefix:-"+Inputdata[i][5].toString());
+				Thread.sleep(3000);
 				waitandForElementDisplayed(xml.getlocator("//locators/AreaCodeExt"));
 				SendKeys(getwebelement(xml.getlocator("//locators/AreaCodeExt")), Inputdata[i][45].toString());
 				log("Enter the Area Code Extention:-"+Inputdata[i][45].toString());
@@ -749,6 +958,7 @@ Thread.sleep(5000);
 				Clickon(getwebelement(xml.getlocator("//locators/Submitbtn"))); 
 				log("Click on Submit button");
 				
+				Thread.sleep(5000);	
 				if(isElementPresent(xml.getlocator("//locators/GriddataNMTS")))
 				{
 
@@ -803,33 +1013,71 @@ Thread.sleep(5000);
 					switchtodefault();
 					Thread.sleep(10000);
 					switchtoframe("fmMain");		
+					//block size dependency
+					if(Inputdata[i][37].toString().equals("COLT") ||Inputdata[i][2].toString().equals("DE NON-GEO") )
+					{
+					
 					waitandForElementDisplayed(xml.getlocator("//locators/selectDesc"));
 					Select(getwebelement(xml.getlocator("//locators/selectDesc")), Inputdata[i][52].toString());
-					log("Select the Service Destination:-"+Inputdata[i][52].toString());			
+					log("Select the Service Destination:-"+Inputdata[i][52].toString());
+					Thread.sleep(3000);
 					waitandForElementDisplayed(xml.getlocator("//locators/EmailNotification"));
 					Select(getwebelement(xml.getlocator("//locators/EmailNotification")), Inputdata[i][53].toString());
-					log("Select the Email Notification:-"+Inputdata[i][53].toString());				
-					waitandForElementDisplayed(xml.getlocator("//locators/ServicePro"));
-					SendKeys(getwebelement(xml.getlocator("//locators/ServicePro")), Inputdata[i][3].toString());
-					log("Enter the Service Profile:-"+Inputdata[i][3].toString());			
-					waitandForElementDisplayed(xml.getlocator("//locators/TransactionreferenceNo"));
-					SendKeys(getwebelement(xml.getlocator("//locators/TransactionreferenceNo")), Inputdata[i][55].toString());
-					log("Enter the Transaction reference Number:-"+Inputdata[i][55].toString());
-					Thread.sleep(5000);
-					//waitandForElementDisplayed(xml.getlocator("//locators/CheckboxforAllocation"));
+					log("Select the Email Notification:-"+Inputdata[i][53].toString());			
+					Thread.sleep(7000);
 					Clickon(getwebelement(xml.getlocator("//locators/CheckboxforAllocation"))); 
 					log("Click mark Checkbox");
 					WaitforElementtobeclickable(xml.getlocator("//locators/SubmitOrderBtn"));
 					Clickon(getwebelement(xml.getlocator("//locators/SubmitOrderBtn"))); 
 					log("Click on Submit Order Button");
 					Thread.sleep(3000);
+					}
+					else {
+						Thread.sleep(4000);
+						
+						
+				//		String Desc = Inputdata[i][52].toString();
+					//  boolean Desti = Desc.equalsIgnoreCase(Inputdata[i][52].toString());
+					//  String ServiceDesti = String.valueOf(Inputdata[i][52].toString().equalsIgnoreCase(Inputdata[i][52].toString()));
+					
+						waitandForElementDisplayed(xml.getlocator("//locators/selectDesc"));
+						Select(getwebelement(xml.getlocator("//locators/selectDesc")), Inputdata[i][52].toString());
+						log("Select the Service Destination:-"+Inputdata[i][52].toString());
+					
+						Thread.sleep(3000);
+						waitandForElementDisplayed(xml.getlocator("//locators/EmailNotification"));
+						Select(getwebelement(xml.getlocator("//locators/EmailNotification")), Inputdata[i][53].toString());
+						log("Select the Email Notification:-"+Inputdata[i][53].toString());			
+						Thread.sleep(7000);
+				if(isElementPresent(xml.getlocator("//locators/ServicePro")))	{
+					
+				
+					//waitandForElementDisplayed(xml.getlocator("//locators/ServicePro"));
+					SendKeys(getwebelement(xml.getlocator("//locators/ServicePro")), Inputdata[i][3].toString());
+					log("Enter the Service Profile:-"+Inputdata[i][3].toString());	
+					Thread.sleep(3000);
+					waitandForElementDisplayed(xml.getlocator("//locators/TransactionreferenceNo"));
+					SendKeys(getwebelement(xml.getlocator("//locators/TransactionreferenceNo")), Inputdata[i][55].toString());
+					log("Enter the Transaction reference Number:-"+Inputdata[i][55].toString());
+				}
+					Thread.sleep(5000);
+					//waitandForElementDisplayed(xml.getlocator("//locators/CheckboxforAllocation"));
+					Clickon(getwebelement(xml.getlocator("//locators/CheckboxforAllocation"))); 
+					log("Click mark Checkbox");
+				
+					WaitforElementtobeclickable(xml.getlocator("//locators/SubmitOrderBtn"));
+					Clickon(getwebelement(xml.getlocator("//locators/SubmitOrderBtn"))); 
+					log("Click on Submit Order Button");
+					Thread.sleep(3000);
+					}
 					//verify the Reservation status as : Reservation 
 		//			GET THE RESERVATION STATUS**********************************************************************************************//
 					String CurrentNumberStatus = GetText(getwebelement(xml.getlocator("//locators/verifyStatus")));
 					TransactionStatusNMTS.set(CurrentNumberStatus);
 					log("current  number status is:-"+CurrentNumberStatus);
 					Thread.sleep(3000);
-			
+			if(Inputdata[i][0].toString().equals("Free to Reserve") || Inputdata[i][0].toString().equals("Reservation Scenario"))
+			{
 					if(Inputdata[i][78].toString().equalsIgnoreCase("Yes"))
 					{
 						Thread.sleep(3000);
@@ -853,7 +1101,10 @@ Thread.sleep(5000);
 						}
 						Assert.assertTrue(TransactionStatusNMTS.get().toLowerCase().toString().contains(firstFourChars),"Status under NMTS and COCOM are not Same!");
 						log("Status Under NMTS and COCOM have same and verified!!!");
+					}
+					else {
 						
+					}
 					
 				
 					}}}
@@ -876,32 +1127,45 @@ public String NumberQuiryUsingNumberRange(Object[][] Inputdata)
 
 				Select(getwebelement(xml.getlocator("//locators/Country")), Inputdata[i][79].toString());
 				ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Country: " + Inputdata[i][2].toString());
-				Thread.sleep(3000);
+				Thread.sleep(7000);
 				Select(getwebelement(xml.getlocator("//locators/ServiceProfile")), Inputdata[i][3].toString());
 				ExtentTestManager.getTest().log(LogStatus.PASS,
 						" Step: Select the Service Profile: " + Inputdata[i][3].toString());
-				Thread.sleep(7000);
+				Thread.sleep(5000);
                 // System.out.println("1");
 				Select(getwebelement(xml.getlocator("//locators/SearchCriteria")), "Number Range");
 				ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Select the Search Criteria as Number Status");
 //System.out.println("2");
+				Thread.sleep(3000);
 				Select(getwebelement(xml.getlocator("//locators/LocalAreaCode")), Inputdata[i][80].toString());
 				ExtentTestManager.getTest().log(LogStatus.PASS,
 						" Step: Select the Local Area code: " + Inputdata[i][5].toString());
+				Thread.sleep(3000);
 				SendKeys(getwebelement(xml.getlocator("//locators/mainNumber")), Inputdata[i][36].toString());
 				ExtentTestManager.getTest().log(LogStatus.PASS,
 						" Step: Enter the main number: " + Inputdata[i][36].toString());
+				Thread.sleep(5000);
 				SendKeys(getwebelement(xml.getlocator("//locators/RangeStart")), Inputdata[i][14].toString());
 				ExtentTestManager.getTest().log(LogStatus.PASS,
 						" Step: Enter the RangeStart: " + Inputdata[i][14].toString());
+				Thread.sleep(3000);
 				SendKeys(getwebelement(xml.getlocator("//locators/RangeEnd")), Inputdata[i][15].toString());
 				ExtentTestManager.getTest().log(LogStatus.PASS,
 						" Step: Enter the RangeEnd: " + Inputdata[i][15].toString());
 				Clickon(getwebelement(xml.getlocator("//locators/SearchButton")));
 				ExtentTestManager.getTest().log(LogStatus.PASS, " Step:click the Search button");
-				Thread.sleep(5000);
+				Thread.sleep(7000);
 				//getting status of number
-				status = Gettext(getwebelement(xml.getlocator("//locators/SEarchStatus1")));
+				try {
+					status = Gettext(getwebelement(xml.getlocator("//locators/SEarchStatus1")));
+					log("Cocom Current status :-" +status);
+				}
+				catch(StaleElementReferenceException w)
+				{
+					status = Gettext(getwebelement(xml.getlocator("//locators/SEarchStatus1")));
+					log("Cocom Current status :-" +status);
+				}
+				
 				System.out.println(status);
 			}
 			
@@ -913,10 +1177,8 @@ public String NumberQuiryUsingNumberRange(Object[][] Inputdata)
 			{//cancel reservation
 				for (int i = 0; i < Inputdata.length; i++)
 				{
-//					if(Inputdata[i][20].toString().equals("Cancel Reservation"))
-//							{
-					
-					Thread.sleep(2000);
+					UserGroupforPhnNoMgn(Inputdata);
+					Thread.sleep(3000);
 					switchtodefault();
 					switchtoframe("fmMenu");
 					//click to activate 
@@ -927,21 +1189,51 @@ public String NumberQuiryUsingNumberRange(Object[][] Inputdata)
 					switchtodefault();
 					switchtoframe("fmMain");
 					Thread.sleep(4000);
-						Select(getwebelement(xml.getlocator("//locators/madeByNMTS")), Inputdata[i][57].toString());
-									log("select the Made By Name:-" + Inputdata[i][57].toString());
-									Select(getwebelement(xml.getlocator("//locators/DeactivationAvail")), Inputdata[i][37].toString());
-									log("select the Availability:-" + Inputdata[i][37].toString());
-									Select(getwebelement(xml.getlocator("//locators/FilterBy")), Inputdata[i][58].toString());
-									log("select the Filter By:-" + Inputdata[i][58].toString());
-									Thread.sleep(1000); 
-						Select(getwebelement(xml.getlocator("//locators/matching")), Inputdata[i][59].toString());
-									log("select the Matcing:-" + Inputdata[i][59].toString());
-									SendKeys(getwebelement(xml.getlocator("//locators/FilterText")), Inputdata[i][42].toString());
-									log("Enter the Number" + Inputdata[i][42].toString());
+					
+					if(Inputdata[i][2].toString().equals("IT") || Inputdata[i][2].toString().equals("FR"))
+					{
+						Select(getwebelement(xml.getlocator("//locators/SelectReservationColt")), "Colt");
+						log("select the Reservation of Colt:-");
+					}
+					
+					
+					
+					Select(getwebelement(xml.getlocator("//locators/madeByNMTS")), Inputdata[i][57].toString());
+					log("select the Made By Name:-" + Inputdata[i][57].toString());
+					if(Inputdata[i][2].toString().equals("DE NON-GEO"))
+					{
+//					Select(getwebelement(xml.getlocator("//locators/DeactivationAvail")), Inputdata[i][37].toString());
+//					log("select the Availability:-" + Inputdata[i][37].toString());
+					}
+					else {
+						Select(getwebelement(xml.getlocator("//locators/DeactivationAvail")), Inputdata[i][37].toString());
+						log("select the Availability:-" + Inputdata[i][37].toString());
+					}
+					
+					Select(getwebelement(xml.getlocator("//locators/FilterBy")), Inputdata[i][58].toString());
+					log("select the Filter By:-" + Inputdata[i][58].toString());
+					Thread.sleep(5000); 
+		       Select(getwebelement(xml.getlocator("//locators/matching")), Inputdata[i][59].toString());
+					log("select the Matcing:-" + Inputdata[i][59].toString());
+					SendKeys(getwebelement(xml.getlocator("//locators/FilterText")), Inputdata[i][42].toString());
+					log("Enter the Number" + Inputdata[i][42].toString());
+//						Select(getwebelement(xml.getlocator("//locators/madeByNMTS")), Inputdata[i][57].toString());
+//									log("select the Made By Name:-" + Inputdata[i][57].toString());
+//									Select(getwebelement(xml.getlocator("//locators/DeactivationAvail")), Inputdata[i][37].toString());
+//									log("select the Availability:-" + Inputdata[i][37].toString());
+//									Select(getwebelement(xml.getlocator("//locators/FilterBy")), Inputdata[i][58].toString());
+//									log("select the Filter By:-" + Inputdata[i][58].toString());
+//									Thread.sleep(1000); 
+//						Select(getwebelement(xml.getlocator("//locators/matching")), Inputdata[i][59].toString());
+//									log("select the Matcing:-" + Inputdata[i][59].toString());
+//									SendKeys(getwebelement(xml.getlocator("//locators/FilterText")), Inputdata[i][42].toString());
+//									log("Enter the Number" + Inputdata[i][42].toString());
 									WaitforElementtobeclickable((xml.getlocator("//locators/SubmitDeactivate")));
 									Clickon(getwebelement(xml.getlocator("//locators/SubmitDeactivate")));
 									log("click on the submit button");
 									Thread.sleep(10000);
+									
+									
 									if (isElementPresent(xml.getlocator("//locators/errormsgnorecord"))) 
 									{
 										RedLog("No record found please enter the valid data number");
@@ -965,6 +1257,24 @@ public String NumberQuiryUsingNumberRange(Object[][] Inputdata)
 						
 						log("Click on Selected Range Checkrange mark's checkbox");
 						Thread.sleep(1000);
+                    
+						if(Inputdata[i][37].toString().equals("COLT") || Inputdata[i][2].toString().equals("CH") || Inputdata[i][2].toString().equals("DE NON-GEO"))
+						{
+							waitandForElementDisplayed(xml.getlocator("//locators/selectDecision"));
+							Select(getwebelement(xml.getlocator("//locators/selectDecision")), Inputdata[i][56].toString());
+							log("select the Decision as Cancel Reservation:-"+Inputdata[i][56].toString());
+							Thread.sleep(3000);
+							waitandForElementDisplayed(xml.getlocator("//locators/RejectReason"));
+							Select(getwebelement(xml.getlocator("//locators/RejectReason")), Inputdata[i][70].toString());
+							log("select the Reject Reason:-"+Inputdata[i][70].toString());
+							WaitforElementtobeclickable(xml.getlocator("//locators/SubmitDecision"));
+							Clickon(getwebelement(xml.getlocator("//locators/SubmitDecision"))); 
+							log("Click on Submit Decision button");
+							
+						}
+						else {
+							
+						
 						waitandForElementDisplayed(xml.getlocator("//locators/selectDecision"));
 						Select(getwebelement(xml.getlocator("//locators/selectDecision")), Inputdata[i][56].toString());
 						log("select the Decision as Cancel Reservation:-"+Inputdata[i][56].toString());
@@ -982,51 +1292,78 @@ public String NumberQuiryUsingNumberRange(Object[][] Inputdata)
 						log("Click on Submit Decision button");
 						Thread.sleep(3000);
 						String CurrentNumberStatus1 = GetText(getwebelement(xml.getlocator("//locators/verifyStatus")));
-						log("Second Current number status is:-"+CurrentNumberStatus1);
+						//log("Second Current number status is:-"+CurrentNumberStatus1);
 						
 						TransactionStatusNMTS.set(CurrentNumberStatus1);
 						log("current  number status is:-"+CurrentNumberStatus1);
 						Thread.sleep(3000);
 				
 						
-						if(Inputdata[i][78].toString().equalsIgnoreCase("Yes"))
-						{
-							Thread.sleep(3000);
-					
-							DriverTestcase tc=new DriverTestcase();
-							tc.setupforChrome();
-							Thread.sleep(3000);
-							
-							DriverTestcase dtc = new DriverTestcase();
-							NmtsHelper nmt = new NmtsHelper(dtc.getwebdriver());
-							String COCOMstatus = nmt.NumberQuiryUsingNumberRange(Inputdata);
-							Thread.sleep(3000);
-						   String firstFourChars = "";
-							if (COCOMstatus.length() > 5) 
-							{
-							    firstFourChars = COCOMstatus.toLowerCase().substring(0, 4);
-							} 
-							else
-							{
-							    firstFourChars = COCOMstatus.toLowerCase();
-							}
-							Assert.assertTrue(TransactionStatusNMTS.get().toLowerCase().toString().contains(firstFourChars),"Status under NMTS and COCOM are not Same!");
-							log("Status Under NMTS and COCOM have same and verified!!!");
+//						if(Inputdata[i][78].toString().equalsIgnoreCase("Yes"))
+//						{
+//							Thread.sleep(3000);
+//					
+//							DriverTestcase tc=new DriverTestcase();
+//							tc.setupforChrome();
+//							Thread.sleep(3000);
+//							
+//							DriverTestcase dtc = new DriverTestcase();
+//							NmtsHelper nmt = new NmtsHelper(dtc.getwebdriver());
+//							String COCOMstatus = nmt.NumberQuiryUsingNumberRange(Inputdata);
+//							Thread.sleep(3000);
+//						   String firstFourChars = "";
+//							if (COCOMstatus.length() > 5) 
+//							{
+//							    firstFourChars = COCOMstatus.toLowerCase().substring(0, 4);
+//							} 
+//							else
+//							{
+//							    firstFourChars = COCOMstatus.toLowerCase();
+//							}
+//							Assert.assertTrue(TransactionStatusNMTS.get().toLowerCase().toString().contains(firstFourChars),"Status under NMTS and COCOM are not Same!");
+//							log("Status Under NMTS and COCOM have same and verified!!!");
 							
 						
 					
 						}}}
-
-							}
-	      
+			}
 			
 			public void AllocationPerform(Object[][] Inputdata) throws InterruptedException, Exception 
-			{//free To reserve
+			{
 				for (int i = 0; i < Inputdata.length; i++)
 				{
-					
-//					else if(Inputdata[i][20].toString().equals("Free to ActivatewithAddress") || Inputdata[i][20].toString().equals("Reserve to ActivatewithAddress") )
-//					{
+
+					if(Inputdata[i][37].toString().equals("COLT") || Inputdata[i][2].toString().equals("DE NON-GEO") )
+					{
+						Thread.sleep(3000);
+						WaitforElementtobeclickable(xml.getlocator("//locators/CancelReserveCheckbox"));
+						Clickon(getwebelement(xml.getlocator("//locators/CancelReserveCheckbox"))); 
+						log("Click on Submit mark's checkbox");
+						Thread.sleep(3000);
+						Clickon(getwebelement(xml.getlocator("//locators/SelectedAllLink"))); 
+						log("Click on select mark's checkbox");
+						Thread.sleep(5000);
+						WaitforElementtobeclickable(xml.getlocator("//locators/SelectedRangeCheckrange"));
+						Clickon(getwebelement(xml.getlocator("//locators/SelectedRangeCheckrange"))); 					
+						log("Click on Selected Range Checkrange mark's checkbox");
+					//	Thread.sleep(3000);
+						waitandForElementDisplayed(xml.getlocator("//locators/selectDecision"));
+						Select(getwebelement(xml.getlocator("//locators/selectDecision")), Inputdata[i][56].toString());
+						log("select the Processing Decision:- "+Inputdata[i][56].toString());
+						SendKeys(getwebelement(xml.getlocator("//locators/ContactNo")), Inputdata[i][66].toString());
+						log("Enter the End Contact Number:-"+Inputdata[i][66].toString());
+					//	Thread.sleep(2000);
+						waitandForElementDisplayed(xml.getlocator("//locators/ContractSource"));
+						Select(getwebelement(xml.getlocator("//locators/ContractSource")), Inputdata[i][61].toString());
+						log("select the Contract Source:- "+Inputdata[i][61].toString());
+						Thread.sleep(2000);
+						WaitforElementtobeclickable(xml.getlocator("//locators/SubmitDecision"));
+						Clickon(getwebelement(xml.getlocator("//locators/SubmitDecision"))); 
+						log("Click on Submit Decision button");
+					}
+					else {
+						
+				
 						Thread.sleep(3000);
 						WaitforElementtobeclickable(xml.getlocator("//locators/CancelReserveCheckbox"));
 						Clickon(getwebelement(xml.getlocator("//locators/CancelReserveCheckbox"))); 
@@ -1050,16 +1387,42 @@ public String NumberQuiryUsingNumberRange(Object[][] Inputdata)
 						Select(getwebelement(xml.getlocator("//locators/ContractSource")), Inputdata[i][61].toString());
 						log("select the Contract Source:- "+Inputdata[i][61].toString());
 						//Thread.sleep(2000);
+						
+						if(Inputdata[i][2].toString().equals("CH"))
+						{
+//							waitandForElementDisplayed(xml.getlocator("//locators/MRN"));
+//							SendKeys(getwebelement(xml.getlocator("//locators/MRN")), Inputdata[i][60].toString());
+//							log("Enter the MRN number:-"+Inputdata[i][60].toString());	
+						}
+						else {
+			
 						waitandForElementDisplayed(xml.getlocator("//locators/MRN"));
 						SendKeys(getwebelement(xml.getlocator("//locators/MRN")), Inputdata[i][60].toString());
-						log("Enter the MRN number:-"+Inputdata[i][60].toString());					
+						log("Enter the MRN number:-"+Inputdata[i][60].toString());				
+						}
+						if(Inputdata[i][2].toString().equals("NL"))
+						{
+							Thread.sleep(2000);				
+							SendKeys(getwebelement(xml.getlocator("//locators/VATnumber")), Inputdata[i][82].toString());
+							log("Enter the Town:-"+Inputdata[i][82].toString());
+							
+						}
 						waitandForElementDisplayed(xml.getlocator("//locators/EndCustName"));
 						SendKeys(getwebelement(xml.getlocator("//locators/EndCustName")), Inputdata[i][7].toString());
 						log("Enter the End Customer Name:-"+Inputdata[i][7].toString());
-						Thread.sleep(3000);					
-						SendKeys(getwebelement(xml.getlocator("//locators/BuildingNameNMTS")), Inputdata[i][8].toString());
-						log("Enter the Building Name:-"+Inputdata[i][8].toString());
-						Thread.sleep(2000);
+						Thread.sleep(3000);
+						
+						if(Inputdata[i][2].toString().equals("CH") || Inputdata[i][2].toString().equals("IT"))
+						{
+//						SendKeys(getwebelement(xml.getlocator("//locators/BuildingNameNMTS")), Inputdata[i][8].toString());
+//						log("Enter the Building Name:-"+Inputdata[i][8].toString());
+//						Thread.sleep(2000);
+						}
+						else {
+							SendKeys(getwebelement(xml.getlocator("//locators/BuildingNameNMTS")), Inputdata[i][8].toString());
+							log("Enter the Building Name:-"+Inputdata[i][8].toString());
+							Thread.sleep(2000);
+						}
 						SendKeys(getwebelement(xml.getlocator("//locators/BuildingNumberNMTS")), Inputdata[i][9].toString());
 						log("Enter the Building Number:-"+Inputdata[i][9].toString());
 						Thread.sleep(2000);				
@@ -1070,13 +1433,117 @@ public String NumberQuiryUsingNumberRange(Object[][] Inputdata)
 						log("Enter the Town:-"+Inputdata[i][62].toString());
 						Thread.sleep(5000);			
 						SendKeys(getwebelement(xml.getlocator("//locators/PostCodeNMTS")), Inputdata[i][12].toString());
-						log("Enter the PostCode:-"+Inputdata[i][12].toString());					
+						log("Enter the PostCode:-"+Inputdata[i][12].toString());	
+						
+						Thread.sleep(2000);
+							
+						if(Inputdata[i][2].toString().equals("BE"))
+						{
+							
+							if(Inputdata[i][89].toString().equals("Residential"))
+							{
+								WaitforElementtobeclickable(xml.getlocator("//locators/ResidentialRadiobtn"));
+								Clickon(getwebelement(xml.getlocator("//locators/ResidentialRadiobtn"))); 
+								log("Click on Residential Radio button");
+								
+								Thread.sleep(2000);				
+								SendKeys(getwebelement(xml.getlocator("//locators/VATnumber")), Inputdata[i][82].toString());
+								log("Enter the Town:-"+Inputdata[i][82].toString());
+								Thread.sleep(2000);				
+								SendKeys(getwebelement(xml.getlocator("//locators/flatNumber")), Inputdata[i][83].toString());
+								log("Enter the Town:-"+Inputdata[i][83].toString());
+								Thread.sleep(2000);				
+								SendKeys(getwebelement(xml.getlocator("//locators/Extention")), Inputdata[i][83].toString());
+								log("Enter the Town:-"+Inputdata[i][84].toString());
+								Thread.sleep(2000);				
+								
+								waitandForElementDisplayed(xml.getlocator("//locators/buildingnumberletter"));
+								Select(getwebelement(xml.getlocator("//locators/buildingnumberletter")), Inputdata[i][85].toString());
+								log("select the Processing Decision:- "+Inputdata[i][85].toString());
+								Thread.sleep(2000);	
+	
+								
+								SendKeys(getwebelement(xml.getlocator("//locators/AllovationFirstName")), Inputdata[i][90].toString());
+								log("Enter the  FirstName-"+Inputdata[i][90].toString());
+								SendKeys(getwebelement(xml.getlocator("//locators/AllovationlastName")), Inputdata[i][91].toString());
+								log("Enter the lastName:-"+Inputdata[i][91].toString());
+								
+								SendKeys(getwebelement(xml.getlocator("//locators/CustomerTitle")), Inputdata[i][92].toString());
+								log("Enter the  Customer Title-"+Inputdata[i][92].toString());
+								SendKeys(getwebelement(xml.getlocator("//locators/AllocationLanguage")), Inputdata[i][93].toString());
+								log("Enter the Language:-"+Inputdata[i][93].toString());
+								
+							}
+							else {
+								
+							
+							Thread.sleep(2000);				
+						SendKeys(getwebelement(xml.getlocator("//locators/VATnumber")), Inputdata[i][82].toString());
+						log("Enter the Town:-"+Inputdata[i][82].toString());
+						Thread.sleep(2000);				
+						SendKeys(getwebelement(xml.getlocator("//locators/flatNumber")), Inputdata[i][83].toString());
+						log("Enter the Town:-"+Inputdata[i][83].toString());
+						Thread.sleep(2000);				
+						SendKeys(getwebelement(xml.getlocator("//locators/Extention")), Inputdata[i][83].toString());
+						log("Enter the Town:-"+Inputdata[i][84].toString());
+						Thread.sleep(2000);				
+						
+						waitandForElementDisplayed(xml.getlocator("//locators/buildingnumberletter"));
+						Select(getwebelement(xml.getlocator("//locators/buildingnumberletter")), Inputdata[i][85].toString());
+						log("select the Processing Decision:- "+Inputdata[i][85].toString());
+						Thread.sleep(2000);	
+						SendKeys(getwebelement(xml.getlocator("//locators/RegisteredName")), Inputdata[i][86].toString());
+						log("Enter the Town:-"+Inputdata[i][86].toString());
+							
+							}
+						}
+						
+						if(Inputdata[i][2].toString().equals("ES"))
+						{
+							SendKeys(getwebelement(xml.getlocator("//locators/TelephoneNumber")), Inputdata[i][81].toString());
+							log("Enter the Telephone Number:-"+Inputdata[i][81].toString());
+							SendKeys(getwebelement(xml.getlocator("//locators/CIFvalue")), Inputdata[i][87].toString());
+							log("Enter the Telephone Number:-"+Inputdata[i][87].toString());
+						}
+						Thread.sleep(2000);	
+						if(Inputdata[i][2].toString().equals("AT"))
+						{
+									
+							SendKeys(getwebelement(xml.getlocator("//locators/TelephoneNumber")), Inputdata[i][81].toString());
+							log("Enter the Telephone Number:-"+Inputdata[i][81].toString());
+						}
+						if(Inputdata[i][2].toString().equals("IE"))
+						{
+							if(Inputdata[i][89].toString().equals("Residential"))
+							{
+								WaitforElementtobeclickable(xml.getlocator("//locators/ResidentialRadiobtn"));
+								Clickon(getwebelement(xml.getlocator("//locators/ResidentialRadiobtn"))); 
+								log("Click on Residential Radio button");
+								
+								SendKeys(getwebelement(xml.getlocator("//locators/AllovationFirstName")), Inputdata[i][90].toString());
+								log("Enter the  FirstName-"+Inputdata[i][90].toString());
+								SendKeys(getwebelement(xml.getlocator("//locators/AllovationlastName")), Inputdata[i][91].toString());
+								log("Enter the lastName:-"+Inputdata[i][91].toString());
+								
+							}
+							else {
+								log("Selected country name is Country with Bussiness Radio button for allocation" );
+							}
+						}
+						Thread.sleep(2000);
 						WaitforElementtobeclickable(xml.getlocator("//locators/SubmitDecision"));
 						Clickon(getwebelement(xml.getlocator("//locators/SubmitDecision"))); 
 						log("Click on Submit Decision button");
 						Thread.sleep(3000);	
+						
+						if(Inputdata[i][2].toString().equals("CH")||Inputdata[i][2].toString().equals("DK")||Inputdata[i][2].toString().equals("PT")||Inputdata[i][2].toString().equals("NL")||Inputdata[i][2].toString().equals("ES") ||Inputdata[i][2].toString().equals("AT") || Inputdata[i][2].toString().equals("BE") || Inputdata[i][2].toString().equals("IE") || Inputdata[i][2].toString().equals("IT"))
+						{
+							//AcceptJavaScriptMethod();
+						}
+						else {
 							AcceptJavaScriptMethod();
-							}
+						}
+							}}
 			
 //					else {
 //						RedLog("it seems like :( there is issue with your Excel data sheet . please correct it ..");
@@ -1097,16 +1564,47 @@ public String NumberQuiryUsingNumberRange(Object[][] Inputdata)
 		
 			switchtodefault();
 			switchtoframe("fmMain");
-			Thread.sleep(2000);
+			Thread.sleep(3000);
+			if(Inputdata[i][2].toString().equals("IT"))
+			{
+				try {
+					
+				Select(getwebelement(xml.getlocator("//locators/SelectReservationColt")), "Colt");
+				log("select the Reservation of Colt");
+				}
+				catch(StaleElementReferenceException r)
+				{
+					Select(getwebelement(xml.getlocator("//locators/SelectReservationColt")), "Colt");
+					log("select the Reservation of Colt");
+				}
+			}
+			
+			Thread.sleep(3000);
 				Select(getwebelement(xml.getlocator("//locators/madeByNMTS")), Inputdata[i][57].toString());
 							log("select the Made By Name:-" + Inputdata[i][57].toString());
+							
+							if(Inputdata[i][2].toString().equals("DE NON-GEO"))
+							{
+//								Select(getwebelement(xml.getlocator("//locators/DeactivationAvail")), Inputdata[i][37].toString());
+//								log("select the Availability:-" + Inputdata[i][37].toString());
+							}
+							else {
+
 							Select(getwebelement(xml.getlocator("//locators/DeactivationAvail")), Inputdata[i][37].toString());
 							log("select the Availability:-" + Inputdata[i][37].toString());
+							}
 							Select(getwebelement(xml.getlocator("//locators/FilterBy")), Inputdata[i][58].toString());
 							log("select the Filter By:-" + Inputdata[i][58].toString());
 							Thread.sleep(1000); 
-				Select(getwebelement(xml.getlocator("//locators/matching")), Inputdata[i][59].toString());
-							log("select the Matcing:-" + Inputdata[i][59].toString());
+							if(Inputdata[i][2].toString().equals("DE NON-GEO"))
+							{	
+//				Select(getwebelement(xml.getlocator("//locators/matching")), Inputdata[i][59].toString());
+//							log("select the Matcing:-" + Inputdata[i][59].toString());
+							}
+							else {
+								Select(getwebelement(xml.getlocator("//locators/matching")), Inputdata[i][59].toString());
+								log("select the Matcing:-" + Inputdata[i][59].toString());
+							}
 							SendKeys(getwebelement(xml.getlocator("//locators/FilterText")), Inputdata[i][42].toString());
 							log("Enter the Number" + Inputdata[i][42].toString());
 							WaitforElementtobeclickable((xml.getlocator("//locators/SubmitDeactivate")));
@@ -1136,15 +1634,26 @@ public String NumberQuiryUsingNumberRange(Object[][] Inputdata)
 								log("Click on Activate Number button");
 								
 								Thread.sleep(8000);
-								//String ActivatedStatus="Activated";
-							log("Current NMTS Number Status :"+ "Activated Status");
-								String CurrentNumberStatus1="";
-							
-									 CurrentNumberStatus1 = GetText(getwebelement(xml.getlocator("//locators/verifyActivaate")));
-									log("Second Current number status is:-"+CurrentNumberStatus1);
+			
 								
-								TransactionStatusNMTS.set(CurrentNumberStatus1);
-								log("current  number status is:-"+CurrentNumberStatus1);
+							//log("Current NMTS Number Status :"+ "Activated Status");
+								String ActivatedStatus="";
+								Thread.sleep(8000);
+							try {
+			                      ActivatedStatus = GetText(getwebelement(xml.getlocator("//locators/verifyActivaate")));
+									log("Current number status is:-"+ActivatedStatus);
+									
+									//
+									System.out.println(ActivatedStatus);
+							}
+							catch (StaleElementReferenceException r)
+							{
+								ActivatedStatus = GetText(getwebelement(xml.getlocator("//locators/verifyActivaate")));
+								//log("Current number status is:-"+ActivatedStatus);
+								System.out.println(ActivatedStatus);
+							}
+								TransactionStatusNMTS.set(ActivatedStatus);
+							//	log("current  number status is:-"+ActivatedStatus);
 								Thread.sleep(3000);
 						
 								
@@ -1189,10 +1698,27 @@ public String NumberQuiryUsingNumberRange(Object[][] Inputdata)
 				log("Click on the Process Reservation tab");
 				switchtodefault();
 				switchtoframe("fmMain");
+				
+				if(Inputdata[i][2].toString().equals("IT") || Inputdata[i][2].toString().equals("FR"))
+				{
+					Select(getwebelement(xml.getlocator("//locators/SelectReservationColt")), "Colt");
+					log("select the Reservation of Colt:-");
+				}
+				
+				
+				
 				Select(getwebelement(xml.getlocator("//locators/madeByNMTS")), Inputdata[i][57].toString());
 				log("select the Made By Name:-" + Inputdata[i][57].toString());
-				Select(getwebelement(xml.getlocator("//locators/DeactivationAvail")), Inputdata[i][37].toString());
-				log("select the Availability:-" + Inputdata[i][37].toString());
+				if(Inputdata[i][2].toString().equals("DE NON-GEO"))
+				{
+//				Select(getwebelement(xml.getlocator("//locators/DeactivationAvail")), Inputdata[i][37].toString());
+//				log("select the Availability:-" + Inputdata[i][37].toString());
+				}
+				else {
+					Select(getwebelement(xml.getlocator("//locators/DeactivationAvail")), Inputdata[i][37].toString());
+					log("select the Availability:-" + Inputdata[i][37].toString());
+				}
+				
 				Select(getwebelement(xml.getlocator("//locators/FilterBy")), Inputdata[i][58].toString());
 				log("select the Filter By:-" + Inputdata[i][58].toString());
 				Thread.sleep(5000); 
@@ -1212,7 +1738,7 @@ public String NumberQuiryUsingNumberRange(Object[][] Inputdata)
 					Thread.sleep(10000);
 					if(isElementPresent(xml.getlocator("//locators/CheckReservestatus")))
 					{
-						//.
+
 						waitandForElementDisplayed(xml.getlocator("//locators/OrderId"));
 						DoubleClick(getwebelement(xml.getlocator("//locators/OrderId")));
 						log("Doubleclick on the order id button");
@@ -1250,9 +1776,28 @@ public String NumberQuiryUsingNumberRange(Object[][] Inputdata)
 				Thread.sleep(3000);
 				switchtodefault();
 				switchtoframe("fmMenu");
-				WaitforElementtobeclickable((xml.getlocator("//locators/PortIntab")));
-				Clickon(getwebelement(xml.getlocator("//locators/PortIntab")));
-				log("Click on the PortIn Numbers tab");
+				
+				if (Inputdata[i][2].toString().contains("CH"))
+				{
+					WaitforElementtobeclickable((xml.getlocator("//locators/port-inCH")));
+					Clickon(getwebelement(xml.getlocator("//locators/port-inCH")));
+					log("Click on the PortIn Numbers tab");
+					Thread.sleep(5000);
+					switchtodefault();
+					switchtoframe("fmMain");
+					WaitforElementtobeclickable((xml.getlocator("//locators/PORT-INradiobutton")));
+					Clickon(getwebelement(xml.getlocator("//locators/PORT-INradiobutton")));
+					log("Click on Wholesale Radio button");
+					
+				}
+				else
+				{
+
+					WaitforElementtobeclickable((xml.getlocator("//locators/PortIntab")));
+					Clickon(getwebelement(xml.getlocator("//locators/PortIntab")));
+					log("Click on the PortIn Numbers tab");
+				}
+			
 				switchtodefault();
 				switchtoframe("fmMain");
 			Select(getwebelement(xml.getlocator("//locators/Switch")), Inputdata[i][44].toString());
@@ -1270,7 +1815,9 @@ public String NumberQuiryUsingNumberRange(Object[][] Inputdata)
 				log("Area the area code prefix:-" + Inputdata[i][5].toString());
 				switchtodefault();
 				switchtoframe("fmMain");
-			} else {
+			}
+			else 
+			{
 				SendKeys(getwebelement(xml.getlocator("//locators/Areacodeother")), Inputdata[i][5].toString());
 				log("Enter the area code/prfix:-" + Inputdata[i][5].toString());
 			}
@@ -1280,12 +1827,41 @@ public String NumberQuiryUsingNumberRange(Object[][] Inputdata)
 			log("Enter the range start value:-" + Inputdata[i][14].toString());
 			SendKeys(getwebelement(xml.getlocator("//locators/IEMergeRangeEnd")), Inputdata[i][15].toString());
 			log("Enter the range end value:-" + Inputdata[i][15].toString());
-			Select(getwebelement(xml.getlocator("//locators/AddnumGeo")), Inputdata[i][38].toString());
-			log("Select the Geo or non-Geo:-" + Inputdata[i][38].toString());
-			Select(getwebelement(xml.getlocator("//locators/AddnumCtg")), Inputdata[i][46].toString());
+			
+			if (Inputdata[i][2].toString().contains("DE NON-GEO"))
+			{
+//			Select(getwebelement(xml.getlocator("//locators/AddnumGeo")), Inputdata[i][38].toString());
+//			log("Select the Geo or non-Geo:-" + Inputdata[i][38].toString());
+			}
+			else {
+				Select(getwebelement(xml.getlocator("//locators/AddnumGeo")), Inputdata[i][38].toString());
+				log("Select the Geo or non-Geo:-" + Inputdata[i][38].toString());
+				
+			}
+			
+			
+			if (Inputdata[i][2].toString().contains("CH") ||Inputdata[i][2].toString().contains("SE") ||Inputdata[i][2].toString().contains("PT")|| Inputdata[i][2].toString().contains("IT") || Inputdata[i][2].toString().contains("DK"))
+			{
+			
+			Select(getwebelement(xml.getlocator("//locators/AddnumCtg")), Inputdata[i][46].toString().toUpperCase());
 			log("Select the Category:-" + Inputdata[i][46].toString());
+			}
+			else {
+				Select(getwebelement(xml.getlocator("//locators/AddnumCtg")), Inputdata[i][46].toString());
+				log("Select the Category:-" + Inputdata[i][46].toString());
+			}
+			
+			
+			if (Inputdata[i][2].toString().contains("CH") || Inputdata[i][2].toString().contains("DE NON-GEO"))
+					{
+//				Select(getwebelement(xml.getlocator("//locators/AddingAvailability")), Inputdata[i][37].toString());
+//				log("Select the Availability:-" + Inputdata[i][37].toString());	
+					}
+			else 
+			{
 			Select(getwebelement(xml.getlocator("//locators/AddingAvailability")), Inputdata[i][37].toString());
 			log("Select the Availability:-" + Inputdata[i][37].toString());	
+			}
 			SendKeys(getwebelement(xml.getlocator("//locators/NRN")), Inputdata[i][60].toString());
 			log("Enter the NRN VALUE:-" + Inputdata[i][60].toString());	
 			Thread.sleep(3000);
@@ -1301,12 +1877,19 @@ public String NumberQuiryUsingNumberRange(Object[][] Inputdata)
 			Thread.sleep(5000);
 			switchtodefault();
 			switchtoframe("fmMain");			
+			if(isElementPresent(xml.getlocator("//locators/ocn")))
+			{
+				
 			waitandForElementDisplayed(xml.getlocator("//locators/ocn"));
 			SendKeys(getwebelement(xml.getlocator("//locators/ocn")), Inputdata[i][51].toString());
 			log("Enter the OCN noumber:-"+Inputdata[i][51].toString());			
 			WaitforElementtobeclickable(xml.getlocator("//locators/Submitocn"));
 			Clickon(getwebelement(xml.getlocator("//locators/Submitocn"))); 
 			log("Click on submit Search button");
+			}
+			else {
+				RedLog("Please check your input data: it seems like incorrect");
+			}
 			Thread.sleep(10000);
 		Thread.sleep(7000);
 		if(isElementPresent(xml.getlocator("//locators/GriddataforOCN")))
@@ -1321,6 +1904,59 @@ public String NumberQuiryUsingNumberRange(Object[][] Inputdata)
 			{
 				RedLog("it seems like OCN no is not correct in Excel sheet please check it ");
 			}
+		   if(Inputdata[i][37].toString().equals("COLT") ||Inputdata[i][2].toString().equals("DE NON-GEO") )
+		{
+			Thread.sleep(10000);
+			switchtodefault();
+			Thread.sleep(10000);
+			switchtoframe("fmMain");	
+			waitandForElementDisplayed(xml.getlocator("//locators/selectDesc"));
+			Select(getwebelement(xml.getlocator("//locators/selectDesc")), Inputdata[i][52].toString());
+			log("Select the Service Destination:-"+Inputdata[i][52].toString());			
+			waitandForElementDisplayed(xml.getlocator("//locators/EmailNotification"));
+			Select(getwebelement(xml.getlocator("//locators/EmailNotification")), Inputdata[i][53].toString());
+			log("Select the Email Notification:-"+Inputdata[i][53].toString());	
+			Clickon(getwebelement(xml.getlocator("//locators/CheckboxforAllocation"))); 
+			log("Click mark Checkbox");
+			WaitforElementtobeclickable(xml.getlocator("//locators/SubmitOrderBtn"));
+			Clickon(getwebelement(xml.getlocator("//locators/SubmitOrderBtn"))); 
+			log("Click on Submit Order Button");
+			Thread.sleep(3000);
+			waitandForElementDisplayed(xml.getlocator("//locators/selectDecision"));
+			Select(getwebelement(xml.getlocator("//locators/selectDecision")), Inputdata[i][19].toString());
+			log("select the Processing Decision : Allocate for Port-in Activate:-"+Inputdata[i][19].toString());
+			Thread.sleep(3000);
+			//waitandForElementDisplayed(xml.getlocator("//locators/ContactNo"));
+			SendKeys(getwebelement(xml.getlocator("//locators/ContactNo")), Inputdata[i][66].toString());
+			log("Enter the End Contact Number:-"+Inputdata[i][66].toString());
+			
+			
+			Thread.sleep(2000);
+			waitandForElementDisplayed(xml.getlocator("//locators/ContractSource"));
+			Select(getwebelement(xml.getlocator("//locators/ContractSource")), Inputdata[i][61].toString());
+			log("select the Contract Source:- "+Inputdata[i][61].toString());
+			Thread.sleep(2000);
+			WaitforElementtobeclickable(xml.getlocator("//locators/SubmitDecision"));
+			Clickon(getwebelement(xml.getlocator("//locators/SubmitDecision"))); 
+			log("Click on Submit Decision button");
+			Thread.sleep(2000);	
+			
+			
+//			try 
+//		    { 
+//				AcceptJavaScriptMethod2();
+//				
+//		      
+//		    }
+//		    catch (NoAlertPresentException Ex) 
+//		    { 
+//		    	
+//		    }  	
+			isAlertPresent();
+			}
+		else {
+			
+		
 		Thread.sleep(10000);
 			switchtodefault();
 			Thread.sleep(10000);
@@ -1344,19 +1980,7 @@ public String NumberQuiryUsingNumberRange(Object[][] Inputdata)
 			WaitforElementtobeclickable(xml.getlocator("//locators/SubmitOrderBtn"));
 			Clickon(getwebelement(xml.getlocator("//locators/SubmitOrderBtn"))); 
 			log("Click on Submit Order Button");
-//			try
-//			{
-//			Thread.sleep(4000);
-//			String CurrentNumberStatus4 = GetText(getwebelement(xml.getlocator("//locators/verifyStatusforPortInone")));
-//			Thread.sleep(4000);
-//			String CurrentNumberStatus5 = GetText(getwebelement(xml.getlocator("//locators/verifyStatusforPortIntwo")));
-//			log("Current NMTS Number Status is "+CurrentNumberStatus4+CurrentNumberStatus5);
-//			}
-//			catch(StaleElementReferenceException w)
-//			{
-//				
-//			}
-
+		
 				Thread.sleep(3000);
 				waitandForElementDisplayed(xml.getlocator("//locators/selectDecision"));
 				Select(getwebelement(xml.getlocator("//locators/selectDecision")), Inputdata[i][19].toString());
@@ -1366,17 +1990,32 @@ public String NumberQuiryUsingNumberRange(Object[][] Inputdata)
 				SendKeys(getwebelement(xml.getlocator("//locators/ContactNo")), Inputdata[i][66].toString());
 				log("Enter the End Contact Number:-"+Inputdata[i][66].toString());
 				Thread.sleep(2000);
+				
 				waitandForElementDisplayed(xml.getlocator("//locators/ContractSource"));
 				Select(getwebelement(xml.getlocator("//locators/ContractSource")), Inputdata[i][61].toString());
 				log("select the Contract Source:- "+Inputdata[i][61].toString());
+				
+				
+				
 				Thread.sleep(2000);
+				if(Inputdata[i][2].toString().equals("NL"))
+				{
+				Thread.sleep(2000);				
+				SendKeys(getwebelement(xml.getlocator("//locators/VATnumber")), Inputdata[i][82].toString());
+				log("Enter the Town:-"+Inputdata[i][82].toString());
+				}
+				
 				waitandForElementDisplayed(xml.getlocator("//locators/EndCustName"));
 				SendKeys(getwebelement(xml.getlocator("//locators/EndCustName")), Inputdata[i][7].toString());
 				log("Enter the End Customer Name:-"+Inputdata[i][7].toString());
 				Thread.sleep(3000);		
+				if (isElementPresent(xml.getlocator("//locators/BuildingNameNMTSForAllocate"))) 
+				{
+				
 				SendKeys(getwebelement(xml.getlocator("//locators/BuildingNameNMTSForAllocate")), Inputdata[i][8].toString());
 				log("Enter the Building Name:-"+Inputdata[i][8].toString());
 				Thread.sleep(2000);
+				}
 				SendKeys(getwebelement(xml.getlocator("//locators/BuildingNumberNMTSForAllocate")), Inputdata[i][9].toString());
 				log("Enter the Building Number:-"+Inputdata[i][9].toString());
 				Thread.sleep(2000);	
@@ -1388,13 +2027,112 @@ public String NumberQuiryUsingNumberRange(Object[][] Inputdata)
 				Thread.sleep(5000);
 				SendKeys(getwebelement(xml.getlocator("//locators/PostCodeNMTSForAllocate")), Inputdata[i][12].toString());
 				log("Enter the PostCode:-"+Inputdata[i][12].toString());	
+				//
+				Thread.sleep(1000);
+				if(Inputdata[i][2].toString().equals("BE"))
+				{
+					
+					if(Inputdata[i][89].toString().equals("Residential"))
+					{
+						WaitforElementtobeclickable(xml.getlocator("//locators/ResidentialRadiobtn"));
+						Clickon(getwebelement(xml.getlocator("//locators/ResidentialRadiobtn"))); 
+						log("Click on Residential Radio button");
+						
+						Thread.sleep(2000);				
+						SendKeys(getwebelement(xml.getlocator("//locators/VATnumber")), Inputdata[i][82].toString());
+						log("Enter the Town:-"+Inputdata[i][82].toString());
+						Thread.sleep(2000);				
+						SendKeys(getwebelement(xml.getlocator("//locators/flatNumber")), Inputdata[i][83].toString());
+						log("Enter the Town:-"+Inputdata[i][83].toString());
+						Thread.sleep(2000);				
+						SendKeys(getwebelement(xml.getlocator("//locators/Extention")), Inputdata[i][83].toString());
+						log("Enter the Town:-"+Inputdata[i][84].toString());
+						Thread.sleep(2000);				
+						
+						waitandForElementDisplayed(xml.getlocator("//locators/buildingnumberletter"));
+						Select(getwebelement(xml.getlocator("//locators/buildingnumberletter")), Inputdata[i][85].toString());
+						log("select the Processing Decision:- "+Inputdata[i][85].toString());
+						Thread.sleep(2000);	
+
+						
+						SendKeys(getwebelement(xml.getlocator("//locators/AllovationFirstName")), Inputdata[i][90].toString());
+						log("Enter the  FirstName-"+Inputdata[i][90].toString());
+						SendKeys(getwebelement(xml.getlocator("//locators/AllovationlastName")), Inputdata[i][91].toString());
+						log("Enter the lastName:-"+Inputdata[i][91].toString());
+						
+						SendKeys(getwebelement(xml.getlocator("//locators/CustomerTitle")), Inputdata[i][92].toString());
+						log("Enter the  Customer Title-"+Inputdata[i][92].toString());
+						SendKeys(getwebelement(xml.getlocator("//locators/AllocationLanguage")), Inputdata[i][93].toString());
+						log("Enter the Language:-"+Inputdata[i][93].toString());
+						
+					}
+					else {
+						
+					
+					Thread.sleep(2000);				
+				SendKeys(getwebelement(xml.getlocator("//locators/VATnumber")), Inputdata[i][82].toString());
+				log("Enter the Town:-"+Inputdata[i][82].toString());
+				Thread.sleep(2000);				
+				SendKeys(getwebelement(xml.getlocator("//locators/flatNumber")), Inputdata[i][83].toString());
+				log("Enter the Town:-"+Inputdata[i][83].toString());
+				Thread.sleep(2000);				
+				SendKeys(getwebelement(xml.getlocator("//locators/Extention")), Inputdata[i][83].toString());
+				log("Enter the Town:-"+Inputdata[i][84].toString());
+				Thread.sleep(2000);				
+				
+				waitandForElementDisplayed(xml.getlocator("//locators/buildingnumberletter"));
+				Select(getwebelement(xml.getlocator("//locators/buildingnumberletter")), Inputdata[i][85].toString());
+				log("select the Processing Decision:- "+Inputdata[i][85].toString());
+				Thread.sleep(2000);	
+				SendKeys(getwebelement(xml.getlocator("//locators/RegisteredName")), Inputdata[i][86].toString());
+				log("Enter the Town:-"+Inputdata[i][86].toString());
+					
+					}
+				}
+				
+				Thread.sleep(1000);
+				
+				if(Inputdata[i][2].toString().equals("ES"))
+				{
+					SendKeys(getwebelement(xml.getlocator("//locators/portinAllocatetel")), Inputdata[i][81].toString());
+					log("Enter the Telephone Number:-"+Inputdata[i][81].toString());
+					SendKeys(getwebelement(xml.getlocator("//locators/CIFvalue")), Inputdata[i][87].toString());
+					log("Enter the Telephone Number:-"+Inputdata[i][87].toString());
+				}
+				Thread.sleep(1000);
+				 if(Inputdata[i][2].toString().equals("SE") && Inputdata[i][89].toString().equals("Residential") ||Inputdata[i][2].toString().equals("IE") && Inputdata[i][89].toString().equals("Residential") )
+					{
+					 SendKeys(getwebelement(xml.getlocator("//locators/AllovationFirstName")), Inputdata[i][90].toString());
+						log("Enter the  FirstName-"+Inputdata[i][90].toString());
+						SendKeys(getwebelement(xml.getlocator("//locators/AllovationlastName")), Inputdata[i][91].toString());
+						log("Enter the lastName:-"+Inputdata[i][91].toString());
+					}
+				
+				 if(Inputdata[i][2].toString().equals("AT"))
+					{
+					 
+					 SendKeys(getwebelement(xml.getlocator("//locators/portinAllocatetel")), Inputdata[i][81].toString());
+						log("Enter the Telephone Number:-"+Inputdata[i][81].toString());
+					}
+				 
 				WaitforElementtobeclickable(xml.getlocator("//locators/SubmitDecision"));
 				Clickon(getwebelement(xml.getlocator("//locators/SubmitDecision"))); 
 				log("Click on Submit Decision button");
 				Thread.sleep(2000);	
-				AcceptJavaScriptMethod();
+				
+//				try 
+//			    { 
+//					AcceptJavaScriptMethod();
+//			      
+//			    }
+//			    catch (NoAlertPresentException Ex) 
+//			    { 
+//			     
+//			    } 
+				isAlertPresent(); 	
+				
 		//After port-in Allocated go to view order tab to check the status and also trying to Port-in acativate
-
+		}
 				switchtodefault();
 				switchtoframe("fmMenu");
 				//click to activate 
@@ -1404,10 +2142,28 @@ public String NumberQuiryUsingNumberRange(Object[][] Inputdata)
 				switchtodefault();
 				switchtoframe("fmMain");
 				Thread.sleep(2000);
+				
 				Select(getwebelement(xml.getlocator("//locators/madeByNMTS")), Inputdata[i][57].toString());
 				log("select the Made By Name:-" + Inputdata[i][57].toString());
-				Select(getwebelement(xml.getlocator("//locators/DeactivationAvail")), Inputdata[i][37].toString());
-				log("select the Availability:-" + Inputdata[i][37].toString());
+				Thread.sleep(2000);
+				if(Inputdata[i][2].toString().equals("IT"))
+						{
+					Select(getwebelement(xml.getlocator("//locators/SelectReservationColt")), "Colt");
+					log("select the Reservation of Colt:-");
+						}
+				Thread.sleep(2000);
+				
+				if(Inputdata[i][2].toString().equals("DE NON-GEO"))
+				{
+//					Select(getwebelement(xml.getlocator("//locators/DeactivationAvail")), Inputdata[i][37].toString());
+//					log("select the Availability:-" + Inputdata[i][37].toString());
+					
+				}
+				else {
+					Select(getwebelement(xml.getlocator("//locators/DeactivationAvail")), Inputdata[i][37].toString());
+					log("select the Availability:-" + Inputdata[i][37].toString());
+				}
+				Thread.sleep(2000);
 				Select(getwebelement(xml.getlocator("//locators/FilterBy")), Inputdata[i][58].toString());
 				log("select the Filter By:-" + Inputdata[i][58].toString());
 				Thread.sleep(1000); 
@@ -1432,12 +2188,31 @@ public String NumberQuiryUsingNumberRange(Object[][] Inputdata)
 					Clickon(getwebelement(xml.getlocator("//locators/ActivateNumnerbtn")));
 					log("click on the Activate Number button");
 					//GreenLog("Success");
+					Thread.sleep(8000);
+				
+					String portin="";
+					Thread.sleep(8000);
+								try
+					{
 					
-					String ActivateStatus="PortIn(Activated)";
-	//
-					//String CurrentNumberStatus = GetText(getwebelement(xml.getlocator("//locators/verifyStatus")));
-					TransactionStatusNMTS.set(ActivateStatus);
-					log("current  number status is:-"+ActivateStatus);
+					String CurrentNumberStatus4 = GetText(getwebelement(xml.getlocator("//locators/verifyStatusforPortInone")));
+					Thread.sleep(8000);
+					String CurrentNumberStatus5 = GetText(getwebelement(xml.getlocator("//locators/verifyStatusforPortIntwo")));
+					 portin = CurrentNumberStatus4+CurrentNumberStatus5;
+					log("Current NMTS Number Status is "+portin);
+					}
+					catch(StaleElementReferenceException w)
+					{
+						Thread.sleep(8000);
+						String CurrentNumberStatus4 = GetText(getwebelement(xml.getlocator("//locators/verifyStatusforPortInone")));
+						Thread.sleep(8000);
+						String CurrentNumberStatus5 = GetText(getwebelement(xml.getlocator("//locators/verifyStatusforPortIntwo")));
+						 portin = CurrentNumberStatus4+CurrentNumberStatus5;
+					}
+								
+					TransactionStatusNMTS.set(portin);
+					log("current  number status is:-"+portin);
+					
 					Thread.sleep(3000);
 			
 					if(Inputdata[i][78].toString().equalsIgnoreCase("Yes"))
@@ -1480,6 +2255,7 @@ public String NumberQuiryUsingNumberRange(Object[][] Inputdata)
 					log("Click on the change country name");
 					switchtodefault();
 					switchtoframe("fmMain");
+					
 					waitandForElementDisplayed(xml.getlocator("//locators/IECountryName"));
 					Select(getwebelement(xml.getlocator("//locators/IECountryName")), Inputdata[i][2].toString());
 					log("Select the country name is: " + Inputdata[i][2]);
@@ -1516,13 +2292,13 @@ public String NumberQuiryUsingNumberRange(Object[][] Inputdata)
 					Clickon(getwebelement(xml.getlocator("//locators/ChangeGroupbtn")));
 					log("click on the submit Button button");
 					Thread.sleep(3000);
-					switchtodefault();
-					switchtoframe("fmMenu");
+//					switchtodefault();
+//					switchtoframe("fmMenu");
 					
 					WaitforElementtobeclickable((xml.getlocator("//locators/IECountryButton")));
 					Clickon(getwebelement(xml.getlocator("//locators/IECountryButton")));
 					log("Click on the change country name");
-					Thread.sleep(3000);
+					Thread.sleep(5000);
 					switchtodefault();
 					switchtoframe("fmMain");
 					waitandForElementDisplayed(xml.getlocator("//locators/IECountryName"));
@@ -1541,7 +2317,8 @@ public String NumberQuiryUsingNumberRange(Object[][] Inputdata)
 				Thread.sleep(3000);
 				switchtoframe("fmMenu");
 				String check = Gettext(getwebelement(xml.getlocator("//locators/UserName")));
-				if (check.equals("[SuperUser]")) {
+				if (check.equals("[SuperUser]")) 
+				{
 					if(Inputdata[i][2].toString().equals("CH"))
 					{
 						WaitforElementtobeclickable((xml.getlocator("//locators/ChangeGroupforCH")));
@@ -1571,53 +2348,48 @@ public String NumberQuiryUsingNumberRange(Object[][] Inputdata)
 					log("click on the Change Group Button button");
 					Thread.sleep(3000);
 					switchtoframe("fmMenu");
-					if(Inputdata[i][2].toString().equals("CH"))
-					{
-						WaitforElementtobeclickable((xml.getlocator("//locators/PhnmgncountryforCH")));
-						Clickon(getwebelement(xml.getlocator("//locators/PhnmgncountryforCH")));
-						log("Click on the change country name for CH extension country");
-					}
-					else if(Inputdata[i][2].toString().equals("IT")) {
-						WaitforElementtobeclickable((xml.getlocator("//locators/PhnmgncountryforIT")));
-						Clickon(getwebelement(xml.getlocator("//locators/PhnmgncountryforIT")));
-						log("Click on the change country name for IT extension country");
-					}
-					else {
-					WaitforElementtobeclickable((xml.getlocator("//locators/PhnMgnCountry")));
-					Clickon(getwebelement(xml.getlocator("//locators/PhnMgnCountry")));
-					log("Click on the change country name");
-					}
-					switchtodefault();
-					switchtoframe("fmMain");
-					waitandForElementDisplayed(xml.getlocator("//locators/IECountryName"));
-					Select(getwebelement(xml.getlocator("//locators/IECountryName")), Inputdata[i][2].toString());
-					log("Select the country name is: " + Inputdata[i][2]);
-					WaitforElementtobeclickable((xml.getlocator("//locators/IECountryNameButton")));
-					Clickon(getwebelement(xml.getlocator("//locators/IECountryNameButton")));
-					log("click on the select button");
-
-				} else {
 					log("user group is phone number manager.");
 					Thread.sleep(3000);
 					log("Country");
-					if(Inputdata[i][2].toString().equals("CH"))
-					{
-						WaitforElementtobeclickable((xml.getlocator("//locators/PhnmgncountryforCH")));
-						Clickon(getwebelement(xml.getlocator("//locators/PhnmgncountryforCH")));
-						log("Click on the change country name for CH extension country");
-					}
-					else if(Inputdata[i][2].toString().equals("IT")) {
-						WaitforElementtobeclickable((xml.getlocator("//locators/PhnmgncountryforIT")));
-						Clickon(getwebelement(xml.getlocator("//locators/PhnmgncountryforIT")));
-						log("Click on the change country name for IT extension country");
-					}
+					Thread.sleep(3000);
+				}
+
 					else {
-					WaitforElementtobeclickable((xml.getlocator("//locators/PhnMgnCountry")));
-					Clickon(getwebelement(xml.getlocator("//locators/PhnMgnCountry")));
+						Thread.sleep(5000);
+						// changing be shashank
+						switchtodefault();
+						switchtoframe("fmMenu");				
+						List<WebElement> count ;
+				count=driver.findElements(By.xpath("//table[@id='tblEntityExplorer']//tr/td"));	
+				int lengh = count.size();
+				System.out.println(count.size());		 
+						 Clickon(getwebelement(xml.getlocator("//locators/PhnMgnCountry").replace("index",Integer.toString(lengh) )));
+						 
+					WaitforElementtobeclickable((xml.getlocator("//locators/Countcountry")));
+					
+					
+					Clickon(getwebelement(xml.getlocator("//locators/Countcountry")));
 					log("Click on the change country name");
 					}
+				Thread.sleep(5000);
+				// changing be shashank
+				switchtodefault();
+				switchtoframe("fmMenu");				
+				List<WebElement> count ;
+		count=driver.findElements(By.xpath("//table[@id='tblEntityExplorer']//tr/td"));	
+		int lengh = count.size();
+		System.out.println(count.size());		 
+				 Clickon(getwebelement(xml.getlocator("//locators/PhnMgnCountry").replace("index",Integer.toString(lengh) )));
+				 
+			WaitforElementtobeclickable((xml.getlocator("//locators/Countcountry")));
+			
+			
+			Clickon(getwebelement(xml.getlocator("//locators/Countcountry")));
+			log("Click on the change country name");
+					Thread.sleep(5000);
 					switchtodefault();
 					switchtoframe("fmMain");
+
 					waitandForElementDisplayed(xml.getlocator("//locators/IECountryName"));
 					Select(getwebelement(xml.getlocator("//locators/IECountryName")), Inputdata[i][2].toString());
 					log("Select the country name is: " + Inputdata[i][2]);
@@ -1628,9 +2400,9 @@ public String NumberQuiryUsingNumberRange(Object[][] Inputdata)
 				}
 
 			}
-		}
 		public void Country(Object[][] Inputdata) throws InterruptedException, Exception {
-			for (int i = 0; i < Inputdata.length; i++) {
+			for (int i = 0; i < Inputdata.length; i++)
+			{
 				Thread.sleep(3000);
 
 				switchtoframe("fmMenu");
@@ -1645,222 +2417,354 @@ public String NumberQuiryUsingNumberRange(Object[][] Inputdata)
 				WaitforElementtobeclickable((xml.getlocator("//locators/IECountryNameButton")));
 				Clickon(getwebelement(xml.getlocator("//locators/IECountryNameButton")));
 				log("click on the select button");
-
 			}
-		}
-			public void SplitNumbermain(Object[][] Inputdata) throws InterruptedException, Exception {
-				for (int i = 0; i < Inputdata.length; i++) {
-					UserGroupforSuperUser(Inputdata);
-					Thread.sleep(4000);
-					switchtodefault();
-					switchtoframe("fmMenu");
-					WaitforElementtobeclickable((xml.getlocator("//locators/IESplitNumberButton")));
-					Clickon(getwebelement(xml.getlocator("//locators/IESplitNumberButton")));
-					log("click on the Split Free Range");
-					switchtodefault();
-					switchtoframe("fmMain");
-					Thread.sleep(5000);
-					SendKeys(getwebelement(xml.getlocator("//locators/IESplitNumber")), Inputdata[i][42].toString());
-					log("Input the number:-" + Inputdata[i][42].toString());
-					WaitforElementtobeclickable((xml.getlocator("//locators/IESplitSearchButton")));
-					Clickon(getwebelement(xml.getlocator("//locators/IESplitSearchButton")));
-					log("Click on the search button");
-					Thread.sleep(3000);
+			}
+		
+		public void SplitNumbermain(Object[][] Inputdata) throws InterruptedException, Exception {
+			for (int i = 0; i < Inputdata.length; i++) {
+				UserGroupforSuperUser(Inputdata);
+				Thread.sleep(4000);
+				switchtodefault();
+				switchtoframe("fmMenu");
+				WaitforElementtobeclickable((xml.getlocator("//locators/IESplitNumberButton")));
+				Clickon(getwebelement(xml.getlocator("//locators/IESplitNumberButton")));
+				log("click on the Split Free Range");
+				switchtodefault();
+				switchtoframe("fmMain");
+				Thread.sleep(5000);
+				SendKeys(getwebelement(xml.getlocator("//locators/IESplitNumber")), Inputdata[i][42].toString());
+				log("Input the number:-" + Inputdata[i][42].toString());
+				WaitforElementtobeclickable((xml.getlocator("//locators/IESplitSearchButton")));
+				Clickon(getwebelement(xml.getlocator("//locators/IESplitSearchButton")));
+				log("Click on the search button");
+				Thread.sleep(3000);
+				
+				if (isElementPresent(xml.getlocator("//locators/Norecord")))
+				{
+						RedLog("No Record found please enter the valid Number");	
+				}	
+				else
+                {
 					
-					if (isElementPresent(xml.getlocator("//locators/Norecord")))
+					int rangefrom = Integer.parseInt(Gettext(getwebelement(xml.getlocator("//locators/Rangefromspit"))));
+					int rangeto = Integer.parseInt(Gettext(getwebelement(xml.getlocator("//locators/Rangetospit"))));
+					int Actual=rangeto-rangefrom;
+					
+					int ActualRange = Actual+1;
+					System.out.println(ActualRange);
+					log("Total range is:-"+ActualRange);
+					
+				// calculating the data from the Excel 	
+					int firstsize = Integer.parseInt((Inputdata[i][22].toString()));
+					log("First Block size is:-"+firstsize);
+					int firstquantity= 0;
+					if(Inputdata[i][23].toString()=="")
 					{
-							RedLog("No Record found please enter the valid Number");	
-					}	
+						firstquantity=0;
+					}
 					else
-                    {
-						
-						int rangefrom = Integer.parseInt(Gettext(getwebelement(xml.getlocator("//locators/Rangefromspit"))));
-						int rangeto = Integer.parseInt(Gettext(getwebelement(xml.getlocator("//locators/Rangetospit"))));
-						int Actual=rangeto-rangefrom;
-						
-						int ActualRange = Actual+1;
-						System.out.println(ActualRange);
-						log("Total range is:-"+ActualRange);
-						
-					// calculating the data from the Excel 	
-						int firstsize = Integer.parseInt((Inputdata[i][22].toString()));
-						log("First size is:-"+firstsize);
-						int firstquantity= 0;
-						if(Inputdata[i][23].toString()=="")
-						{
-							firstquantity=0;
-						}
-						else
-						{
-							 firstquantity = Integer.parseInt((Inputdata[i][23].toString()));
+					{
+						 firstquantity = Integer.parseInt((Inputdata[i][23].toString()));
 
-						}
-						log("First quantity is:-"+firstquantity);
-						int firstAll=firstsize*firstquantity;
-						System.out.println(firstAll);
+					}
+					log("First Quantity is:-"+firstquantity);
+					int firstAll=firstsize*firstquantity;
+					System.out.println(firstAll);
 
-						int secondsize = Integer.parseInt((Inputdata[i][72].toString()));
-						log("Second size is:-"+secondsize);
-						int secondquantity= 0;
-						if(Inputdata[i][73].toString()=="")
-						{
-							secondquantity=0;
-						}
-						else
-						{
-							secondquantity = Integer.parseInt((Inputdata[i][73].toString()));
+					int secondsize = Integer.parseInt((Inputdata[i][72].toString()));
+					log("Second Block size is:-"+secondsize);
+					int secondquantity= 0;
+					if(Inputdata[i][73].toString()=="")
+					{
+						secondquantity=0;
+					}
+					else
+					{
+						secondquantity = Integer.parseInt((Inputdata[i][73].toString()));
 
-						}
-						log("Second Quantity is:-"+secondquantity);
-						int secondAll=secondsize*secondquantity;
-						System.out.println(secondAll);
-						int thirdsize = Integer.parseInt((Inputdata[i][74].toString()));
-						log("third size is:-"+thirdsize);
-						int thirdquantity= 0;
-						if(Inputdata[i][75].toString()=="")
-						{
-							thirdquantity=0;
-						}
-						else
-						{
-							thirdquantity = Integer.parseInt((Inputdata[i][75].toString()));
+					}
+					log("Second Quantity is:-"+secondquantity);
+					int secondAll=secondsize*secondquantity;
+					System.out.println(secondAll);
+					int thirdsize = Integer.parseInt((Inputdata[i][74].toString()));
+					log("third Block size is:-"+thirdsize);
+					int thirdquantity= 0;
+					if(Inputdata[i][75].toString()=="")
+					{
+						thirdquantity=0;
+					}
+					else
+					{
+						thirdquantity = Integer.parseInt((Inputdata[i][75].toString()));
 
-						}
-						log("Third quantity is:-"+thirdquantity);
-						int thirdAll=thirdsize*thirdquantity;
-						System.out.println(thirdAll);
-						int fourthsize = Integer.parseInt((Inputdata[i][76].toString()));
-						log("Fourth size is:-"+fourthsize);
-						int fourthquantity= 0;
-						if(Inputdata[i][77].toString()=="")
-						{
-							fourthquantity=0;
-						}
-						else
-						{
-							fourthquantity = Integer.parseInt((Inputdata[i][77].toString()));
+					}
+					log("Third Quantity is:-"+thirdquantity);
+					int thirdAll=thirdsize*thirdquantity;
+					System.out.println(thirdAll);
+					int fourthsize = Integer.parseInt((Inputdata[i][76].toString()));
+					log("Fourth Block size is:-"+fourthsize);
+					int fourthquantity= 0;
+					if(Inputdata[i][77].toString()=="")
+					{
+						fourthquantity=0;
+					}
+					else
+					{
+						fourthquantity = Integer.parseInt((Inputdata[i][77].toString()));
 
+					}
+					log("Fourth Quantity is:-"+fourthquantity);
+					
+					int fourthAll=fourthsize*fourthquantity;
+					System.out.println(fourthAll);
+
+					
+					if(firstAll+secondAll+thirdAll+fourthAll == ActualRange)
+					{
+						if(firstquantity == 0  )//we need to calculate the null value as well here
+						{
+			log("Since you hav't filled any data Quantity to create for block size 1 so we are checking with another quantity");
+			          
+			
 						}
-						log("Fourth quantity is:-"+fourthquantity);
+						else 
+						{
+					
+							Thread.sleep(2000);
+							SendKeys(getwebelement(xml.getlocator("//locators/IESplitblockSizesplit").replace("indexrow",String.valueOf(2))), Inputdata[i][22].toString());
+							log("first block size is:-" + Inputdata[i][22].toString());
+							Thread.sleep(3000);
+							log("entering again the block size - 1");
+							SendKeys(getwebelement(xml.getlocator("//locators/IESplitQuantitysizesplit").replace("indexrow",String.valueOf(2))), Inputdata[i][23].toString());
+							log("first quantity is:-" + Inputdata[i][23].toString());
+							Thread.sleep(3000);
+							log("please enter the quantity for block size number");
+							SendKeys(getwebelement(xml.getlocator("//locators/IESplitQuantitysizesplit").replace("indexrow",String.valueOf(2))), Inputdata[i][23].toString());
+							log("first quantity size is:-" + Inputdata[i][23].toString());
+							Thread.sleep(3000);
+							WaitforElementtobeclickable((xml.getlocator("//locators/SplitAddButn")));				
+							Clickon(getwebelement(xml.getlocator("//locators/SplitAddButn")));
+							Clickon(getwebelement(xml.getlocator("//locators/SplitAddButn")));
+					}
+					
 						
-						int fourthAll=fourthsize*fourthquantity;
-						System.out.println(fourthAll);
-						 
+						if(secondquantity == 0 )//we need to calculate the null value as well here
+						{
+			log("Since you hav't filled any data Quantity to create for block size 10 so we are checking with another quantity");
 						
-						
+						}
+						else 
+						{
+							if(firstquantity==0 && secondquantity>0)
+							{
+							Thread.sleep(2000);
 							
-						if(firstAll+secondAll+thirdAll+fourthAll == ActualRange)
-						{
-							if(firstquantity == 0  )//we need to calculate the null value as well here
-							{
-				log("Since you hav't filled any data Quantity to create for block size 1 so we are checking with another quantity");
+							Thread.sleep(2000);
+							SendKeys(getwebelement(xml.getlocator("//locators/IESplitblockSizesplit").replace("indexrow",String.valueOf(2))), Inputdata[i][72].toString());
+							log("first block size is:-" + Inputdata[i][72].toString());
+							Thread.sleep(3000);
+							log("entering again the block size - 1");
+							SendKeys(getwebelement(xml.getlocator("//locators/IESplitQuantitysizesplit").replace("indexrow",String.valueOf(2))), Inputdata[i][73].toString());
+							log("first quantity is:-" + Inputdata[i][73].toString());
+							Thread.sleep(3000);
+							log("please enter the quantity for block size number");
+							SendKeys(getwebelement(xml.getlocator("//locators/IESplitQuantitysizesplit").replace("indexrow",String.valueOf(2))), Inputdata[i][73].toString());
+							log("first quantity size is:-" + Inputdata[i][73].toString());
+							Thread.sleep(3000);
+							WaitforElementtobeclickable((xml.getlocator("//locators/SplitAddButn")));				
+							Clickon(getwebelement(xml.getlocator("//locators/SplitAddButn")));
+							Clickon(getwebelement(xml.getlocator("//locators/SplitAddButn")));
 							}
-							else 
-							{
+							
+							else if(firstquantity>0 && secondquantity>0){
+								
 								Thread.sleep(2000);
-								SendKeys(getwebelement(xml.getlocator("//locators/IESplitblockSizesplit")), Inputdata[i][22].toString());
-								log("first block size is:-" + Inputdata[i][22].toString());
+								SendKeys(getwebelement(xml.getlocator("//locators/IESplitblockSizesplit").replace("indexrow",String.valueOf(3))), Inputdata[i][72].toString());
+								log("first block size is:-" + Inputdata[i][72].toString());
 								Thread.sleep(3000);
 								log("entering again the block size - 1");
-								SendKeys(getwebelement(xml.getlocator("//locators/IESplitQuantitysizesplit")), Inputdata[i][23].toString());
-								log("first quantity is:-" + Inputdata[i][23].toString());
+								SendKeys(getwebelement(xml.getlocator("//locators/IESplitQuantitysizesplit").replace("indexrow",String.valueOf(3))), Inputdata[i][73].toString());
+								log("first quantity is:-" + Inputdata[i][73].toString());
 								Thread.sleep(3000);
 								log("please enter the quantity for block size number");
-								SendKeys(getwebelement(xml.getlocator("//locators/IESplitQuantitysizesplit")), Inputdata[i][23].toString());
-								log("first quantity size is:-" + Inputdata[i][23].toString());
+								SendKeys(getwebelement(xml.getlocator("//locators/IESplitQuantitysizesplit").replace("indexrow",String.valueOf(3))), Inputdata[i][73].toString());
+								log("first quantity size is:-" + Inputdata[i][73].toString());
 								Thread.sleep(3000);
 								WaitforElementtobeclickable((xml.getlocator("//locators/SplitAddButn")));				
 								Clickon(getwebelement(xml.getlocator("//locators/SplitAddButn")));
 								Clickon(getwebelement(xml.getlocator("//locators/SplitAddButn")));
 							}
-							if(secondquantity == 0 )//we need to calculate the null value as well here
-							{
-				log("Since you hav't filled any data Quantity to create for block size 10 so we are checking with another quantity");
-							}
-							else 
+						}
+						
+						 
+						if(thirdquantity == 0 )//we need to calculate the null value as well here
+						{
+			log("Since you hav't filled any data Quantity to create for block size 100 so we are checking with another quantity");
+						}
+						else 
+						{
+							if(firstquantity==0 && secondquantity==0 && thirdquantity>0)
 							{
 								Thread.sleep(2000);
+								SendKeys(getwebelement(xml.getlocator("//locators/IESplitblockSizesplit").replace("indexrow",String.valueOf(2))), Inputdata[i][74].toString());
+								log("first block size is:-" + Inputdata[i][72].toString());
+								Thread.sleep(3000);
+								log("entering again the block size - 1");
+								SendKeys(getwebelement(xml.getlocator("//locators/IESplitQuantitysizesplit").replace("indexrow",String.valueOf(2))), Inputdata[i][75].toString());
+								log("first quantity is:-" + Inputdata[i][73].toString());
+								Thread.sleep(3000);
+								log("please enter the quantity for block size number");
+								SendKeys(getwebelement(xml.getlocator("//locators/IESplitQuantitysizesplit").replace("indexrow",String.valueOf(2))), Inputdata[i][75].toString());
+								log("first quantity size is:-" + Inputdata[i][73].toString());
+								Thread.sleep(3000);
+								WaitforElementtobeclickable((xml.getlocator("//locators/SplitAddButn")));				
+								Clickon(getwebelement(xml.getlocator("//locators/SplitAddButn")));
+								Clickon(getwebelement(xml.getlocator("//locators/SplitAddButn")));
 								
-										Thread.sleep(3000);
-										log("entering again the block size - 10");
-										SendKeys(getwebelement(xml.getlocator("//locators/Splitblocksize10")), Inputdata[i][72].toString());
-										log("please enter the quantity for one block size number:-"+Inputdata[i][72].toString());
-										Thread.sleep(3000);
-										SendKeys(getwebelement(xml.getlocator("//locators/SplitQuantitysize10")),
-												Inputdata[i][73].toString());
-										log("please enter the size for 10 block :-"+Inputdata[i][73].toString());
-										Thread.sleep(3000);
-										SendKeys(getwebelement(xml.getlocator("//locators/SplitQuantitysize10")),
-												Inputdata[i][73].toString());
-										log("please again enter the size for 10 block :-"+Inputdata[i][73].toString());
-										Thread.sleep(3000);
-										WaitforElementtobeclickable((xml.getlocator("//locators/SplitAddButn")));
-										Clickon(getwebelement(xml.getlocator("//locators/SplitAddButn")));
-										Clickon(getwebelement(xml.getlocator("//locators/SplitAddButn")));
-										log("Click on the split add button");
+								//2
 							}
-							if(thirdquantity == 0 )//we need to calculate the null value as well here
-							{
-				log("Since you hav't filled any data Quantity to create for block size 100 so we are checking with another quantity");
-							}
-							else 
-							{
-								Thread.sleep(3000);
-								log("entering again the block size - 100");
-								SendKeys(getwebelement(xml.getlocator("//locators/Splitblocksize100")), Inputdata[i][74].toString());
-								log("enter the size for 100 block:-"+Inputdata[i][74].toString());
-								//log("please enter the quantity for one block size number");
-								Thread.sleep(3000);
-								SendKeys(getwebelement(xml.getlocator("//locators/SplitQuantitysize100")),
-										Inputdata[i][75].toString());
-								log("enter the quantity for 100 block size is:-"+Inputdata[i][75].toString());
-								Thread.sleep(3000);
-								SendKeys(getwebelement(xml.getlocator("//locators/SplitQuantitysize100")),
-										Inputdata[i][75].toString());
-								log("again enter the quantity for 100 block size is:-"+Inputdata[i][75].toString());
-								Thread.sleep(5000);
-								//WaitforElementtobeclickable((xml.getlocator("//locators/splitaddbtn3")));
-								Clickon(getwebelement(xml.getlocator("//locators/SplitAddButn")));
-								Clickon(getwebelement(xml.getlocator("//locators/SplitAddButn")));
-								log("Click on the split add button");
-							}
-							if(fourthquantity == 0 )//we need to calculate the null value as well here
-							{
-				log("Since you hav't filled any data Quantity to create for block size 1000 so it will not be created");
-				Thread.sleep(20000);
-							}
-							else 
-							{
-								Thread.sleep(3000);
-								log("entering again the block size - 1000");
-								SendKeys(getwebelement(xml.getlocator("//locators/Splitblocksize1000")), Inputdata[i][76].toString());
-								log("please enter the block size for 1000 block size number:-"+Inputdata[i][76].toString());
-								Thread.sleep(3000);
-								SendKeys(getwebelement(xml.getlocator("//locators/SplitQuantitysize1000")),
-										Inputdata[i][77].toString());
-								log(" enter the quantity for 1000 block size is:-"+Inputdata[i][77].toString());
-								Thread.sleep(3000);
-								SendKeys(getwebelement(xml.getlocator("//locators/SplitQuantitysize1000")),
-										Inputdata[i][77].toString());
-								log("again enter the quantity for 1000 block size is:-"+Inputdata[i][77].toString());
-								Thread.sleep(3000);
-								WaitforElementtobeclickable((xml.getlocator("//locators/splitaddabtn4")));
-								Clickon(getwebelement(xml.getlocator("//locators/SplitAddButn")));
-								Clickon(getwebelement(xml.getlocator("//locators/SplitAddButn")));
-								log("Click on the split add button");
-							}
-							Thread.sleep(3000);
-							WaitforElementtobeclickable((xml.getlocator("//locators/splitFreenumbtn")));
-							Clickon(getwebelement(xml.getlocator("//locators/splitFreenumbtn")));
-							log("Click on Save free number button ");
 							
-						}	
-							else {
-								RedLog("it seems like you have'nt calculated the correct Block size and Quantity in your Excel sheet :( please check qand correct it ");
+							else if((firstquantity>0 && secondquantity==0 && thirdquantity>0) || (firstquantity==0 && secondquantity>0 && thirdquantity>0))
+							{
+								Thread.sleep(2000);
+								SendKeys(getwebelement(xml.getlocator("//locators/IESplitblockSizesplit").replace("indexrow",String.valueOf(3))), Inputdata[i][74].toString());
+								log("first block size is:-" + Inputdata[i][72].toString());
+								Thread.sleep(3000);
+								log("entering again the block size - 1");
+								SendKeys(getwebelement(xml.getlocator("//locators/IESplitQuantitysizesplit").replace("indexrow",String.valueOf(3))), Inputdata[i][75].toString());
+								log("first quantity is:-" + Inputdata[i][73].toString());
+								Thread.sleep(3000);
+								log("please enter the quantity for block size number");
+								SendKeys(getwebelement(xml.getlocator("//locators/IESplitQuantitysizesplit").replace("indexrow",String.valueOf(3))), Inputdata[i][75].toString());
+								log("first quantity size is:-" + Inputdata[i][73].toString());
+								Thread.sleep(3000);
+								WaitforElementtobeclickable((xml.getlocator("//locators/SplitAddButn")));				
+								Clickon(getwebelement(xml.getlocator("//locators/SplitAddButn")));
+								Clickon(getwebelement(xml.getlocator("//locators/SplitAddButn")));
+								//3
 							}
-						
+							else if(firstquantity>0 && secondquantity>0 && thirdquantity>0)
+							{
+								Thread.sleep(2000);
+								SendKeys(getwebelement(xml.getlocator("//locators/IESplitblockSizesplit").replace("indexrow",String.valueOf(4))), Inputdata[i][74].toString());
+								log("first block size is:-" + Inputdata[i][74].toString());
+								Thread.sleep(3000);
+								log("entering again the block size - 1");
+								SendKeys(getwebelement(xml.getlocator("//locators/IESplitQuantitysizesplit").replace("indexrow",String.valueOf(4))), Inputdata[i][75].toString());
+								log("first quantity is:-" + Inputdata[i][75].toString());
+								Thread.sleep(3000);
+								log("please enter the quantity for block size number");
+								SendKeys(getwebelement(xml.getlocator("//locators/IESplitQuantitysizesplit").replace("indexrow",String.valueOf(4))), Inputdata[i][75].toString());
+								log("first quantity size is:-" + Inputdata[i][75].toString());
+								Thread.sleep(3000);
+								WaitforElementtobeclickable((xml.getlocator("//locators/SplitAddButn")));				
+								Clickon(getwebelement(xml.getlocator("//locators/SplitAddButn")));
+								Clickon(getwebelement(xml.getlocator("//locators/SplitAddButn")));
+								
+								//4
+							}
+
 						}
 	
-				}
-			//shashank	
-				}}
+						
+						if(fourthquantity == 0 )//we need to calculate the null value as well here
+						{
+			log("Since you hav't filled any data Quantity to create for block size 1000 so it will not be created");
+			Thread.sleep(20000);
+						}
+						else 
+						
+						{
+							if(firstquantity==0 && secondquantity==0 && thirdquantity==0 && fourthquantity>0)
+							{
+								Thread.sleep(2000);
+								SendKeys(getwebelement(xml.getlocator("//locators/IESplitblockSizesplit").replace("indexrow",String.valueOf(2))), Inputdata[i][76].toString());
+								log("first block size is:-" + Inputdata[i][74].toString());
+								Thread.sleep(3000);
+								log("entering again the block size - 1");
+								SendKeys(getwebelement(xml.getlocator("//locators/IESplitQuantitysizesplit").replace("indexrow",String.valueOf(2))), Inputdata[i][77].toString());
+								log("first quantity is:-" + Inputdata[i][75].toString());
+								Thread.sleep(3000);
+								log("please enter the quantity for block size number");
+								SendKeys(getwebelement(xml.getlocator("//locators/IESplitQuantitysizesplit").replace("indexrow",String.valueOf(2))), Inputdata[i][77].toString());
+								log("first quantity size is:-" + Inputdata[i][75].toString());
+								Thread.sleep(3000);
+								WaitforElementtobeclickable((xml.getlocator("//locators/SplitAddButn")));				
+								Clickon(getwebelement(xml.getlocator("//locators/SplitAddButn")));
+								Clickon(getwebelement(xml.getlocator("//locators/SplitAddButn")));
+								//2
+							}
+							else if((firstquantity==0 && secondquantity==0 && thirdquantity>0 && fourthquantity>0)|| (firstquantity==0 && secondquantity>0 && thirdquantity==0 && fourthquantity>0)||(firstquantity>0 && secondquantity==0 && thirdquantity==0 && fourthquantity>0))
+							{
+								Thread.sleep(2000);
+								SendKeys(getwebelement(xml.getlocator("//locators/IESplitblockSizesplit").replace("indexrow",String.valueOf(3))), Inputdata[i][76].toString());
+								log("first block size is:-" + Inputdata[i][74].toString());
+								Thread.sleep(3000);
+								log("entering again the block size - 1");
+								SendKeys(getwebelement(xml.getlocator("//locators/IESplitQuantitysizesplit").replace("indexrow",String.valueOf(3))), Inputdata[i][77].toString());
+								log("first quantity is:-" + Inputdata[i][75].toString());
+								Thread.sleep(3000);
+								log("please enter the quantity for block size number");
+								SendKeys(getwebelement(xml.getlocator("//locators/IESplitQuantitysizesplit").replace("indexrow",String.valueOf(3))), Inputdata[i][77].toString());
+								log("first quantity size is:-" + Inputdata[i][75].toString());
+								Thread.sleep(3000);
+								WaitforElementtobeclickable((xml.getlocator("//locators/SplitAddButn")));				
+								Clickon(getwebelement(xml.getlocator("//locators/SplitAddButn")));
+								Clickon(getwebelement(xml.getlocator("//locators/SplitAddButn")));
+								//3
+							}
+							else if((firstquantity==0 && secondquantity>0 && thirdquantity>0 && fourthquantity>0)|| (firstquantity>0 && secondquantity>0 && thirdquantity==0 && fourthquantity>0)||(firstquantity>0 && secondquantity==0 && thirdquantity>0 && fourthquantity>0))
+							{
+								Thread.sleep(2000);
+								SendKeys(getwebelement(xml.getlocator("//locators/IESplitblockSizesplit").replace("indexrow",String.valueOf(4))), Inputdata[i][76].toString());
+								log("first block size is:-" + Inputdata[i][74].toString());
+								Thread.sleep(3000);
+								log("entering again the block size - 1");
+								SendKeys(getwebelement(xml.getlocator("//locators/IESplitQuantitysizesplit").replace("indexrow",String.valueOf(4))), Inputdata[i][77].toString());
+								log("first quantity is:-" + Inputdata[i][75].toString());
+								Thread.sleep(3000);
+								log("please enter the quantity for block size number");
+								SendKeys(getwebelement(xml.getlocator("//locators/IESplitQuantitysizesplit").replace("indexrow",String.valueOf(4))), Inputdata[i][77].toString());
+								log("first quantity size is:-" + Inputdata[i][75].toString());
+								Thread.sleep(3000);
+								WaitforElementtobeclickable((xml.getlocator("//locators/SplitAddButn")));				
+								Clickon(getwebelement(xml.getlocator("//locators/SplitAddButn")));
+								Clickon(getwebelement(xml.getlocator("//locators/SplitAddButn")));
+								//4
+							}
+							else if(firstquantity>0 && secondquantity>0 && thirdquantity>0 && fourthquantity>0)
+							{
+								Thread.sleep(2000);
+								SendKeys(getwebelement(xml.getlocator("//locators/IESplitblockSizesplit").replace("indexrow",String.valueOf(5))), Inputdata[i][76].toString());
+								log("first block size is:-" + Inputdata[i][74].toString());
+								Thread.sleep(3000);
+								log("entering again the block size - 1");
+								SendKeys(getwebelement(xml.getlocator("//locators/IESplitQuantitysizesplit").replace("indexrow",String.valueOf(5))), Inputdata[i][77].toString());
+								log("first quantity is:-" + Inputdata[i][75].toString());
+								Thread.sleep(3000);
+								log("please enter the quantity for block size number");
+								SendKeys(getwebelement(xml.getlocator("//locators/IESplitQuantitysizesplit").replace("indexrow",String.valueOf(5))), Inputdata[i][77].toString());
+								log("first quantity size is:-" + Inputdata[i][75].toString());
+								Thread.sleep(3000);
+								WaitforElementtobeclickable((xml.getlocator("//locators/SplitAddButn")));				
+								Clickon(getwebelement(xml.getlocator("//locators/SplitAddButn")));
+								Clickon(getwebelement(xml.getlocator("//locators/SplitAddButn")));
+		
+						}
+					}
+						Thread.sleep(5000);
+						WaitforElementtobeclickable((xml.getlocator("//locators/splitFreenumbtn")));
+						Clickon(getwebelement(xml.getlocator("//locators/splitFreenumbtn")));
+						log("Click on Save free number button ");
+					}
+					
+						else {
+							RedLog("it seems like you have'nt calculated the correct Block size and Quantity in your Excel sheet :( please check and correct it ");
+						}
+					
+                }}}
+					}
+			
+			
+		//shashank ji
+			

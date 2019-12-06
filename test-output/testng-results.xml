@@ -1,63 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Click on the change country name]]>
+    </line>
+    <line>
+      <![CDATA[Click on the change country name]]>
+    </line>
+    <line>
+      <![CDATA[Select the country name is: CH]]>
+    </line>
+    <line>
+      <![CDATA[click on the select button]]>
+    </line>
+    <line>
+      <![CDATA[Click on the PortIn Numbers tab]]>
+    </line>
+    <line>
+      <![CDATA[Click on Wholesale Radio button]]>
+    </line>
+    <line>
+      <![CDATA[select the Switch in Adding Number:-IP Soft Switch]]>
+    </line>
+    <line>
+      <![CDATA[Enter the area code/prfix:-0113]]>
+    </line>
+    <line>
+      <![CDATA[Enter the area code extension:-167]]>
+    </line>
+    <line>
+      <![CDATA[Enter the range start value:-9054]]>
+    </line>
+    <line>
+      <![CDATA[Enter the range end value:-9054]]>
+    </line>
+    <line>
+      <![CDATA[Select the Geo or non-Geo:-Geographical]]>
+    </line>
+    <line>
+      <![CDATA[Select the Category:-IP GEO]]>
+    </line>
+    <line>
+      <![CDATA[Enter the NRN VALUE:-222]]>
+    </line>
+    <line>
+      <![CDATA[Select the SelectRangeHolder:-COLT (000040)]]>
+    </line>
+    <line>
+      <![CDATA[Click on the submit button]]>
+    </line>
+    <line>
+      <![CDATA[ <font color='red'> Please check your input data: it seems like incorrect </font>]]>
+    </line>
   </reporter-output>
-  <suite started-at="2019-11-18T11:50:49Z" name="NH Automation" finished-at="2019-11-18T11:50:54Z" duration-ms="5568">
+  <suite started-at="2019-12-06T09:48:16Z" name="NMTS Automation" finished-at="2019-12-06T09:49:19Z" duration-ms="63202">
     <groups>
     </groups>
-    <test started-at="2019-11-18T11:50:49Z" name="Scenario" finished-at="2019-11-18T11:50:54Z" duration-ms="5568">
-      <class name="Testscript.NumberHosting">
-        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:Testscript.NumberHosting@3ec300f1]" started-at="2019-11-18T17:20:48Z" name="BeforeSuite" finished-at="2019-11-18T17:20:49Z" duration-ms="227" status="PASS">
+    <test started-at="2019-12-06T09:48:16Z" name="Scenario" finished-at="2019-12-06T09:49:19Z" duration-ms="63202">
+      <class name="Testscript.NMTS">
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:Testscript.NMTS@40e6dfe1]" started-at="2019-12-06T15:18:15Z" name="BeforeSuite" finished-at="2019-12-06T15:18:16Z" duration-ms="257" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeSuite -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Testscript.NumberHosting@3ec300f1]" started-at="2019-11-18T17:20:49Z" name="setup" finished-at="2019-11-18T17:20:53Z" duration-ms="3846" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testscript.NMTS@40e6dfe1]" started-at="2019-12-06T15:18:16Z" name="setup" finished-at="2019-12-06T15:18:20Z" duration-ms="4233" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, org.testng.ITestContext, [Ljava.lang.Object;)[pri:0, instance:Testscript.NumberHosting@3ec300f1]" started-at="2019-11-18T17:20:54Z" name="BeforeMethod" finished-at="2019-11-18T17:20:54Z" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, org.testng.ITestContext, [Ljava.lang.Object;)[pri:0, instance:Testscript.NMTS@40e6dfe1]" started-at="2019-12-06T15:18:22Z" name="BeforeMethod" finished-at="2019-12-06T15:18:22Z" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Testscript.NumberHosting.NumberInquiry(java.lang.Object[][]) throws java.lang.Exception]]>
+                <![CDATA[public void Testscript.NMTS.NumberInquiryForNMTS(java.lang.Object[][]) throws java.lang.Exception]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@3bdb2c78]]>
+                <![CDATA[org.testng.TestRunner@6084b7c2]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[[Ljava.lang.Object;@64693226]]>
+                <![CDATA[[Ljava.lang.Object;@521ad0e6]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="NumberInquiry([[Ljava.lang.Object;)[pri:0, instance:Testscript.NumberHosting@3ec300f1]" started-at="2019-11-18T17:20:54Z" name="NumberInquiry" data-provider="NumberHosting" finished-at="2019-11-18T17:20:54Z" duration-ms="135" status="FAIL">
+        <test-method signature="NumberInquiryForNMTS([[Ljava.lang.Object;)[pri:0, instance:Testscript.NMTS@40e6dfe1]" started-at="2019-12-06T15:18:22Z" name="NumberInquiryForNMTS" data-provider="NumberHosting" finished-at="2019-12-06T15:19:19Z" duration-ms="56637" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[[Ljava.lang.Object;@108531c2]]>
+                <![CDATA[[[Ljava.lang.Object;@21ec5672]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[null value in entry: url=null]]>
+              <![CDATA[ <font color='red'> Either data is incorrect in excel sheet or no Record found in system Application </font>]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: null value in entry: url=null
-	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:34)
-	at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:42)
-	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:73)
-	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:120)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:364)
-	at Driver.DriverHelper.openurl(DriverHelper.java:412)
-	at ScriptHelper.NumberHostingHelper.OpenApplication(NumberHostingHelper.java:36)
-	at Testscript.NumberHosting.NumberInquiry(NumberHosting.java:16)
+              <![CDATA[java.lang.AssertionError:  <font color='red'> Either data is incorrect in excel sheet or no Record found in system Application </font>
+	at org.testng.Assert.fail(Assert.java:94)
+	at Driver.DriverHelper.RedLog(DriverHelper.java:1143)
+	at ScriptHelper.NmtsHelper.PortInNMTS(NmtsHelper.java:1891)
+	at ScriptHelper.NmtsHelper.SearchofNMTSScenario(NmtsHelper.java:98)
+	at Testscript.NMTS.NumberInquiryForNMTS(NMTS.java:18)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -84,19 +132,70 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
+            <line>
+              <![CDATA[Click on the change country name]]>
+            </line>
+            <line>
+              <![CDATA[Click on the change country name]]>
+            </line>
+            <line>
+              <![CDATA[Select the country name is: CH]]>
+            </line>
+            <line>
+              <![CDATA[click on the select button]]>
+            </line>
+            <line>
+              <![CDATA[Click on the PortIn Numbers tab]]>
+            </line>
+            <line>
+              <![CDATA[Click on Wholesale Radio button]]>
+            </line>
+            <line>
+              <![CDATA[select the Switch in Adding Number:-IP Soft Switch]]>
+            </line>
+            <line>
+              <![CDATA[Enter the area code/prfix:-0113]]>
+            </line>
+            <line>
+              <![CDATA[Enter the area code extension:-167]]>
+            </line>
+            <line>
+              <![CDATA[Enter the range start value:-9054]]>
+            </line>
+            <line>
+              <![CDATA[Enter the range end value:-9054]]>
+            </line>
+            <line>
+              <![CDATA[Select the Geo or non-Geo:-Geographical]]>
+            </line>
+            <line>
+              <![CDATA[Select the Category:-IP GEO]]>
+            </line>
+            <line>
+              <![CDATA[Enter the NRN VALUE:-222]]>
+            </line>
+            <line>
+              <![CDATA[Select the SelectRangeHolder:-COLT (000040)]]>
+            </line>
+            <line>
+              <![CDATA[Click on the submit button]]>
+            </line>
+            <line>
+              <![CDATA[ <font color='red'> Please check your input data: it seems like incorrect </font>]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- NumberInquiry -->
-        <test-method is-config="true" signature="Teardown2()[pri:0, instance:Testscript.NumberHosting@3ec300f1]" started-at="2019-11-18T17:20:54Z" name="Teardown2" finished-at="2019-11-18T17:20:54Z" duration-ms="0" status="PASS">
+        </test-method> <!-- NumberInquiryForNMTS -->
+        <test-method is-config="true" signature="Teardown2()[pri:0, instance:Testscript.NMTS@40e6dfe1]" started-at="2019-12-06T15:19:19Z" name="Teardown2" finished-at="2019-12-06T15:19:19Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown2 -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:Testscript.NumberHosting@3ec300f1]" started-at="2019-11-18T17:20:54Z" name="Teardown" finished-at="2019-11-18T17:20:54Z" duration-ms="21" status="PASS">
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:Testscript.NMTS@40e6dfe1]" started-at="2019-12-06T15:19:19Z" name="Teardown" finished-at="2019-12-06T15:19:19Z" duration-ms="36" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
-      </class> <!-- Testscript.NumberHosting -->
+      </class> <!-- Testscript.NMTS -->
     </test> <!-- Scenario -->
-  </suite> <!-- NH Automation -->
+  </suite> <!-- NMTS Automation -->
 </testng-results>

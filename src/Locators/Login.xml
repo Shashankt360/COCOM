@@ -10,6 +10,8 @@
 <Username>id=userId</Username>
 <Password>id=password</Password>
 <Loginbutton>id=Submit</Loginbutton>
+<salestools>//a[contains(text(),'Sales Tools')]</salestools>
+<cocomwebmanager>//a[contains(text(),'Cocom Web Manager')]</cocomwebmanager> 
 <Userinfo>//*[@id="gen_menu_6"]</Userinfo>
 <skipwarning>//a[text()='Continue']</skipwarning>
 <UserProfile>//span[contains(@class,'IconMenu')]/parent::*/parent::*</UserProfile>

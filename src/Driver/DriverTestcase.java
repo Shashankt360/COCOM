@@ -413,12 +413,14 @@ public static final ThreadLocal<WebDriver> WEB_DRIVER_THREAD_LOCAL = new Inherit
 		
 			//WebDriver dr=new ChromeDriver();
 			WebDriver dr = new ChromeDriver(capabilities);
+			Thread.sleep(5000);
 			WEB_DRIVER_THREAD_LOCAL.set(dr);
-			Thread.sleep(2000);
-			dr.get("http://amsros78:8080/wholesale1");
-			Thread.sleep(12000);
+			Thread.sleep(5000);
+			dr.get("http://rfsdcp.colt.net");
+			Thread.sleep(6000);
 			
 			LoginHelper h=new LoginHelper(getwebdriver());
+			Thread.sleep(2000);
 			h.IntergrationLogin("NH");
 			
 

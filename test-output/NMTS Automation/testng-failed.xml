@@ -9,7 +9,8 @@
       <class name="Testscript.NMTS">
         <methods>
           <include name="BeforeMethod"/>
-          <include name="NumberInquiryForNMTS" invocation-numbers="1"/>
+          <include name="NumberInquiryForNMTS" invocation-numbers="0"/>
+          <include name="setup"/>
           <include name="Teardown2"/>
           <include name="BeforeSuite"/>
           <include name="Teardown"/>

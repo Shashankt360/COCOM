@@ -100,6 +100,7 @@
 <ServiceProfileone>(//table[@id='NHListTable']//td/a)[index]</ServiceProfileone>
 <ClickonCalender>//input[@id='datePortOut']/../img</ClickonCalender>
 <Clickonmonth>//button[text()='this month']</Clickonmonth>
+
 <Highterdate>//td[@class='dpDayHighlightTD']</Highterdate>
 <daterow>(//div[@id='datepicker']//tr)[index]</daterow>
 <dateclm>((//div[@id='datepicker']//tr)[x])//td[index1]</dateclm>
@@ -176,6 +177,7 @@
 <IECountryButton>(//table[@id='tblEntityExplorer']//tbody/tr)[7]/td/font</IECountryButton>
 
 <IECountryName>//select[@id='cboSwitchCountry']</IECountryName>
+<IECountryNametwo>//table[@id='tblEntityExplorer']//tr[9]/td</IECountryNametwo>
 <IECountryNameButton>id=btnChangeCountry</IECountryNameButton>
 <IEMergeButtonforsuper>(//table[@id='tblTaskMenu']//tr)[5]/td/font</IEMergeButtonforsuper>
 <IEAreaCode>//input[@id="txtAreaCode"]</IEAreaCode>
@@ -198,8 +200,10 @@
 <IEErrormsg>//span[contains(text(),'Please Enter the Details like Block Size, Quantity')]</IEErrormsg>
 <IESplitblockSize>//input[@id='gvSplitFreeNumberDetails__ctl2_txtSplitBlockSize']</IESplitblockSize>
 <RishabhNMTS></RishabhNMTS>
-<PhnMgnCountry>(//table[@id='tblEntityExplorer']//tr)[8]/td</PhnMgnCountry>
-
+<PhnMgnCountry>//table[@id='tblEntityExplorer']/tbody//tr[index]/td</PhnMgnCountry>
+<PhnMgnCountryal>//table[@id='tblEntityExplorer']//tr//td/font[contains(text(),'Change Country')]</PhnMgnCountryal>
+<Countcountry>//table[@id='tblEntityExplorer']//tr/td</Countcountry>
+<PhnMgnCountryCH>//table[@id='tblEntityExplorer']/tbody//tr[11]/td</PhnMgnCountryCH>
 <IEpoolandstatus>//input[@id='radMergeNumerType_1']</IEpoolandstatus>
 <targetStatus>//select[@id='ddlTargetStatus']</targetStatus>
 <tgtavail>//select[@id='ddlTargetAvail']</tgtavail>
@@ -246,12 +250,14 @@
 <selectPhoneNOmanager>//span[text()='Select New Group']/../..//select[@id='cboSelectNewGroup']</selectPhoneNOmanager>
 <ChangeGroupbtn>//input[@id='btnChangeGroup']</ChangeGroupbtn>
 <DirectAllocation>(//table[@id='tblNumberManagement']/tbody/tr)[8]/td</DirectAllocation>
+<DirectAllocationDE>(//table[@id='tblNumberManagement']/tbody/tr)[7]/td</DirectAllocationDE>
+<DirectAllocationforIT>(//table[@id='tblNumberManagement']/tbody/tr)[9]/td</DirectAllocationforIT>
 <AreaCodePrefix>//input[@id='ucxSearchCriteria_txtNationalCode']</AreaCodePrefix>
 <AreaCodeExt>//input[@id='ucxSearchCriteria_txtAreaCode']</AreaCodeExt>
 <RangeFrom>//input[@id='ucxSearchCriteria_txtLowerBound']</RangeFrom>
 <RangeTo>//input[@id='ucxSearchCriteria_txtUpperBound']</RangeTo>
 <Submitbtn>//input[@id='ucxSearchCriteria_btnSubmitSearch']</Submitbtn>
-<GriddataNMTS>//table[@id='ucxRange_grdView']//td[text()='IP Soft Switch']</GriddataNMTS>
+<GriddataNMTS>//table[@id='ucxRange_grdView']//td[2]</GriddataNMTS>
 <AllocationCheckbox>((//table[@id='ucxRange_grdView']/tbody/tr)[2]/td)[11]</AllocationCheckbox>
 <checkbox3>//input[@id='ucxRange_grdView__ctl2_chkMark']</checkbox3>
 <Selectmark>//a[@id='ucxRange_btnDeleteMarked']</Selectmark>
@@ -301,7 +307,7 @@
 <yespopup>//img[contains(@src,'Images/General/Yes.JPG')]/..</yespopup>
 <check1>//input[@id='ucxRangeList_grdView__ctl2_chkMark']</check1>
 <errormsgnorecord>//table[@id='ucxOrderHistory_grdView']//tr/td[contains(text(),'No Record Found.')]</errormsgnorecord>
-<portoutNMTS>//table[@id='tblNumberManagement']//tr[4]/td</portoutNMTS>
+<portoutNMTS>//table[@id='tblNumberManagement']//tr[4]/td/font</portoutNMTS>
 <RangeHolder>//select[@id='cboRangeHolder']</RangeHolder>
 <ContractNumber>//input[@id='txtContractNumber']</ContractNumber>
 <ContractSrc>//select[@id='cboContractSource']</ContractSrc>
@@ -314,19 +320,28 @@
 <Addnewrange>//input[@id'btnAddNewRangeSpec']</Addnewrange>
 <SelectRangeHolder>//select[@id='cboRangeOwner']</SelectRangeHolder>
 <verifyStatus>//td[text()='Reservation Status:']/following-sibling::td/span</verifyStatus>
+<verifyDeactivate>//td[text()='Reservation Status:']/..following-sibling::td/span</verifyDeactivate>
 <verifyActivaate>//span[text()='Activated']</verifyActivaate>
-<verifyStatusforPortIntwo>//td[text()='Reservation Status:']/following-sibling::td/span[@id='ucxOrderAttributes_lblAllocted']</verifyStatusforPortIntwo>
-<verifyStatusforPortInone>//td[text()='Reservation Status:']/following-sibling::td/span[@id='ucxOrderAttributes_lblOrderStatus']</verifyStatusforPortInone>
+<verifyStatusforPortIntwo>//span[@id='ucxOrderAttributes_lblAllocted']</verifyStatusforPortIntwo>
+<verifyStatusforPortInone>//span[@id='ucxOrderAttributes_lblOrderStatus']</verifyStatusforPortInone>
+<vv>//span[@id='ucxOrderAttributes_lblOrderStatus']</vv>
 <RejectReason>//select[@id='cboRejectionReason']</RejectReason>
 <ViewOrderDetailed>(//table[@id='tblTaskMenu']//tr)[4]/td</ViewOrderDetailed>
 <ActivateNumnerbtn>//input[@id='btnActivateNumbers']</ActivateNumnerbtn>
 <CheckReservestatus>(//table[@id='ucxOrderHistory_grdView']//tr)[2]//td[text()='Reserved']</CheckReservestatus>
 <ProcessReservationtab>(//table[@id='tblTaskMenu']//tr)[2]/td</ProcessReservationtab>
+<SelectColtcategory>//select[@id='ddlColtCategory']</SelectColtcategory>
+
+<SliptConcept>//table[@id='gvSplitFreeNumberDetails']//tr[index]//td/input</SliptConcept>
 
 
 
-<IESplitblockSizesplit>(//input[contains(@id,'_txtSplitBlockSize')])[1]</IESplitblockSizesplit>
-<IESplitQuantitysizesplit>(//input[contains(@id,'_txtSplitQuantity')])[1]</IESplitQuantitysizesplit>
+<IESplitblockSizesplit1>(//input[contains(@id,'_txtSplitBlockSize')])</IESplitblockSizesplit1>
+<IESplitQuantitysizesplit1>(//input[contains(@id,'_txtSplitQuantity')])</IESplitQuantitysizesplit1>
+
+<IESplitblockSizesplit>//table[@id='gvSplitFreeNumberDetails']//tr[indexrow]//td[2]//input</IESplitblockSizesplit>
+<IESplitQuantitysizesplit>//table[@id='gvSplitFreeNumberDetails']//tr[indexrow]//td[3]//input</IESplitQuantitysizesplit>
+<Rowcount>//table[@id='gvSplitFreeNumberDetails']//tr</Rowcount>
 <Splitblocksize10>(//input[contains(@id,'_txtSplitBlockSize')])[2]</Splitblocksize10>
 <SplitQuantitysize10>(//input[contains(@id,'_txtSplitQuantity')])[2]</SplitQuantitysize10>
 <Splitblocksize100>(//input[contains(@id,'_txtSplitBlockSize')])[3]</Splitblocksize100>
@@ -343,15 +358,16 @@
 <SplitRangeTo>//span[@id='lblRangeTo']</SplitRangeTo>
 <Rangefromspit>//span[@id='lblRangeFrom']</Rangefromspit>
 <Rangetospit>//span[@id='lblRangeTo']</Rangetospit>
-<splitFreenumbtn>//input[@id='btnSplitFreeNumber']</splitFreenumbtn>
+
 <processreservation>(//table[@id='tblTaskMenu']//tr)[2]/td</processreservation>
 
 
 <rishabhslastlocater></rishabhslastlocater>
 
 
-<PhnmgncountryforCH>(//table[@id='tblEntityExplorer']//tbody/tr)[10]/td/font</PhnmgncountryforCH>
-<PhnmgncountryforIT>(//table[@id='tblEntityExplorer']//tbody/tr)[9]/td/font</PhnmgncountryforIT>
+<PhnmgncountryforCH>//table[@id='tblEntityExplorer']//tr[10]/td</PhnmgncountryforCH>
+<PhnmgncountryforFR>//table[@id='tblEntityExplorer']//tr[8]/td</PhnmgncountryforFR>
+<PhnmgncountryforIT>(//table[@id='tblEntityExplorer']/tbody//tr)[9]/td</PhnmgncountryforIT>
 
 
 
@@ -381,6 +397,7 @@
 <YesBtn>//input[@id='btnYes']</YesBtn>
 <Coltandhostednumber>//select[@id='ucxOrderHistory_cboHostedNumberFilter']</Coltandhostednumber>
 <ReturnAvailability>//select[@id='ucxSearchCriteria_cboAvailabilityUK']</ReturnAvailability>
+<ReturnAvailabilityIT>//select[@id='ucxSearchCriteria_cboAvailability']</ReturnAvailabilityIT>
 <totalpage>//span[@id='ucxSelectRange_lblPageTotal']</totalpage>
 <pagenumberInput>//input[@id='ucxSelectRange_txtPageNo']</pagenumberInput>
 <operator>//select[@id='ddlTransferOwner']</operator>
@@ -391,16 +408,17 @@
 <wholesaleradiobtn>//input[@id='ucxSearchCriteria_radColt_1']</wholesaleradiobtn>
 <portoutradiobtn>//input[@id='ucxSearchCriteria_radPortout']</portoutradiobtn>
 <checkboxformerge>//input[@id='chkSwitchTask']</checkboxformerge>
-<Port-outStatus>//div[@id='lblSuccessfulMsg']</Port-outStatus>
+<Port-outStatus>//div[@id='panPortingSection']/following-sibling::table//tr[3]//span[@id='lblSuccessfulMsg']</Port-outStatus>
 
 
 <IEErrormsg2>//span[@id='lblErrorMsg']</IEErrormsg2>
 <errorforerror>//span[contains(text(),'can not be saved, it is already present in the database.')]</errorforerror>
 <mergebtnCH>(//table[@id='tblTaskMenu']//tr)[4]/td/font</mergebtnCH>
-<IECeaseButton>//table[@id='tblTaskMenu']//tr[5]//td//font</IECeaseButton>
+<IECeaseButton>//table[@id='tblTaskMenu']//tr[6]//td//font</IECeaseButton>
+<IEceasebtnU>//table[@id='tblTaskMenu']//tr[5]//td//font</IEceasebtnU>
 <CeaseBtnforFR>//table[@id='tblTaskMenu']//tr[6]//td//font</CeaseBtnforFR>
 <Changegroup2>(//table[@id='tblEntityExplorer']//tbody/tr)[6]/td[1]/font</Changegroup2>
-<ChangeGroupforCH>(//table[@id='tblEntityExplorer']//tbody/tr)[8]/td[1]</ChangeGroupforCH>
+<ChangeGroupforCH>//table[@id='tblEntityExplorer']/tbody//tr[10]/td</ChangeGroupforCH>
 <ChangeGroupforIT>(//table[@id='tblEntityExplorer']//tbody/tr)[7]/td[1]</ChangeGroupforIT>
 <Login></Login>
 <Usernametococom>//input[@id='userId']</Usernametococom>
@@ -408,5 +426,31 @@
 <Loginbutton>//input[@id='Submit']</Loginbutton> 
 
 <SEarchStatus1>//table[@id='numberList']//tbody//tr[1]//td[8]</SEarchStatus1>
+
+
+<Changes></Changes>
+
+<flatNumber>//input[@id='txtFlatNumber']</flatNumber>
+<Extention>//input[@id='txtExtension']</Extention>
+<buildingnumberletter>//select[@id='ddlBuildNoLetter']</buildingnumberletter>
+<RegisteredName>//input[@id='txtRegisteredName']</RegisteredName>
+<ResidentialRadiobtn>//table[@id='radCustomerType']//tr/td[2]/input</ResidentialRadiobtn>
+<VATnumber>//input[@id='txtVatNumber']</VATnumber>
+<TelephoneNumber>//input[@id='txtTelephone']</TelephoneNumber>
+<CIFvalue>//input[@id='txtCIF']</CIFvalue>
+<sELECThOSTEDnO>//select[@id='ucxSearchCriteria_cboHostedNumber']</sELECThOSTEDnO>
+<AllovationFirstName>//input[@id='txtFirstName']</AllovationFirstName>
+<AllovationlastName>//input[@id='txtLastName']</AllovationlastName>
+<CustomerTitle>//input[@id='txtCustomerTitle']</CustomerTitle>
+<AllocationLanguage>//input[@id='txtLanguage']</AllocationLanguage>
+<SelectReservationColt>//select[@id='ucxOrderHistory_cboHostedNumberFilter']</SelectReservationColt>
+<DirectAllocationCH>//table[@id='tblNumberManagement']//tr[11]/td</DirectAllocationCH>
+<SelectWholesaleCh>//input[@id='ucxSearchCriteria_radColt_1']</SelectWholesaleCh>
+<portinAllocatetel>//input[@id='txtTelPhNo']</portinAllocatetel>
+<port-inCH>//table[@id='tblNumberManagement']//tr[4]/td</port-inCH>
+<PORT-INradiobutton>//input[@id='CHNumberTypeSelctorForPortINReclaim1_rdoWholesalePortIn']</PORT-INradiobutton>
+
+
+
 
 </locators>

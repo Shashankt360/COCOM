@@ -146,6 +146,24 @@ public class LoginHelper extends DriverHelper{
 	}
 	public void IntergrationLogin(String Application) throws Exception
 	{
+		
+		if(isElementPresent(xml.getlocator("//locators/salestools")))
+		{
+	Clickon(getwebelement(xml.getlocator("//locators/salestools")));
+	WaitforElementtobeclickable(xml.getlocator("//locators/cocomwebmanager"));
+	Clickon(getwebelement(xml.getlocator("//locators/cocomwebmanager")));
+	SendKeys(getwebelement(xml.getlocator("//locators/"+Application+"/Username")),Getkeyvalue(Application+"_Username"));
+	//ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Enter User Name");
+//	WaitforElementtobeclickable(xml.getlocator("//locators/"+Application+"/Password"));
+	SendKeys(getwebelement(xml.getlocator("//locators/"+Application+"/Password")),Getkeyvalue(Application+"_Password"));
+	//ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Enter Password");
+//	WaitforElementtobeclickable(xml.getlocator("//locators/"+Application+"/Loginbutton"));
+	
+	Clickon(getwebelement(xml.getlocator("//locators/"+Application+"/Loginbutton")));
+	
+		} 
+		else {
+	
 		//openurl(Application);
 		//ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Navigated to "+Application+" Login Page");
 	//	WaitforElementtobeclickable(xml.getlocator("//locators/"+Application+"/Username"));  
@@ -158,7 +176,7 @@ public class LoginHelper extends DriverHelper{
 		
 		Clickon(getwebelement(xml.getlocator("//locators/"+Application+"/Loginbutton")));
 		//ExtentTestManager.getTest().log(LogStatus.PASS, " Step: Click on Login Button");
-		
+		}
 	}
 	public void LoginNMTS(String Application) throws Exception
 	{

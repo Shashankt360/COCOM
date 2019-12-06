@@ -23,6 +23,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.StaleElementReferenceException;
@@ -975,6 +976,22 @@ public void Clickonoutofviewportwithstring(String locator) throws Exception {
 			driver.switchTo().defaultContent();
 			return true;
 		}
+	
+	 public  boolean isAlertPresent() throws InterruptedException{
+		
+         try{
+
+        	 driver.switchTo().alert().accept();
+        	
+         return true;
+
+         }
+         catch(NoAlertPresentException ex){
+
+         return false;
+
+         }
+	 }
 	public void CancelJavaScriptMethod() throws InterruptedException{
 		Thread.sleep(1000);
 			Alert alert = driver.switchTo().alert();

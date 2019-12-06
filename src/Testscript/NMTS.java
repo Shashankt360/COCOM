@@ -15,32 +15,12 @@ public class NMTS extends DriverTestcase{
 		Login.get().LoginNMTS("NMTS");
 		
 
-		nmtsHelper.get().SearchofNMTSScenario(Data); // running well
+		nmtsHelper.get().SearchofNMTSScenario(Data);
 		
 		
+	
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-//	nmtsHelper.get().SplitNumbermain(Data);
-//		nmtsHelper.get().PortInNMTS(Data);         //running well
-//		nmtsHelper.get().ReservetoActivate(Data);	//running well
-//		
-//		nmtsHelper.get().FreeToActivateOnNMTS(Data);    // running well
-		
+
 	}
 
 }
